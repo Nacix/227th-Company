@@ -1,0 +1,13 @@
+name            = "[227th] - Krayt Company Aux Mod";
+picture         = "227th_picture.paa";
+actionName      = "Discord";
+action          = "https://discord.gg/FMW6DHUQTE";
+description     = "Auxillary mod for the 227th Krayt Company unit";
+logoSmall       = "227th_logo_small.paa";
+logo            = "227th_logo.paa";
+logoOver        = "227th_logo.paa";
+tooltip         = "227th Legion Armory";
+tooltipOwned    = "227th Legion";
+overview        = "Auxillary mod for the 227th Krayt Company unit";
+author          = "Anorexican & Valyrian";
+overviewPicture = "227th_picture.paa";
