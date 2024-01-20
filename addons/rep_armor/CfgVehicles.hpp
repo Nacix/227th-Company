@@ -1,183 +1,6 @@
-class CfgVehicles {
-	#undef SET_ARMOR_VALS
-	#define SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,mult) \
-		armor = QUOTE(baseArmor*mult); \
-		passThrough = QUOTE(pass); \
-		explosionShielding = QUOTE(blastProc*mult); \
-		minimalHit = QUOTE(minHit); \
-		material = -1;
-	#undef SET_ARMOR_HEAD
-	#define SET_ARMOR_HEAD(baseArmor,pass,blastProc,minHit,headMult) \
-		class HitFace \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name = "face_hub"; \
-			radius = 0.08; \
-		}; \
-		class HitNeck: HitFace \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name = "neck"; \
-			radius = 0.1; \
-		}; \
-		class HitHead: HitNeck \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,headMult) \
-			name = "head"; \
-			radius = 0.2; \
-			depends = "HitFace max HitNeck"; \
-		};
-	#undef SET_ARMOR_TORSO
-	#define SET_ARMOR_TORSO(baseArmor,pass,blastProc,minHit) \
-		class HitPelvis \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name = "pelvis"; \
-			radius = 0.24; \
-			visual = "injury_body"; \
-		}; \
-		class HitAbdomen: HitPelvis \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name = "spine1"; \
-			radius = 0.16; \
-		}; \
-		class HitDiaphragm: HitAbdomen \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name = "spine2"; \
-			radius = 0.18; \
-		}; \
-		class HitChest: HitDiaphragm \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,1) \
-			name = "spine3"; \
-			radius = 0.18; \
-		}; \
-		class HitBody: HitChest \
-		{ \
-			armor = 1000; \
-			material = -1; \
-			name = "body"; \
-			passThrough = 1; \
-			radius = 0; \
-			explosionShielding = 6; \
-			minimalHit = 0.01; \
-			depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
-		};
-	#undef SET_ARMOR_LIMBS
-	#define SET_ARMOR_LIMBS(baseArmor,pass,blastProc,minHit,limbMult) \
-		class HitArms \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name = "arms"; \
-			radius = 0.1; \
-			visual = "injury_hands"; \
-		}; \
-		class HitHands: HitArms \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name = "hands"; \
-			radius = 0.1; \
-			visual = "injury_hands"; \
-			depends = "HitArms"; \
-		}; \
-		class HitLegs \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name = "legs"; \
-			radius = 0.14; \
-			visual = "injury_legs"; \
-		}; \
-		class Incapacitated: HitLegs \
-		{ \
-			armor = 1000; \
-			material = -1; \
-			name = "body"; \
-			passThrough = 1; \
-			radius = 0; \
-			explosionShielding = 3; \
-			visual = ""; \
-			minimalHit = 0; \
-			depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2"; \
-		}; \
-		class HitLeftArm \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name = "hand_l"; \
-			radius = 0.08; \
-			visual = "injury_hands"; \
-		}; \
-		class HitRightArm: HitLeftArm \
-		{ \
-			name = "hand_r"; \
-		}; \
-		class HitLeftLeg \
-		{ \
-			SET_ARMOR_VALS(baseArmor,pass,blastProc,minHit,limbMult) \
-			name = "leg_l"; \
-			radius = 0.1; \
-			visual = "injury_legs"; \
-		}; \
-		class HitRightLeg: HitLeftLeg \
-		{ \
-			name = "leg_r"; \
-		};
-	#undef SET_ARMOR
-	#define SET_ARMOR(baseArmor,pass,blastProc,minHit,headMult,limbMult) \
-		class HitPoints: HitPoints \
-		{ \
-			SET_ARMOR_HEAD(baseArmor,1,blastProc,minHit,headMult) \
-			SET_ARMOR_TORSO(baseArmor,pass,blastProc,minHit) \
-			SET_ARMOR_LIMBS(baseArmor,1,blastProc,minHit,limbMult) \
-		};
-
-	#define ADD_BACKPACK(className,rawName,parentClass) \
-		class TAG##_B_Pack_##className##: parentClass \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_##className##_co.paa) }; \
-		}
-	#define ADD_JETPACK(className,rawName,parentClass) \
-		class TAG##_B_Pack_##className##: parentClass \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\jetpacks\b_##className##_co.paa) }; \
-		}
-	#define ADD_BACKPACK_STRAPS(className,rawName,parentClass) \
-		ADD_BACKPACK(className,rawName,parentClass); \
-		class TAG##_B_Pack_##className##_straps: parentClass##_s \
-		{ \
-			displayName = TAG_NAME(rawName## (Straps)); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_##className##_co.paa) }; \
-		}
-
-	#define ADD_UNIFORM_TROOPER_BASE(className,rawName,groupDir,localDir) \
-		SUBCLASS(B_##className##_Base,TAG##_B_Trooper_Base) \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			scope = 2; \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\uniforms\##groupDir##\##localDir##\u_up_##className##_co.paa), \
-				QPATHTOF(data\uniforms\##groupDir##\##localDir##\u_low_##className##_co.paa) \
-			}; \
-		}
-	#define ADD_UNIFORM_INSULATED(className,rawName) \
-		SUBCLASS(B_Insulated_##className##_Base,TAG##_B_Insulated_Base) \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			scope = 2; \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa), \
-				QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa) \
-			}; \
-		}
-
-	#define ADD_UNIFORM_TROOPER(className,rawName) ADD_UNIFORM_TROOPER_BASE(className,rawName,trooper,className)
-	#define ADD_UNIFORM_JET(className,rawName) ADD_UNIFORM_TROOPER_BASE(Jet_##className,rawName,jet,className)
-	#define ADD_UNIFORM_TROOPER_CUSTOM(className,rawName) ADD_UNIFORM_TROOPER_BASE(className,rawName,custom,className)
+class CfgVehicles
+{
+	// ############################################################ Referenced Classes ############################################################
 
 	class B_Soldier_Base_F;
 	class B_Soldier_F: B_Soldier_Base_F
@@ -197,6 +20,8 @@ class CfgVehicles {
 	class JLTS_Clone_jumppack_Chicken;
 	class JLTS_Clone_jumppack_JT12;
 	class JLTS_Clone_Jumppack_mc;
+
+	// ############################################################ Backpacks ############################################################
 
 	ADD_BACKPACK(ARC,ARC Backpack,JLTS_Clone_ARC_backpack);
 	ADD_BACKPACK(ARC_Medic,ARC Medic Backpack,JLTS_Clone_ARC_backpack);
@@ -228,6 +53,8 @@ class CfgVehicles {
 	ADD_JETPACK(JP_MC_krayt,Jump Pack (MC) [Krayt],JLTS_Clone_Jumppack_mc);
 	ADD_JETPACK(JP_MC_valyrian,Jump Pack (MC) [Valyrian],JLTS_Clone_Jumppack_mc);
 
+	// ############################################################ Uniform Vehicles ############################################################
+
 	SUBCLASS(B_Trooper_Base,B_Soldier_F)
 	{
 		author = "Anorexican";
@@ -254,7 +81,7 @@ class CfgVehicles {
 			QPATHTOF(data\uniforms\trooper\ct\u_up_ct_co.paa),
 			QPATHTOF(data\uniforms\trooper\ct\u_low_ct_co.paa)
 		};
-		SET_ARMOR(11.5,0.625,12,0.01,0.25,0.4)
+		SET_ARMOR_UNIFORM(11.5,0.625,12,0.01,0.25,0.4)
 		class Wounds
 		{
 			tex[] = {};
@@ -318,28 +145,28 @@ class CfgVehicles {
 		};
 	};
 
-	ADD_UNIFORM_TROOPER(CR,CRBase);
-	ADD_UNIFORM_TROOPER(CT,CTBase);
-	ADD_UNIFORM_TROOPER(SCT,SCTBase);
-	ADD_UNIFORM_TROOPER(VCT,VCTBase);
-	ADD_UNIFORM_TROOPER(CSP,CSPBase);
-	ADD_UNIFORM_TROOPER(CLP,CLPBase);
-	ADD_UNIFORM_TROOPER(CP,CPBase);
-	ADD_UNIFORM_TROOPER(CS,CSBase);
-	ADD_UNIFORM_TROOPER(CSS,CSSBase);
-	ADD_UNIFORM_TROOPER(CSM,CSMBase);
+	ADD_V_UNIFORM_TROOPER(CR,CRBase);
+	ADD_V_UNIFORM_TROOPER(CT,CTBase);
+	ADD_V_UNIFORM_TROOPER(SCT,SCTBase);
+	ADD_V_UNIFORM_TROOPER(VCT,VCTBase);
+	ADD_V_UNIFORM_TROOPER(CSP,CSPBase);
+	ADD_V_UNIFORM_TROOPER(CLP,CLPBase);
+	ADD_V_UNIFORM_TROOPER(CP,CPBase);
+	ADD_V_UNIFORM_TROOPER(CS,CSBase);
+	ADD_V_UNIFORM_TROOPER(CSS,CSSBase);
+	ADD_V_UNIFORM_TROOPER(CSM,CSMBase);
 
-	ADD_UNIFORM_TROOPER_CUSTOM(Cookie,CookieBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Jinx,JinxBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Knight,KnightBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Luci,LuciBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Neca,NecaBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Speed,SpeedBase);
-	ADD_UNIFORM_TROOPER_CUSTOM(Valyrian,ValyrianBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Cookie,CookieBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Jinx,JinxBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Knight,KnightBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Luci,LuciBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Neca,NecaBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Speed,SpeedBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Valyrian,ValyrianBase);
 
-	ADD_UNIFORM_JET(CT,JetBase);
-	ADD_UNIFORM_JET(NCO,JetNCOBase);
+	ADD_V_UNIFORM_TROOPER_JET(CT,JetBase);
+	ADD_V_UNIFORM_TROOPER_JET(NCO,JetNCOBase);
 
-	ADD_UNIFORM_INSULATED(CT,InsulatedBase);
-	ADD_UNIFORM_INSULATED(Geonosis_CT,InsulatedGeonosisBase);
+	ADD_V_UNIFORM_INSULATED(CT,InsulatedBase);
+	ADD_V_UNIFORM_INSULATED(Geonosis_CT,InsulatedGeonosisBase);
 };

@@ -207,6 +207,8 @@ class CfgPatches
     };
 };
 
+#include "macros_protection.hpp"
+#include "macros_equipment.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGearModels.hpp"
 #include "XtdGearInfos.hpp"
