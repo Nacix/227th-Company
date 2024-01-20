@@ -1,4 +1,4 @@
-name            = "[227th] - Krayt Company Aux Mod";
+name            = "[227th] Krayt Company Aux Mod";
 picture         = "227th_picture.paa";
 actionName      = "Discord";
 action          = "https://discord.gg/FMW6DHUQTE";
