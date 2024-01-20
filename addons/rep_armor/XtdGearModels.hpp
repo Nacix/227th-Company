@@ -1,5 +1,19 @@
 class XtdGearModels
 {
+
+	#define SET_BACKGROUND(className,optionName) \
+		class className \
+		{ \
+			label = QUOTE(optionName); \
+			image = "#(rgb,8,8,3)color(0.42,0.125,0.03,1)"; \
+		}
+		
+	#define SET_BACKGROUND_GENERIC(className) SET_BACKGROUND(className,className)
+	#define SET_BACKGROUND_PRETTY(className,optionName) SET_BACKGROUND(className,optionName)
+
+	#define SET_BACKGROUND_DEFAULT(optionName) SET_BACKGROUND_GENERIC(optionName)
+	#define SET_BACKGROUND_DEFAULT_PRETTY(className,optionName) SET_BACKGROUND_PRETTY(className,optionName)
+
 	class CfgWeapons 
 	{
 		NEW_CLASS(H_P2_Trooper)
@@ -12,6 +26,9 @@ class XtdGearModels
 				label = "Type";
 				values[] = {"Trooper", "Specialist", "ARC"};
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Trooper);
+				SET_BACKGROUND_DEFAULT(Specialist);
+				SET_BACKGROUND_DEFAULT(ARC);
 			};
 			class skin
 			{
@@ -30,13 +47,12 @@ class XtdGearModels
 					"CSM",
 					"Jet",
 					"EOD",
-					"EOD [CSP]",
-					"EOD [NCO]",
+					"EOD_CSP",
+					"EOD_NCO",
 					"Cookie",
 					"DevilDolphin",
 					"Jinx",
 					"Knight",
-					"Valyrian",
 					"Canada",
 					"Catcher",
 					"Fiveo",
@@ -58,6 +74,44 @@ class XtdGearModels
 					"Valyrian",
 					"Wicked"
 				};
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(SCT);
+				SET_BACKGROUND_DEFAULT(VCT);
+				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CP);
+				SET_BACKGROUND_DEFAULT(CS);
+				SET_BACKGROUND_DEFAULT(CSS);
+				SET_BACKGROUND_DEFAULT(CFS);
+				SET_BACKGROUND_DEFAULT(CSM);
+				SET_BACKGROUND_DEFAULT(Jet);
+				SET_BACKGROUND_DEFAULT(EOD);
+				SET_BACKGROUND_DEFAULT_PRETTY(EOD_CSP,EOD [CSP]);
+				SET_BACKGROUND_DEFAULT_PRETTY(EOD_NCO,EOD [NCO]);
+				SET_BACKGROUND_DEFAULT(Cookie);
+				SET_BACKGROUND_DEFAULT(DevilDolphin);
+				SET_BACKGROUND_DEFAULT(Jinx);
+				SET_BACKGROUND_DEFAULT(Knight);
+				SET_BACKGROUND_DEFAULT(Canada);
+				SET_BACKGROUND_DEFAULT(Catcher);
+				SET_BACKGROUND_DEFAULT(Fiveo);
+				SET_BACKGROUND_DEFAULT(Fox);
+				SET_BACKGROUND_DEFAULT(Hotshot);
+				SET_BACKGROUND_DEFAULT(Jager);
+				SET_BACKGROUND_DEFAULT(Kitsune);
+				SET_BACKGROUND_DEFAULT(Luci);
+				SET_BACKGROUND_DEFAULT(Neca);
+				SET_BACKGROUND_DEFAULT(Rage);
+				SET_BACKGROUND_DEFAULT(Rex);
+				SET_BACKGROUND_DEFAULT(Riven);
+				SET_BACKGROUND_DEFAULT(Sage);
+				SET_BACKGROUND_DEFAULT(Space);
+				SET_BACKGROUND_DEFAULT(Sparky);
+				SET_BACKGROUND_DEFAULT(Sparrow);
+				SET_BACKGROUND_DEFAULT(Spartacus);
+				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Valyrian);
+				SET_BACKGROUND_DEFAULT(Wicked);
 			};
 		};
 		NEW_CLASS(H_ARF)
@@ -69,6 +123,8 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Default", "Spartacus" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Spartacus);
 			};
 		};
 		NEW_CLASS(H_P1)
@@ -80,6 +136,14 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Default", "SCT", "VCT", "CSP", "CS", "CSS", "CSM", "Jinx" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(SCT);
+				SET_BACKGROUND_DEFAULT(VCT);
+				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(CS);
+				SET_BACKGROUND_DEFAULT(CSS);
+				SET_BACKGROUND_DEFAULT(CSM);
+				SET_BACKGROUND_DEFAULT(Jinx);
 			};
 		};
 		NEW_CLASS(H_Pilot)
@@ -92,11 +156,18 @@ class XtdGearModels
 				label = "Type";
 				values[] = { "P1", "P2" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(P1);
+				SET_BACKGROUND_DEFAULT(P2);
 			};
 			class skin
 			{
 				label = "Skin";
 				values[] = { "Default", "CXG1", "CXG2", "Carrot", "Texan" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(CXG1);
+				SET_BACKGROUND_DEFAULT(CXG2);
+				SET_BACKGROUND_DEFAULT(Carrot);
+				SET_BACKGROUND_DEFAULT(Texan);
 			};
 		};
 		NEW_CLASS(H_Insulated)
@@ -108,11 +179,8 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Default", "Geonosis" };
-
-				class Default
-				{
-					label = "Default";
-				};
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Geonosis);
 			};
 		};
 		NEW_CLASS(H_Engineer)
@@ -124,6 +192,9 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Default", "CSP", "NCO" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(NCO);
 			};
 		};
 		NEW_CLASS(H_SpecOp)
@@ -136,11 +207,16 @@ class XtdGearModels
 				label = "Type";
 				values[] = { "Default", "Geonosis" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Geonosis);
 			};
 			class skin
 			{
 				label = "Skin";
 				values[] = { "Default", "CSP", "NCO" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(NCO);
 			};
 		};
 		NEW_CLASS(NV_Range)
@@ -152,6 +228,10 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Brown", "Gray", "Jinx", "Yellow" };
+				SET_BACKGROUND_DEFAULT(Brown);
+				SET_BACKGROUND_DEFAULT(Gray);
+				SET_BACKGROUND_DEFAULT(Jinx);
+				SET_BACKGROUND_DEFAULT(Yellow);
 			};
 		};
 		NEW_CLASS(NV_Macro)
@@ -164,11 +244,17 @@ class XtdGearModels
 				label = "Position";
 				values[] = { "Default", "Specialist" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Specialist);
 			};
 			class skin
 			{
 				label = "Skin";
 				values[] = { "Brown", "Gray", "White", "Yellow" };
+				SET_BACKGROUND_DEFAULT(Brown);
+				SET_BACKGROUND_DEFAULT(Gray);
+				SET_BACKGROUND_DEFAULT(White);
+				SET_BACKGROUND_DEFAULT(Yellow);
 			};
 		};
 		NEW_CLASS(NV_Visor)
@@ -180,6 +266,10 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Brown", "Gray", "Valyrian", "Yellow" };
+				SET_BACKGROUND_DEFAULT(Brown);
+				SET_BACKGROUND_DEFAULT(Gray);
+				SET_BACKGROUND_DEFAULT(Valyrian);
+				SET_BACKGROUND_DEFAULT(Yellow);
 			};
 		};
 		NEW_CLASS(V_ARC)
@@ -191,6 +281,13 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Cadet", "Trooper", "Medic", "Veteran", "Cookie", "Jinx", "Valyrian" };
+				SET_BACKGROUND_DEFAULT(Cadet);
+				SET_BACKGROUND_DEFAULT(Trooper);
+				SET_BACKGROUND_DEFAULT(Medic);
+				SET_BACKGROUND_DEFAULT(Veteran);
+				SET_BACKGROUND_DEFAULT(Cookie);
+				SET_BACKGROUND_DEFAULT(Jinx);
+				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};
 		NEW_CLASS(V_Omni)
@@ -203,6 +300,9 @@ class XtdGearModels
 				label = "Type";
 				values[] = { "Basic", "Specialist", "Leadership" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Basic);
+				SET_BACKGROUND_DEFAULT(Specialist);
+				SET_BACKGROUND_DEFAULT(Leadership);
 			};
 			class skin
 			{
@@ -212,7 +312,7 @@ class XtdGearModels
 					"Invisible",
 					"Trooper",
 					"Suspenders",
-					"Anti-Tank",
+					"AT",
 					"EOD",
 					"Geonosis",
 					"Jet",
@@ -227,6 +327,23 @@ class XtdGearModels
 					"Spartacus",
 					"Valyrian"
 				};
+				SET_BACKGROUND_DEFAULT(Invisible);
+				SET_BACKGROUND_DEFAULT(Trooper);
+				SET_BACKGROUND_DEFAULT(Suspenders);
+				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
+				SET_BACKGROUND_DEFAULT(EOD);
+				SET_BACKGROUND_DEFAULT(Geonosis);
+				SET_BACKGROUND_DEFAULT(Jet);
+				SET_BACKGROUND_DEFAULT(Marksman);
+				SET_BACKGROUND_DEFAULT(Medic);
+				SET_BACKGROUND_DEFAULT(RTO);
+				SET_BACKGROUND_DEFAULT(Support);
+				SET_BACKGROUND_DEFAULT(Corporal);
+				SET_BACKGROUND_DEFAULT(Sergeant);
+				SET_BACKGROUND_DEFAULT(Officer);
+				SET_BACKGROUND_DEFAULT(Neca);
+				SET_BACKGROUND_DEFAULT(Spartacus);
+				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};
 		NEW_CLASS(U_Trooper)
@@ -250,7 +367,7 @@ class XtdGearModels
 					"CSS",
 					"CSM",
 					"Jet",
-					"Jet [NCO]",
+					"Jet_NCO",
 					"Cookie",
 					"Jinx",
 					"Knight",
@@ -258,6 +375,24 @@ class XtdGearModels
 					"Speed",
 					"Valyrian"
 				};
+				SET_BACKGROUND_DEFAULT(Cadet);
+				SET_BACKGROUND_DEFAULT(CT);
+				SET_BACKGROUND_DEFAULT(SCT);
+				SET_BACKGROUND_DEFAULT(VCT);
+				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CP);
+				SET_BACKGROUND_DEFAULT(CS);
+				SET_BACKGROUND_DEFAULT(CSS);
+				SET_BACKGROUND_DEFAULT(CSM);
+				SET_BACKGROUND_DEFAULT(Jet);
+				SET_BACKGROUND_DEFAULT_PRETTY(Jet_NCO,Jet [NCO]);
+				SET_BACKGROUND_DEFAULT(Cookie);
+				SET_BACKGROUND_DEFAULT(Jinx);
+				SET_BACKGROUND_DEFAULT(Knight);
+				SET_BACKGROUND_DEFAULT(Neca);
+				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};
 		NEW_CLASS(U_Insulated)
@@ -269,6 +404,8 @@ class XtdGearModels
 			{
 				label = "Skin";
 				values[] = { "Default", "Geonosis" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Geonosis);
 			};
 		};
 	};
@@ -284,16 +421,26 @@ class XtdGearModels
 				label = "Type";
 				values[] = { "Basic", "RTO", "ARC" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Basic);
+				SET_BACKGROUND_DEFAULT(RTO);
+				SET_BACKGROUND_DEFAULT(ARC);
 			};
 			class straps
 			{
 				label = "Straps";
 				values[] = { "Default", "Yes" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Yes);
 			};
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "Medic", "Anti-Tank", "EOD", "RTO (Mini)" };
+				values[] = { "Default", "Medic", "AT", "EOD", "RTO_Mini" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Medic);
+				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
+				SET_BACKGROUND_DEFAULT(EOD);
+				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Mini,RTO (Mini));
 			};
 		};
 		NEW_CLASS(B_Jetpack)
@@ -306,11 +453,20 @@ class XtdGearModels
 				label = "Type";
 				values[] = { "MC", "JT12", "Chicken" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(MC);
+				SET_BACKGROUND_DEFAULT(JT12);
+				SET_BACKGROUND_DEFAULT(Chicken);
 			};
 			class skin
 			{
 				label = "Skin";
 				values[] = { "Default", "Medic", "Pilot", "Krayt", "Mercy", "Valyrian" };
+				SET_BACKGROUND_DEFAULT(Default);
+				SET_BACKGROUND_DEFAULT(Medic);
+				SET_BACKGROUND_DEFAULT(Pilot);
+				SET_BACKGROUND_DEFAULT(Krayt);
+				SET_BACKGROUND_DEFAULT(Mercy);
+				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};
 	};

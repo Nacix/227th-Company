@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include <script_component.hpp>
 
 class CfgPatches
 {
@@ -207,10 +207,10 @@ class CfgPatches
     };
 };
 
-#include "macros_protection.hpp"
-#include "macros_equipment.hpp"
-#include "CfgWeapons.hpp"
-#include "XtdGearModels.hpp"
-#include "XtdGearInfos.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgUnitInsignia.hpp"
+#include <macros_protection.hpp>
+#include <macros_equipment.hpp>
+#include <CfgWeapons.hpp>
+#include <CfgVehicles.hpp>
+#include <CfgUnitInsignia.hpp>
+#include <XtdGearModels.hpp>
+#include <XtdGearInfos.hpp>
