@@ -1,1 +1,0 @@
-#include "\x\kyt\addons\common\script_component.hpp"
