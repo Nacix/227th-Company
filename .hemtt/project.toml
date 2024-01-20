@@ -1,0 +1,15 @@
+name = "227th Aux Mod"
+prefix = "krt"
+mainprefix = "x"
+
+[version]
+git_hash = 0
+
+[files]
+include = [
+    "*.dll",
+    "*.so",
+    "*.paa",
+    "mod.cpp",
+    "README.md",
+]
