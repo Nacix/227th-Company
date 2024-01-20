@@ -58,6 +58,7 @@
 #define NEW_CLASS(className) class TAG_CLASS(className)
 #define TAG_CLASS(className) TAG##_##className
 #define CLASS(className) QUOTE(TAG_CLASS(className))
+#define SUBCLASS(className, parentClass) class TAG_CLASS(className): parentClass
 
 #define CATEGORY(categoryName) QUOTE(TITLE - categoryName)
 
@@ -69,11 +70,11 @@
 #define VISIBLE(pointer) ((configFile >> "CfgWeapons" >> pointer >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData isEqualTo 0)
 #define HASLASER(attachment) not isNil {(configFile >> "CfgWeapons" >> attachment >> "ItemInfo" >> "Pointer" >> "isIR") call BIS_fnc_getCfgData}
 
-#define GET_INFO(className,parentClass) \
+#define REF_INFO(className,parentClass) \
     class className##: parentClass \
     { \
         class ItemInfo; \
-    };
+    }
 
 #define WEAPONS(primaryWeapon,secondaryWeapon,launcherWeapon,binocularWeapon) \
     weapons[]= \
@@ -117,7 +118,7 @@
         #endif \
         "Throw", \
         "Put" \
-    };
+    }
 
 #define EQUIPMENT(helmet,vest,back,nvg,comms) \
     linkedItems[]= \
@@ -163,10 +164,11 @@
         "ItemMap", \
         "ItemCompass", \
         "ItemWatch" \
-    }; \
+    } \
     #if back \
     #else \
-        backpack = QUOTE(back);
+        ; \
+        backpack = QUOTE(back); \
     #endif
 
 #define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg);
@@ -175,12 +177,12 @@
     PREVIEW(className) \
     faction = CLASS(factionID); \
     editorSubcategory = CLASS(category); \
-    uniformClass = QUOTE(uniform);
+    uniformClass = QUOTE(uniform)
 
 #define DEF_MAGS \
     #ifdef MAGAZINES \
         magazines[] = { MAGAZINES }; \
-		respawnMagazines[] = { MAGAZINES }; \
+		respawnMagazines[] = { MAGAZINES } \
     #endif
 
 #define LIST_1(item) \
@@ -275,13 +277,13 @@
     QUOTE(item)
 
 #define UNIT_NEW(unit, index, rank, pos, sideID) \
-		class Unit##index \
-		{ \
-			position[] = {pos}; \
-			rank = QUOTE(rank); \
-			side = sideID; \
-			vehicle = CLASS(unit); \
-		};
+    class Unit##index \
+    { \
+        position[] = {pos}; \
+        rank = QUOTE(rank); \
+        side = sideID; \
+        vehicle = CLASS(unit); \
+    }
 
 	#define UNIT_1(unit, sideID) UNIT_NEW(unit, 0, SERGEANT, ARR_3(0, 0, 0), sideID)
 	#define UNIT_2(unit, sideID) UNIT_NEW(unit, 1, CORPORAL, ARR_3(5, -5, 0), sideID)
