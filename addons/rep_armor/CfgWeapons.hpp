@@ -443,7 +443,7 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(V_CS,JLTS_CloneVestAirborne)
+	SUBCLASS(V_CS,TAG##_V_CP)
 	{
 		displayName = TAG_NAME(Sergeant Vest);
 		hiddenSelectionsTextures[]=
@@ -455,7 +455,7 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Spartacus,TAG##_V_CS)
+	SUBCLASS(V_Spartacus,TAG##_V_CP)
 	{
 		displayName = TAG_NAME(Spartacus' Vest);
 		hiddenSelectionsTextures[]=
