@@ -1,7 +1,7 @@
 #define MAINPREFIX x
-#define PREFIX kyt
+#define PREFIX krt
 
-#define TAG 227th
+#define TAG KRT
 #define TAG_BR [##227th##]
 
 #define TITLE 227th Krayt Company
