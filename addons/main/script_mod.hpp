@@ -6,8 +6,6 @@
 
 #define TITLE 227th Krayt Company
 
-#define FACTION_REP CLASS(Krayt)
-
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCHLVL
 #define VERSION_AR  MAJOR,MINOR,PATCHLVL
