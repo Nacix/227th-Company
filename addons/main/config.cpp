@@ -5,15 +5,14 @@ class CfgPatches
     class ADDON 
     {
         name = COMPONENT_NAME;
+        author = ECSTRING(Common,AuxTeam);
+        authors[] = {"Anorexican", "Valyrian"};
 		requiredVersion = REQUIRED_VERSION;
-        units[] = {};
-        weapons[] = {};
         requiredAddons[] = {"cba_main"};
-		author = ECSTRING(Common,AuxTeam);
-		authors[] = {"Anorexican", "Valyrian"};
 		url = ECSTRING(main,URL);
     };
 };
+
 class CfgMods 
 {
     class PREFIX 
