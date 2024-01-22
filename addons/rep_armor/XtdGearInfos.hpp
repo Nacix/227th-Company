@@ -113,7 +113,7 @@ class XtdGearInfos
 			}
 
 		// P2 Trooper Helmets
-		XTD_H_P2(Trooper,Trooper,Default);
+		XTD_H_P2(CT,Trooper,Default);
 		XTD_H_P2(SCT,Trooper,SCT);
 		XTD_H_P2(VCT,Trooper,VCT);
 		XTD_H_P2(CSP,Trooper,CSP);

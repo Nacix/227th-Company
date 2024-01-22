@@ -10,7 +10,7 @@
 // ############################################################ CfgWeapons ############################################################
 
 #define ADD_CT_HELMET(className,rawName) \
-    class TAG##_H_P2_##className##: TAG##_H_P2_Trooper \
+    class TAG##_H_P2_##className##: TAG##_H_P2_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_##className##_co.paa) }; \
