@@ -5,14 +5,14 @@ class XtdGearInfos
 		#define XTD_H_P2(className,typeName,skinName) \
 			class TAG##_H_P2_##className## \
 			{ \
-				model = QUOTE(TAG##_H_P2_Trooper); \
+				model = QUOTE(TAG##_H_P2_CT); \
 				type = QUOTE(typeName); \
 				skin = QUOTE(skinName); \
 			}
 		#define XTD_H_ARC(className,skinName) \
 			class TAG##_H_ARC_##className## \
 			{ \
-				model = QUOTE(TAG##_H_P2_Trooper); \
+				model = QUOTE(TAG##_H_P2_CT); \
 				type = QUOTE(ARC); \
 				skin = QUOTE(skinName); \
 			}

@@ -16,7 +16,7 @@ class XtdGearModels
 
 	class CfgWeapons 
 	{
-		NEW_CLASS(H_P2_Trooper)
+		NEW_CLASS(H_P2_CT)
 		{
 			label = TAG_NAME(P2 Helmet);
 			author = "Anorexican";
