@@ -127,8 +127,8 @@ class XtdGearInfos
 		// P2 Specialist Helmets
 		XTD_H_P2(Jet,Specialist,Jet);
 		XTD_H_P2(EOD,Specialist,EOD);
-		XTD_H_P2(EOD_CSP,Specialist,EOD [CSP]);
-		XTD_H_P2(EOD_NCO,Specialist,EOD [NCO]);
+		XTD_H_P2(EOD_CSP,Specialist,EOD_CSP);
+		XTD_H_P2(EOD_NCO,Specialist,EOD_NCO);
 
 		// P2 ARC Helmets
 		XTD_H_ARC(Cookie,Cookie);
@@ -259,7 +259,7 @@ class XtdGearInfos
 
 		// Special Trooper Uniforms
 		XTD_U_TROOPER(Jet_CT,Jet);
-		XTD_U_TROOPER(Jet_NCO,Jet [NCO]);
+		XTD_U_TROOPER(Jet_NCO,Jet_NCO);
 
 		// Custom Trooper Uniforms
 		XTD_U_TROOPER(Cookie,Cookie);
