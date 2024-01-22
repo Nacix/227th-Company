@@ -230,7 +230,7 @@ class XtdGearInfos
 		XTD_V_OMNI(Invisible,Basic,Invisible);
 		XTD_V_OMNI(Trooper,Basic,Trooper);
 		XTD_V_OMNI(Suspenders,Basic,Suspenders);
-		XTD_V_OMNI(AT,Specialist,Anti-Tank);
+		XTD_V_OMNI(AT,Specialist,AT);
 		XTD_V_OMNI(EOD,Specialist,EOD);
 		XTD_V_OMNI(Geonosis,Specialist,Geonosis);
 		XTD_V_OMNI(Jet,Specialist,Jet);
@@ -303,10 +303,10 @@ class XtdGearInfos
 		// Backpacks
 		XTD_B_OMNI_STRAPS(Basic,Basic,Default);
 		XTD_B_OMNI_STRAPS(Medic,Basic,Medic);
-		XTD_B_OMNI_STRAPS(AT,Basic,Anti-Tank);
+		XTD_B_OMNI_STRAPS(AT,Basic,AT);
 		XTD_B_OMNI_STRAPS(EOD,Basic,EOD);
 		XTD_B_OMNI_STRAPS(RTO,RTO,Default);
-		XTD_B_OMNI(RTO_Mini,RTO,RTO (Mini));
+		XTD_B_OMNI(RTO_mini,RTO,RTO_Mini);
 		XTD_B_OMNI(ARC,ARC,Default);
 		XTD_B_OMNI(ARC_Medic,ARC,Medic);
 
