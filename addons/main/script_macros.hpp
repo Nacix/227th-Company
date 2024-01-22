@@ -85,12 +85,12 @@
     respawnMagazines[] = MAGAZINES
 
 #define SET_INFO(className,sideID,factionName,categoryName) \
-        editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg); \
-        scope = 2; \
-        scopeCurator = 2; \
-        side = sideID; \
-        faction = CLASS(factionName); \
-        editorSubcategory = CLASS(EdSubcat_##categoryName)
+    editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg); \
+    scope = 2; \
+    scopeCurator = 2; \
+    side = sideID; \
+    faction = CLASS(factionName); \
+    editorSubcategory = CLASS(EdSubcat_##categoryName)
 
 #define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg)
 
