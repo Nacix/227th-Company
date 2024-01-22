@@ -22,7 +22,50 @@ class CfgPatches
 			"ls_vehicles_ground"
         };
         weapons[] = {};
-        units[] = {};
+        units[]=
+        {
+            CLASS(B_Krayt_P2_DC15A_F),
+            CLASS(B_Krayt_P2_DC15S_F),
+            CLASS(B_Krayt_P2_AT_F),
+            CLASS(B_Krayt_P2_DC15A_UGL_F),
+            CLASS(B_Krayt_P2_CP_F),
+            CLASS(B_Krayt_P2_CS_F),
+            CLASS(B_Krayt_P2_CSM_F),
+            CLASS(B_Krayt_P2_CLT_F),
+            CLASS(B_Krayt_P2_CPT_F),
+            CLASS(B_Krayt_P2_CC_F),
+            CLASS(B_Krayt_P2_Engineer_F),
+            CLASS(B_Krayt_P2_Engineer_NCO_F),
+            CLASS(B_Krayt_P2_Medic_F),
+            CLASS(B_Krayt_P2_RTO_F),
+            CLASS(B_Krayt_P2_Support_F),
+            CLASS(B_Krayt_P2_Marksman_F),
+            CLASS(B_Krayt_ARC_DC15A_UGL_F),
+            CLASS(B_Krayt_ARC_Medic_F),
+            CLASS(B_Krayt_ARC_NCO_F),
+            CLASS(B_Krayt_P2_Pilot_F),
+            CLASS(B_Krayt_P1_Pilot_F),
+            CLASS(B_Krayt_Geonosis_DC15A_F),
+            CLASS(B_Krayt_Geonosis_DC15S_F),
+            CLASS(B_Krayt_Geonosis_AT_F),
+            CLASS(B_Krayt_Geonosis_DC15A_UGL_F),
+            CLASS(B_Krayt_Geonosis_CP_F),
+            CLASS(B_Krayt_Geonosis_CS_F),
+            CLASS(B_Krayt_Geonosis_Engineer_F),
+            CLASS(B_Krayt_Geonosis_Medic_F),
+            CLASS(B_Krayt_Geonosis_RTO_F),
+            CLASS(B_Krayt_Geonosis_Marksman_F),
+            CLASS(B_Krayt_Insulated_DC15A_F),
+            CLASS(B_Krayt_Insulated_DC15S_F),
+            CLASS(B_Krayt_Insulated_AT_F),
+            CLASS(B_Krayt_Insulated_DC15A_UGL_F),
+            CLASS(B_Krayt_Insulated_CP_F),
+            CLASS(B_Krayt_Insulated_CS_F),
+            CLASS(B_Krayt_Insulated_Engineer_F),
+            CLASS(B_Krayt_Insulated_Medic_F),
+            CLASS(B_Krayt_Insulated_RTO_F),
+            CLASS(B_Krayt_Insulated_Marksman_F)
+        };
         magazines[] = {};
         ammo[] = {};
     };
