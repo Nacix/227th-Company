@@ -4,6 +4,14 @@ class CfgEditorSubcategories
 	{ 
 		displayName = "Clone Troopers";
 	};
+	NEW_CLASS(EdSubcat_Geonosis)
+	{
+		displayName = "Clone Troopers (Desert)";
+	};
+	NEW_CLASS(EdSubcat_Insulated)
+	{
+		displayName = "Clone Troopers (Insulated)";
+	};
 	NEW_CLASS(EdSubcat_AB)
 	{
 		displayName = "Airborne Troopers";
@@ -22,7 +30,7 @@ class CfgEditorSubcategories
 	};
 	NEW_CLASS(EdSubcat_Helicopters)
 	{
-		displayName = "Atmospheric Ships";
+		displayName = "Atomospheric Ships";
 	};
 	NEW_CLASS(EdSubcat_Jets)
 	{
@@ -33,12 +41,12 @@ class CfgEditorSubcategories
 		displayName = "Ground Vehicles";
 	};
 
-	NEW_CLASS(EdSubcat_P1_CT)
+	NEW_CLASS(EdSubcat_CT_P1)
 	{
 		displayName = "Clone Troopers (P1)";
 	};
-	NEW_CLASS(EdSubcat_P1_Helicopters)
+	NEW_CLASS(EdSubcat_Helicopters_P1)
 	{
-		displayName = "Vehicles (P1)";
+		displayName = "Atomospheric Ships (P1)";
 	};
 };
