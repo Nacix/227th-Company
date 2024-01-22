@@ -76,114 +76,23 @@
         class ItemInfo; \
     }
 
-#define WEAPONS(primaryWeapon,secondaryWeapon,launcherWeapon,binocularWeapon) \
-    weapons[]= \
-    { \
-        #if primaryWeapon \
-        #else \
-            QUOTE(primaryWeapon), \
-        #endif \
-        #if secondaryWeapon \
-        #else \
-            QUOTE(secondaryWeapon), \
-        #endif \
-        #if launcherWeapon \
-        #else \
-            QUOTE(launcherWeapon), \
-        #endif \
-        #if binocularWeapon \
-        #else \
-            QUOTE(binocularWeapon), \
-        #endif \
-        "Throw", \
-        "Put" \
-    }; \
-    respawnWeapons[]= \
-    { \
-        #if primaryWeapon \
-        #else \
-            QUOTE(primaryWeapon), \
-        #endif \
-        #if secondaryWeapon \
-        #else \
-            QUOTE(secondaryWeapon), \
-        #endif \
-        #if launcherWeapon \
-        #else \
-            QUOTE(launcherWeapon), \
-        #endif \
-        #if binocularWeapon \
-        # \
-            QUOTE(binocularWeapon), \
-        #endif \
-        "Throw", \
-        "Put" \
-    }
+#define SET_LOADOUT \
+    linkedItems[] = EQUIPMENT; \
+    respawnLinkedItems[] = EQUIPMENT; \
+    weapons[] = WEAPONS; \
+    respawnWeapons[] = WEAPONS; \
+    magazines[] = MAGAZINES; \
+    respawnMagazines[] = MAGAZINES
 
-#define EQUIPMENT(helmet,vest,back,nvg,comms) \
-    linkedItems[]= \
-	{ \
-        #if helmet \
-        #else \
-            QUOTE(helmet), \
-        #endif \
-        #if vest \
-        #else \
-            QUOTE(vest), \
-        #endif \
-        #if nvg \
-        #else \
-            QUOTE(nvg), \
-        #endif \
-        #if comms  \
-        #else \
-            QUOTE(comms), \
-        #endif \
-        "ItemMap", \
-        "ItemCompass", \
-        "ItemWatch" \
-    }; \
-    respawnLinkedItems[]= \
-    { \
-        #if helmet \
-        #else \
-            QUOTE(helmet), \
-        #endif \
-        #if vest \
-        #else \
-            QUOTE(vest), \
-        #endif \
-        #if nvg \
-        #else \
-            QUOTE(nvg), \
-        #endif \
-        #if comms  \
-        #else \
-            QUOTE(comms), \
-        #endif \
-        "ItemMap", \
-        "ItemCompass", \
-        "ItemWatch" \
-    } \
-    #if back \
-    #else \
-        ; \
-        backpack = QUOTE(back); \
-    #endif
+#define SET_INFO(className,sideID,factionName,categoryName) \
+        editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg); \
+        scope = 2; \
+        scopeCurator = 2; \
+        side = sideID; \
+        faction = CLASS(factionName); \
+        editorSubcategory = CLASS(EdSubcat_##categoryName)
 
-#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg);
-
-#define IDENTITY(factionID,category,uniform,className) \
-    PREVIEW(className) \
-    faction = CLASS(factionID); \
-    editorSubcategory = CLASS(category); \
-    uniformClass = QUOTE(uniform)
-
-#define DEF_MAGS \
-    #ifdef MAGAZINES \
-        magazines[] = { MAGAZINES }; \
-		respawnMagazines[] = { MAGAZINES } \
-    #endif
+#define PREVIEW(className) editorPreview = QPATHTOF(data\ui\editorPreviews\TAG_CLASS(className).jpg)
 
 #define LIST_1(item) \
     QUOTE(item)
