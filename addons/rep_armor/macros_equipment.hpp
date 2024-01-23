@@ -182,7 +182,6 @@
     SUBCLASS(B_##className##_Base,TAG##_B_Trooper_Base) \
     { \
         displayName = TAG_NAME(rawName); \
-        scope = 2; \
         hiddenSelectionsTextures[]= \
         { \
             QPATHTOF(data\uniforms\##groupDir##\##localDir##\u_up_##className##_co.paa), \
@@ -193,7 +192,6 @@
     SUBCLASS(B_Insulated_##className##_Base,TAG##_B_Insulated_Base) \
     { \
         displayName = TAG_NAME(rawName); \
-        scope = 2; \
         hiddenSelectionsTextures[]= \
         { \
             QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa), \

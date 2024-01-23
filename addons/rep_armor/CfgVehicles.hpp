@@ -58,9 +58,8 @@ class CfgVehicles
 	SUBCLASS(B_Trooper_Base,B_Soldier_F)
 	{
 		author = "Anorexican";
-		scope = 0;
+		scope = 1;
 		scopeCurator = 0;
-		scopeArsenal = 0;
 		_generalMacro = CLASS(B_Trooper_Base);
 		displayName = TAG_NAME(CloneTrooperBase);
 		side = 1;
