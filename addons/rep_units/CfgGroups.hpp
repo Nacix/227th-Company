@@ -112,7 +112,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Squad (250m)";
+                    name = "Dropper Squad A (250m)";
                     side = 1;
                     SQUAD_9(B_Krayt_Jet_NCO_1_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_AT_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -120,7 +120,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Team (250m)";
+                    name = "Dropper Team A (250m)";
                     side = 1;
                     SQUAD_4(B_Krayt_Jet_NCO_1_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -129,7 +129,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Squad (500m)";
+                    name = "Dropper Squad B (500m)";
                     side = 1;
                     SQUAD_9(B_Krayt_Jet_NCO_2_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_AT_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -137,7 +137,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Team (500m)";
+                    name = "Dropper Team B (500m)";
                     side = 1;
                     SQUAD_4(B_Krayt_Jet_NCO_2_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -146,7 +146,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Squad (750m)";
+                    name = "Dropper Squad C (750m)";
                     side = 1;
                     SQUAD_9(B_Krayt_Jet_NCO_3_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_AT_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -154,7 +154,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_inf.paa";
-                    name = "Dropper Team (750m)";
+                    name = "Dropper Team C (750m)";
                     side = 1;
                     SQUAD_4(B_Krayt_Jet_NCO_3_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -163,7 +163,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
-                    name = "Dropper Squad (1000m)";
+                    name = "Dropper Squad D (1000m)";
                     side = 1;
                     SQUAD_9(B_Krayt_Jet_NCO_4_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_Medic_F,B_Krayt_Jet_AT_F,B_Krayt_Jet_AT_F,1);
                 };
@@ -171,7 +171,7 @@ class CfgGroups
                 {
                     faction = CLASS(BLU_Krayt_F);
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_recon.paa";
-                    name = "Dropper Team (1000m)";
+                    name = "Dropper Team D (1000m)";
                     side = 1;
                     SQUAD_4(B_Krayt_Jet_NCO_4_F,B_Krayt_Jet_DC15A_UGL_F,B_Krayt_Jet_DC15LE_F,B_Krayt_Jet_AT_F,1);
                 };
