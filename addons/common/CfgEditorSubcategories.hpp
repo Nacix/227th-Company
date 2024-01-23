@@ -4,6 +4,10 @@ class CfgEditorSubcategories
 	{ 
 		displayName = "Clone Troopers";
 	};
+	NEW_CLASS(EdSubcat_Jet)
+	{
+		displayName = "Jet Troopers";
+	};
 	NEW_CLASS(EdSubcat_Geonosis)
 	{
 		displayName = "Clone Troopers (Desert)";
