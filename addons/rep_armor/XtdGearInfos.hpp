@@ -299,7 +299,7 @@ class XtdGearInfos
 			}
 
 		// Backpacks
-		XTD_B_OMNI_STRAPS(Basic,Basic,Default);
+		XTD_B_OMNI_STRAPS(CT,Basic,Default);
 		XTD_B_OMNI_STRAPS(Medic,Basic,Medic);
 		XTD_B_OMNI_STRAPS(AT,Basic,AT);
 		XTD_B_OMNI_STRAPS(EOD,Basic,EOD);

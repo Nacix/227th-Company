@@ -36,7 +36,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_SCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -104,7 +104,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_SCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -128,7 +128,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CP);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -152,7 +152,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CS);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -176,7 +176,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSM);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -200,7 +200,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CP);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -224,7 +224,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSS);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -248,7 +248,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSM);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -373,7 +373,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_SCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -397,7 +397,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_VCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -521,7 +521,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -545,7 +545,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -593,7 +593,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -617,7 +617,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CLP);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -641,7 +641,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CP);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -665,7 +665,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSS);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -689,7 +689,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CP);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -713,7 +713,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSS);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -737,7 +737,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_CSM);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -857,7 +857,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_SCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -881,7 +881,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_VCT);
-        backpack = CLASS(B_Pack_Basic);
+        backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1058,7 +1058,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1082,7 +1082,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1130,7 +1130,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1154,7 +1154,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1178,7 +1178,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1274,7 +1274,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1298,7 +1298,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = CLASS(B_Pack_Basic_straps);
+        backpack = CLASS(B_Pack_CT_straps);
 
         // Equipment
         #undef EQUIPMENT
