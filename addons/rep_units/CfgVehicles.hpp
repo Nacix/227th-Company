@@ -414,6 +414,8 @@ class CfgVehicles
         SET_LOADOUT;
     };
 
+    // ############################################################ ARC Troopers ############################################################
+
     SUBCLASS(B_Krayt_ARC_DC15A_UGL_F,TAG_CLASS(B_Krayt_P2_DC15A_UGL_F))
     {
         displayName = "ARC Trooper (DC-15A UGL)";
