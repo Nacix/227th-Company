@@ -577,7 +577,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(JLTS_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -601,11 +601,35 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(JLTS_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
         #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_AT_F,TAG_CLASS(B_Krayt_P2_AT_F))
+    {
+        displayName = "Jet Trooper (Anti-Tank)";
+        SET_INFO_KRAYT(B_Krayt_Jet_AT_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = QUOTE(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AT), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_RPS6), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_3(71st_RPS6_HEAT_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -621,11 +645,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_CS), CLASS(NV_Range_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_CS), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(JLTS_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -634,7 +658,7 @@ class CfgVehicles
         SET_LOADOUT;
     };
     
-    SUBCLASS(B_Krayt_Jet_NCO_1_F,TAG_CLASS(B_Krayt_Jet_NCO_F)) { scope=1; scopeCurator=0; };
+    SUBCLASS(B_Krayt_Jet_NCO_1_F,TAG_CLASS(B_Krayt_Jet_NCO_F)) { scope = 1; scopeCurator = 0; };
     SUBCLASS(B_Krayt_Jet_NCO_2_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
     SUBCLASS(B_Krayt_Jet_NCO_3_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
     SUBCLASS(B_Krayt_Jet_NCO_4_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
@@ -853,6 +877,30 @@ class CfgVehicles
         // Magazines
         #undef MAGAZINES
         #define MAGAZINES  { LIST_10(71st_DC15S_60Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Geonosis_Support_F,TAG_CLASS(B_Krayt_P2_Support_F))
+    {
+        displayName = "Desert Trooper (Support)";
+        SET_INFO_KRAYT(B_Krayt_Geonosis_Support_F,Geonosis);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
+        backpack = CLASS(B_Pack_Basic_straps);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1095,6 +1143,30 @@ class CfgVehicles
         // Magazines
         #undef MAGAZINES
         #define MAGAZINES  { LIST_10(71st_DC15S_60Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Insulated_Support_F,TAG_CLASS(B_Krayt_P2_Support_F))
+    {
+        displayName = "Insulated Trooper (Support)";
+        SET_INFO_KRAYT(B_Krayt_Insulated_Support_F,Insulated);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Insulated_CT);
+        backpack = CLASS(3AS_B_ColdAssault_Backpack);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
 
         SET_LOADOUT;
     };

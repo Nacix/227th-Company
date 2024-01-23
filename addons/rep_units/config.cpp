@@ -48,6 +48,7 @@ class CfgPatches
             CLASS(B_Krayt_Jet_DC15LE_F),
             CLASS(B_Krayt_Jet_DC15A_UGL_F),
             CLASS(B_Krayt_Jet_Medic_F),
+            CLASS(B_Krayt_Jet_AT_F),
             CLASS(B_Krayt_Jet_NCO_F),
             CLASS(B_Krayt_Jet_NCO_1_F),
             CLASS(B_Krayt_Jet_NCO_2_F),
@@ -62,6 +63,7 @@ class CfgPatches
             CLASS(B_Krayt_Geonosis_Engineer_F),
             CLASS(B_Krayt_Geonosis_Medic_F),
             CLASS(B_Krayt_Geonosis_RTO_F),
+            CLASS(B_Krayt_Geonosis_Support_F),
             CLASS(B_Krayt_Geonosis_Marksman_F),
             CLASS(B_Krayt_Insulated_DC15A_F),
             CLASS(B_Krayt_Insulated_DC15S_F),
@@ -72,6 +74,7 @@ class CfgPatches
             CLASS(B_Krayt_Insulated_Engineer_F),
             CLASS(B_Krayt_Insulated_Medic_F),
             CLASS(B_Krayt_Insulated_RTO_F),
+            CLASS(B_Krayt_Insulated_Support_F),
             CLASS(B_Krayt_Insulated_Marksman_F)
         };
         magazines[] = {};
