@@ -85,7 +85,7 @@
     respawnMagazines[] = MAGAZINES
 
 #define SET_INFO(className,sideID,factionName,categoryName) \
-    editorPreview = QPATHTOF(data\ui\editorPreviews\##className##.jpg); \
+    editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_##className##.jpg); \
     scope = 2; \
     scopeCurator = 2; \
     side = sideID; \
