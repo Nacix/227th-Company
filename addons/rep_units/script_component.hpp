@@ -1,8 +1,6 @@
-#define COMPONENT main
-#define COMPONENT_BEAUTIFIED Main
+#define COMPONENT rep_units
+#define COMPONENT_BEAUTIFIED [GAR] - Units
 
 #include <\x\krt\addons\main\script_mod.hpp>
-
-// #define DISABLE_COMPILE_CACHE
 
 #include <\x\krt\addons\main\script_macros.hpp>

@@ -1,245 +1,6 @@
-class CfgWeapons {
-// ############################################################ Macro Definitions ############################################################
-	// Sets armor value for a HitPoint
-	#define SET_ARMOR_VALS(baseArmor,pass,mult) \
-		armor = QUOTE(baseArmor*mult); \
-		passThrough = QUOTE(pass);
-
-	// Calls armor value setter for each region of the head with given multiplier
-	#define SET_ARMOR_HEAD(baseArmor,pass,headMult) \
-		class Head \
-		{ \
-			hitpointName = "HitHead"; \
-			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
-		}; \
-		class Face \
-		{ \
-			hitpointName = "HitFace"; \
-			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
-		}; \
-		class Neck \
-		{ \
-			hitpointName = "HitNeck"; \
-			SET_ARMOR_VALS(baseArmor,0.5,headMult) \
-		};
-	
-	// Calls armor value setter for each region of the torso with given multiplier
-	#define SET_ARMOR_TORSO(baseArmor,pass,torsoMult) \
-		class Body \
-		{ \
-			hitpointName = "HitBody"; \
-			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
-		}; \
-		class Chest \
-		{ \
-			hitpointName = "HitChest"; \
-			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
-		}; \
-		class Diaphragm \
-		{ \
-			hitpointName = "HitDiaphragm"; \
-			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
-		}; \
-		class Abdomen \
-		{ \
-			hitpointName = "HitAbdomen"; \
-			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
-		}; \
-		class Pelvis \
-		{ \
-			hitpointName = "HitPelvis"; \
-			SET_ARMOR_VALS(baseArmor,pass*torsoMult,torsoMult) \
-		};
-
-	// Calls armor value setter for each region of the arms with given multiplier
-	#define SET_ARMOR_ARMS(baseArmor,pass,armsMult) \
-		class Arms \
-		{ \
-			hitpointName = "HitArms"; \
-			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
-		}; \
-		class Hands \
-		{ \
-			hitpointName = "HitHands"; \
-			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
-		}; \
-		class LeftArm \
-		{ \
-			hitpointName = "HitLeftArm"; \
-			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
-		}; \
-		class RightArm \
-		{ \
-			hitpointName = "HitRightArm"; \
-			SET_ARMOR_VALS(baseArmor,0.9,armsMult) \
-		};
-
-	// Calls armor value setter for each region of the legs with given multiplier
-	#define SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
-		class Legs \
-		{ \
-			hitpointName = "HitLegs"; \
-			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
-		}; \
-		class LeftLeg \
-		{ \
-			hitpointName = "HitLeftLeg"; \
-			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
-		}; \
-		class RightLeg \
-		{ \
-			hitpointName = "HitRightLeg"; \
-			SET_ARMOR_VALS(baseArmor,0.9,legsMult) \
-		};
-
-	// Calls setters for each part of the body
-	#define SET_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
-		class HitpointsProtectionInfo \
-		{ \
-			SET_ARMOR_HEAD(baseArmor,pass,headMult) \
-			SET_ARMOR_TORSO(baseArmor,pass,torsoMult) \
-			SET_ARMOR_ARMS(baseArmor,pass,armsMult) \
-			SET_ARMOR_LEGS(baseArmor,pass,legsMult) \
-		};
-
-	// Inherits ItemInfo from parent class and calls master setter for HitPoint armor
-	#define DEF_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
-		class ItemInfo: ItemInfo \
-		{ \
-			SET_ARMOR(baseArmor,pass,headMult,torsoMult,armsMult,legsMult) \
-		}
-
-	#define ADD_CT_HELMET(className,rawName) \
-		class TAG##_H_P2_##className##: TAG##_H_P2_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_##className##_co.paa) }; \
-		}
-
-	#define ADD_ARC_HELMET(className,rawName) \
-		class TAG##_H_ARC_##className##: TAG##_H_ARC_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\arc\h_arc_##className##_co.paa),QPATHTOF(data\helmets\arc\h_arc_##className##_co.paa) }; \
-		}
-
-	#define ADD_ARF_HELMET(className,rawName) \
-		class TAG##_H_ARF_##className##: TAG##_H_ARF_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\arf\##className##\h_arf_##className##_co.paa), \
-				QPATHTOF(data\helmets\arf\##className##\h_arf_plates_##className##_co.paa), \
-				QPATHTOF(data\helmets\arf\##className##\h_arf_visor_##className##_co.paa) \
-			}; \
-		}
-
-	#define ADD_ENGI_HELMET(className,rawName) \
-		class TAG##_H_Engineer_##className##: TAG##_H_Engineer_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\engi\h_engi_##className##_co.paa), \
-				QPATHTOF(data\helmets\engi\h_engi_##className##_co.paa) \
-			}; \
-		}
-
-	#define ADD_P1_CT_HELMET(className,rawName) \
-		class TAG##_H_P1_##className##: TAG##_H_P1_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName (P1)); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa) }; \
-		}
-
-	#define ADD_P1_PILOT_HELMET(className,rawName) \
-		class TAG##_H_P1_Pilot_##className##: TAG##_H_P1_Pilot_CX \
-		{ \
-			displayName = TAG_NAME(rawName (P1)); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\p1\pilot\h_p1_pilot_##className##_co.paa), \
-				QPATHTOF(data\helmets\p1\pilot\h_p1_pilot_tubes_co.paa), \
-				QPATHTOF(data\helmets\p1\pilot\h_p1_pilot_##className##_co.paa) \
-			}; \
-		}
-	#define ADD_P2_PILOT_HELMET(className,rawName) \
-		class TAG##_H_P2_Pilot_##className##: TAG##_H_P2_Pilot_CX \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\p2\pilot\h_p2_pilot_##className##_co.paa), \
-				QPATHTOF(data\helmets\p2\pilot\h_p2_pilot_##className##_co.paa), \
-				"", \
-				QPATHTOF(data\helmets\p2\pilot\h_p2_pilot_tubes_co.paa), \
-				QPATHTOF(data\helmets\p2\pilot\h_p2_pilot_##className##_co.paa), \
-				"" \
-			}; \
-		}
-
-	#define ADD_INSULATED_HELMET(className,rawName) \
-		class TAG##_H_Insulated_##className##: TAG##_H_Insulated_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\insulated\h_insulated_##className##_co.paa), \
-				QPATHTOF(data\helmets\insulated\h_insulated_##className##_co.paa), \
-				QPATHTOF(data\helmets\insulated\h_insulated_##className##_co.paa) \
-			}; \
-		}
-
-	#define ADD_SPECOP_HELMET(className,rawName) \
-		class TAG##_H_SpecOp_##className##: TAG##_H_SpecOp_Trooper \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[]= \
-			{ \
-				QPATHTOF(data\helmets\specops\h_specop_##className##_co.paa), \
-				QUOTE(\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa), \
-				QPATHTOF(data\helmets\specops\h_specop_##className##_co.paa) \
-			}; \
-		}
-
-	#define ADD_NVG(className,rawName,parentClass) \
-		class TAG##_NV_##className##: parentClass \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\nvg\nv_##className##_co.paa) }; \
-			modelOptics = QUOTE(\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d); \
-		}
-
-	#define ADD_NVG_MACRO(className,rawName,parentClass) \
-		class TAG##_NV_Macro_##className##: parentClass \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\nvg\nv_macro_##className##_co.paa) }; \
-			modelOptics = QUOTE(\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d); \
-		}; \
-		class TAG##_NV_Macro_##className##_spec: JLTS_CloneNVG_spec \
-		{ \
-			displayName = TAG_NAME(rawName## [Specialist]); \
-			hiddenSelectionsTextures[] = { QPATHTOF(data\nvg\nv_macro_##className##_co.paa) }; \
-		}
-
-	#define ADD_UNIFORM(className,rawName,cargoSize,parentClass) \
-		class TAG##_U_B_##className##: TAG##_U_B_##parentClass##_Base \
-		{ \
-			displayName = TAG_NAME(rawName); \
-			scope = 2; \
-			class ItemInfo: ItemInfo \
-			{ \
-				uniformClass = CLASS(B_##className##_Base); \
-				containerClass = QUOTE(Supply##cargoSize); \
-			}; \
-		}
-
-	#define ADD_TROOPER_UNIFORM(className,rawName,cargoSize) ADD_UNIFORM(className,rawName,cargoSize,Trooper)
-	#define ADD_INSULATED_UNIFORM(className,rawName,cargoSize) ADD_UNIFORM(Insulated_##className,rawName,cargoSize,Insulated)
-
-// ############################################################ Referenced Classes ############################################################
+class CfgWeapons
+{
+	// ############################################################ Referenced Classes ############################################################
 
 	class HeadgearItem;
 	class ItemCore;
@@ -294,15 +55,15 @@ class CfgWeapons {
 	REF_INFO(3AS_H_Katarn_Helmet,3AS_Katarn_Helmet_Base);
 	REF_INFO(JLTS_CloneHelmetARC_illum,JLTS_CloneHelmetARC);
 
-	#define SET_ARMOR_BASE SET_ARMOR(13.5,0.8,1,0,0,0)
 	#define DEF_ARMOR_BASE DEF_ARMOR(13.5,0.8,1,0,0,0)
+	#define SET_ARMOR_BASE SET_ARMOR(13.5,0.8,1,0,0,0)
 	
-// ############################################################ P2 Trooper Helmets ############################################################
+	// ############################################################ P2 Trooper Helmets ############################################################
 
-	SUBCLASS(H_P2_Trooper,JLTS_CloneHelmetP2)
+	SUBCLASS(H_P2_CT,JLTS_CloneHelmetP2)
 	{
 		displayName = TAG_NAME(Trooper Helmet);
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_trooper_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_ct_co.paa) };
 		DEF_ARMOR_BASE;
 	};
 
@@ -341,7 +102,7 @@ class CfgWeapons {
     ADD_CT_HELMET(Valyrian,Valyrian's Helmet);
     ADD_CT_HELMET(Wicked,Wicked's Helmet);
 
-// ############################################################ ARC Helmets ############################################################
+	// ############################################################ ARC Helmets ############################################################
 
 	SUBCLASS(H_ARC_Trooper,JLTS_CloneHelmetARC_illum)
 	{
@@ -356,7 +117,7 @@ class CfgWeapons {
 	ADD_ARC_HELMET(Jinx,Jinx's ARC Helmet);
 	ADD_ARC_HELMET(Knight,Knight's ARC Helmet);
 
-// ############################################################ ARF Helmets ############################################################
+	// ############################################################ ARF Helmets ############################################################
 
 	SUBCLASS(H_ARF_Trooper,SEA_Helmet_ARF_Base)
 	{
@@ -373,7 +134,7 @@ class CfgWeapons {
 
 	ADD_ARF_HELMET(Spartacus,Spartacus' Helmet);
 
-// ############################################################ Engineer Helmets ############################################################
+	// ############################################################ Engineer Helmets ############################################################
 
 	SUBCLASS(H_Engineer_Trooper,SEA_Helmet_Engineer_Base)
 	{
@@ -390,7 +151,7 @@ class CfgWeapons {
 	ADD_ENGI_HELMET(CSP,Engineer Helmet [CSP]);
 	ADD_ENGI_HELMET(NCO,Engineer Helmet [NCO]);
 
-// ############################################################ SpecOps Helmets ############################################################
+	// ############################################################ SpecOps Helmets ############################################################
 
 	SUBCLASS(H_SpecOp_Trooper,SEA_Helmet_SpecOps_SR_Base)
 	{
@@ -410,7 +171,7 @@ class CfgWeapons {
 	ADD_SPECOP_HELMET(CSP,Spec-Ops Helmet [CSP]);
 	ADD_SPECOP_HELMET(NCO,Spec-Ops Helmet [NCO]);
 
-// ############################################################ Insulated Helmets ############################################################
+	// ############################################################ Insulated Helmets ############################################################
 
 	SUBCLASS(H_Insulated_Trooper,3AS_ColdAssault_Helmet_Base)
 	{
@@ -428,7 +189,7 @@ class CfgWeapons {
 
 	ADD_INSULATED_HELMET(Geonosis,Insulated Helmet [Geonosis]);
 
-// ############################################################ P1 Trooper Helmets ############################################################
+	// ############################################################ P1 Trooper Helmets ############################################################
 
 	SUBCLASS(H_P1_Trooper,3AS_P1_Base)
 	{
@@ -447,7 +208,7 @@ class CfgWeapons {
 
 	ADD_P1_CT_HELMET(Jinx,Jinx's Helmet);
 
-// ############################################################ P1 Pilot Helmets ############################################################
+	// ############################################################ P1 Pilot Helmets ############################################################
 
 	SUBCLASS(H_P1_Pilot_CX,LSEA_Helmet_Pilot_P1_Base)
 	{
@@ -465,7 +226,7 @@ class CfgWeapons {
 	ADD_P1_PILOT_HELMET(CXG1,CXG1 Helmet);
 	ADD_P1_PILOT_HELMET(CXG2,CXG2 Helmet);
 
-// ############################################################ P2 Pilot Helmets ############################################################
+	// ############################################################ P2 Pilot Helmets ############################################################
 
 	SUBCLASS(H_P2_Pilot_CX,3AS_P2_Pilot_Helmet)
 	{
@@ -486,7 +247,7 @@ class CfgWeapons {
 	ADD_P2_PILOT_HELMET(Carrot,Carrot's Helmet);
 	ADD_P2_PILOT_HELMET(Texan,Texan's Helmet);
 
-// ############################################################ Night Vision ############################################################
+	// ############################################################ Night Vision ############################################################
 
 	SUBCLASS(NV_Internal,JLTS_CloneNVG)
 	{ 
@@ -495,22 +256,22 @@ class CfgWeapons {
 		modelOptics = "\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d";
 	};
 
-	ADD_NVG(Range_Brown,Rangefinder (Brown),JLTS_CloneNVGRange);
-	ADD_NVG(Range_Gray,Rangefinder (Gray),JLTS_CloneNVGRange);
-	ADD_NVG(Range_Jinx,Rangefinder (Jinx),JLTS_CloneNVGRange);
-	ADD_NVG(Range_Yellow,Rangefinder (Yellow),JLTS_CloneNVGRange);
+	ADD_NVG_RANGE(Brown);
+	ADD_NVG_RANGE(Gray);
+	ADD_NVG_RANGE(Jinx);
+	ADD_NVG_RANGE(Yellow);
 	
-	ADD_NVG_MACRO(Brown,Visor (Brown),JLTS_CloneNVG);
-	ADD_NVG_MACRO(Gray,Visor (Gray),JLTS_CloneNVG);
-	ADD_NVG_MACRO(White,Visor (White),JLTS_CloneNVG);
-	ADD_NVG_MACRO(Yellow,Visor (Yellow),JLTS_CloneNVG);
+	ADD_NVG_MACRO(Brown);
+	ADD_NVG_MACRO(Gray);
+	ADD_NVG_MACRO(White);
+	ADD_NVG_MACRO(Yellow);
 
-	ADD_NVG(Visor_Brown,Visor (Brown),JLTS_CloneNVGCC);
-	ADD_NVG(Visor_Gray,Visor (Gray),JLTS_CloneNVGCC);
-	ADD_NVG(Visor_Valyrian,Visor (Valyrian),JLTS_CloneNVGCC);
-	ADD_NVG(Visor_Yellow,Visor (Yellow),JLTS_CloneNVGCC);
+	ADD_NVG_VISOR(Brown);
+	ADD_NVG_VISOR(Gray);
+	ADD_NVG_VISOR(Valyrian);
+	ADD_NVG_VISOR(Yellow);
 
-// ############################################################ Basic Vests ############################################################
+	// ############################################################ Basic Vests ############################################################
 
 	SUBCLASS(V_Invisible,JLTS_CloneVestHolster)
 	{
@@ -614,7 +375,7 @@ class CfgWeapons {
 		};
 	};
 
-// ############################################################ ARC Vests ############################################################
+	// ############################################################ ARC Vests ############################################################
 
 	SUBCLASS(V_ARC_Trooper,JLTS_CloneVestARC)
 	{
@@ -659,7 +420,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_cadet_co.paa) };
 	};
 
-// ############################################################ Leadership Vests ############################################################
+	// ############################################################ Leadership Vests ############################################################
 
 	SUBCLASS(V_CP,JLTS_CloneVestAirborne)
 	{
@@ -682,7 +443,7 @@ class CfgWeapons {
 		};
 	};
 
-	SUBCLASS(V_CS,JLTS_CloneVestAirborne)
+	SUBCLASS(V_CS,TAG##_V_CP)
 	{
 		displayName = TAG_NAME(Sergeant Vest);
 		hiddenSelectionsTextures[]=
@@ -694,7 +455,7 @@ class CfgWeapons {
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Spartacus,TAG##_V_CS)
+	SUBCLASS(V_Spartacus,TAG##_V_CP)
 	{
 		displayName = TAG_NAME(Spartacus' Vest);
 		hiddenSelectionsTextures[]=
@@ -726,7 +487,7 @@ class CfgWeapons {
 		};
 	};
 
-// ############################################################ Uniforms ############################################################
+	// ############################################################ Uniform Items ############################################################
 
 	SUBCLASS(U_B_Trooper_Base,Uniform_Base)
 	{
@@ -761,30 +522,30 @@ class CfgWeapons {
 	};
 
 	// Trooper Uniforms
-	ADD_TROOPER_UNIFORM(CR,Trooper Armor (Cadet),150);
-	ADD_TROOPER_UNIFORM(CT,Trooper Armor (CT),150);
-	ADD_TROOPER_UNIFORM(SCT,Trooper Armor (SCT),150);
-	ADD_TROOPER_UNIFORM(VCT,Trooper Armor (VCT),200);
-	ADD_TROOPER_UNIFORM(CSP,Trooper Armor (CSP),200);
-	ADD_TROOPER_UNIFORM(CLP,Trooper Armor (CLP),200);
-	ADD_TROOPER_UNIFORM(CP,Trooper Armor (CP),200);
-	ADD_TROOPER_UNIFORM(CS,Trooper Armor (CS),200);
-	ADD_TROOPER_UNIFORM(CSS,Trooper Armor (CSS),200);
-	ADD_TROOPER_UNIFORM(CSM,Trooper Armor (CSM),200);
+	ADD_UNIFORM_TROOPER(CR,Trooper Armor (Cadet),150);
+	ADD_UNIFORM_TROOPER(CT,Trooper Armor (CT),150);
+	ADD_UNIFORM_TROOPER(SCT,Trooper Armor (SCT),150);
+	ADD_UNIFORM_TROOPER(VCT,Trooper Armor (VCT),200);
+	ADD_UNIFORM_TROOPER(CSP,Trooper Armor (CSP),200);
+	ADD_UNIFORM_TROOPER(CLP,Trooper Armor (CLP),200);
+	ADD_UNIFORM_TROOPER(CP,Trooper Armor (CP),200);
+	ADD_UNIFORM_TROOPER(CS,Trooper Armor (CS),200);
+	ADD_UNIFORM_TROOPER(CSS,Trooper Armor (CSS),200);
+	ADD_UNIFORM_TROOPER(CSM,Trooper Armor (CSM),200);
 
 	// Custom Trooper Uniforms
-	ADD_TROOPER_UNIFORM(Cookie,Cookie's Armor,200);
-	ADD_TROOPER_UNIFORM(Jinx,Jinx's Armor,200);
-	ADD_TROOPER_UNIFORM(Knight,Knight's Armor,200);
-	ADD_TROOPER_UNIFORM(Neca,Neca's Armor,200);
-	ADD_TROOPER_UNIFORM(Speed,Speed' Armor,200);
-	ADD_TROOPER_UNIFORM(Valyrian,Valyrian's Armor,200);
+	ADD_UNIFORM_TROOPER(Cookie,Cookie's Armor,200);
+	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
+	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
+	ADD_UNIFORM_TROOPER(Neca,Neca's Armor,200);
+	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
+	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
 	// Special Trooper Uniforms
-	ADD_TROOPER_UNIFORM(Jet_CT,Jet Trooper Armor,200);
-	ADD_TROOPER_UNIFORM(Jet_NCO,Jet Trooper Armor (NCO),200);
+	ADD_UNIFORM_TROOPER(Jet_CT,Jet Trooper Armor,200);
+	ADD_UNIFORM_TROOPER(Jet_NCO,Jet Trooper Armor (NCO),200);
 
 	// Insulated Uniforms
-	ADD_INSULATED_UNIFORM(CT,Insulated Armor,200);
-	ADD_INSULATED_UNIFORM(Geonosis_CT,Insulated Armor (Geonosis),200);
+	ADD_UNIFORM_INSULATED(CT,Insulated Armor,200);
+	ADD_UNIFORM_INSULATED(Geonosis_CT,Insulated Armor (Geonosis),200);
 };

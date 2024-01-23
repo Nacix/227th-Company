@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include <script_component.hpp>
 
 class CfgPatches
 {
@@ -35,4 +35,4 @@ class CfgPatches
     };
 };
 
-#include "CfgVehicles.hpp"
+#include <CfgVehicles.hpp>

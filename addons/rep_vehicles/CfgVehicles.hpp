@@ -69,6 +69,8 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk2.jpg);
         editorSubcategory = CLASS(EdSubcat_Helicopters);
         faction = CLASS(BLU_Krayt_F);
+        crew = CLASS(B_Krayt_P1_Pilot_F);
+        typicalcargo[] = { CLASS(B_Krayt_P1_Pilot_F) };
         hiddenSelectionsTextures[]=
         {
             BASE_LAAT_TEXTURES
@@ -82,6 +84,8 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk2_lamps.jpg);
         editorSubcategory = CLASS(EdSubcat_Helicopters);
         faction = CLASS(BLU_Krayt_F);
+        crew = CLASS(B_Krayt_P1_Pilot_F);
+        typicalcargo[] = { CLASS(B_Krayt_P1_Pilot_F) };
         hiddenSelectionsTextures[]=
         {
             BASE_LAAT_TEXTURES
@@ -95,6 +99,8 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk1.jpg);
         editorSubcategory = CLASS(EdSubcat_Helicopters);
         faction = CLASS(BLU_Krayt_F);
+        crew = CLASS(B_Krayt_P1_Pilot_F);
+        typicalcargo[] = { CLASS(B_Krayt_P1_Pilot_F) };
         hiddenSelectionsTextures[]=
         {
             BASE_LAAT_TEXTURES
@@ -108,6 +114,8 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk1_lamps.jpg);
         editorSubcategory = CLASS(EdSubcat_Helicopters);
         faction = CLASS(BLU_Krayt_F);
+        crew = CLASS(B_Krayt_P1_Pilot_F);
+        typicalcargo[] = { CLASS(B_Krayt_P1_Pilot_F) };
         hiddenSelectionsTextures[]=
         {
             BASE_LAAT_TEXTURES

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include <script_component.hpp>
 
 class CfgPatches 
 {
@@ -9,7 +9,11 @@ class CfgPatches
         authors[] = {"Anorexican", "Valyrian"};
 		requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
-		url = ECSTRING(main,URL);
+        url = ECSTRING(main,URL);
+        units[] = {};
+        weapons[] = {};
+        magazines[] = {};
+        ammo[] = {};
     };
 };
 

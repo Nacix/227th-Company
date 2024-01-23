@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include <script_component.hpp>
 
 class CfgPatches
 {
@@ -26,7 +26,7 @@ class CfgPatches
         };
         weapons[]=
         {
-            CLASS(H_P2_Trooper),
+            CLASS(H_P2_CT),
             CLASS(H_P2_SCT),
             CLASS(H_P2_VCT),
             CLASS(H_P2_CSP),
@@ -207,8 +207,10 @@ class CfgPatches
     };
 };
 
-#include "CfgWeapons.hpp"
-#include "XtdGearModels.hpp"
-#include "XtdGearInfos.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgUnitInsignia.hpp"
+#include <macros_protection.hpp>
+#include <macros_equipment.hpp>
+#include <CfgWeapons.hpp>
+#include <CfgVehicles.hpp>
+#include <CfgUnitInsignia.hpp>
+#include <XtdGearModels.hpp>
+#include <XtdGearInfos.hpp>
