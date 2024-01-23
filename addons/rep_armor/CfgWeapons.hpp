@@ -91,11 +91,9 @@ class CfgWeapons
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
     ADD_CT_HELMET(Neca,Neca's Helmet);
-    ADD_CT_HELMET(Rage,Rage's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);
     ADD_CT_HELMET(Riven,Riven's Helmet);
     ADD_CT_HELMET(Sage,Sage's Helmet);
-    ADD_CT_HELMET(Space,Space's Helmet);
     ADD_CT_HELMET(Sparky,Sparky's Helmet);
     ADD_CT_HELMET(Sparrow,Sparrow's Helmet);
     ADD_CT_HELMET(Speed,Speed's Helmet);

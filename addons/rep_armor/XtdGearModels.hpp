@@ -62,11 +62,9 @@ class XtdGearModels
 					"Kitsune",
 					"Luci",
 					"Neca",
-					"Rage",
 					"Rex",
 					"Riven",
 					"Sage",
-					"Space",
 					"Sparky",
 					"Sparrow",
 					"Spartacus",
@@ -101,11 +99,9 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
 				SET_BACKGROUND_DEFAULT(Neca);
-				SET_BACKGROUND_DEFAULT(Rage);
 				SET_BACKGROUND_DEFAULT(Rex);
 				SET_BACKGROUND_DEFAULT(Riven);
 				SET_BACKGROUND_DEFAULT(Sage);
-				SET_BACKGROUND_DEFAULT(Space);
 				SET_BACKGROUND_DEFAULT(Sparky);
 				SET_BACKGROUND_DEFAULT(Sparrow);
 				SET_BACKGROUND_DEFAULT(Spartacus);

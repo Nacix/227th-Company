@@ -147,11 +147,9 @@ class XtdGearInfos
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
 		XTD_H_P2(Neca,Trooper,Neca);
-		XTD_H_P2(Rage,Trooper,Rage);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
-		XTD_H_P2(Space,Trooper,Space);
 		XTD_H_P2(Sparky,Trooper,Sparky);
 		XTD_H_P2(Sparrow,Trooper,Sparrow);
 		XTD_H_P2(Spartacus,Trooper,Spartacus);
