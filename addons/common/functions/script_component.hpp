@@ -1,0 +1,1 @@
+#include "\x\krt\addons\common\script_component.hpp"

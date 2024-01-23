@@ -40,11 +40,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -60,11 +60,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -84,11 +84,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_RPS6), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_RPS6), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -108,11 +108,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -132,11 +132,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -156,11 +156,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CS), CLASS(V_CS), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CS), CLASS(V_CS), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -180,11 +180,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_CS), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_CS), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -204,11 +204,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_Officer), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_Officer), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -228,11 +228,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CFS), CLASS(V_Officer), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CFS), CLASS(V_Officer), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -252,11 +252,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_Officer), CLASS(NV_Visor_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_Officer), CLASS(NV_Visor_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -276,11 +276,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Engineer_Trooper), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Engineer_Trooper), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -300,11 +300,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Engineer_NCO), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Engineer_NCO), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -324,11 +324,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Medic), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Medic), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -353,11 +353,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_RTO), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_RTO), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -377,11 +377,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Support), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Support), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -401,11 +401,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -425,11 +425,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Trooper), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Trooper), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -449,11 +449,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Medic), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Medic), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -473,11 +473,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_ARC_Veteran), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_ARC_Veteran), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -497,11 +497,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Pilot_CX), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P2_Pilot_CX), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -523,11 +523,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P1_Pilot_CXG1), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_P1_Pilot_CXG1), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -535,6 +535,109 @@ class CfgVehicles
 
         SET_LOADOUT;
     };
+
+    // ############################################################ Jet Troopers ############################################################
+
+    SUBCLASS(B_Krayt_Jet_DC15LE_F,TAG_CLASS(B_Krayt_P2_Support_F))
+    {
+        displayName = "Jet Trooper (DC-15LE)";
+        SET_INFO_KRAYT(B_Krayt_Jet_DC15LE_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_DC15A_UGL_F,TAG_CLASS(B_Krayt_P2_DC15A_UGL_F))
+    {
+        displayName = "Jet Trooper (DC-15A UGL)";
+        SET_INFO_KRAYT(B_Krayt_Jet_DC15A_UGL_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(JLTS_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_60Rnd_mag), LIST_5(3Rnd_HE_Grenade_shell), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_Medic_F,TAG_CLASS(B_Krayt_P2_Medic_F))
+    {
+        displayName = "Jet Trooper (Medic)";
+        SET_INFO_KRAYT(B_Krayt_Jet_Medic_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Medic), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(JLTS_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_NCO_F,TAG_CLASS(B_Krayt_P2_CS_F))
+    {
+        displayName = "Jet Trooper (NCO)";
+        SET_INFO_KRAYT(B_Krayt_Jet_NCO_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_NCO);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_CS), CLASS(NV_Range_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(JLTS_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(71st_DC15A_100Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+    
+    SUBCLASS(B_Krayt_Jet_NCO_1_F,TAG_CLASS(B_Krayt_Jet_NCO_F)) { scope=1; scopeCurator=0; };
+    SUBCLASS(B_Krayt_Jet_NCO_2_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
+    SUBCLASS(B_Krayt_Jet_NCO_3_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
+    SUBCLASS(B_Krayt_Jet_NCO_4_F,TAG_CLASS(B_Krayt_Jet_NCO_1_F)) {};
 
     // ############################################################ Geonosis Troopers ############################################################
 
@@ -549,11 +652,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -573,11 +676,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -597,11 +700,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_RPS6), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_RPS6), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -621,11 +724,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -645,11 +748,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -669,11 +772,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -693,11 +796,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -717,11 +820,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -741,11 +844,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -765,11 +868,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_LE), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -791,11 +894,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -815,11 +918,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -839,11 +942,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_RPS6), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_RPS6), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -863,11 +966,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -887,11 +990,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_UGL), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -911,11 +1014,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -935,11 +1038,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -959,11 +1062,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -983,11 +1086,11 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15S), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1007,11 +1110,11 @@ class CfgVehicles
         
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE}
+        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE}
+        #define WEAPONS { QUOTE(71st_DC15A_LE_predef), QUOTE(71st_DC17), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
