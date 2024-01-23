@@ -514,6 +514,390 @@ class CfgVehicles
 
     // ############################################################ Phase 1 Troopers ############################################################
 
+    SUBCLASS(B_Krayt_P1_DC15A_F,TAG_CLASS(B_Krayt_P2_DC15A_F))
+    {
+        displayName = "Clone Trooper (DC-15A)";
+        SET_INFO_KRAYT(B_Krayt_P1_DC15A_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CT);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_DC15S_F,TAG_CLASS(B_Krayt_P2_DC15S_F))
+    {
+        displayName = "Clone Trooper (DC-15S)";
+        SET_INFO_KRAYT(B_Krayt_P1_DC15S_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CT);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS {  QUOTE(71st_DC15S), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15S_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_AT_F,TAG_CLASS(B_Krayt_P2_AT_F))
+    {
+        displayName = "Clone Trooper (Anti-Tank)";
+        SET_INFO_KRAYT(B_Krayt_P1_AT_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_SCT);
+        backpack = CLASS(B_Pack_AT);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_SCT), CLASS(V_AB_AT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), QUOTE(71st_DC17), QUOTE(71st_RPS6), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), LIST_2(71st_DC17_mag), LIST_2(71st_RPS6_HEAT_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_DC15A_UGL_F,TAG_CLASS(B_Krayt_P2_DC15A_UGL_F))
+    {
+        displayName = "Clone Trooper (DC-15A UGL)";
+        SET_INFO_KRAYT(B_Krayt_P1_DC15A_UGL_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CT);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_SCT), CLASS(V_Suspenders_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A_UGL), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), LIST_5(1Rnd_HE_Grenade_shell), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CP_F,TAG_CLASS(B_Krayt_P2_CP_F))
+    {
+        displayName = "Clone Trooper (Corporal)";
+        SET_INFO_KRAYT(B_Krayt_P1_CP_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLP);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSP), CLASS(V_Kama_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A_UGL), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), LIST_5(1Rnd_HE_Grenade_shell), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CS_F,TAG_CLASS(B_Krayt_P2_CS_F))
+    {
+        displayName = "Clone Trooper (Sergeant)";
+        SET_INFO_KRAYT(B_Krayt_P1_CS_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CP);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSS), CLASS(V_Kama_CS), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CSM_F,TAG_CLASS(B_Krayt_P2_CSM_F))
+    {
+        displayName = "Clone Trooper (Sergeant Major)";
+        SET_INFO_KRAYT(B_Krayt_P1_CSM_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CSS);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSM), CLASS(V_Kama_CS), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CLT_F,TAG_CLASS(B_Krayt_P2_CLT_F))
+    {
+        displayName = "Clone Trooper (Lieutenant)";
+        SET_INFO_KRAYT(B_Krayt_P1_CLT_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CP);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSP), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CPT_F,TAG_CLASS(B_Krayt_P2_CPT_F))
+    {
+        displayName = "Clone Trooper (Captain)";
+        SET_INFO_KRAYT(B_Krayt_P1_CPT_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CSS);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSS), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_CC_F,TAG_CLASS(B_Krayt_P2_CC_F))
+    {
+        displayName = "Clone Trooper (Commander)";
+        SET_INFO_KRAYT(B_Krayt_P1_CC_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CSM);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_CSM), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_Engineer_F,TAG_CLASS(B_Krayt_P2_Engineer_F))
+    {
+        displayName = "Clone Trooper (Engineer)";
+        SET_INFO_KRAYT(B_Krayt_P1_Engineer_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_VCT);
+        backpack = CLASS(B_Pack_EOD);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AB_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_60Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_Engineer_NCO_F,TAG_CLASS(B_Krayt_P2_Engineer_NCO_F))
+    {
+        displayName = "Clone Trooper (Engineer NCO)";
+        SET_INFO_KRAYT(B_Krayt_P1_Engineer_NCO_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLP);
+        backpack = CLASS(B_Pack_EOD);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_CSP), CLASS(V_Kama_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_60Rnd_mag), LIST_2(71st_DC17_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_Medic_F,TAG_CLASS(B_Krayt_P2_Medic_F))
+    {
+        displayName = "Clone Trooper (Medic)";
+        SET_INFO_KRAYT(B_Krayt_P1_Medic_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_SCT);
+        backpack = CLASS(B_Pack_Medic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_SCT), CLASS(V_AB_Medic), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15S), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15S_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_RTO_F,TAG_CLASS(B_Krayt_P2_RTO_F))
+    {
+        displayName = "Clone Trooper (RTO)";
+        SET_INFO_KRAYT(B_Krayt_P1_RTO_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_SCT);
+        backpack = CLASS(B_Pack_RTO);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_SCT), CLASS(V_AB_RTO), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_Support_F,TAG_CLASS(B_Krayt_P2_Support_F))
+    {
+        displayName = "Clone Trooper (Support)";
+        SET_INFO_KRAYT(B_Krayt_P1_Support_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_SCT);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_SCT), CLASS(V_AB_Support), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A_LE), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_100Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_P1_Marksman_F,TAG_CLASS(B_Krayt_P2_Marksman_F))
+    {
+        displayName = "Clone Trooper (Marksman)";
+        SET_INFO_KRAYT(B_Krayt_P1_Marksman_F,CT_P1);
+
+        // Uniform
+        uniformClass = CLASS(U_B_VCT);
+        backpack = CLASS(B_Pack_Basic);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P1_VCT), CLASS(V_AB_Marksman), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS  { QUOTE(71st_DC15A_LE_predef), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(71st_DC15A_60Rnd_mag), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
     SUBCLASS(B_Krayt_P1_Pilot_F,TAG_CLASS(B_Krayt_P2_Pilot_F))
     {
         displayName = "Clone Pilot";
