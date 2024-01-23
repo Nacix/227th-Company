@@ -17,14 +17,14 @@
     }
 
 #define ADD_ARC_HELMET(className,rawName) \
-    class TAG##_H_ARC_##className##: TAG##_H_ARC_Trooper \
+    class TAG##_H_ARC_##className##: TAG##_H_ARC_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\arc\h_arc_##className##_co.paa),QPATHTOF(data\helmets\arc\h_arc_##className##_co.paa) }; \
     }
 
 #define ADD_ARF_HELMET(className,rawName) \
-    class TAG##_H_ARF_##className##: TAG##_H_ARF_Trooper \
+    class TAG##_H_ARF_##className##: TAG##_H_ARF_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[]= \
@@ -35,19 +35,19 @@
         }; \
     }
 
-#define ADD_ENGI_HELMET(className,rawName) \
-    class TAG##_H_Engineer_##className##: TAG##_H_Engineer_Trooper \
+#define ADD_ENGINEER_HELMET(className,rawName) \
+    class TAG##_H_Engineer_##className##: TAG##_H_Engineer_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[]= \
         { \
-            QPATHTOF(data\helmets\engi\h_engi_##className##_co.paa), \
-            QPATHTOF(data\helmets\engi\h_engi_##className##_co.paa) \
+            QPATHTOF(data\helmets\engineer\h_engineer_##className##_co.paa), \
+            QPATHTOF(data\helmets\engineer\h_engineer_##className##_co.paa) \
         }; \
     }
 
 #define ADD_P1_CT_HELMET(className,rawName) \
-    class TAG##_H_P1_##className##: TAG##_H_P1_Trooper \
+    class TAG##_H_P1_##className##: TAG##_H_P1_CT \
     { \
         displayName = TAG_NAME(rawName (P1)); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa) }; \
@@ -81,7 +81,7 @@
     }
 
 #define ADD_INSULATED_HELMET(className,rawName) \
-    class TAG##_H_Insulated_##className##: TAG##_H_Insulated_Trooper \
+    class TAG##_H_Insulated_##className##: TAG##_H_Insulated_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[]= \
@@ -93,7 +93,7 @@
     }
 
 #define ADD_SPECOP_HELMET(className,rawName) \
-    class TAG##_H_SpecOp_##className##: TAG##_H_SpecOp_Trooper \
+    class TAG##_H_SpecOp_##className##: TAG##_H_SpecOp_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[]= \
@@ -165,10 +165,10 @@
         hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_##className##_co.paa) }; \
     }
 #define ADD_JETPACK(className,rawName,parentClass) \
-    class TAG##_B_Pack_##className##: parentClass \
+    class TAG##_B_Pack_JP_##className##: parentClass \
     { \
         displayName = TAG_NAME(rawName); \
-        hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\jetpacks\b_##className##_co.paa) }; \
+        hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\jetpacks\b_jp_##className##_co.paa) }; \
     }
 #define ADD_BACKPACK_STRAPS(className,rawName,parentClass) \
     ADD_BACKPACK(className,rawName,parentClass); \

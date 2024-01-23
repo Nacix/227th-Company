@@ -40,7 +40,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -60,7 +60,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -84,7 +84,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AB_AT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -108,7 +108,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Suspenders_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -132,7 +132,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_Kama_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -156,7 +156,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CS), CLASS(V_CS), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CS), CLASS(V_Kama_CS), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -180,7 +180,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_CS), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_Kama_CS), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -204,7 +204,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_Officer), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CP), CLASS(V_Kama_Officer), CLASS(NV_Range_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -228,7 +228,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CFS), CLASS(V_Officer), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CFS), CLASS(V_Kama_Officer), CLASS(NV_Macro_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -252,7 +252,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_Officer), CLASS(NV_Visor_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CSM), CLASS(V_Kama_Officer), CLASS(NV_Visor_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -276,7 +276,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Engineer_Trooper), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Engineer_CT), CLASS(V_AB_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -300,7 +300,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Engineer_NCO), CLASS(V_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Engineer_NCO), CLASS(V_AB_EOD), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -324,7 +324,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Medic), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AB_Medic), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -353,7 +353,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_RTO), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AB_RTO), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -377,7 +377,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_Support), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_SCT), CLASS(V_AB_Support), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -401,7 +401,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_AB_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -427,7 +427,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Trooper), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_CT), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -499,7 +499,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Pilot_CX), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Pilot_CX), CLASS(V_Suspenders_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -525,7 +525,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P1_Pilot_CXG1), CLASS(V_Suspenders), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P1_Pilot_CXG1), CLASS(V_Suspenders_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -551,7 +551,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -575,7 +575,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Jet), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -599,7 +599,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Medic), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Medic), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -623,7 +623,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AT), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_AT), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -647,7 +647,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_CS), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Kama_CS), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -678,7 +678,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -702,7 +702,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -726,7 +726,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -750,7 +750,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -774,7 +774,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -798,7 +798,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -822,7 +822,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -846,7 +846,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -870,7 +870,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -894,7 +894,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -918,7 +918,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -944,7 +944,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -968,7 +968,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -992,7 +992,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1016,7 +1016,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1040,7 +1040,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1064,7 +1064,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1088,7 +1088,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1112,7 +1112,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1136,7 +1136,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1160,7 +1160,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -1184,7 +1184,7 @@ class CfgVehicles
         
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_Insulated_Trooper), CLASS(V_Invisible), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS

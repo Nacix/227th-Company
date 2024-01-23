@@ -1,15 +1,15 @@
 class CfgUnitInsignia {
-	#define NEW_INSIGNIA(displayName) \
-	class TAG##_Insignia_##displayName## \
+	#define NEW_INSIGNIA(className) \
+	class TAG##_Insignia_##className## \
 	{ \
-		displayName = TAG_NAME(displayName); \
-		texture = QPATHTOF(data\icons\##displayName##.paa); \
+		displayName = TAG_NAME(className); \
+		texture = QPATHTOF(data\icons\icon_##className##_co.paa); \
 	}
 
 	NEW_INSIGNIA(Centurion);
 	NEW_INSIGNIA(EOD);
 	NEW_INSIGNIA(Krayt);
-	NEW_INSIGNIA(Logo);
+	NEW_INSIGNIA(Emblem);
 	NEW_INSIGNIA(Medic);
 	NEW_INSIGNIA(Purrgil);
 	NEW_INSIGNIA(Reaper);

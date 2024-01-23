@@ -23,7 +23,7 @@ class CfgVehicles
 
 	// ############################################################ Backpacks ############################################################
 
-	ADD_BACKPACK(ARC,ARC Backpack,JLTS_Clone_ARC_backpack);
+	ADD_BACKPACK(ARC_CT,ARC Backpack,JLTS_Clone_ARC_backpack);
 	ADD_BACKPACK(ARC_Medic,ARC Medic Backpack,JLTS_Clone_ARC_backpack);
 	
 	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO);
@@ -34,24 +34,24 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_RTO_co.paa) };
 	};
 
-	ADD_BACKPACK(RTO_mini,RTO Pack (Mini),JLTS_Clone_RTO_pack);
+	ADD_BACKPACK(RTO_Mini,RTO Pack (Mini),JLTS_Clone_RTO_pack);
 
 	ADD_BACKPACK_STRAPS(AT,AT Backpack,JLTS_Clone_backpack);
 	ADD_BACKPACK_STRAPS(Medic,Medic Backpack,JLTS_Clone_backpack);
 	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack);
 	ADD_BACKPACK_STRAPS(Basic,Trooper Backpack,JLTS_Clone_backpack);
 
-	ADD_JETPACK(JP_Chicken,Jump Pack (Chicken),JLTS_Clone_jumppack_Chicken);
+	ADD_JETPACK(Chicken_CT,Jump Pack (Chicken),JLTS_Clone_jumppack_Chicken);
 
-	ADD_JETPACK(JT12,Jetpack (JT-12),JLTS_Clone_jumppack_JT12);
-	ADD_JETPACK(JT12_medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12);
-	ADD_JETPACK(JT12_mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12);
+	ADD_JETPACK(JT12_CT,Jetpack (JT-12),JLTS_Clone_jumppack_JT12);
+	ADD_JETPACK(JT12_Medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12);
+	ADD_JETPACK(JT12_Mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12);
 
-	ADD_JETPACK(JP_MC,Jump Pack (MC),JLTS_Clone_Jumppack_mc);
-	ADD_JETPACK(JP_MC_medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc);
-	ADD_JETPACK(JP_MC_pilot,Jump Pack (MC) [Pilot],JLTS_Clone_Jumppack_mc);
-	ADD_JETPACK(JP_MC_krayt,Jump Pack (MC) [Krayt],JLTS_Clone_Jumppack_mc);
-	ADD_JETPACK(JP_MC_valyrian,Jump Pack (MC) [Valyrian],JLTS_Clone_Jumppack_mc);
+	ADD_JETPACK(MC_CT,Jump Pack (MC),JLTS_Clone_Jumppack_mc);
+	ADD_JETPACK(MC_Medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc);
+	ADD_JETPACK(MC_Pilot,Jump Pack (MC) [Pilot],JLTS_Clone_Jumppack_mc);
+	ADD_JETPACK(MC_Krayt,Jump Pack (MC) [Krayt],JLTS_Clone_Jumppack_mc);
+	ADD_JETPACK(MC_Valyrian,Jump Pack (MC) [Valyrian],JLTS_Clone_Jumppack_mc);
 
 	// ############################################################ Uniform Vehicles ############################################################
 
