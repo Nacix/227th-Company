@@ -59,9 +59,10 @@ class CfgVehicles
 	{
 		author = "Anorexican";
 		scope = 1;
+		scopeCurator = 0;
 		_generalMacro = CLASS(B_Trooper_Base);
 		displayName = TAG_NAME(CloneTrooperBase);
-		side = 0;
+		side = 1;
 		faction = CLASS(BLU_Krayt_F);
 		uniformClass = CLASS(U_B_Trooper_Base);
 		model = "\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";

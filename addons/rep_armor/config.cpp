@@ -26,7 +26,7 @@ class CfgPatches
         };
         weapons[]=
         {
-            CLASS(H_P2_Trooper),
+            CLASS(H_P2_CT),
             CLASS(H_P2_SCT),
             CLASS(H_P2_VCT),
             CLASS(H_P2_CSP),

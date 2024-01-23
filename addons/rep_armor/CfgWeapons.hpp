@@ -60,10 +60,10 @@ class CfgWeapons
 	
 	// ############################################################ P2 Trooper Helmets ############################################################
 
-	SUBCLASS(H_P2_Trooper,JLTS_CloneHelmetP2)
+	SUBCLASS(H_P2_CT,JLTS_CloneHelmetP2)
 	{
 		displayName = TAG_NAME(Trooper Helmet);
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_trooper_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_ct_co.paa) };
 		DEF_ARMOR_BASE;
 	};
 

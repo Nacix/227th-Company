@@ -5,14 +5,14 @@ class XtdGearInfos
 		#define XTD_H_P2(className,typeName,skinName) \
 			class TAG##_H_P2_##className## \
 			{ \
-				model = QUOTE(TAG##_H_P2_Trooper); \
+				model = QUOTE(TAG##_H_P2_CT); \
 				type = QUOTE(typeName); \
 				skin = QUOTE(skinName); \
 			}
 		#define XTD_H_ARC(className,skinName) \
 			class TAG##_H_ARC_##className## \
 			{ \
-				model = QUOTE(TAG##_H_P2_Trooper); \
+				model = QUOTE(TAG##_H_P2_CT); \
 				type = QUOTE(ARC); \
 				skin = QUOTE(skinName); \
 			}
@@ -113,7 +113,7 @@ class XtdGearInfos
 			}
 
 		// P2 Trooper Helmets
-		XTD_H_P2(Trooper,Trooper,Default);
+		XTD_H_P2(CT,Trooper,Default);
 		XTD_H_P2(SCT,Trooper,SCT);
 		XTD_H_P2(VCT,Trooper,VCT);
 		XTD_H_P2(CSP,Trooper,CSP);
@@ -127,8 +127,8 @@ class XtdGearInfos
 		// P2 Specialist Helmets
 		XTD_H_P2(Jet,Specialist,Jet);
 		XTD_H_P2(EOD,Specialist,EOD);
-		XTD_H_P2(EOD_CSP,Specialist,EOD [CSP]);
-		XTD_H_P2(EOD_NCO,Specialist,EOD [NCO]);
+		XTD_H_P2(EOD_CSP,Specialist,EOD_CSP);
+		XTD_H_P2(EOD_NCO,Specialist,EOD_NCO);
 
 		// P2 ARC Helmets
 		XTD_H_ARC(Cookie,Cookie);
@@ -230,7 +230,7 @@ class XtdGearInfos
 		XTD_V_OMNI(Invisible,Basic,Invisible);
 		XTD_V_OMNI(Trooper,Basic,Trooper);
 		XTD_V_OMNI(Suspenders,Basic,Suspenders);
-		XTD_V_OMNI(AT,Specialist,Anti-Tank);
+		XTD_V_OMNI(AT,Specialist,AT);
 		XTD_V_OMNI(EOD,Specialist,EOD);
 		XTD_V_OMNI(Geonosis,Specialist,Geonosis);
 		XTD_V_OMNI(Jet,Specialist,Jet);
@@ -259,7 +259,7 @@ class XtdGearInfos
 
 		// Special Trooper Uniforms
 		XTD_U_TROOPER(Jet_CT,Jet);
-		XTD_U_TROOPER(Jet_NCO,Jet [NCO]);
+		XTD_U_TROOPER(Jet_NCO,Jet_NCO);
 
 		// Custom Trooper Uniforms
 		XTD_U_TROOPER(Cookie,Cookie);
@@ -303,10 +303,10 @@ class XtdGearInfos
 		// Backpacks
 		XTD_B_OMNI_STRAPS(Basic,Basic,Default);
 		XTD_B_OMNI_STRAPS(Medic,Basic,Medic);
-		XTD_B_OMNI_STRAPS(AT,Basic,Anti-Tank);
+		XTD_B_OMNI_STRAPS(AT,Basic,AT);
 		XTD_B_OMNI_STRAPS(EOD,Basic,EOD);
 		XTD_B_OMNI_STRAPS(RTO,RTO,Default);
-		XTD_B_OMNI(RTO_Mini,RTO,RTO (Mini));
+		XTD_B_OMNI(RTO_mini,RTO,RTO_Mini);
 		XTD_B_OMNI(ARC,ARC,Default);
 		XTD_B_OMNI(ARC_Medic,ARC,Medic);
 

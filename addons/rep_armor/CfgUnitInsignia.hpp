@@ -1,19 +1,19 @@
 class CfgUnitInsignia {
-	#define NEW_INSIGNIA(name,display) \
-	class TAG##_Insignia_##name## \
+	#define NEW_INSIGNIA(displayName) \
+	class TAG##_Insignia_##displayName## \
 	{ \
-		displayName = TAG_NAME(display); \
-		texture = QPATHTOF(data\icons\##name##.paa); \
+		displayName = TAG_NAME(displayName); \
+		texture = QPATHTOF(data\icons\##displayName##.paa); \
 	}
 
-	NEW_INSIGNIA(Centurion,Centurion);
-	NEW_INSIGNIA(EOD,EOD);
-	NEW_INSIGNIA(Krayt,Krayt);
-	NEW_INSIGNIA(Logo,Logo);
-	NEW_INSIGNIA(Medic,Medic);
-	NEW_INSIGNIA(Purrgil,Purrgil);
-	NEW_INSIGNIA(Reaper,Reaper);
-	NEW_INSIGNIA(Varactyl,Varactyl);
-	NEW_INSIGNIA(Mercy,Mercy);
-	NEW_INSIGNIA(Nimbus,Nimbus);
+	NEW_INSIGNIA(Centurion);
+	NEW_INSIGNIA(EOD);
+	NEW_INSIGNIA(Krayt);
+	NEW_INSIGNIA(Logo);
+	NEW_INSIGNIA(Medic);
+	NEW_INSIGNIA(Purrgil);
+	NEW_INSIGNIA(Reaper);
+	NEW_INSIGNIA(Varactyl);
+	NEW_INSIGNIA(Mercy);
+	NEW_INSIGNIA(Nimbus);
 };

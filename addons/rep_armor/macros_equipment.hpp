@@ -10,7 +10,7 @@
 // ############################################################ CfgWeapons ############################################################
 
 #define ADD_CT_HELMET(className,rawName) \
-    class TAG##_H_P2_##className##: TAG##_H_P2_Trooper \
+    class TAG##_H_P2_##className##: TAG##_H_P2_CT \
     { \
         displayName = TAG_NAME(rawName); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p2\h_p2_##className##_co.paa) }; \
@@ -182,7 +182,6 @@
     SUBCLASS(B_##className##_Base,TAG##_B_Trooper_Base) \
     { \
         displayName = TAG_NAME(rawName); \
-        scope = 2; \
         hiddenSelectionsTextures[]= \
         { \
             QPATHTOF(data\uniforms\##groupDir##\##localDir##\u_up_##className##_co.paa), \
@@ -193,7 +192,6 @@
     SUBCLASS(B_Insulated_##className##_Base,TAG##_B_Insulated_Base) \
     { \
         displayName = TAG_NAME(rawName); \
-        scope = 2; \
         hiddenSelectionsTextures[]= \
         { \
             QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa), \
