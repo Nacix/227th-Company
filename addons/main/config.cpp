@@ -9,7 +9,11 @@ class CfgPatches
         authors[] = {"Anorexican", "Valyrian"};
 		requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
-		url = ECSTRING(main,URL);
+        url = ECSTRING(main,URL);
+        units[] = {};
+        weapons[] = {};
+        magazines[] = {};
+        ammo[] = {};
     };
 };
 
