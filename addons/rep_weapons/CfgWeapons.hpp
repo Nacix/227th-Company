@@ -25,7 +25,10 @@ class CfgWeapons
 
     class JLTS_DC17SA: hgun_P07_F
     {
-        class Single;
+        class Single: Mode_SemiAuto
+		{
+			class StandardSound;
+		};
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class PointerSlot;
@@ -165,7 +168,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-17SA);
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
-		hiddenSelectionsTextures[] = {QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa)};
+		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
 		magazines[] = { CLASS(21Rnd_EC30_mag) };
 		reloadMagazineSound[]=
 		{
