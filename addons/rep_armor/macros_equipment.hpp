@@ -158,23 +158,32 @@
 
 // ############################################################ CfgVehicles ############################################################
 
-#define ADD_BACKPACK(className,rawName,parentClass) \
+#define ADD_BACKPACK(className,rawName,parentClass,loadValue) \
     class TAG##_B_Pack_##className##: parentClass \
     { \
         displayName = TAG_NAME(rawName); \
+        maximumLoad = QUOTE(loadValue); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_##className##_co.paa) }; \
     }
-#define ADD_JETPACK(className,rawName,parentClass) \
+#define ADD_JETPACK(className,rawName,parentClass,loadValue) \
     class TAG##_B_Pack_JP_##className##: parentClass \
     { \
         displayName = TAG_NAME(rawName); \
+        maximumLoad = QUOTE(loadValue); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\jetpacks\b_jp_##className##_co.paa) }; \
+        tf_dialog="JLTS_clone_lr_programmer_radio_dialog"; \
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;"; \
+        tf_encryptionCode="tf_west_radio_code"; \
+        tf_hasLRradio=1; \
+        tf_range=16000; \
+        tf_subtype="digital_lr"; \
     }
-#define ADD_BACKPACK_STRAPS(className,rawName,parentClass) \
-    ADD_BACKPACK(className,rawName,parentClass); \
+#define ADD_BACKPACK_STRAPS(className,rawName,parentClass,loadValue) \
+    ADD_BACKPACK(className,rawName,parentClass,loadValue); \
     class TAG##_B_Pack_##className##_straps: parentClass##_s \
     { \
         displayName = TAG_NAME(rawName## (Straps)); \
+        maximumLoad = QUOTE(loadValue); \
         hiddenSelectionsTextures[] = { QPATHTOF(data\backpacks\b_##className##_co.paa) }; \
     }
 
