@@ -169,7 +169,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
-		magazines[] = { CLASS(21Rnd_EC30_mag) };
+		magazines[] = { CLASS(24Rnd_EC30_mag) };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -279,4 +279,5 @@ class CfgWeapons
 			};
 		};
     };
+
 };
