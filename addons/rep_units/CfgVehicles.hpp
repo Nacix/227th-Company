@@ -1324,7 +1324,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1348,7 +1348,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1372,7 +1372,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1396,7 +1396,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1420,7 +1420,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1444,7 +1444,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1468,7 +1468,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1492,7 +1492,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1516,7 +1516,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = QUOTE(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
