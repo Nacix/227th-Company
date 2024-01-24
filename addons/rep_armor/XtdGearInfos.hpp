@@ -135,7 +135,7 @@ class XtdGearInfos
 		XTD_H_ARC(Devil,DevilDolphin);
 		XTD_H_ARC(Jinx,Jinx);
 		XTD_H_ARC(Knight,Knight);
-		XTD_H_ARC(Trooper,Default);
+		XTD_H_ARC(CT,Default);
 
 		// P2 Custom Helmets
 		XTD_H_P2(Canada,Trooper,Canada);
@@ -147,11 +147,9 @@ class XtdGearInfos
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
 		XTD_H_P2(Neca,Trooper,Neca);
-		XTD_H_P2(Rage,Trooper,Rage);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
-		XTD_H_P2(Space,Trooper,Space);
 		XTD_H_P2(Sparky,Trooper,Sparky);
 		XTD_H_P2(Sparrow,Trooper,Sparrow);
 		XTD_H_P2(Spartacus,Trooper,Spartacus);
@@ -160,7 +158,7 @@ class XtdGearInfos
 		XTD_H_P2(Wicked,Trooper,Wicked);
 
 		// P1 Trooper Helmets
-		XTD_H_P1(Trooper,Default);
+		XTD_H_P1(CT,Default);
 		XTD_H_P1(SCT,SCT);
 		XTD_H_P1(VCT,VCT);
 		XTD_H_P1(CSP,CSP);
@@ -180,20 +178,20 @@ class XtdGearInfos
 		XTD_H_P1_PILOT(CXG2,CXG2);
 
 		// ARF Helmets
-		XTD_H_ARF(Trooper,Default);
+		XTD_H_ARF(CT,Default);
 		XTD_H_ARF(Spartacus,Spartacus);
 
 		// Insulated Helmets
-		XTD_H_INSULATED(Trooper,Default);
+		XTD_H_INSULATED(CT,Default);
 		XTD_H_INSULATED(Geonosis,Geonosis);
 
 		// Engineer Helmets
-		XTD_H_ENGINEER(Trooper,Default);
+		XTD_H_ENGINEER(CT,Default);
 		XTD_H_ENGINEER(CSP,CSP);
 		XTD_H_ENGINEER(NCO,NCO);
 
 		// Spec-Ops Helmets
-		XTD_H_SPECOP(Trooper,Default,Default);
+		XTD_H_SPECOP(CT,Default,Default);
 		XTD_H_SPECOP(CSP,Default,CSP);
 		XTD_H_SPECOP(NCO,Default,NCO);
 		XTD_H_SPECOP(Geonosis,Geonosis,Default);
@@ -219,7 +217,7 @@ class XtdGearInfos
 
 		// ARC Vests
 		XTD_V_ARC(Cadet,Cadet);
-		XTD_V_ARC(Trooper,Trooper);
+		XTD_V_ARC(CT,Trooper);
 		XTD_V_ARC(Medic,Medic);
 		XTD_V_ARC(Veteran,Veteran);
 		XTD_V_ARC(Cookie,Cookie);
@@ -227,23 +225,23 @@ class XtdGearInfos
 		XTD_V_ARC(Valyrian,Valyrian);
 
 		// Miscellaneous Vests
-		XTD_V_OMNI(Invisible,Basic,Invisible);
-		XTD_V_OMNI(Trooper,Basic,Trooper);
-		XTD_V_OMNI(Suspenders,Basic,Suspenders);
-		XTD_V_OMNI(AT,Specialist,AT);
-		XTD_V_OMNI(EOD,Specialist,EOD);
-		XTD_V_OMNI(Geonosis,Specialist,Geonosis);
-		XTD_V_OMNI(Jet,Specialist,Jet);
-		XTD_V_OMNI(Marksman,Specialist,Marksman);
-		XTD_V_OMNI(Medic,Specialist,Medic);
-		XTD_V_OMNI(RTO,Specialist,RTO);
-		XTD_V_OMNI(Support,Specialist,Support);
-		XTD_V_OMNI(CP,Leadership,Corporal);
-		XTD_V_OMNI(CS,Leadership,Sergeant);
-		XTD_V_OMNI(Officer,Leadership,Officer);
-		XTD_V_OMNI(Neca,Leadership,Neca);
-		XTD_V_OMNI(Spartacus,Leadership,Spartacus);
-		XTD_V_OMNI(Valyrian,Leadership,Valyrian);
+		XTD_V_OMNI(Invisible_CT,Basic,Invisible);
+		XTD_V_OMNI(AB_CT,Basic,Trooper);
+		XTD_V_OMNI(Suspenders_CT,Basic,Suspenders);
+		XTD_V_OMNI(AB_AT,Specialist,AT);
+		XTD_V_OMNI(AB_EOD,Specialist,EOD);
+		XTD_V_OMNI(AB_Geonosis,Specialist,Geonosis);
+		XTD_V_OMNI(AB_Jet,Specialist,Jet);
+		XTD_V_OMNI(AB_Marksman,Specialist,Marksman);
+		XTD_V_OMNI(AB_Medic,Specialist,Medic);
+		XTD_V_OMNI(AB_RTO,Specialist,RTO);
+		XTD_V_OMNI(AB_Support,Specialist,Support);
+		XTD_V_OMNI(Kama_CP,Leadership,Corporal);
+		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
+		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
+		XTD_V_OMNI(Kama_Neca,Leadership,Neca);
+		XTD_V_OMNI(Kama_Spartacus,Leadership,Spartacus);
+		XTD_V_OMNI(Kama_Valyrian,Leadership,Valyrian);
 
 		// Trooper Uniforms
 		XTD_U_TROOPER(CR,Cadet);
@@ -301,24 +299,26 @@ class XtdGearInfos
 			}
 
 		// Backpacks
-		XTD_B_OMNI_STRAPS(Basic,Basic,Default);
+		XTD_B_OMNI_STRAPS(CT,Basic,Default);
 		XTD_B_OMNI_STRAPS(Medic,Basic,Medic);
 		XTD_B_OMNI_STRAPS(AT,Basic,AT);
 		XTD_B_OMNI_STRAPS(EOD,Basic,EOD);
 		XTD_B_OMNI_STRAPS(RTO,RTO,Default);
-		XTD_B_OMNI(RTO_mini,RTO,RTO_Mini);
-		XTD_B_OMNI(ARC,ARC,Default);
+		XTD_B_OMNI_STRAPS(Jet,Basic,Jet);
+		XTD_B_OMNI_STRAPS(Snow_CT,Basic,Snow);
+		XTD_B_OMNI(RTO_Mini,RTO,RTO_Mini);
+		XTD_B_OMNI(ARC_CT,ARC,Default);
 		XTD_B_OMNI(ARC_Medic,ARC,Medic);
 
 		// Jetpacks
-		XTD_B_JETPACK(JP_MC,MC,Default);
-		XTD_B_JETPACK(JP_MC_medic,MC,Medic);
-		XTD_B_JETPACK(JP_MC_pilot,MC,Pilot);
-		XTD_B_JETPACK(JP_MC_krayt,MC,Krayt);
-		XTD_B_JETPACK(JP_MC_valyrian,MC,Valyrian);
-		XTD_B_JETPACK(JT12,JT12,Default);
-		XTD_B_JETPACK(JT12_medic,JT12,Medic);
-		XTD_B_JETPACK(JT12_mercy,JT12,Mercy);
-		XTD_B_JETPACK(JP_Chicken,Chicken,Default);
+		XTD_B_JETPACK(JP_MC_CT,MC,Default);
+		XTD_B_JETPACK(JP_MC_Medic,MC,Medic);
+		XTD_B_JETPACK(JP_MC_Pilot,MC,Pilot);
+		XTD_B_JETPACK(JP_MC_Krayt,MC,Krayt);
+		XTD_B_JETPACK(JP_MC_Valyrian,MC,Valyrian);
+		XTD_B_JETPACK(JP_JT12_CT,JT12,Default);
+		XTD_B_JETPACK(JP_JT12_Medic,JT12,Medic);
+		XTD_B_JETPACK(JP_JT12_Mercy,JT12,Mercy);
+		XTD_B_JETPACK(JP_Chicken_CT,Chicken,Default);
 	};
 };

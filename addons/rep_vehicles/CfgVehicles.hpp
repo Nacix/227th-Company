@@ -96,7 +96,7 @@ class CfgVehicles {
     SUBCLASS(B_Heli_LAAT_mk1_balls,3as_LAAT_Mk1)
     {
         displayName = TAG_NAME(LAAT Mk.I (Balls));
-        editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk1.jpg);
+        editorPreview = QPATHTOF(data\ui\editorPreviews\##TAG##_B_Heli_LAAT_mk1_balls.jpg);
         editorSubcategory = CLASS(EdSubcat_Helicopters);
         faction = CLASS(BLU_Krayt_F);
         crew = CLASS(B_Krayt_P1_Pilot_F);

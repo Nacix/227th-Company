@@ -91,11 +91,9 @@ class CfgWeapons
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
     ADD_CT_HELMET(Neca,Neca's Helmet);
-    ADD_CT_HELMET(Rage,Rage's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);
     ADD_CT_HELMET(Riven,Riven's Helmet);
     ADD_CT_HELMET(Sage,Sage's Helmet);
-    ADD_CT_HELMET(Space,Space's Helmet);
     ADD_CT_HELMET(Sparky,Sparky's Helmet);
     ADD_CT_HELMET(Sparrow,Sparrow's Helmet);
     ADD_CT_HELMET(Speed,Speed's Helmet);
@@ -104,11 +102,11 @@ class CfgWeapons
 
 	// ############################################################ ARC Helmets ############################################################
 
-	SUBCLASS(H_ARC_Trooper,JLTS_CloneHelmetARC_illum)
+	SUBCLASS(H_ARC_CT,JLTS_CloneHelmetARC_illum)
 	{
 		displayName = TAG_NAME(ARC Helmet);
 		scope = 2;
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\arc\h_arc_trooper_co.paa),QPATHTOF(data\helmets\arc\h_arc_trooper_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\arc\h_arc_ct_co.paa),QPATHTOF(data\helmets\arc\h_arc_ct_co.paa) };
 		DEF_ARMOR_BASE;
 	};
 
@@ -119,15 +117,15 @@ class CfgWeapons
 
 	// ############################################################ ARF Helmets ############################################################
 
-	SUBCLASS(H_ARF_Trooper,SEA_Helmet_ARF_Base)
+	SUBCLASS(H_ARF_CT,SEA_Helmet_ARF_Base)
 	{
 		displayName = TAG_NAME(ARF Helmet);
 		subItems[] = {};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\helmets\arf\h_arf_trooper_co.paa),
-			QPATHTOF(data\helmets\arf\h_arf_plates_trooper_co.paa),
-			QPATHTOF(data\helmets\arf\h_arf_visor_trooper_co.paa)
+			QPATHTOF(data\helmets\arf\h_arf_ct_co.paa),
+			QPATHTOF(data\helmets\arf\h_arf_plates_ct_co.paa),
+			QPATHTOF(data\helmets\arf\h_arf_visor_ct_co.paa)
 		};
 		DEF_ARMOR_BASE;
 	};
@@ -136,32 +134,32 @@ class CfgWeapons
 
 	// ############################################################ Engineer Helmets ############################################################
 
-	SUBCLASS(H_Engineer_Trooper,SEA_Helmet_Engineer_Base)
+	SUBCLASS(H_Engineer_CT,SEA_Helmet_Engineer_Base)
 	{
 		displayName = TAG_NAME(Engineer Helmet);
 		subItems[] = {};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\helmets\engi\h_engi_co.paa),
-			QPATHTOF(data\helmets\engi\h_engi_co.paa)
+			QPATHTOF(data\helmets\engineer\h_engineer_ct_co.paa),
+			QPATHTOF(data\helmets\engineer\h_engineer_ct_co.paa)
 		};
 		DEF_ARMOR_BASE;
 	};
 
-	ADD_ENGI_HELMET(CSP,Engineer Helmet [CSP]);
-	ADD_ENGI_HELMET(NCO,Engineer Helmet [NCO]);
+	ADD_ENGINEER_HELMET(CSP,Engineer Helmet [CSP]);
+	ADD_ENGINEER_HELMET(NCO,Engineer Helmet [NCO]);
 
 	// ############################################################ SpecOps Helmets ############################################################
 
-	SUBCLASS(H_SpecOp_Trooper,SEA_Helmet_SpecOps_SR_Base)
+	SUBCLASS(H_SpecOp_CT,SEA_Helmet_SpecOps_SR_Base)
 	{
 		displayName = TAG_NAME(Spec-Ops Helmet);
 		subItems[] = {};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\helmets\specops\h_specop_trooper_co.paa),
+			QPATHTOF(data\helmets\specops\h_specop_ct_co.paa),
 			"\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa",
-			QPATHTOF(data\helmets\specops\h_specop_trooper_co.paa)
+			QPATHTOF(data\helmets\specops\h_specop_ct_co.paa)
 		};
 		DEF_ARMOR_BASE;
 	};
@@ -173,16 +171,16 @@ class CfgWeapons
 
 	// ############################################################ Insulated Helmets ############################################################
 
-	SUBCLASS(H_Insulated_Trooper,3AS_ColdAssault_Helmet_Base)
+	SUBCLASS(H_Insulated_CT,3AS_ColdAssault_Helmet_Base)
 	{
 		displayName = TAG_NAME(Insulated Helmet);
 		scope = 2;
 		subItems[] = {};
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\helmets\insulated\h_insulated_trooper_co.paa),
-			QPATHTOF(data\helmets\insulated\h_insulated_trooper_co.paa),
-			QPATHTOF(data\helmets\insulated\h_insulated_trooper_co.paa)
+			QPATHTOF(data\helmets\insulated\h_insulated_ct_co.paa),
+			QPATHTOF(data\helmets\insulated\h_insulated_ct_co.paa),
+			QPATHTOF(data\helmets\insulated\h_insulated_ct_co.paa)
 		};
 		DEF_ARMOR_BASE;
 	};
@@ -191,11 +189,11 @@ class CfgWeapons
 
 	// ############################################################ P1 Trooper Helmets ############################################################
 
-	SUBCLASS(H_P1_Trooper,3AS_P1_Base)
+	SUBCLASS(H_P1_CT,3AS_P1_Base)
 	{
 		displayName = TAG_NAME(Trooper Helmet (P1));
 		subItems[] = {};
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_trooper_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_ct_co.paa) };
 		DEF_ARMOR_BASE;
 	};
 
@@ -273,142 +271,142 @@ class CfgWeapons
 
 	// ############################################################ Basic Vests ############################################################
 
-	SUBCLASS(V_Invisible,JLTS_CloneVestHolster)
+	SUBCLASS(V_Invisible_CT,JLTS_CloneVestHolster)
 	{
 		displayName = TAG_NAME(Invisible Vest);
 		hiddenSelectionsTextures[] = { "", "" };
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_Suspenders,JLTS_CloneVestSuspender)
+	SUBCLASS(V_Suspenders_CT,JLTS_CloneVestSuspender)
 	{
 		displayName = TAG_NAME(Suspenders);
-		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\basic\trooper\v_suspenders_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\basic\trooper\v_suspenders_ct_co.paa) };
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_Trooper,TAG##_V_Invisible)
+	SUBCLASS(V_AB_CT,TAG##_V_Invisible_CT)
 	{
 		displayName = TAG_NAME(Trooper Vest);
-		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\basic\trooper\v_trooper_co.paa), "" };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\basic\trooper\v_ab_ct_co.paa), "" };
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_Medic,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_Medic,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Medic Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\medic\v_medic_low_co.paa),
-			QPATHTOF(data\vests\basic\medic\v_medic_up_co.paa)
+			QPATHTOF(data\vests\basic\medic\v_ab_medic_low_co.paa),
+			QPATHTOF(data\vests\basic\medic\v_ab_medic_up_co.paa)
 		};
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_AT,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_AT,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(AT Vest);
 		hiddenSelectionsTextures[]=
 		{ 
-			QPATHTOF(data\vests\basic\at\v_at_low_co.paa),
-			QPATHTOF(data\vests\basic\at\v_at_up_co.paa)
+			QPATHTOF(data\vests\basic\at\v_ab_at_low_co.paa),
+			QPATHTOF(data\vests\basic\at\v_ab_at_up_co.paa)
 		};
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_RTO,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_RTO,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(RTO Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\rto\v_rto_low_co.paa),
-			QPATHTOF(data\vests\basic\rto\v_rto_up_co.paa)
+			QPATHTOF(data\vests\basic\rto\v_ab_rto_low_co.paa),
+			QPATHTOF(data\vests\basic\rto\v_ab_rto_up_co.paa)
 		};
 		DEF_ARMOR(0.8,0.5,0,1,0.15,0.25);
 	};
 
-	SUBCLASS(V_Support,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_Support,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Support Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\support\v_support_low_co.paa),
-			QPATHTOF(data\vests\basic\support\v_support_up_co.paa)
+			QPATHTOF(data\vests\basic\support\v_ab_support_low_co.paa),
+			QPATHTOF(data\vests\basic\support\v_ab_support_up_co.paa)
 		};
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_EOD,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_EOD,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(EOD Vest);
-		hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\basic\eod\v_eod_co.paa) };
+		hiddenSelectionsTextures[] = { "", QPATHTOF(data\vests\basic\eod\v_ab_eod_co.paa) };
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Marksman,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_Marksman,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Marksman Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\marksman\v_marksman_low_co.paa),
-			QPATHTOF(data\vests\basic\marksman\v_marksman_up_co.paa)
+			QPATHTOF(data\vests\basic\marksman\v_ab_marksman_low_co.paa),
+			QPATHTOF(data\vests\basic\marksman\v_ab_marksman_up_co.paa)
 		};
 	};
 
-	SUBCLASS(V_Geonosis,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_Geonosis,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Geonosis Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\trooper\v_geonosis_co.paa),
+			QPATHTOF(data\vests\basic\trooper\v_ab_geonosis_co.paa),
 			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"
 		};
 	};
 
-	SUBCLASS(V_Jet,JLTS_CloneVestAirborne)
+	SUBCLASS(V_AB_Jet,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Jet Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\basic\trooper\v_jet_co.paa),
+			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
 			"MRC\JLTS\characters\CloneArmor\data\Clone_vest_heavy_co.paa"
 		};
 	};
 
 	// ############################################################ ARC Vests ############################################################
 
-	SUBCLASS(V_ARC_Trooper,JLTS_CloneVestARC)
+	SUBCLASS(V_ARC_CT,JLTS_CloneVestARC)
 	{
 		displayName = TAG_NAME(ARC Vest);
-		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_trooper_co.paa) };
+		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_ct_co.paa) };
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_ARC_Cookie,TAG##_V_ARC_Trooper)
+	SUBCLASS(V_ARC_Cookie,TAG##_V_ARC_CT)
 	{
 		displayName = TAG_NAME(ARC Vest (Cookie));
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_cookie_co.paa) };
 	};
 
-	SUBCLASS(V_ARC_Jinx,TAG##_V_ARC_Trooper)
+	SUBCLASS(V_ARC_Jinx,TAG##_V_ARC_CT)
 	{
 		displayName = TAG_NAME(ARC Vest (Jinx));
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_jinx_co.paa) };
 	};
 
-	SUBCLASS(V_ARC_Medic,TAG##_V_ARC_Trooper)
+	SUBCLASS(V_ARC_Medic,TAG##_V_ARC_CT)
 	{
 		displayName = TAG_NAME(ARC Vest (Medic));
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_medic_co.paa) };
 	};
 
-	SUBCLASS(V_ARC_Valyrian,TAG##_V_ARC_Trooper)
+	SUBCLASS(V_ARC_Valyrian,TAG##_V_ARC_CT)
 	{
 		displayName = TAG_NAME(ARC Vest (Valyrian));
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_valyrian_co.paa) };
 	};
 
-	SUBCLASS(V_ARC_Veteran,TAG##_V_ARC_Trooper)
+	SUBCLASS(V_ARC_Veteran,TAG##_V_ARC_CT)
 	{
 		displayName = TAG_NAME(ARC Vest (Veteran));
 		hiddenSelectionsTextures[] = { QPATHTOF(data\vests\arc\v_arc_veteran_co.paa) };
@@ -422,68 +420,68 @@ class CfgWeapons
 
 	// ############################################################ Leadership Vests ############################################################
 
-	SUBCLASS(V_CP,JLTS_CloneVestAirborne)
+	SUBCLASS(V_Kama_CP,JLTS_CloneVestAirborne)
 	{
 		displayName = TAG_NAME(Corporal Vest);
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\officer\v_kama_cp_co.paa),
-			QPATHTOF(data\vests\officer\v_cp_up_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_cp_up_co.paa)
 		};
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Neca,TAG##_V_CP)
+	SUBCLASS(V_Kama_Neca,TAG##_V_Kama_CP)
 	{
 		displayName = TAG_NAME(Neca's Vest);
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\officer\v_kama_neca_co.paa),
-			QPATHTOF(data\vests\officer\v_cp_up_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_cp_up_co.paa)
 		};
 	};
 
-	SUBCLASS(V_CS,TAG##_V_CP)
+	SUBCLASS(V_Kama_CS,TAG##_V_Kama_CP)
 	{
 		displayName = TAG_NAME(Sergeant Vest);
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\officer\v_kama_cs_co.paa),
-			QPATHTOF(data\vests\officer\v_cs_up_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_cs_up_co.paa)
 			
 		};
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Spartacus,TAG##_V_CP)
+	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_CP)
 	{
 		displayName = TAG_NAME(Spartacus' Vest);
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
-			QPATHTOF(data\vests\officer\v_cs_up_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_cs_up_co.paa)
 			
 		};
 	};
 
-	SUBCLASS(V_Officer,JLTS_CloneVestOfficer)
+	SUBCLASS(V_Kama_Officer,JLTS_CloneVestOfficer)
 	{
 		displayName = TAG_NAME(Officer Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\officer\v_officer_co.paa),
-			QPATHTOF(data\vests\officer\v_officer_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
 		};
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Valyrian,TAG##_V_Officer)
+	SUBCLASS(V_Kama_Valyrian,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Valyrian's Vest);
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\officer\v_valyrian_co.paa),
-			QPATHTOF(data\vests\officer\v_valyrian_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_valyrian_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_valyrian_co.paa)
 		};
 	};
 

@@ -62,11 +62,9 @@ class XtdGearModels
 					"Kitsune",
 					"Luci",
 					"Neca",
-					"Rage",
 					"Rex",
 					"Riven",
 					"Sage",
-					"Space",
 					"Sparky",
 					"Sparrow",
 					"Spartacus",
@@ -101,11 +99,9 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
 				SET_BACKGROUND_DEFAULT(Neca);
-				SET_BACKGROUND_DEFAULT(Rage);
 				SET_BACKGROUND_DEFAULT(Rex);
 				SET_BACKGROUND_DEFAULT(Riven);
 				SET_BACKGROUND_DEFAULT(Sage);
-				SET_BACKGROUND_DEFAULT(Space);
 				SET_BACKGROUND_DEFAULT(Sparky);
 				SET_BACKGROUND_DEFAULT(Sparrow);
 				SET_BACKGROUND_DEFAULT(Spartacus);
@@ -435,11 +431,13 @@ class XtdGearModels
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "Medic", "AT", "EOD", "RTO_Mini" };
+				values[] = { "Default", "Medic", "AT", "EOD", "Jet", "Snow", "RTO_Mini" };
 				SET_BACKGROUND_DEFAULT(Default);
 				SET_BACKGROUND_DEFAULT(Medic);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
 				SET_BACKGROUND_DEFAULT(EOD);
+				SET_BACKGROUND_DEFAULT(Jet);
+				SET_BACKGROUND_DEFAULT(Snow);
 				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Mini,RTO (Mini));
 			};
 		};
