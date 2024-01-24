@@ -46,7 +46,7 @@ class CfgPatches
         units[] = {};
         magazines[]=
 		{
-			CLASS(21Rnd_EC30_mag)
+			CLASS(24Rnd_EC30_mag)
 		};
         ammo[] = {};
     };
