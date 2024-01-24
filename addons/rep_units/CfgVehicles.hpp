@@ -1003,7 +1003,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Jet_CT);
-        backpack = QUOTE(B_Pack_JP_MC_krayt);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
 
         // Equipment
         #undef EQUIPMENT
@@ -1106,7 +1106,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
-        backpack = QUOTE(B_Pack_AT_straps);
+        backpack = CLASS(B_Pack_AT_straps);
 
         // Equipment
         #undef EQUIPMENT
@@ -1540,7 +1540,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = CLASS(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
 
         // Equipment
         #undef EQUIPMENT
@@ -1564,7 +1564,7 @@ class CfgVehicles
 
         // Uniform
         uniformClass = CLASS(U_B_Insulated_CT);
-        backpack = CLASS(3AS_B_ColdAssault_Backpack);
+        backpack = CLASS(B_Pack_Snow_CT);
         
         // Equipment
         #undef EQUIPMENT
