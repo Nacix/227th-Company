@@ -327,7 +327,7 @@ class CfgGroups
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_service.paa";
                     name = "Engineer Team";
                     side = 1;
-                    SQUAD_4(B_Krayt_Geonosis_Engineer_NCO_F,B_Krayt_Geonosis_Engineer_F,B_Krayt_Geonosis_Engineer_F,B_Krayt_Geonosis_Engineer_F,1);
+                    SQUAD_4(B_Krayt_Geonosis_CP_F,B_Krayt_Geonosis_Engineer_F,B_Krayt_Geonosis_Engineer_F,B_Krayt_Geonosis_Engineer_F,1);
                 };
                 NEW_CLASS(B_Geonosis_InfTeam)
                 {
@@ -405,7 +405,7 @@ class CfgGroups
                     icon = "\MRC\JLTS\Core_mod\data\markers\gar_service.paa";
                     name = "Engineer Team";
                     side = 1;
-                    SQUAD_4(B_Krayt_Insulated_Engineer_NCO_F,B_Krayt_Insulated_Engineer_F,B_Krayt_Insulated_Engineer_F,B_Krayt_Insulated_Engineer_F,1);
+                    SQUAD_4(B_Krayt_Insulated_CP_F,B_Krayt_Insulated_Engineer_F,B_Krayt_Insulated_Engineer_F,B_Krayt_Insulated_Engineer_F,1);
                 };
                 NEW_CLASS(B_Insulated_InfTeam)
                 {
