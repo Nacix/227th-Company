@@ -39,6 +39,8 @@ class CfgPatches
             CLASS(acc_pointer_Short_Borange_IR),
             CLASS(acc_pointer_Long_Borange),
             CLASS(acc_pointer_Long_Borange_IR),
+			CLASS(acc_flashlight),
+			CLASS(Optic_Holo),
             CLASS(hgun_DC17SA_F)
         };
         units[] = {};

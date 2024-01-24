@@ -23,6 +23,10 @@ class CfgWeapons
     class hgun_P07_F;
     class acc_pointer_IR;
 
+	class 3AS_optic_holo_DC15S;
+
+	class jlts_glocko_flashlight;
+
     class JLTS_DC17SA: hgun_P07_F
     {
         class Single: Mode_SemiAuto
@@ -163,6 +167,19 @@ class CfgWeapons
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange);
     };
 
+	NEW_CLASS(acc_flashlight): jlts_glocko_flashlight
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(DC-Series Flashlight);
+	};
+
+	NEW_CLASS(Optic_Holo): 3AS_optic_holo_DC15S
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(Holosight);
+		scope = 1;
+    };
+
     SUBCLASS(hgun_DC17SA_F,JLTS_DC17SA)
     {
 		displayName = TAG_NAME(DC-17SA);
@@ -279,4 +296,6 @@ class CfgWeapons
 			};
 		};
     };
+
+
 };
