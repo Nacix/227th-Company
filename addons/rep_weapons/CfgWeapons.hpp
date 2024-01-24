@@ -57,8 +57,8 @@ class CfgWeapons
 			{
 				irLaserPos = "flash dir"; // MemoryPosition for where our laser will point
 				irLaserEnd = "flash"; // MemoryPosition for our laser's SOURCE (for some goofy reason; this isn't a mix-up)
-				beamColor[] = {2000, 25, 100000}; // {R,G,B} value for our laser beam. These values also effect emissiveness, with higher numbers meaning higher brightness.
-				dotColor[] = {665, 0.75, 2500}; // {R,G,B} value for our laser dot. The dot is cast when the laser hits a surface, and follows the same rules as beamColor[].
+				beamColor[] = {100000, 500, 65}; // {R,G,B} value for our laser beam. These values also effect emissiveness, with higher numbers meaning higher brightness.
+				dotColor[] = {2500, 500, 1}; // {R,G,B} value for our laser dot. The dot is cast when the laser hits a surface, and follows the same rules as beamColor[].
 				dotSize = 0.025; // Size of our laser dot. Unfortunately, it doesn't actually function in-game. You can compensate using higher dotColor values, but that leads to crazy glow in dark areas.
 				beamThickness = 0.1; // Thickness of our laser beam.
 				beamMaxLength = 50; // Maximum distance (in meters) our beam can travel. Most likely overridden past a certain value. Still goes pretty far; definitely enough to blind your favorite pilot.
