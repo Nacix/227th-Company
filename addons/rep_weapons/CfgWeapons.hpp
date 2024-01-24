@@ -202,8 +202,8 @@ class CfgWeapons
 		recoil = "3AS_recoil_DC15S";
 		class Single: Single
 		{
-			reloadTime = 0.12;
-			dispersion = 0.0029;
+			reloadTime = "60 / 500";
+			dispersion = "3.0 / 1000";
 			minRange = 5;
 			minRangeProbab = 0.30000001;
 			midRange = 25;
@@ -236,8 +236,9 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 2;
-			reloadTime = 0.08;
-			dispersion = 0.0029;
+			reloadTime = "60 / 750";
+			dispersion = "3.0 / 1000";
+			textureType = "dual";
 			minRange = 5;
 			minRangeProbab = 0.30000001;
 			midRange = 25;
