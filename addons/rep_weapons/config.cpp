@@ -42,7 +42,10 @@ class CfgPatches
             CLASS(hgun_DC17SA_F)
         };
         units[] = {};
-        magazines[] = {};
+        magazines[]=
+		{
+			CLASS(21Rnd_EC30_mag)
+		};
         ammo[] = {};
     };
 };
