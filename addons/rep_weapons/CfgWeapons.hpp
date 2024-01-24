@@ -1,25 +1,25 @@
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class UnderBarrelSlot;
+class WeaponSlotsInfo;
+class PointerSlot: SlotInfo
+{
+	compatibleItems[] += {
+		CLASS(acc_pointer_Borange),
+		CLASS(acc_pointer_Borange_IR),
+		CLASS(acc_pointer_Short_Borange),
+		CLASS(acc_pointer_Short_Borange_IR),
+		CLASS(acc_pointer_Long_Borange),
+		CLASS(acc_pointer_Long_Borange_IR)
+	};
+};
+
 class CfgWeapons
 {
-    class Mode_SemiAuto;
-    class Mode_Burst;
-    class Mode_FullAuto;
-    class SlotInfo;
-    class CowsSlot;
-    class MuzzleSlot;
-    class UnderBarrelSlot;
-    class WeaponSlotsInfo;
-    class PointerSlot: SlotInfo
-    {
-        compatibleItems[] += {
-            CLASS(acc_pointer_Borange),
-            CLASS(acc_pointer_Borange_IR),
-            CLASS(acc_pointer_Short_Borange),
-            CLASS(acc_pointer_Short_Borange_IR),
-            CLASS(acc_pointer_Long_Borange),
-            CLASS(acc_pointer_Long_Borange_IR)
-        };
-    };
-
     class hgun_P07_F;
     class acc_pointer_IR;
 
@@ -55,8 +55,8 @@ class CfgWeapons
 			// We can define our laser's parameters here
 			class Pointer
 			{
-				irLaserPos = "laser pos"; // MemoryPosition for where our laser will point
-				irLaserEnd = "laser dir"; // MemoryPosition for our laser's SOURCE (for some goofy reason; this isn't a mix-up)
+				irLaserPos = "flash dir"; // MemoryPosition for where our laser will point
+				irLaserEnd = "flash"; // MemoryPosition for our laser's SOURCE (for some goofy reason; this isn't a mix-up)
 				beamColor[] = {2000, 25, 100000}; // {R,G,B} value for our laser beam. These values also effect emissiveness, with higher numbers meaning higher brightness.
 				dotColor[] = {665, 0.75, 2500}; // {R,G,B} value for our laser dot. The dot is cast when the laser hits a surface, and follows the same rules as beamColor[].
 				dotSize = 0.025; // Size of our laser dot. Unfortunately, it doesn't actually function in-game. You can compensate using higher dotColor values, but that leads to crazy glow in dark areas.
@@ -93,8 +93,8 @@ class CfgWeapons
 			// We can define our laser's parameters here
 			class Pointer
 			{
-				irLaserPos = "laser pos";
-				irLaserEnd = "laser dir";
+				irLaserPos = "flash dir";
+				irLaserEnd = "flash";
 			};
 			
 			class Flashlight {}; // Resets the flashlight data from InventoryFlashLightItem_Base_F so it doesn't sneak into our pointer.
@@ -112,8 +112,8 @@ class CfgWeapons
 			class Pointer: Pointer
 			{
 				beamMaxLength = 20;
-				irLaserPos = "laser pos";
-				irLaserEnd = "laser dir";
+				irLaserPos = "flash dir";
+				irLaserEnd = "flash";
 			};
 		};
 
@@ -177,13 +177,13 @@ class CfgWeapons
 			1,
 			30
 		};
-		recoil = "recoil_pistol_signal";
 		modes[]=
 		{
 			"Single",
 			"Burst"
 		};
-		class Single
+		recoil = "3AS_recoil_DC15S";
+		class Single: Single
 		{
 			reloadTime = 0.12;
 			dispersion = 0.0029;
