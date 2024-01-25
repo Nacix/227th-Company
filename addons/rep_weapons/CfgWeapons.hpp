@@ -1,3 +1,4 @@
+class Default;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -20,15 +21,22 @@ class PointerSlot: SlotInfo
 
 class CfgWeapons
 {
+	class arifle_MX_Base_F;
     class hgun_P07_F;
     class acc_pointer_IR;
+	class optic_LRPS;
 
 	class 3AS_optic_holo_DC15S;
 
+	class 71st_BlasterRifle_Base;
 	class 71st_DC15A_Base;
 	class 71st_DC15A_UGL_Base;
 	class 71st_DC15A_LE_Base;
+
+	class ItemCore;
+	class InventoryOpticsItem_Base_F;
 	class JLTS_DC15S;
+	class JLTS_DC15X_scope;
 
     class JLTS_DC17SA: hgun_P07_F
     {
@@ -92,6 +100,49 @@ class CfgWeapons
 			class UnderBarrelSlot;
 		};
 	};
+
+	class JLTS_DC15X: arifle_MX_Base_F
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
+	{
+		author = "Krinix & Anorexican";
+		displayName = TAG_NAME(DC-15X Scope);
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
+			weaponInfoType = "RscWeaponRangeZeroingFOV";
+			class OpticsModes
+			{
+				class Snip
+				{
+					cameraDir = "";
+					discreteDistance[] = { 100 };
+					discreteDistanceInitIndex = 0;
+					discretefov[] = { 0.042, 0.01 };
+					discreteInitIndex = 0;
+					distanceZoomMax = 2400;
+					distanceZoomMin = 300;
+					memoryPointCamera = "opticView";
+					modelOptics[] = { "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d", "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d" };
+					opticsDisablePeripherialVision = 1;
+					opticsDisplayName = "WFOV";
+					opticsFlare = 1;
+					opticsID = 1;
+					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+					opticsZoomInit = 0.042;
+					opticsZoomMax = 0.042;
+					opticsZoomMin = 0.01;
+					useModelOptics = 1;
+					visionMode[] = { "Normal", "NVG", "TI" };
 		};
 	};
         };
@@ -612,6 +663,50 @@ class CfgWeapons
 			reloadTime = "60 / 600";
 			dispersion = "(1.85 / 3.4377) / 1000";
 			textureType = "fastAuto";
+		};
+	};
+
+	SUBCLASS(srifle_DC15X_F,JLTS_DC15X)
+	{
+		displayName = TAG_NAME(DC-15X);
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(srifle_DC15X_F);
+		recoil = "3AS_recoil_DC15C";
+		magazines[] = { CLASS(10Rnd_EC80_Mag_F) };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 100";
+			dispersion = "(0.5 / 3.4377) / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\valken_38x.wss),
+					2.75,
+					0.9,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_DC15X_scope) };
+			};
 		};
 	};
 };
