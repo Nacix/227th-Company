@@ -37,6 +37,7 @@ class CfgWeapons
 	class InventoryOpticsItem_Base_F;
 	class JLTS_DC15S;
 	class JLTS_DC15X_scope;
+	class JLTS_Glocko_flashlight;
 
     class JLTS_DC17SA: hgun_P07_F
     {
@@ -112,6 +113,14 @@ class CfgWeapons
 			class UnderBarrelSlot;
 		};
 	};
+
+	SUBCLASS(optic_Holo,3AS_optic_holo_DC15S)
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(Holosight);
+		scope = 1;
+    };
+
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
 	{
 		author = "Krinix & Anorexican";
@@ -143,18 +152,18 @@ class CfgWeapons
 					opticsZoomMin = 0.01;
 					useModelOptics = 1;
 					visionMode[] = { "Normal", "NVG", "TI" };
+				};
+			};
 		};
 	};
-        };
-    };
 
     SUBCLASS(acc_pointer_Borange,acc_pointer_IR)
     {
         author = "Anorexican";
         displayName = TAG_NAME(DC-Series Laser Module);
-        picture = "\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
-        model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
-
+		model = "\OPTRE_Weapons\smg\m12_laser.p3d";
+		picture = "\OPTRE_weapons\smg\icons\m12_laser.paa";
+		
         class ItemInfo
 		{
 			allowedSlots[] = {801, 701, 901};
@@ -176,7 +185,7 @@ class CfgWeapons
 				isIR = 0; // If set to 1, laser will only be visible in Night or Thermal vision modes. I don't believe the other settings will fully apply in this mode.
 			};
 			
-			class Flashlight {}; // Resets the flashlight data from InventoryFlashLightItem_Base_F so it doesn't sneak into our pointer.
+			delete Flashlight; // Removes the flashlight data from InventoryFlashLightItem_Base_F so it doesn't sneak into our pointer.
 		};
 
 		// These definitions add compatibility with MRT's item switching framework, which allows us to switch between laser types using keybinds.
@@ -189,9 +198,6 @@ class CfgWeapons
     {
         author = "Anorexican";
 		scope = 1;
-		displayName = TAG_NAME(DC-Series Laser Module);
-		picture = "\MRC\JLTS\optionals\Glocko\data\ui\Glocko_flash_ui_ca.paa";
-		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
 
 		class ItemInfo
 		{
@@ -204,11 +210,12 @@ class CfgWeapons
 			// We can define our laser's parameters here
 			class Pointer
 			{
-				irLaserPos = "flash dir";
-				irLaserEnd = "flash";
+				isIR = 1;
+				irLaserPos = "laser pos";
+				irLaserEnd = "laser dir";
 			};
 			
-			class Flashlight {}; // Resets the flashlight data from InventoryFlashLightItem_Base_F so it doesn't sneak into our pointer.
+			delete Flashlight; // Removes the flashlight data from InventoryFlashLightItem_Base_F so it doesn't sneak into our pointer.
 		};
 		
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange);
@@ -218,6 +225,7 @@ class CfgWeapons
 
     SUBCLASS(acc_pointer_Short_Borange,TAG_CLASS(acc_pointer_Borange))
     {
+		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
 		class ItemInfo: ItemInfo
 		{
 			class Pointer: Pointer
@@ -234,6 +242,7 @@ class CfgWeapons
 
     SUBCLASS(acc_pointer_Short_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
+		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
         MRT_SwitchItemNextClass = CLASS(acc_pointer_Short_Borange);
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Short_Borange);
     };
@@ -274,18 +283,11 @@ class CfgWeapons
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange);
     };
 
-	NEW_CLASS(acc_flashlight): jlts_glocko_flashlight
+	NEW_CLASS(acc_flashlight): JLTS_Glocko_flashlight
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(DC-Series Flashlight);
 	};
-
-	NEW_CLASS(Optic_Holo): 3AS_optic_holo_DC15S
-	{
-		author = "Anorexican";
-		displayName = TAG_NAME(Holosight);
-		scope = 1;
-    };
 
     SUBCLASS(hgun_DC17SA_F,JLTS_DC17SA)
     {
@@ -307,11 +309,11 @@ class CfgWeapons
 			"Single",
 			"Burst"
 		};
-		recoil = "3AS_recoil_DC15S";
+		
 		class Single: Single
 		{
 			reloadTime = "60 / 500";
-			dispersion = "3.0 / 1000";
+			dispersion = "(3.0 / 3.4377) / 1000";
 			minRange = 5;
 			minRangeProbab = 0.30000001;
 			midRange = 25;
@@ -324,7 +326,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound
+			class StandardSound: StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -345,7 +347,7 @@ class CfgWeapons
 		{
 			burst = 2;
 			reloadTime = "60 / 750";
-			dispersion = "3.0 / 1000";
+			dispersion = "(3.3 / 3.4377) / 1000";
 			textureType = "dual";
 			minRange = 5;
 			minRangeProbab = 0.30000001;
