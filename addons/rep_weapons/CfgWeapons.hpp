@@ -289,11 +289,12 @@ class CfgWeapons
 
     SUBCLASS(hgun_DC17SA_F,JLTS_DC17SA)
     {
-		displayName = TAG_NAME(DC-17SA);
+		displayName = TAG_NAME(DC-17SA Blaster Pistol);
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
+		recoil = "3AS_recoil_DC15S";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
-		magazines[] = { CLASS(24Rnd_EC30_mag) };
+		magazines[] = { CLASS(24Rnd_EC30_Mag_F) };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",

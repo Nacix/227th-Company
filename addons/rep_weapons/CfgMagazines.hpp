@@ -4,7 +4,7 @@ class CfgMagazines
     class 3AS_100Rnd_EC40_Mag;
     class 3AS_10Rnd_EC80_Mag;
 
-    SUBCLASS(24Rnd_EC30_mag,3AS_60Rnd_EC30_Mag)
+    SUBCLASS(24Rnd_EC30_Mag_F,3AS_60Rnd_EC30_Mag)
     {
         author = "Anorexican";
         displayName = "24Rnd EC30 Mag";
