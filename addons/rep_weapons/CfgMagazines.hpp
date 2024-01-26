@@ -22,6 +22,15 @@ class CfgMagazines
         descriptionShort = "45-charge EC40 tibanna cartridge<br />Used in: DC-15A";
     };
 
+    SUBCLASS(60Rnd_EC40_Mag_F,3AS_100Rnd_EC40_Mag)
+    {
+        author = "Anorexican";
+        displayName = "60Rnd EC40 Mag";
+        count = 60;
+        mass = 5;
+        descriptionShort = "60-charge EC40 tibanna cartridge<br />Used in: Westar M5";
+    };
+
     SUBCLASS(60Rnd_EC30_Mag_F,3AS_60Rnd_EC30_Mag)
     {
         author = "Anorexican";

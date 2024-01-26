@@ -27,6 +27,7 @@ class CfgWeapons
 	class optic_LRPS;
 
 	class 3AS_optic_holo_DC15S;
+	class 3AS_WestarM5_Base_F;
 
 	class 71st_BlasterRifle_Base;
 	class 71st_DC15A_Base;
@@ -105,6 +106,20 @@ class CfgWeapons
 	class JLTS_DC15X: arifle_MX_Base_F
 	{
 		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
+	{
+		class Single;
+		class Burst;
+		class FullAuto;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -710,6 +725,94 @@ class CfgWeapons
 			{
 				compatibleItems[] = { CLASS(optic_DC15X_scope) };
 			};
+		};
+	};
+	SUBCLASS(arifle_WestarM5_F,3AS_WestarM5_F)
+	{
+		displayName = TAG_NAME(Westar M5 Blaster Carbine);
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_WestarM5_F);
+		recoil = "recoil_smg_03";
+		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 500";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundContinuous = 1;
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Burst: Burst
+		{
+			reloadTime = "60 / 650";
+			dispersion = "(1.3 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.2 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 65;
 		};
 	};
 };
