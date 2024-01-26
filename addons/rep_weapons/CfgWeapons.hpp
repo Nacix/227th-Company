@@ -158,7 +158,7 @@ class CfgWeapons
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(Holosight);
-		scope = 1;
+		scope = 2;
     };
 
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
