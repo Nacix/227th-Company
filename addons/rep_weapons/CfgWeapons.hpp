@@ -30,6 +30,7 @@ class CfgWeapons
 	class 3AS_DC15C_Base_F;
 	class 3AS_DC17M_Base_F;
 	class 3AS_WestarM5_Base_F;
+	class 3AS_WestarM5_GL;
 
 	class 71st_BlasterRifle_Base;
 	class 71st_DC15A_Base;
@@ -860,6 +861,95 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 65;
+		};
+	};
+	
+	SUBCLASS(arifle_WestarM5_UGL_F,3AS_WestarM5_GL)
+	{
+		displayName = TAG_NAME(Westar M5 Blaster Carbine (UGL));
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_WestarM5_UGL_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 500";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundContinuous = 1;
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Burst: Burst
+		{
+			reloadTime = "60 / 650";
+			dispersion = "(1.3 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.2 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss",
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 70;
 		};
 	};
 
