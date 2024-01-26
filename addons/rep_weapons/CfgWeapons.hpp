@@ -27,6 +27,7 @@ class CfgWeapons
 	class optic_LRPS;
 
 	class 3AS_optic_holo_DC15S;
+	class 3AS_DC15C_Base_F;
 	class 3AS_WestarM5_Base_F;
 
 	class 71st_BlasterRifle_Base;
@@ -120,6 +121,30 @@ class CfgWeapons
 		class Single;
 		class Burst;
 		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC15C_F: 3AS_DC15C_Base_F
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
+	{
+		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -813,6 +838,138 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 65;
+		};
+	};
+
+	SUBCLASS(arifle_DC15C_F,3AS_DC15C_F)
+	{
+		displayName = TAG_NAME(DC-15C Blaster Carbine);
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC15C_F);
+		recoil = "recoil_trg21";
+		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		modes[] = { "Single", "Burst" };
+		class Burst: Mode_Burst
+		{
+			burst = 2;
+			reloadTime = "60 / 500";
+			dispersion = "(1.6 / 3.4377) / 1000";
+			textureType = "dual";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.2,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.2,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 70;
+		};
+	};
+
+	SUBCLASS(arifle_DC15C_UGL_F,3AS_DC15C_GL)
+	{
+		displayName = TAG_NAME(DC-15C Blaster Carbine (UGL));
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC15C_UGL_F);
+		recoil = "recoil_trg21";
+		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		modes[] = { "Single", "Burst" };
+		class Burst: Mode_Burst
+		{
+			burst = 2;
+			reloadTime = "60 / 500";
+			dispersion = "(1.6 / 3.4377) / 1000";
+			textureType = "dual";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.25,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.25,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 85;
 		};
 	};
 };
