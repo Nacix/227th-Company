@@ -450,7 +450,7 @@ class CfgWeapons
 
 	SUBCLASS(arifle_DC15A_F,71st_DC15A)
 	{
-		displayName = TAG_NAME(DC-15A);
+		displayName = TAG_NAME(DC-15A Blaster Rifle);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(arifle_DC15A_F);
 		recoil = "3AS_recoil_DC15A";
@@ -509,7 +509,7 @@ class CfgWeapons
 
 	SUBCLASS(arifle_DC15A_UGL_F,71st_DC15A_UGL)
 	{
-		displayName = TAG_NAME(DC-15A UGL);
+		displayName = TAG_NAME(DC-15A Blaster Rifle (UGL));
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(arifle_DC15A_UGL_F);
 		recoil = "3AS_recoil_DC15A";
@@ -567,7 +567,7 @@ class CfgWeapons
 
 	SUBCLASS(SMG_DC15S_F,71st_DC15S)
 	{
-		displayName = TAG_NAME(DC-15S);
+		displayName = TAG_NAME(DC-15S Blaster Carbine);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(SMG_DC15S_F);
 		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
@@ -624,7 +624,7 @@ class CfgWeapons
 
 	SUBCLASS(LMG_DC15LE_F,71st_DC15A_LE)
 	{
-		displayName = TAG_NAME(DC-15LE);
+		displayName = TAG_NAME(DC-15LE Blaster Rifle);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(LMG_DC15LE_F);
 		recoil = "recoil_car_lsw";
@@ -711,7 +711,7 @@ class CfgWeapons
 
 	SUBCLASS(srifle_DC15X_F,JLTS_DC15X)
 	{
-		displayName = TAG_NAME(DC-15X);
+		displayName = TAG_NAME(DC-15X Precision Blaster);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "3AS_recoil_DC15C";
@@ -732,7 +732,7 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\valken_38x.wss),
+					QPATHTOF(data\sounds\dc15x.wss),
 					2.75,
 					0.9,
 					1800
