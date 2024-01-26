@@ -752,6 +752,7 @@ class CfgWeapons
 			};
 		};
 	};
+	
 	SUBCLASS(arifle_WestarM5_F,3AS_WestarM5_F)
 	{
 		displayName = TAG_NAME(Westar M5 Blaster Carbine);
