@@ -714,7 +714,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15X Precision Blaster);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(srifle_DC15X_F);
-		recoil = "3AS_recoil_DC15C";
+		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(10Rnd_EC80_Mag_F) };
 		reloadMagazineSound[]=
 		{
@@ -726,7 +726,7 @@ class CfgWeapons
 		class Single: Single
 		{
 			reloadTime = "60 / 100";
-			dispersion = "(0.5 / 3.4377) / 1000";
+			dispersion = "(0.4 / 3.4377) / 1000";
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
