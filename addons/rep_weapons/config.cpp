@@ -45,10 +45,13 @@ class CfgPatches
             CLASS(acc_pointer_Long_Borange),
             CLASS(acc_pointer_Long_Borange_IR),
 			CLASS(acc_flashlight),
+			CLASS(arifle_DC15A_F),
+			CLASS(arifle_WestarM5_F),
+			CLASS(arifle_DC15C_F),
+			CLASS(arifle_DC15C_UGL_F),
+			CLASS(hgun_DC17SA_F),
 			CLASS(optic_Holo),
 			CLASS(optic_DC15X_scope),
-            CLASS(hgun_DC17SA_F),
-			CLASS(arifle_DC15A_F),
 			CLASS(SMG_DC15S_F),
 			CLASS(srifle_DC15X_F)
         };
@@ -56,9 +59,11 @@ class CfgPatches
         magazines[]=
 		{
 			CLASS(24Rnd_EC30_Mag_F),
-			CLASS(45Rnd_EC40_Mag_F),
 			CLASS(60Rnd_EC30_Mag_F),
+			CLASS(45Rnd_EC40_Mag_F),
+			CLASS(60Rnd_EC40_Mag_F),
 			CLASS(100Rnd_EC40_Mag_F),
+			CLASS(36Rnd_EC50_Mag_F),
 			CLASS(10Rnd_EC80_Mag_F)
 		};
         ammo[] = {};
