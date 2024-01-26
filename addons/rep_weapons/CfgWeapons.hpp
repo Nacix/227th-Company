@@ -440,8 +440,8 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
 				{
-					CLASS(acc_pointer_Borange),
-					CLASS(acc_pointer_Borange_IR),
+					CLASS(acc_pointer_Short_Borange),
+					CLASS(acc_pointer_Short_Borange_IR),
 					CLASS(acc_flashlight)
 				};
 			};
