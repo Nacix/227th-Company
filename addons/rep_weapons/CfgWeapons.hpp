@@ -765,7 +765,7 @@ class CfgWeapons
 		displayName = TAG_NAME(Westar M5 Blaster Carbine);
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_WestarM5_F);
-		recoil = "recoil_smg_03";
+		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		class FullAuto: FullAuto
 		{
