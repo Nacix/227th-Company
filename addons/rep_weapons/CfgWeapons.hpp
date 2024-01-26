@@ -289,15 +289,15 @@ class CfgWeapons
 
     SUBCLASS(acc_pointer_Long_Borange,TAG_CLASS(acc_pointer_Borange))
     {
-        model = "\A3\weapons_f\acc\accv_pointer_F";
+        model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
         
         class ItemInfo: ItemInfo
         {
             class Pointer: Pointer
             {
                 beamMaxLength = 2000;
-                irLaserPos = "laser pos";
-                irLaserEnd = "laser dir";
+                irLaserPos = "laser dir";
+                irLaserEnd = "laser";
             };
         };
 
@@ -307,15 +307,15 @@ class CfgWeapons
 
     SUBCLASS(acc_pointer_Long_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
-        model = "\A3\weapons_f\acc\accv_pointer_IR_F";
+        model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
 
         class ItemInfo: ItemInfo
         {
             class Pointer: Pointer
             {
                 beamMaxLength = 2000;
-                irLaserPos = "laser pos";
-                irLaserEnd = "laser dir";
+                irLaserPos = "laser dir";
+                irLaserEnd = "laser";
             };
         };
 
