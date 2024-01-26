@@ -453,7 +453,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15A Blaster Rifle);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(arifle_DC15A_F);
-		recoil = "3AS_recoil_DC15A";
+		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		reloadMagazineSound[]=
 		{
@@ -512,7 +512,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15A Blaster Rifle (UGL));
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(arifle_DC15A_UGL_F);
-		recoil = "3AS_recoil_DC15A";
+		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		reloadMagazineSound[]=
 		{
