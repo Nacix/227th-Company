@@ -748,7 +748,7 @@ class CfgWeapons
 		{
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = { CLASS(optic_DC15X_scope) };
+				compatibleItems[] = { CLASS(optic_Holo), CLASS(optic_DC15X_scope) };
 			};
 		};
 	};
