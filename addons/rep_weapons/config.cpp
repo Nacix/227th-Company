@@ -64,7 +64,7 @@ class CfgPatches
 			CLASS(60Rnd_EC40_Mag_F),
 			CLASS(100Rnd_EC40_Mag_F),
 			CLASS(36Rnd_EC50_Mag_F),
-			CLASS(10Rnd_EC80_Mag_F)
+			CLASS(15Rnd_EC80_Mag_F)
 		};
         ammo[] = {};
     };

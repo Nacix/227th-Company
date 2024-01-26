@@ -715,7 +715,7 @@ class CfgWeapons
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(10Rnd_EC80_Mag_F) };
+		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
