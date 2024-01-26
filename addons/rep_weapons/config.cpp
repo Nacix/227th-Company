@@ -47,6 +47,7 @@ class CfgPatches
 			CLASS(acc_flashlight),
 			CLASS(arifle_DC15A_F),
 			CLASS(arifle_WestarM5_F),
+			CLASS(arifle_WestarM5_GL_F),
 			CLASS(arifle_DC15C_F),
 			CLASS(arifle_DC15C_UGL_F),
 			CLASS(hgun_DC17SA_F),
@@ -64,7 +65,9 @@ class CfgPatches
 			CLASS(60Rnd_EC40_Mag_F),
 			CLASS(100Rnd_EC40_Mag_F),
 			CLASS(36Rnd_EC50_Mag_F),
-			CLASS(15Rnd_EC80_Mag_F)
+			CLASS(5Rnd_EC80_Mag_F),
+			CLASS(15Rnd_EC80_Mag_F),
+			CLASS(1Rnd_EX1000_Mag_F)
 		};
         ammo[] = {};
     };
