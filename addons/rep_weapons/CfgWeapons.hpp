@@ -28,6 +28,7 @@ class CfgWeapons
 
 	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
+	class 3AS_DC17M_Base_F;
 	class 3AS_WestarM5_Base_F;
 
 	class 71st_BlasterRifle_Base;
@@ -145,6 +146,19 @@ class CfgWeapons
 	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
 	{
 		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC17M_F: 3AS_DC17M_Base_F
+	{
+		class Single;
+		class FullAuto;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -978,6 +992,97 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
+		};
+	};
+
+	SUBCLASS(arifle_DC17M_F,3AS_DC17M_F)
+	{
+		displayName = TAG_NAME(DC-17M Blaster Platform);
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC17M_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_EX1000_Mag_F) };
+		modes[] = { "Single", "Burst", "FullAuto" };
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 600";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundContinuous = 1;
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dw32s.wss),
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Burst: Mode_Burst
+		{
+			burst = 5;
+			reloadTime = "60 / 750";
+			dispersion = "(1.3 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dw32s.wss),
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.2 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dw32s.wss),
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 70;
 		};
 	};
 };
