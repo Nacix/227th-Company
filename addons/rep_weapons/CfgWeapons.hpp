@@ -750,6 +750,13 @@ class CfgWeapons
 			{
 				compatibleItems[] = { CLASS(optic_Holo), CLASS(optic_DC15X_scope) };
 			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] += {
+					CLASS(acc_pointer_Long_Borange),
+					CLASS(acc_pointer_Long_Borange_IR)
+				};
+			};
 		};
 	};
 	
