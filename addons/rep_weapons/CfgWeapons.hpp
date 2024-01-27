@@ -227,7 +227,6 @@ class CfgWeapons
 		displayName = TAG_NAME(Holosight);
 		scope = 2;
     };
-
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
 	{
 		author = "Krinix & Anorexican";
@@ -300,7 +299,6 @@ class CfgWeapons
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_IR); // Classname of the item we switched here from
 		MRT_switchItemHintText = "Visible Laser"; // Text that will be displayed in the hint box when switching to this item
     };
-
     SUBCLASS(acc_pointer_Borange_IR,TAG_CLASS(acc_pointer_Borange))
     {
         author = "Anorexican";
@@ -346,7 +344,6 @@ class CfgWeapons
         MRT_SwitchItemNextClass = CLASS(acc_pointer_Short_Borange_IR);
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Short_Borange_IR);
     };
-
     SUBCLASS(acc_pointer_Short_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
 		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
@@ -406,7 +403,6 @@ class CfgWeapons
         MRT_SwitchItemNextClass = CLASS(acc_pointer_Long_Borange_IR);
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange_IR);
     };
-
     SUBCLASS(acc_pointer_Long_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
         model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
