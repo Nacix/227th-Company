@@ -721,7 +721,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dc15c.wss),
 					3,
-					0.89999998,
+					0.785,
 					1800
 				};
 				soundBegin[]=
@@ -742,7 +742,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dc15c.wss),
 					3,
-					0.89999998,
+					0.785,
 					1800
 				};
 				soundBegin[]=
