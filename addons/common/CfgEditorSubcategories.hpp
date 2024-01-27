@@ -53,4 +53,29 @@ class CfgEditorSubcategories
 	{
 		displayName = "Atomospheric Ships (P1)";
 	};
+
+	NEW_CLASS(EdSubCat_Launchers)
+	{
+		displayName = "Launchers";
+	};
+	NEW_CLASS(EdSubcat_LightMachineGuns)
+	{
+		displayName = "Squad Support Blasters";
+	};
+	NEW_CLASS(EdSubcat_SniperRifles)
+	{
+		displayName = "Sniper Blasters";
+	};
+	NEW_CLASS(EdSubcat_AssaultRifles)
+	{
+		displayName = "Blaster Rifles";
+	};
+	NEW_CLASS(EdSubcat_SubMachineGuns)
+	{
+		displayName = "Light Blasters";
+	};
+	NEW_CLASS(EdSubcat_Pistols)
+	{
+		displayName = "Blaster Sidearms";
+	};
 };
