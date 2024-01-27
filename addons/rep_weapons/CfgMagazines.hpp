@@ -26,6 +26,15 @@ class CfgMagazines
         descriptionShort = "24-charge EC30 tibanna cartridge<br />Used in: DC-17SA";
     };
 
+    SUBCLASS(30Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
+    {
+        author = "Anorexican";
+        displayName = "30Rnd EC50 Cartridge";
+        count = 30;
+        mass = 3;
+        descriptionShort = "30-charge EC50 tibanna cartridge<br />Used in: DP-23";
+    };
+
     SUBCLASS(45Rnd_EC40_Mag_F,3AS_100Rnd_EC40_Mag)
     {
         author = "Anorexican";
@@ -87,8 +96,19 @@ class CfgMagazines
         displayName = "5Rnd EC80 Cartridge";
         count = 5;
         mass = 5;
-        initSpeed = 1000;
+        initSpeed = 850;
         descriptionShort = "5-charge EC80 tibanna cartridge<br />Used in: DC-17M";
+    };
+
+    SUBCLASS(1Rnd_ECX130_Mag_F,TAG_CLASS(45Rnd_EC40_Mag_F))
+    {
+        author = "Anorexican";
+        displayName = "1Rnd ECX130 Cartridge";
+        ammo = CLASS(B_ECX130_147x114_AT);
+        count = 1;
+        mass = 6;
+        initSpeed = 850;
+        descriptionShort = "ECX130 superheated tibanna cartridge<br />Used in: DC-15L";
     };
 
     SUBCLASS(1Rnd_ECX1000_Mag_F,3AS_AntiArmour_mag)
