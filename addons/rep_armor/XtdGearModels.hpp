@@ -39,7 +39,7 @@ class XtdGearModels
 					"SCT",
 					"VCT",
 					"CSP",
-					"CLP",
+					"CLC",
 					"CP",
 					"CS",
 					"CSS",
@@ -76,7 +76,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
 				SET_BACKGROUND_DEFAULT(CSP);
-				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CLC);
 				SET_BACKGROUND_DEFAULT(CP);
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
@@ -357,7 +357,7 @@ class XtdGearModels
 					"SCT",
 					"VCT",
 					"CSP",
-					"CLP",
+					"CLC",
 					"CP",
 					"CS",
 					"CSS",
@@ -376,7 +376,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
 				SET_BACKGROUND_DEFAULT(CSP);
-				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CLC);
 				SET_BACKGROUND_DEFAULT(CP);
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);

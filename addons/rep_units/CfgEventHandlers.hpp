@@ -56,8 +56,8 @@ class Extended_InitPost_EventHandlers {
 	SET_TRAITS(B_Krayt_P1_Support_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_P1_Marksman_F,SPC,VCT,scout);
 	SET_TRAITS(B_Krayt_P1_Pilot_F,SPC,CX,basic);
-	SET_TRAITS(B_Krayt_ARC_DC15A_UGL_F,SPC,CLP,elite);
-	SET_TRAITS(B_Krayt_ARC_Medic_F,SPC,CLP,elite);
+	SET_TRAITS(B_Krayt_ARC_DC15A_UGL_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_Medic_F,SPC,CLC,elite);
 	SET_TRAITS(B_Krayt_ARC_NCO_F,NCO,CSS,elite);
 	SET_TRAITS(B_Krayt_Jet_DC15LE_F,SPC,CSP,leader);
 	SET_TRAITS(B_Krayt_Jet_DC15A_UGL_F,SPC,CSP,scout);

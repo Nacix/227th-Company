@@ -422,12 +422,12 @@ class CfgVehicles
         SET_INFO_KRAYT(B_Krayt_ARC_DC15A_UGL_F,ARC);
 
         // Uniform
-        uniformClass = CLASS(U_B_CLP);
+        uniformClass = CLASS(U_B_CLC);
         backpack = CLASS(B_Pack_ARC);
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_CT), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_CT), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -446,12 +446,12 @@ class CfgVehicles
         SET_INFO_KRAYT(B_Krayt_ARC_Medic_F,ARC);
 
         // Uniform
-        uniformClass = CLASS(U_B_CLP);
+        uniformClass = CLASS(U_B_CLC);
         backpack = CLASS(B_Pack_ARC_Medic);
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_CLP), CLASS(V_ARC_Medic), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_Medic), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -616,7 +616,7 @@ class CfgVehicles
         SET_INFO_KRAYT(B_Krayt_P1_CP_F,CT_P1);
 
         // Uniform
-        uniformClass = CLASS(U_B_CLP);
+        uniformClass = CLASS(U_B_CLC);
         backpack = CLASS(B_Pack_CT);
 
         // Equipment
@@ -784,7 +784,7 @@ class CfgVehicles
         SET_INFO_KRAYT(B_Krayt_P1_Engineer_NCO_F,CT_P1);
 
         // Uniform
-        uniformClass = CLASS(U_B_CLP);
+        uniformClass = CLASS(U_B_CLC);
         backpack = CLASS(B_Pack_EOD);
 
         // Equipment

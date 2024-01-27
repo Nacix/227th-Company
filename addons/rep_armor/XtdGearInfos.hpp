@@ -117,7 +117,7 @@ class XtdGearInfos
 		XTD_H_P2(SCT,Trooper,SCT);
 		XTD_H_P2(VCT,Trooper,VCT);
 		XTD_H_P2(CSP,Trooper,CSP);
-		XTD_H_P2(CLP,Trooper,CLP);
+		XTD_H_P2(CLC,Trooper,CLC);
 		XTD_H_P2(CP,Trooper,CP);
 		XTD_H_P2(CS,Trooper,CS);
 		XTD_H_P2(CSS,Trooper,CSS);
@@ -249,7 +249,7 @@ class XtdGearInfos
 		XTD_U_TROOPER(SCT,SCT);
 		XTD_U_TROOPER(VCT,VCT);
 		XTD_U_TROOPER(CSP,CSP);
-		XTD_U_TROOPER(CLP,CLP);
+		XTD_U_TROOPER(CLC,CLC);
 		XTD_U_TROOPER(CP,CP);
 		XTD_U_TROOPER(CS,CS);
 		XTD_U_TROOPER(CSS,CSS);
