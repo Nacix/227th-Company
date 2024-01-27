@@ -1182,7 +1182,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC17M_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_EX1000_Mag_F) };
+		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
 		modes[] = { "Single", "Burst", "FullAuto" };
 		class FullAuto: FullAuto
 		{
