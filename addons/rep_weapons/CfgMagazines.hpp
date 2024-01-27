@@ -91,12 +91,12 @@ class CfgMagazines
         descriptionShort = "5-charge EC80 tibanna cartridge<br />Used in: DC-17M";
     };
 
-    SUBCLASS(1Rnd_EX1000_Mag_F,3AS_AntiArmour_mag)
+    SUBCLASS(1Rnd_ECX1000_Mag_F,3AS_AntiArmour_mag)
     {
         author = "Anorexican";
-        displayName = "1Rnd EX1000 Cartridge";
+        displayName = "1Rnd ECX1000 Cartridge";
         count = 1;
         mass = 5;
-        descriptionShort = "EX1000 volatile tibanna cartridge<br />Used in: DC-17M";
+        descriptionShort = "ECX1000 volatile tibanna cartridge<br />Used in: DC-17M";
     };
 };

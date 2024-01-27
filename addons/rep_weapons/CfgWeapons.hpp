@@ -30,9 +30,9 @@ class CfgWeapons
 
 	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
+	class 3AS_DC15L_Base_F;
 	class 3AS_DC17M_Base_F;
 	class 3AS_WestarM5_Base_F;
-	class 3AS_WestarM5_GL;
 
 	class 71st_BlasterRifle_Base;
 	class 71st_DC15A_Base;
@@ -188,6 +188,17 @@ class CfgWeapons
 	{
 		class Single;
 		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC15L_F: 3AS_DC15L_Base_F
+	{
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -1202,6 +1213,109 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+	SUBCLASS(arifle_DC15L_F,3AS_DC15L_F)
+	{
+		displayName = TAG_NAME(DC-15L Dual-Purpose Blaster);
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC15L_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		modes[] = { "Single", "Burst" };
+		muzzles[] = { "this", "AntiTank" };
+		class Burst: Mode_Burst
+		{
+			burst = 5;
+			reloadTime = "60 / 650";
+			dispersion = "(1.3 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc15l.wss),
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.2 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc15l.wss),
+					3,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class AntiTank: Rifle_Base_F
+		{
+			displayName = "Anti-Tank Mode";
+			discreteDistance[] = { 100 };
+			discreteDistanceInitIndex = 0;
+			drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
+			magazines[] = { CLASS(1Rnd_ECX130_Mag_F) };
+			maxZeroing = 100;
+			modes[] = { "Single" };
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[] = { "\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30 };
+			class Single: Mode_SemiAuto
+			{
+				reloadTime = "60 / 60";
+				dispersion = "(2.0 / 3.4377) / 1000";
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					weaponSoundEffect = "";
+					begin1[]=
+					{
+						QPATHTOF(data\sounds\valken_38x.wss),
+						15,
+						0.65,
+						2250
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 135;
+		};
+	};
+
 	SUBCLASS(sgun_DP23_F,JLTS_DP23)
 	{
 		displayName = TAG_NAME(DP-23 CQC Blaster);
