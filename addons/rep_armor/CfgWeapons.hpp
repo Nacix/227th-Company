@@ -460,6 +460,16 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
+	SUBCLASS(V_Kama_Officer_Geonosis,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Officer Vest (Geonosis));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_geonosis_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_geonosis_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_Valyrian,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Valyrian's Vest);
@@ -525,7 +535,7 @@ class CfgWeapons
 
 	// Special Trooper Uniforms
 	ADD_UNIFORM_TROOPER(Jet_CT,Jet Trooper Armor,200);
-	ADD_UNIFORM_TROOPER(Jet_NCO,Jet Trooper Armor (NCO),200);
+	ADD_UNIFORM_TROOPER(Jet_NCO,Jet's Armor,200);
 
 	// Insulated Uniforms
 	ADD_UNIFORM_INSULATED(CT,Insulated Armor,200);

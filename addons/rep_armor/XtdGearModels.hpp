@@ -78,9 +78,9 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(CFS);
 				SET_BACKGROUND_DEFAULT(CSM);
 				SET_BACKGROUND_DEFAULT(Jet);
-				SET_BACKGROUND_DEFAULT(EOD);
-				SET_BACKGROUND_DEFAULT_PRETTY(EOD_CSP,EOD [CSP]);
-				SET_BACKGROUND_DEFAULT_PRETTY(EOD_NCO,EOD [NCO]);
+				SET_BACKGROUND_DEFAULT(Cookie);
+				SET_BACKGROUND_DEFAULT(DevilDolphin);
+				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
 				SET_BACKGROUND_DEFAULT(Canada);
 				SET_BACKGROUND_DEFAULT(Catcher);
@@ -299,7 +299,6 @@ class XtdGearModels
 					"Trooper",
 					"Suspenders",
 					"AT",
-					"EOD",
 					"Geonosis",
 					"Jet",
 					"Marksman",
@@ -309,6 +308,7 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
+					"Officer_Geonosis",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -316,7 +316,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Trooper);
 				SET_BACKGROUND_DEFAULT(Suspenders);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
-				SET_BACKGROUND_DEFAULT(EOD);
 				SET_BACKGROUND_DEFAULT(Geonosis);
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT(Marksman);
@@ -326,6 +325,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
+				SET_BACKGROUND_DEFAULT_PRETTY(Officer_Geonosis,Officer [Geonosis]);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};

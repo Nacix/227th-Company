@@ -122,6 +122,7 @@ class CfgPatches
             CLASS(V_Kama_CS),
             CLASS(V_Kama_Spartacus),
             CLASS(V_Kama_Officer),
+            CLASS(V_Kama_Officer_Geonosis),
             CLASS(V_Kama_Valyrian),
             CLASS(U_B_Trooper_Base),
             CLASS(U_B_Insulated_Base),
