@@ -328,6 +328,41 @@ class CfgWeapons
 		MRT_switchItemHintText = "IR Laser";
     };
 
+	SUBCLASS(acc_pointer_Borange_DC17M,TAG_CLASS(acc_pointer_Borange))
+    {
+        model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
+        
+		class ItemInfo: ItemInfo
+        {
+            class Pointer: Pointer
+            {
+				beamMaxLength = 150;
+                irLaserPos = "laser dir";
+                irLaserEnd = "laser";
+            };
+        };
+
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DC17M_IR);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DC17M_IR);
+    };
+    SUBCLASS(acc_pointer_Borange_DC17M_IR,TAG_CLASS(acc_pointer_Borange_IR))
+    {
+        model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
+
+		class ItemInfo: ItemInfo
+        {
+            class Pointer: Pointer
+            {
+				beamMaxLength = 150;
+                irLaserPos = "laser dir";
+                irLaserEnd = "laser";
+            };
+        };
+
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DC17M);
+        MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DC17M);
+    };
+
     SUBCLASS(acc_pointer_Short_Borange,TAG_CLASS(acc_pointer_Borange))
     {
 		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
@@ -384,7 +419,7 @@ class CfgWeapons
 
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DP23);
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DP23);
-    };
+	};
 
     SUBCLASS(acc_pointer_Long_Borange,TAG_CLASS(acc_pointer_Borange))
     {
@@ -1260,6 +1295,17 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]=
+				{
+					CLASS(acc_pointer_Borange_DC17M),
+					CLASS(acc_pointer_Borange_DC17M_IR),
+				};
+			};
+		};
+	};
+
 	SUBCLASS(arifle_DC15L_F,3AS_DC15L_F)
 	{
 		displayName = TAG_NAME(DC-15L Dual-Purpose Blaster);
