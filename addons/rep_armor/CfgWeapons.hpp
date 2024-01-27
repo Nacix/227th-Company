@@ -78,9 +78,6 @@ class CfgWeapons
 	ADD_CT_HELMET(CSM,CSM Helmet);
 
 	ADD_CT_HELMET(Jet,Jet Helmet);
-	ADD_CT_HELMET(EOD,EOD Helmet);
-	ADD_CT_HELMET(EOD_CSP,EOD Helmet [CSP]);
-	ADD_CT_HELMET(EOD_NCO,EOD Helmet [NCO]);
 
 	ADD_CT_HELMET(Canada,Canada's Helmet);
     ADD_CT_HELMET(Catcher,Catcher's Helmet);

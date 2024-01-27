@@ -46,9 +46,6 @@ class XtdGearModels
 					"CFS",
 					"CSM",
 					"Jet",
-					"EOD",
-					"EOD_CSP",
-					"EOD_NCO",
 					"Cookie",
 					"DevilDolphin",
 					"Jinx",
@@ -84,9 +81,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(EOD);
 				SET_BACKGROUND_DEFAULT_PRETTY(EOD_CSP,EOD [CSP]);
 				SET_BACKGROUND_DEFAULT_PRETTY(EOD_NCO,EOD [NCO]);
-				SET_BACKGROUND_DEFAULT(Cookie);
-				SET_BACKGROUND_DEFAULT(DevilDolphin);
-				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
 				SET_BACKGROUND_DEFAULT(Canada);
 				SET_BACKGROUND_DEFAULT(Catcher);
