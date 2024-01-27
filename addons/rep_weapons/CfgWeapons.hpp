@@ -436,7 +436,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-17SA Blaster Pistol);
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
-		recoil = "3AS_recoil_DC15S";
+		recoil = "3AS_recoil_dc15a";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
 		magazines[] = { CLASS(24Rnd_EC30_Mag_F) };
 		reloadMagazineSound[]=
@@ -451,7 +451,6 @@ class CfgWeapons
 			"Single",
 			"Burst"
 		};
-		
 		class Single: Single
 		{
 			reloadTime = "60 / 500";
