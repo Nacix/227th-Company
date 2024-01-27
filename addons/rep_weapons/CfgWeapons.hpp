@@ -764,6 +764,10 @@ class CfgWeapons
 			burst = 5;
 			reloadTime = "60 / 600";
 			dispersion = "(1.7 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
