@@ -44,6 +44,7 @@ class CfgWeapons
 	class JLTS_DC15S;
 	class JLTS_DC15X_scope;
 	class JLTS_Glocko_flashlight;
+	class JLTS_DW32S;
 
     class JLTS_DC17SA: hgun_P07_F
     {
@@ -121,6 +122,18 @@ class CfgWeapons
 	};
 
 	class JLTS_DP23: arifle_MX_Base_F
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class JLTS_DW32S: arifle_MX_Base_F
 	{
 		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1452,6 +1465,51 @@ class CfgWeapons
 			};
 		};
 	};
+
+	SUBCLASS(srifle_DW32S_F,JLTS_DW32S)
+	{
+		mass = 70;
+		displayName = TAG_NAME(DW-32S Blaster Rifle);
+		author = "Anorexican";
+		baseWeapon = CLASS(srifle_DW32S_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
+		class Single: Mode_SemiAuto
+		{
+			reloadTime = "60 / 250";
+			dispersion = "(0.75 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dw32s.wss),
+					2.5,
+					1.15,
+					250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 85;
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]=
+				{ 
+					CLASS(acc_pointer_Long_Borange),
+					CLASS(acc_pointer_Long_Borange_IR)
+				};
+			};
 		};
 	};
 };
