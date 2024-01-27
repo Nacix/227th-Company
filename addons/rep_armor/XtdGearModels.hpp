@@ -58,10 +58,8 @@ class XtdGearModels
 					"Fiveo",
 					"Fox",
 					"Hotshot",
-					"Jager",
 					"Kitsune",
 					"Luci",
-					"Neca",
 					"Rex",
 					"Riven",
 					"Sage",
@@ -95,10 +93,8 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Fiveo);
 				SET_BACKGROUND_DEFAULT(Fox);
 				SET_BACKGROUND_DEFAULT(Hotshot);
-				SET_BACKGROUND_DEFAULT(Jager);
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Rex);
 				SET_BACKGROUND_DEFAULT(Riven);
 				SET_BACKGROUND_DEFAULT(Sage);
@@ -319,7 +315,6 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
-					"Neca",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -337,7 +332,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
@@ -367,7 +361,6 @@ class XtdGearModels
 					"Cookie",
 					"Jinx",
 					"Knight",
-					"Neca",
 					"Speed",
 					"Valyrian"
 				};
@@ -386,7 +379,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Speed);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};

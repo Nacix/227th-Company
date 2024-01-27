@@ -143,10 +143,8 @@ class XtdGearInfos
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
 		XTD_H_P2(Fox,Trooper,Fox);
 		XTD_H_P2(Hotshot,Trooper,Hotshot);
-		XTD_H_P2(Jager,Trooper,Jager);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
-		XTD_H_P2(Neca,Trooper,Neca);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
@@ -239,7 +237,6 @@ class XtdGearInfos
 		XTD_V_OMNI(Kama_CP,Leadership,Corporal);
 		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
 		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
-		XTD_V_OMNI(Kama_Neca,Leadership,Neca);
 		XTD_V_OMNI(Kama_Spartacus,Leadership,Spartacus);
 		XTD_V_OMNI(Kama_Valyrian,Leadership,Valyrian);
 
@@ -263,7 +260,6 @@ class XtdGearInfos
 		XTD_U_TROOPER(Cookie,Cookie);
 		XTD_U_TROOPER(Jinx,Jinx);
 		XTD_U_TROOPER(Knight,Knight);
-		XTD_U_TROOPER(Neca,Neca);
 		XTD_U_TROOPER(Speed,Speed);
 		XTD_U_TROOPER(Valyrian,Valyrian);
 

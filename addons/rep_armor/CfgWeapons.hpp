@@ -87,10 +87,8 @@ class CfgWeapons
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Fox,Fox's Helmet);
     ADD_CT_HELMET(Hotshot,Hotshot's Helmet);
-    ADD_CT_HELMET(Jager,Jager's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
-    ADD_CT_HELMET(Neca,Neca's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);
     ADD_CT_HELMET(Riven,Riven's Helmet);
     ADD_CT_HELMET(Sage,Sage's Helmet);
@@ -431,16 +429,6 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Kama_Neca,TAG##_V_Kama_CP)
-	{
-		displayName = TAG_NAME(Neca's Vest);
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\vests\officer\v_kama_neca_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_cp_up_co.paa)
-		};
-	};
-
 	SUBCLASS(V_Kama_CS,TAG##_V_Kama_CP)
 	{
 		displayName = TAG_NAME(Sergeant Vest);
@@ -535,7 +523,6 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(Cookie,Cookie's Armor,200);
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
-	ADD_UNIFORM_TROOPER(Neca,Neca's Armor,200);
 	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
 	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
