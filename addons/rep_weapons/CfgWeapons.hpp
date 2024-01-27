@@ -1231,7 +1231,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dw32s.wss),
 					3,
-					1,
+					1.5,
 					1800
 				};
 				soundBegin[]=
@@ -1257,7 +1257,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dw32s.wss),
 					3,
-					1,
+					1.5,
 					1800
 				};
 				soundBegin[]=
@@ -1282,7 +1282,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dw32s.wss),
 					3,
-					1,
+					1.5,
 					1800
 				};
 				soundBegin[]=
