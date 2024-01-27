@@ -341,6 +341,41 @@ class CfgWeapons
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Short_Borange);
     };
 
+	SUBCLASS(acc_pointer_Borange_DP23,TAG_CLASS(acc_pointer_Short_Borange))
+	{
+		model = "\OPTRE_Weapons\smg\m12_laser.p3d";
+
+		class ItemInfo: ItemInfo
+		{
+			class Pointer: Pointer
+			{
+				beamMaxLength = 20;
+				irLaserPos = "laser dir";
+				irLaserEnd = "laser";
+			};
+		};
+
+		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DP23_IR);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DP23_IR);
+	};
+	SUBCLASS(acc_pointer_Borange_DP23_IR,TAG_CLASS(acc_pointer_Short_Borange_IR))
+	{
+		model = "\OPTRE_Weapons\smg\m12_laser.p3d";
+
+		class ItemInfo: ItemInfo
+		{
+			class Pointer: Pointer
+			{
+				beamMaxLength = 20;
+				irLaserPos = "laser dir";
+				irLaserEnd = "laser";
+			};
+		};
+
+		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DP23);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DP23);
+    };
+
     SUBCLASS(acc_pointer_Long_Borange,TAG_CLASS(acc_pointer_Borange))
     {
         model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
