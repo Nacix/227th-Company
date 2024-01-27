@@ -60,11 +60,11 @@ class CfgEditorSubcategories
 	};
 	NEW_CLASS(EdSubcat_LightMachineGuns)
 	{
-		displayName = "Squad Support Blasters";
+		displayName = "Support Blasters";
 	};
 	NEW_CLASS(EdSubcat_SniperRifles)
 	{
-		displayName = "Sniper Blasters";
+		displayName = "Precision Blasters";
 	};
 	NEW_CLASS(EdSubcat_AssaultRifles)
 	{
