@@ -21,5 +21,5 @@ class Extended_PostInit_EventHandlers {
 class Extended_FiredBIS_EventHandlers {
 	class ADDON {
 		server_fired_eh = QUOTE(_this call FUNC(adjustGrenadePhysics));
-    };
+	};
 };
