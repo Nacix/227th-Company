@@ -1,10 +1,21 @@
 class CfgMagazines
 {
+    class 3AS_16Rnd_EC20_Mag;
     class 3AS_60Rnd_EC30_Mag;
     class 3AS_100Rnd_EC40_Mag;
     class 3AS_45Rnd_EC50_Mag;
     class 3AS_10Rnd_EC80_Mag;
     class 3AS_AntiArmour_mag;
+
+    SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)
+    {
+        author = "Anorexican";
+        displayName = "15Rnd EC20 Cartridge";
+        ammo = CLASS(B_EC20_Pellets_Submunition);
+        count = 15;
+        mass = 3;
+        descriptionShort = "15-charge EC20 tibanna scatter cartridge<br />Used in: DP-23";
+    };
 
     SUBCLASS(24Rnd_EC30_Mag_F,3AS_60Rnd_EC30_Mag)
     {

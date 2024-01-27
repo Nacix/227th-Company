@@ -25,6 +25,7 @@ class CfgWeapons
     class hgun_P07_F;
     class acc_pointer_IR;
 	class optic_LRPS;
+	class UGL_F;
 
 	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
@@ -107,6 +108,18 @@ class CfgWeapons
 	};
 
 	class JLTS_DC15X: arifle_MX_Base_F
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class JLTS_DP23: arifle_MX_Base_F
 	{
 		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1173,6 +1186,107 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+	SUBCLASS(sgun_DP23_F,JLTS_DP23)
+	{
+		displayName = TAG_NAME(DP-23 CQC Blaster);
+		author = "Anorexican";
+		baseWeapon = CLASS(sgun_DP23_F);
+		muzzles[] = { "this", CLASS(Blaster_F) };
+		magazines[] = { CLASS(15Rnd_EC20_Mag_F) };
+		drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
+		reloadMagazineSound[] = { "\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30 };
+		class Single: Single
+		{
+			reloadTime = "60 / 120";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dp23.wss),
+					6.5,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		SUBCLASS(Blaster_F,UGL_F)
+		{
+			displayName = "Blaster Mode";
+			displayNameShort = "Blaster";
+			muzzlePos = "usti hlavne";
+			muzzleEnd = "konec hlavne";
+			cursor = "";
+			useModelOptics = 0;
+			useExternalOptic = 1;
+			magazineWell[] = {};
+			magazines[] = { CLASS(30Rnd_EC50_Mag_F) };
+			cameraDir = "eye";
+			memoryPointCamera = "";
+			discreteDistance[] = {100};
+			discreteDistanceCameraPoint[]=
+			{
+				"eye"
+			};
+			discreteDistanceInitIndex = 0;
+			initSpeed = -1;
+			recoil = "recoil_akm";
+			recoilProne = "assaultRifleBase";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class Single: Mode_SemiAuto
+			{
+				reloadTime = "60 / 365";
+				dispersion = "(2 / 3.4377) / 1000";
+				recoil = "recoil_single_primary_3outof10";
+				recoilProne = "recoil_single_primary_prone_3outof10";
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[]=
+					{
+						QPATHTOF(data\sounds\dp23_rfl.wss),
+						2,
+						0.825,
+						200
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 70;
+			class CowsSlot: CowsSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = { CLASS(optic_Holo) };
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
+				compatibleItems[]=
+				{
+					CLASS(acc_pointer_Borange_DP23),
+					CLASS(acc_pointer_Borange_DP23_IR)
+				};
+			};
+		};
+	};
 		};
 	};
 };
