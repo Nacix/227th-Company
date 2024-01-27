@@ -1,1 +1,2 @@
+PREP(adjustGrenadePhysics);
 PREP(paradrop);
