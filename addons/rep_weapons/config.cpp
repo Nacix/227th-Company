@@ -42,34 +42,66 @@ class CfgPatches
             CLASS(acc_pointer_Borange_IR),
             CLASS(acc_pointer_Short_Borange),
             CLASS(acc_pointer_Short_Borange_IR),
+			CLASS(acc_pointer_Borange_DP23),
+			CLASS(acc_pointer_Borange_DP23_IR),
             CLASS(acc_pointer_Long_Borange),
             CLASS(acc_pointer_Long_Borange_IR),
 			CLASS(acc_flashlight),
 			CLASS(arifle_DC15A_F),
-			CLASS(arifle_WestarM5_F),
-			CLASS(arifle_WestarM5_GL_F),
+			CLASS(arifle_DC15A_UGL_F),
 			CLASS(arifle_DC15C_F),
 			CLASS(arifle_DC15C_UGL_F),
+			CLASS(arifle_DC15L_F),
+			CLASS(arifle_DC17M_F),
+			CLASS(arifle_WestarM5_F),
+			CLASS(arifle_WestarM5_GL_F),
 			CLASS(hgun_DC17SA_F),
+			CLASS(LMG_DC15LE_F),
 			CLASS(optic_Holo),
 			CLASS(optic_DC15X_scope),
+			CLASS(sgun_DP23_F),
 			CLASS(SMG_DC15S_F),
-			CLASS(srifle_DC15X_F)
+			CLASS(srifle_DC15X_F),
+			CLASS(srifle_DW32S_F)
         };
-        units[] = {};
+        units[]=
+		{
+			CLASS(Weapon_arifle_DC15A_F),
+			CLASS(Weapon_arifle_DC15A_UGL_F),
+			CLASS(Weapon_arifle_DC15C_F),
+			CLASS(Weapon_arifle_DC15C_UGL_F),
+			CLASS(Weapon_arifle_DC15L_F),
+			CLASS(Weapon_arifle_DC17M_F),
+			CLASS(Weapon_arifle_WestarM5_F),
+			CLASS(Weapon_arifle_WestarM5_GL_F),
+			CLASS(Weapon_hgun_DC17SA_F),
+			CLASS(Weapon_LMG_DC15LE_F),
+			CLASS(Weapon_sgun_DP23_F),
+			CLASS(Weapon_SMG_DC15S_F),
+			CLASS(Weapon_srifle_DC15X_F),
+			CLASS(Weapon_srifle_DW32S_F)
+		};
         magazines[]=
 		{
+			CLASS(15Rnd_EC20_Mag_F),
 			CLASS(24Rnd_EC30_Mag_F),
 			CLASS(60Rnd_EC30_Mag_F),
 			CLASS(45Rnd_EC40_Mag_F),
 			CLASS(60Rnd_EC40_Mag_F),
 			CLASS(100Rnd_EC40_Mag_F),
+			CLASS(30Rnd_EC50_Mag_F),
 			CLASS(36Rnd_EC50_Mag_F),
+			CLASS(21Rnd_EC60_Mag_F),
 			CLASS(5Rnd_EC80_Mag_F),
 			CLASS(15Rnd_EC80_Mag_F),
-			CLASS(1Rnd_EX1000_Mag_F)
+			CLASS(1Rnd_ECX1000_Mag_F)
 		};
-        ammo[] = {};
+        ammo[]=
+		{
+			CLASS(B_EC20_Pellets_Submunition_Deploy),
+			CLASS(B_EC20_Pellets_Submunition),
+			CLASS(B_ECX130_147x114_AT)
+		};
     };
 };
 
