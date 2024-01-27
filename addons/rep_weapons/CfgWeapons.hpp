@@ -21,6 +21,7 @@ class PointerSlot: SlotInfo
 
 class CfgWeapons
 {
+	class Rifle_Base_F;
 	class arifle_MX_Base_F;
     class hgun_P07_F;
     class acc_pointer_IR;
@@ -132,6 +133,20 @@ class CfgWeapons
 	};
 
 	class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
+	{
+		class Single;
+		class Burst;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_WestarM5_GL: 3AS_WestarM5_Base_F
 	{
 		class Single;
 		class Burst;
@@ -884,6 +899,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_WestarM5_UGL_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		modes[] = { "Single", "Burst", "FullAuto" };
 		class FullAuto: FullAuto
 		{
 			reloadTime = "60 / 500";
