@@ -1534,7 +1534,7 @@ class CfgWeapons
 				{
 					QPATHTOF(data\sounds\dw32s.wss),
 					2.5,
-					1.15,
+					0.875,
 					250
 				};
 				soundBegin[]=
