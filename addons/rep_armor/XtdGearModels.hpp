@@ -305,7 +305,6 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
-					"Officer_Geonosis",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -322,7 +321,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
-				SET_BACKGROUND_DEFAULT_PRETTY(Officer_Geonosis,Officer [Geonosis]);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};

@@ -453,8 +453,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_cs_up_co.paa)
-			
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
 		};
 	};
 
@@ -474,8 +473,8 @@ class CfgWeapons
 		displayName = TAG_NAME(Officer Vest (Geonosis));
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\officer\v_kama_geonosis_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_geonosis_co.paa)
+			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
 		};
 	};
 
