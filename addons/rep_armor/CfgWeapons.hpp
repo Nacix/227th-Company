@@ -266,7 +266,7 @@ class CfgWeapons
 
 	// ############################################################ Basic Vests ############################################################
 
-	SUBCLASS(V_Invisible_CT,JLTS_CloneVestHolster)
+	SUBCLASS(V_Invisible_CT,JLTS_CloneVestSuspender)
 	{
 		displayName = TAG_NAME(Invisible Vest);
 		hiddenSelectionsTextures[] = { "", "" };
