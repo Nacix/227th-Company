@@ -1636,7 +1636,6 @@ class CfgWeapons
 
 	SUBCLASS(srifle_DW32S_F,JLTS_DW32S)
 	{
-		mass = 70;
 		displayName = TAG_NAME(DW-32S Blaster Rifle);
 		author = "Anorexican";
 		baseWeapon = CLASS(srifle_DW32S_F);
