@@ -153,6 +153,7 @@ class CfgPatches
             CLASS(B_Pack_RTO),
             CLASS(B_Pack_RTO_straps),
             CLASS(B_Pack_RTO_mini),
+            CLASS(B_Pack_RTO_module),
             CLASS(B_Pack_AT),
             CLASS(B_Pack_AT_straps),
             CLASS(B_Pack_Medic),

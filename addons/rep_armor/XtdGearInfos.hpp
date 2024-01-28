@@ -302,6 +302,7 @@ class XtdGearInfos
 		XTD_B_OMNI_STRAPS(Jet,Basic,Jet);
 		XTD_B_OMNI_STRAPS(Snow_CT,Basic,Snow);
 		XTD_B_OMNI(RTO_Mini,RTO,RTO_Mini);
+		XTD_B_OMNI_STRAPS(RTO_Module,RTO,RTO_Module);
 		XTD_B_OMNI(ARC_CT,ARC,Default);
 		XTD_B_OMNI(ARC_Medic,ARC,Medic);
 

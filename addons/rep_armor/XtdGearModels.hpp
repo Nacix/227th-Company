@@ -413,7 +413,7 @@ class XtdGearModels
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "Medic", "AT", "EOD", "Jet", "Snow", "RTO_Mini" };
+				values[] = { "Default", "Medic", "AT", "EOD", "Jet", "Snow", "RTO_Mini", "RTO_Module" };
 				SET_BACKGROUND_DEFAULT(Default);
 				SET_BACKGROUND_DEFAULT(Medic);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
@@ -421,6 +421,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT(Snow);
 				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Mini,RTO (Mini));
+				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Module,RTO (Module));
 			};
 		};
 		NEW_CLASS(B_Jetpack)
