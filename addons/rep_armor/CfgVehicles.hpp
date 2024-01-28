@@ -45,14 +45,21 @@ class CfgVehicles
 	ADD_BACKPACK_STRAPS(Jet,Jet Trooper Backpack,JLTS_Clone_backpack,300);
 	ADD_BACKPACK_STRAPS(Snow_CT,Snow Trooper Backpack,JLTS_Clone_backpack,325);
 
+	SUBCLASS(B_Pack_CT_invisible,TAG_CLASS(B_Pack_CT))
+	{
+		displayname = TAG_NAME(Trooper Backpack (Invisible));
+		maximumLoad = QUOTE(275);
+		hiddenSelectionsTextures[] = { "" };
+	};
+
 	ADD_JETPACK(Chicken_CT,Jump Pack (Chicken),JLTS_Clone_jumppack_Chicken,275);
 
 	ADD_JETPACK(JT12_CT,Jetpack (JT-12),JLTS_Clone_jumppack_JT12,275);
-	ADD_JETPACK(JT12_Medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12,325);
-	ADD_JETPACK(JT12_Mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12,275);
+	ADD_JETPACK(JT12_Medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12,350);
+	ADD_JETPACK(JT12_Mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12,350);
 
 	ADD_JETPACK(MC_CT,Jump Pack (MC),JLTS_Clone_Jumppack_mc,275);
-	ADD_JETPACK(MC_Medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc,325);
+	ADD_JETPACK(MC_Medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc,350);
 	ADD_JETPACK(MC_Pilot,Jump Pack (MC) [Pilot],JLTS_Clone_Jumppack_mc,250);
 	ADD_JETPACK(MC_Krayt,Jump Pack (MC) [Krayt],JLTS_Clone_Jumppack_mc,275);
 	ADD_JETPACK(MC_Valyrian,Jump Pack (MC) [Valyrian],JLTS_Clone_Jumppack_mc,275);
