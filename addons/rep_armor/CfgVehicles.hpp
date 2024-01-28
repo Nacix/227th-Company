@@ -27,7 +27,13 @@ class CfgVehicles
 
 	ADD_BACKPACK(ARC_CT,ARC Backpack,JLTS_Clone_ARC_backpack,350);
 	ADD_BACKPACK(ARC_Medic,ARC Medic Backpack,JLTS_Clone_ARC_backpack,350);
-	
+
+	SUBCLASS(B_Pack_Belt_CT,JLTS_Clone_belt_bag)
+	{
+		displayName = TAG_NAME(Belt Bag);
+		maximumLoad = QUOTE(275);
+	};
+
 	SUBCLASS(B_Pack_RTO_module,JLTS_Clone_LR_attachment)
 	{
 		displayName = TAG_NAME(RTO Attachment (Module));

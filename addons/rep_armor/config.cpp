@@ -160,6 +160,7 @@ class CfgPatches
             CLASS(B_Pack_Medic_straps),
             CLASS(B_Pack_EOD),
             CLASS(B_Pack_EOD_straps),
+            CLASS(B_Pack_Belt_CT),
             CLASS(B_Pack_CT),
             CLASS(B_Pack_CT_invisible),
             CLASS(B_Pack_CT_straps),

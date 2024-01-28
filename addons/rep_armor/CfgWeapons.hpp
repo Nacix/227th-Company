@@ -447,16 +447,6 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_CP)
-	{
-		displayName = TAG_NAME(Spartacus' Vest);
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
-		};
-	};
-
 	SUBCLASS(V_Kama_Officer,JLTS_CloneVestOfficer)
 	{
 		displayName = TAG_NAME(Officer Vest);
@@ -474,6 +464,16 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
+		};
+	};
+
+	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Spartacus' Vest);
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
 			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
 		};
 	};

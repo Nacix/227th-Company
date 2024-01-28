@@ -396,9 +396,10 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = { "Invisible", "Basic", "RTO", "ARC" };
+				values[] = { "Invisible", "Belt", "Basic", "RTO", "ARC" };
 				alwaysSelectable = 1;
 				SET_BACKGROUND_DEFAULT(Invisible);
+				SET_BACKGROUND_DEFAULT(Belt);
 				SET_BACKGROUND_DEFAULT(Basic);
 				SET_BACKGROUND_DEFAULT(RTO);
 				SET_BACKGROUND_DEFAULT(ARC);
