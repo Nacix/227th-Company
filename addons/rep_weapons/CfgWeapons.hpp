@@ -577,7 +577,7 @@ class CfgWeapons
 
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_Firepuncher);
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_Firepuncher);
-    };
+	};
 
 	NEW_CLASS(acc_flashlight): JLTS_Glocko_flashlight
 	{
