@@ -83,7 +83,6 @@ class CfgWeapons
     ADD_CT_HELMET(Catcher,Catcher's Helmet);
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Fox,Fox's Helmet);
-    ADD_CT_HELMET(Hotshot,Hotshot's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);

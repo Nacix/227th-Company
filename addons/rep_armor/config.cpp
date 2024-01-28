@@ -41,7 +41,6 @@ class CfgPatches
             CLASS(H_P2_Catcher),
             CLASS(H_P2_FiveO),
             CLASS(H_P2_Fox),
-            CLASS(H_P2_Hotshot),
             CLASS(H_P2_Kitsune),
             CLASS(H_P2_Luci),
             CLASS(H_P2_Rex),
