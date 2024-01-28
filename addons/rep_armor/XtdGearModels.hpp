@@ -24,10 +24,9 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"Trooper", "Specialist", "ARC"};
+				values[] = {"Trooper", "ARC"};
 				alwaysSelectable = 1;
 				SET_BACKGROUND_DEFAULT(Trooper);
-				SET_BACKGROUND_DEFAULT(Specialist);
 				SET_BACKGROUND_DEFAULT(ARC);
 			};
 			class skin
@@ -39,16 +38,13 @@ class XtdGearModels
 					"SCT",
 					"VCT",
 					"CSP",
-					"CLP",
+					"CLC",
 					"CP",
 					"CS",
 					"CSS",
 					"CFS",
 					"CSM",
 					"Jet",
-					"EOD",
-					"EOD_CSP",
-					"EOD_NCO",
 					"Cookie",
 					"DevilDolphin",
 					"Jinx",
@@ -57,11 +53,8 @@ class XtdGearModels
 					"Catcher",
 					"Fiveo",
 					"Fox",
-					"Hotshot",
-					"Jager",
 					"Kitsune",
 					"Luci",
-					"Neca",
 					"Rex",
 					"Riven",
 					"Sage",
@@ -76,16 +69,13 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
 				SET_BACKGROUND_DEFAULT(CSP);
-				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CLC);
 				SET_BACKGROUND_DEFAULT(CP);
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
 				SET_BACKGROUND_DEFAULT(CFS);
 				SET_BACKGROUND_DEFAULT(CSM);
 				SET_BACKGROUND_DEFAULT(Jet);
-				SET_BACKGROUND_DEFAULT(EOD);
-				SET_BACKGROUND_DEFAULT_PRETTY(EOD_CSP,EOD [CSP]);
-				SET_BACKGROUND_DEFAULT_PRETTY(EOD_NCO,EOD [NCO]);
 				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(DevilDolphin);
 				SET_BACKGROUND_DEFAULT(Jinx);
@@ -94,11 +84,8 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Catcher);
 				SET_BACKGROUND_DEFAULT(Fiveo);
 				SET_BACKGROUND_DEFAULT(Fox);
-				SET_BACKGROUND_DEFAULT(Hotshot);
-				SET_BACKGROUND_DEFAULT(Jager);
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Rex);
 				SET_BACKGROUND_DEFAULT(Riven);
 				SET_BACKGROUND_DEFAULT(Sage);
@@ -309,7 +296,6 @@ class XtdGearModels
 					"Trooper",
 					"Suspenders",
 					"AT",
-					"EOD",
 					"Geonosis",
 					"Jet",
 					"Marksman",
@@ -319,7 +305,6 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
-					"Neca",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -327,7 +312,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Trooper);
 				SET_BACKGROUND_DEFAULT(Suspenders);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
-				SET_BACKGROUND_DEFAULT(EOD);
 				SET_BACKGROUND_DEFAULT(Geonosis);
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT(Marksman);
@@ -337,7 +321,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
@@ -357,7 +340,7 @@ class XtdGearModels
 					"SCT",
 					"VCT",
 					"CSP",
-					"CLP",
+					"CLC",
 					"CP",
 					"CS",
 					"CSS",
@@ -367,7 +350,6 @@ class XtdGearModels
 					"Cookie",
 					"Jinx",
 					"Knight",
-					"Neca",
 					"Speed",
 					"Valyrian"
 				};
@@ -376,7 +358,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
 				SET_BACKGROUND_DEFAULT(CSP);
-				SET_BACKGROUND_DEFAULT(CLP);
+				SET_BACKGROUND_DEFAULT(CLC);
 				SET_BACKGROUND_DEFAULT(CP);
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
@@ -386,7 +368,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
-				SET_BACKGROUND_DEFAULT(Neca);
 				SET_BACKGROUND_DEFAULT(Speed);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
@@ -415,8 +396,10 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = { "Basic", "RTO", "ARC" };
+				values[] = { "Invisible", "Belt", "Basic", "RTO", "ARC" };
 				alwaysSelectable = 1;
+				SET_BACKGROUND_DEFAULT(Invisible);
+				SET_BACKGROUND_DEFAULT(Belt);
 				SET_BACKGROUND_DEFAULT(Basic);
 				SET_BACKGROUND_DEFAULT(RTO);
 				SET_BACKGROUND_DEFAULT(ARC);
@@ -431,7 +414,7 @@ class XtdGearModels
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "Medic", "AT", "EOD", "Jet", "Snow", "RTO_Mini" };
+				values[] = { "Default", "Medic", "AT", "EOD", "Jet", "Snow", "RTO_Mini", "RTO_Module" };
 				SET_BACKGROUND_DEFAULT(Default);
 				SET_BACKGROUND_DEFAULT(Medic);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
@@ -439,6 +422,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT(Snow);
 				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Mini,RTO (Mini));
+				SET_BACKGROUND_DEFAULT_PRETTY(RTO_Module,RTO (Module));
 			};
 		};
 		NEW_CLASS(B_Jetpack)

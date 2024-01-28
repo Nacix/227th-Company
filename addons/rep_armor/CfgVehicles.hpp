@@ -18,6 +18,7 @@ class CfgVehicles
 	class JLTS_Clone_backpack_s_RTO;
 	class JLTS_Clone_RTO_pack;
 	class JLTS_Clone_ARC_backpack;
+	class JLTS_Clone_LR_attachment;
 	class JLTS_Clone_jumppack_Chicken;
 	class JLTS_Clone_jumppack_JT12;
 	class JLTS_Clone_Jumppack_mc;
@@ -26,6 +27,18 @@ class CfgVehicles
 
 	ADD_BACKPACK(ARC_CT,ARC Backpack,JLTS_Clone_ARC_backpack,350);
 	ADD_BACKPACK(ARC_Medic,ARC Medic Backpack,JLTS_Clone_ARC_backpack,350);
+
+	SUBCLASS(B_Pack_Belt_CT,JLTS_Clone_belt_bag)
+	{
+		displayName = TAG_NAME(Belt Bag);
+		maximumLoad = QUOTE(275);
+	};
+
+	SUBCLASS(B_Pack_RTO_module,JLTS_Clone_LR_attachment)
+	{
+		displayName = TAG_NAME(RTO Attachment (Module));
+		maximumLoad = QUOTE(225);
+	};
 	
 	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO,325);
 
@@ -45,14 +58,21 @@ class CfgVehicles
 	ADD_BACKPACK_STRAPS(Jet,Jet Trooper Backpack,JLTS_Clone_backpack,300);
 	ADD_BACKPACK_STRAPS(Snow_CT,Snow Trooper Backpack,JLTS_Clone_backpack,325);
 
+	SUBCLASS(B_Pack_CT_invisible,TAG_CLASS(B_Pack_CT))
+	{
+		displayname = TAG_NAME(Trooper Backpack (Invisible));
+		maximumLoad = QUOTE(275);
+		hiddenSelectionsTextures[] = { "" };
+	};
+
 	ADD_JETPACK(Chicken_CT,Jump Pack (Chicken),JLTS_Clone_jumppack_Chicken,275);
 
 	ADD_JETPACK(JT12_CT,Jetpack (JT-12),JLTS_Clone_jumppack_JT12,275);
-	ADD_JETPACK(JT12_Medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12,325);
-	ADD_JETPACK(JT12_Mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12,275);
+	ADD_JETPACK(JT12_Medic,Jetpack (JT-12) [Medic],JLTS_Clone_jumppack_JT12,350);
+	ADD_JETPACK(JT12_Mercy,Jetpack (JT-12) [Mercy],JLTS_Clone_jumppack_JT12,350);
 
 	ADD_JETPACK(MC_CT,Jump Pack (MC),JLTS_Clone_Jumppack_mc,275);
-	ADD_JETPACK(MC_Medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc,325);
+	ADD_JETPACK(MC_Medic,Jump Pack (MC) [Medic],JLTS_Clone_Jumppack_mc,350);
 	ADD_JETPACK(MC_Pilot,Jump Pack (MC) [Pilot],JLTS_Clone_Jumppack_mc,250);
 	ADD_JETPACK(MC_Krayt,Jump Pack (MC) [Krayt],JLTS_Clone_Jumppack_mc,275);
 	ADD_JETPACK(MC_Valyrian,Jump Pack (MC) [Valyrian],JLTS_Clone_Jumppack_mc,275);
@@ -155,7 +175,7 @@ class CfgVehicles
 	ADD_V_UNIFORM_TROOPER(SCT,SCTBase);
 	ADD_V_UNIFORM_TROOPER(VCT,VCTBase);
 	ADD_V_UNIFORM_TROOPER(CSP,CSPBase);
-	ADD_V_UNIFORM_TROOPER(CLP,CLPBase);
+	ADD_V_UNIFORM_TROOPER(CLC,CLCBase);
 	ADD_V_UNIFORM_TROOPER(CP,CPBase);
 	ADD_V_UNIFORM_TROOPER(CS,CSBase);
 	ADD_V_UNIFORM_TROOPER(CSS,CSSBase);
@@ -165,7 +185,6 @@ class CfgVehicles
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Jinx,JinxBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Knight,KnightBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Luci,LuciBase);
-	ADD_V_UNIFORM_TROOPER_CUSTOM(Neca,NecaBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Speed,SpeedBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Valyrian,ValyrianBase);
 

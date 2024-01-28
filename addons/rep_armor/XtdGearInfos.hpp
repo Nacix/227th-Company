@@ -117,7 +117,7 @@ class XtdGearInfos
 		XTD_H_P2(SCT,Trooper,SCT);
 		XTD_H_P2(VCT,Trooper,VCT);
 		XTD_H_P2(CSP,Trooper,CSP);
-		XTD_H_P2(CLP,Trooper,CLP);
+		XTD_H_P2(CLC,Trooper,CLC);
 		XTD_H_P2(CP,Trooper,CP);
 		XTD_H_P2(CS,Trooper,CS);
 		XTD_H_P2(CSS,Trooper,CSS);
@@ -125,10 +125,7 @@ class XtdGearInfos
 		XTD_H_P2(CSM,Trooper,CSM);
 
 		// P2 Specialist Helmets
-		XTD_H_P2(Jet,Specialist,Jet);
-		XTD_H_P2(EOD,Specialist,EOD);
-		XTD_H_P2(EOD_CSP,Specialist,EOD_CSP);
-		XTD_H_P2(EOD_NCO,Specialist,EOD_NCO);
+		XTD_H_P2(Jet,Trooper,Jet);
 
 		// P2 ARC Helmets
 		XTD_H_ARC(Cookie,Cookie);
@@ -142,11 +139,8 @@ class XtdGearInfos
 		XTD_H_P2(Catcher,Trooper,Catcher);
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
 		XTD_H_P2(Fox,Trooper,Fox);
-		XTD_H_P2(Hotshot,Trooper,Hotshot);
-		XTD_H_P2(Jager,Trooper,Jager);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
-		XTD_H_P2(Neca,Trooper,Neca);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
@@ -237,9 +231,10 @@ class XtdGearInfos
 		XTD_V_OMNI(AB_RTO,Specialist,RTO);
 		XTD_V_OMNI(AB_Support,Specialist,Support);
 		XTD_V_OMNI(Kama_CP,Leadership,Corporal);
+		XTD_V_OMNI(Kama_Medic,Leadership,Medic);
 		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
 		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
-		XTD_V_OMNI(Kama_Neca,Leadership,Neca);
+		XTD_V_OMNI(Kama_Officer_Geonosis,Leadership,Geonosis);
 		XTD_V_OMNI(Kama_Spartacus,Leadership,Spartacus);
 		XTD_V_OMNI(Kama_Valyrian,Leadership,Valyrian);
 
@@ -249,7 +244,7 @@ class XtdGearInfos
 		XTD_U_TROOPER(SCT,SCT);
 		XTD_U_TROOPER(VCT,VCT);
 		XTD_U_TROOPER(CSP,CSP);
-		XTD_U_TROOPER(CLP,CLP);
+		XTD_U_TROOPER(CLC,CLC);
 		XTD_U_TROOPER(CP,CP);
 		XTD_U_TROOPER(CS,CS);
 		XTD_U_TROOPER(CSS,CSS);
@@ -263,7 +258,6 @@ class XtdGearInfos
 		XTD_U_TROOPER(Cookie,Cookie);
 		XTD_U_TROOPER(Jinx,Jinx);
 		XTD_U_TROOPER(Knight,Knight);
-		XTD_U_TROOPER(Neca,Neca);
 		XTD_U_TROOPER(Speed,Speed);
 		XTD_U_TROOPER(Valyrian,Valyrian);
 
@@ -299,14 +293,17 @@ class XtdGearInfos
 			}
 
 		// Backpacks
+		XTD_B_OMNI(CT_invisible,Invisible,Default);
 		XTD_B_OMNI_STRAPS(CT,Basic,Default);
+		XTD_B_OMNI(Belt_CT,Belt,Default);
 		XTD_B_OMNI_STRAPS(Medic,Basic,Medic);
 		XTD_B_OMNI_STRAPS(AT,Basic,AT);
 		XTD_B_OMNI_STRAPS(EOD,Basic,EOD);
 		XTD_B_OMNI_STRAPS(RTO,RTO,Default);
 		XTD_B_OMNI_STRAPS(Jet,Basic,Jet);
 		XTD_B_OMNI_STRAPS(Snow_CT,Basic,Snow);
-		XTD_B_OMNI(RTO_Mini,RTO,RTO_Mini);
+		XTD_B_OMNI(RTO_mini,RTO,RTO_Mini);
+		XTD_B_OMNI_STRAPS(RTO_module,RTO,RTO_Module);
 		XTD_B_OMNI(ARC_CT,ARC,Default);
 		XTD_B_OMNI(ARC_Medic,ARC,Medic);
 

@@ -70,7 +70,7 @@ class CfgWeapons
 	ADD_CT_HELMET(SCT,SCT Helmet);
 	ADD_CT_HELMET(VCT,VCT Helmet);
 	ADD_CT_HELMET(CSP,CSP Helmet);
-	ADD_CT_HELMET(CLP,CLP Helmet);
+	ADD_CT_HELMET(CLC,CLC Helmet);
 	ADD_CT_HELMET(CP,CP Helmet);
 	ADD_CT_HELMET(CS,CS Helmet);
 	ADD_CT_HELMET(CSS,CSS Helmet);
@@ -78,19 +78,13 @@ class CfgWeapons
 	ADD_CT_HELMET(CSM,CSM Helmet);
 
 	ADD_CT_HELMET(Jet,Jet Helmet);
-	ADD_CT_HELMET(EOD,EOD Helmet);
-	ADD_CT_HELMET(EOD_CSP,EOD Helmet [CSP]);
-	ADD_CT_HELMET(EOD_NCO,EOD Helmet [NCO]);
 
 	ADD_CT_HELMET(Canada,Canada's Helmet);
     ADD_CT_HELMET(Catcher,Catcher's Helmet);
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Fox,Fox's Helmet);
-    ADD_CT_HELMET(Hotshot,Hotshot's Helmet);
-    ADD_CT_HELMET(Jager,Jager's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
-    ADD_CT_HELMET(Neca,Neca's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);
     ADD_CT_HELMET(Riven,Riven's Helmet);
     ADD_CT_HELMET(Sage,Sage's Helmet);
@@ -271,7 +265,7 @@ class CfgWeapons
 
 	// ############################################################ Basic Vests ############################################################
 
-	SUBCLASS(V_Invisible_CT,JLTS_CloneVestHolster)
+	SUBCLASS(V_Invisible_CT,JLTS_CloneVestSuspender)
 	{
 		displayName = TAG_NAME(Invisible Vest);
 		hiddenSelectionsTextures[] = { "", "" };
@@ -431,13 +425,13 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Kama_Neca,TAG##_V_Kama_CP)
+	SUBCLASS(V_Kama_Medic,TAG##_V_Kama_CP)
 	{
-		displayName = TAG_NAME(Neca's Vest);
+		displayName = TAG_NAME(Medic Vest (NCO));
 		hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(data\vests\officer\v_kama_neca_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_cp_up_co.paa)
+			QPATHTOF(data\vests\officer\v_kama_cp_co.paa),
+			QPATHTOF(data\vests\basic\medic\v_ab_medic_up_co.paa)
 		};
 	};
 
@@ -453,17 +447,6 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
-	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_CP)
-	{
-		displayName = TAG_NAME(Spartacus' Vest);
-		hiddenSelectionsTextures[]=
-		{
-			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
-			QPATHTOF(data\vests\officer\v_kama_cs_up_co.paa)
-			
-		};
-	};
-
 	SUBCLASS(V_Kama_Officer,JLTS_CloneVestOfficer)
 	{
 		displayName = TAG_NAME(Officer Vest);
@@ -473,6 +456,26 @@ class CfgWeapons
 			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
 		};
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
+	};
+
+	SUBCLASS(V_Kama_Officer_Geonosis,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Officer Vest (Geonosis));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
+		};
+	};
+
+	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Spartacus' Vest);
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_spartacus_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
+		};
 	};
 
 	SUBCLASS(V_Kama_Valyrian,TAG##_V_Kama_Officer)
@@ -525,7 +528,7 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(SCT,Trooper Armor (SCT),150);
 	ADD_UNIFORM_TROOPER(VCT,Trooper Armor (VCT),200);
 	ADD_UNIFORM_TROOPER(CSP,Trooper Armor (CSP),200);
-	ADD_UNIFORM_TROOPER(CLP,Trooper Armor (CLP),200);
+	ADD_UNIFORM_TROOPER(CLC,Trooper Armor (CLC),200);
 	ADD_UNIFORM_TROOPER(CP,Trooper Armor (CP),200);
 	ADD_UNIFORM_TROOPER(CS,Trooper Armor (CS),200);
 	ADD_UNIFORM_TROOPER(CSS,Trooper Armor (CSS),200);
@@ -535,13 +538,12 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(Cookie,Cookie's Armor,200);
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
-	ADD_UNIFORM_TROOPER(Neca,Neca's Armor,200);
 	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
 	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
 	// Special Trooper Uniforms
 	ADD_UNIFORM_TROOPER(Jet_CT,Jet Trooper Armor,200);
-	ADD_UNIFORM_TROOPER(Jet_NCO,Jet Trooper Armor (NCO),200);
+	ADD_UNIFORM_TROOPER(Jet_NCO,Jet's Armor,200);
 
 	// Insulated Uniforms
 	ADD_UNIFORM_INSULATED(CT,Insulated Armor,200);
