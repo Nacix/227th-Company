@@ -59,12 +59,15 @@ class CfgPatches
 			CLASS(arifle_WestarM5_GL_F),
 			CLASS(hgun_DC17SA_F),
 			CLASS(LMG_DC15LE_F),
-			CLASS(optic_Holo),
 			CLASS(optic_DC15X_scope),
+			CLASS(optic_Holo),
+			CLASS(optic_Firepuncher_scope),
+			CLASS(optic_Firepuncher_scope_off),
 			CLASS(sgun_DP23_F),
 			CLASS(SMG_DC15S_F),
 			CLASS(srifle_DC15X_F),
-			CLASS(srifle_DW32S_F)
+			CLASS(srifle_DW32S_F),
+			CLASS(srifle_Firepuncher_F)
         };
         units[]=
 		{
@@ -81,7 +84,8 @@ class CfgPatches
 			CLASS(Weapon_sgun_DP23_F),
 			CLASS(Weapon_SMG_DC15S_F),
 			CLASS(Weapon_srifle_DC15X_F),
-			CLASS(Weapon_srifle_DW32S_F)
+			CLASS(Weapon_srifle_DW32S_F),
+			CLASS(Weapon_srifle_Firepuncher_F)
 		};
         magazines[]=
 		{
