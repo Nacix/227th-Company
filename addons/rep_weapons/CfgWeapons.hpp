@@ -15,12 +15,15 @@ class PointerSlot: SlotInfo
 		CLASS(acc_pointer_Short_Borange),
 		CLASS(acc_pointer_Short_Borange_IR),
 		CLASS(acc_pointer_Long_Borange),
-		CLASS(acc_pointer_Long_Borange_IR)
+		CLASS(acc_pointer_Long_Borange_IR),
+		CLASS(acc_pointer_Borange_Firepuncher),
+		CLASS(acc_pointer_Borange_Firepuncher_IR),
 	};
 };
 
 class CfgWeapons
 {
+	class Default;
 	class Rifle_Base_F;
 	class arifle_MX_Base_F;
     class hgun_P07_F;
@@ -39,12 +42,18 @@ class CfgWeapons
 	class 71st_DC15A_UGL_Base;
 	class 71st_DC15A_LE_Base;
 
-	class ItemCore;
+	
 	class InventoryOpticsItem_Base_F;
 	class JLTS_DC15S;
-	class JLTS_DC15X_scope;
 	class JLTS_Glocko_flashlight;
 	class JLTS_DW32S;
+
+	class k_773_rifle_base;
+	
+	class ItemCore: Default
+	{
+		class ItemInfo;
+	};
 
     class JLTS_DC17SA: hgun_P07_F
     {
@@ -221,6 +230,39 @@ class CfgWeapons
 		};
 	};
 
+	class k_773_rifle: k_773_rifle_base
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class MuzzleSlot;
+			class PointerSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class k_773_scope1: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 773scope;
+			};
+		};
+	};
+	class k_773_scope2: k_773_scope1
+	{
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes
+			{
+				class 773scope;
+			};
+		};
+	};
+
 	SUBCLASS(optic_Holo,3AS_optic_holo_DC15S)
 	{
 		author = "Anorexican";
@@ -248,15 +290,46 @@ class CfgWeapons
 					distanceZoomMin = 300;
 					memoryPointCamera = "opticView";
 					modelOptics[] = { "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d", "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d" };
-					opticsDisablePeripherialVision = 1;
-					opticsDisplayName = "WFOV";
-					opticsFlare = 1;
-					opticsID = 1;
-					opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
-					opticsZoomInit = 0.042;
-					opticsZoomMax = 0.042;
-					opticsZoomMin = 0.01;
-					useModelOptics = 1;
+
+	SUBCLASS(optic_Firepuncher_scope,k_773_scope2)
+	{
+		displayName = TAG_NAME(Firepuncher Scope (12-20x));
+
+		MRT_SwitchItemNextClass = CLASS(optic_Firepuncher_scope_off);
+		MRT_SwitchItemPrevClass = CLASS(optic_Firepuncher_scope_off);
+		MRT_SwitchItemHintText = "Magnifier [OFF]";
+
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class 773scope: 773scope
+				{
+					opticsZoomInit = "0.25 / 12";
+					opticsZoomMax = "0.25 / 12";
+					opticsZoomMin = "0.25 / 20";
+					visionMode[] = { "Normal", "NVG", "TI" };
+				};
+			};
+		};
+	};
+	SUBCLASS(optic_Firepuncher_scope_off,k_773_scope1)
+	{
+		displayName = TAG_NAME(Firepuncher Scope (2-10x));
+
+		MRT_SwitchItemNextClass = CLASS(optic_Firepuncher_scope);
+		MRT_SwitchItemPrevClass = CLASS(optic_Firepuncher_scope);
+		MRT_SwitchItemHintText = "Magnifier [ON]";
+
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class 773scope: 773scope
+				{
+					opticsZoomInit = "0.25 / 2";
+					opticsZoomMax = "0.25 / 2";
+					opticsZoomMin = "0.25 / 10";
 					visionMode[] = { "Normal", "NVG", "TI" };
 				};
 			};
@@ -454,6 +527,39 @@ class CfgWeapons
 
         MRT_SwitchItemNextClass = CLASS(acc_pointer_Long_Borange);
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange);
+    };
+
+	SUBCLASS(acc_pointer_Borange_Firepuncher,TAG_CLASS(acc_pointer_Long_Borange))
+	{
+		model = "\OPTRE_Weapons\Shotgun\flashlight.p3d";
+
+		class ItemInfo: ItemInfo
+		{
+			class Pointer: Pointer
+			{
+				irLaserPos = "flash dir";
+				irLaserEnd = "flash";
+			};
+		};
+
+		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_Firepuncher_IR);
+        MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_Firepuncher_IR);
+	};
+	SUBCLASS(acc_pointer_Borange_Firepuncher_IR,TAG_CLASS(acc_pointer_Long_Borange_IR))
+	{
+		model = "\OPTRE_Weapons\Shotgun\flashlight.p3d";
+
+		class ItemInfo: ItemInfo
+		{
+			class Pointer: Pointer
+			{
+				irLaserPos = "flash dir";
+				irLaserEnd = "flash";
+			};
+		};
+
+		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_Firepuncher);
+        MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_Firepuncher);
     };
 
 	NEW_CLASS(acc_flashlight): JLTS_Glocko_flashlight
@@ -1553,6 +1659,79 @@ class CfgWeapons
 				{ 
 					CLASS(acc_pointer_Long_Borange),
 					CLASS(acc_pointer_Long_Borange_IR)
+				};
+			};
+		};
+	};
+
+	SUBCLASS(srifle_Firepuncher_F,k_773_rifle)
+	{
+		displayName = TAG_NAME(Firepuncher Precision Blaster);
+		author = "Anorexican";
+		baseWeapon = CLASS(srifle_Firepuncher_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 250";
+			dispersion = "(0.5 / 3.4377) / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\firepuncher.wss),
+					2.5,
+					0.9,
+					250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\firepuncher_spr.wss),
+					2.5,
+					0.825,
+					250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 85;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					CLASS(optic_Firepuncher_scope),
+					CLASS(optic_Firepuncher_scope_off)
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]=
+				{ 
+					CLASS(acc_pointer_Borange_Firepuncher),
+					CLASS(acc_pointer_Borange_Firepuncher_IR)
 				};
 			};
 		};

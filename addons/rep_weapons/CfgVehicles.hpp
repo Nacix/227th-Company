@@ -53,4 +53,5 @@ class CfgVehicles
     ADD_RIFLE_OBJECT(DC-15L,arifle_DC15L_F,45Rnd_EC40_Mag_F);
     ADD_RIFLE_OBJECT(DP-23,sgun_DP23_F,15Rnd_EC20_Mag_F);
     ADD_SNIPER_OBJECT(DW-32S,srifle_DW32S_F,21Rnd_EC60_Mag_F);
+    ADD_SNIPER_OBJECT(Firepuncher,srifle_Firepuncher_F,15Rnd_EC80_Mag_F);
 };
