@@ -426,6 +426,16 @@ class CfgWeapons
 		DEF_ARMOR(1.4,0.5,0,1,0.25,0.45);
 	};
 
+	SUBCLASS(V_Kama_Medic,TAG##_V_Kama_CP)
+	{
+		displayName = TAG_NAME(Medic Vest (NCO));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_cp_co.paa),
+			QPATHTOF(data\vests\basic\medic\v_ab_medic_up_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_CS,TAG##_V_Kama_CP)
 	{
 		displayName = TAG_NAME(Sergeant Vest);

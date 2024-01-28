@@ -232,6 +232,7 @@ class XtdGearInfos
 		XTD_V_OMNI(AB_RTO,Specialist,RTO);
 		XTD_V_OMNI(AB_Support,Specialist,Support);
 		XTD_V_OMNI(Kama_CP,Leadership,Corporal);
+		XTD_V_OMNI(Kama_Medic,Leadership,Medic);
 		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
 		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
 		XTD_V_OMNI(Kama_Officer_Geonosis,Leadership,Officer_Geonosis)
