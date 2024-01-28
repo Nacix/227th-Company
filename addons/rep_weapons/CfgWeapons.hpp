@@ -12,8 +12,12 @@ class PointerSlot: SlotInfo
 	compatibleItems[] += {
 		CLASS(acc_pointer_Borange),
 		CLASS(acc_pointer_Borange_IR),
+		CLASS(acc_pointer_Borange_DC17M),
+		CLASS(acc_pointer_Borange_DC17M_IR),
 		CLASS(acc_pointer_Short_Borange),
 		CLASS(acc_pointer_Short_Borange_IR),
+		CLASS(acc_pointer_Borange_DP23),
+		CLASS(acc_pointer_Borange_DP23_IR),
 		CLASS(acc_pointer_Long_Borange),
 		CLASS(acc_pointer_Long_Borange_IR),
 		CLASS(acc_pointer_Borange_Firepuncher),
