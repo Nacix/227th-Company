@@ -266,33 +266,47 @@ class CfgWeapons
 		};
 	};
 
+	class JLTS_DC15X_scope: optic_LRPS
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Snip;
+			};
+		};
+	};
+
 	SUBCLASS(optic_Holo,3AS_optic_holo_DC15S)
 	{
 		author = "Anorexican";
 		displayName = TAG_NAME(Holosight);
 		scope = 2;
     };
+
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
 	{
 		author = "Krinix & Anorexican";
 		displayName = TAG_NAME(DC-15X Scope);
-		class ItemInfo: InventoryOpticsItem_Base_F
+		class ItemInfo: ItemInfo
 		{
 			modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
-			weaponInfoType = "RscWeaponRangeZeroingFOV";
-			class OpticsModes
+			class OpticsModes: OpticsModes
 			{
-				class Snip
+				class Snip: Snip
 				{
-					cameraDir = "";
+					discreteFOV[] = {};
+					discreteInitIndex = -1;
 					discreteDistance[] = { 100 };
 					discreteDistanceInitIndex = 0;
-					discretefov[] = { 0.042, 0.01 };
-					discreteInitIndex = 0;
-					distanceZoomMax = 2400;
-					distanceZoomMin = 300;
-					memoryPointCamera = "opticView";
 					modelOptics[] = { "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d", "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d" };
+					opticsZoomInit = "0.25 / 6";
+					opticsZoomMax = "0.25 / 6";
+					opticsZoomMin = "0.25 / 20";
+				};
+			};
+		};
+	};
 
 	SUBCLASS(optic_Firepuncher_scope,k_773_scope2)
 	{
