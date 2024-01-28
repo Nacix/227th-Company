@@ -125,7 +125,7 @@ class XtdGearInfos
 		XTD_H_P2(CSM,Trooper,CSM);
 
 		// P2 Specialist Helmets
-		XTD_H_P2(Jet,Specialist,Jet);
+		XTD_H_P2(Jet,Trooper,Jet);
 
 		// P2 ARC Helmets
 		XTD_H_ARC(Cookie,Cookie);

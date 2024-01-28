@@ -24,10 +24,9 @@ class XtdGearModels
 			class type
 			{
 				label = "Type";
-				values[] = {"Trooper", "Specialist", "ARC"};
+				values[] = {"Trooper", "ARC"};
 				alwaysSelectable = 1;
 				SET_BACKGROUND_DEFAULT(Trooper);
-				SET_BACKGROUND_DEFAULT(Specialist);
 				SET_BACKGROUND_DEFAULT(ARC);
 			};
 			class skin
