@@ -1,4 +1,3 @@
-class Default;
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
