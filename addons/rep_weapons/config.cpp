@@ -85,7 +85,8 @@ class CfgPatches
 			CLASS(Weapon_SMG_DC15S_F),
 			CLASS(Weapon_srifle_DC15X_F),
 			CLASS(Weapon_srifle_DW32S_F),
-			CLASS(Weapon_srifle_Firepuncher_F)
+			CLASS(Weapon_srifle_Firepuncher_F),
+			CLASS(Weapon_launch_RPS6_F),
 		};
         magazines[]=
 		{
