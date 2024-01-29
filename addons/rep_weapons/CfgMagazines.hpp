@@ -105,6 +105,7 @@ class CfgMagazines
     {
         author = "Anorexican";
         displayName = "5Rnd EC80 Cartridge";
+        modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\sniper_Barrel";
         count = 5;
         mass = 5;
         initSpeed = 850;
