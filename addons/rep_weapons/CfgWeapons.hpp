@@ -1,31 +1,7 @@
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class UnderBarrelSlot;
-class WeaponSlotsInfo;
-class PointerSlot: SlotInfo
-{
-	compatibleItems[] += {
-		CLASS(acc_pointer_Borange),
-		CLASS(acc_pointer_Borange_IR),
-		CLASS(acc_pointer_Borange_DC17M),
-		CLASS(acc_pointer_Borange_DC17M_IR),
-		CLASS(acc_pointer_Short_Borange),
-		CLASS(acc_pointer_Short_Borange_IR),
-		CLASS(acc_pointer_Borange_DP23),
-		CLASS(acc_pointer_Borange_DP23_IR),
-		CLASS(acc_pointer_Long_Borange),
-		CLASS(acc_pointer_Long_Borange_IR),
-		CLASS(acc_pointer_Borange_Firepuncher),
-		CLASS(acc_pointer_Borange_Firepuncher_IR),
-	};
-};
-
 class CfgWeapons
 {
+	// ############################################################ Reference Classes ############################################################
+
 	class Default;
 	class Rifle_Base_F;
 	class arifle_MX_Base_F;
@@ -53,6 +29,8 @@ class CfgWeapons
 	class JLTS_DW32S;
 
 	class k_773_rifle_base;
+
+	// ############################################################ Deep References ############################################################
 	
 	class ItemCore: Default
 	{
@@ -289,6 +267,8 @@ class CfgWeapons
 			class UnderBarrelSlot;
 		};
 	};
+	
+	// ############################################################ Optics ############################################################
 
 	SUBCLASS(optic_Holo,3AS_optic_holo_DC15S)
 	{
@@ -365,6 +345,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	// ############################################################ Lasers & Lights ############################################################
 
     SUBCLASS(acc_pointer_Borange,acc_pointer_IR)
     {
@@ -466,7 +448,7 @@ class CfgWeapons
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DC17M);
     };
 
-    SUBCLASS(acc_pointer_Short_Borange,TAG_CLASS(acc_pointer_Borange))
+    SUBCLASS(acc_pointer_Borange_short,TAG_CLASS(acc_pointer_Borange))
     {
 		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
 		class ItemInfo: ItemInfo
@@ -479,17 +461,17 @@ class CfgWeapons
 			};
 		};
 
-        MRT_SwitchItemNextClass = CLASS(acc_pointer_Short_Borange_IR);
-		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Short_Borange_IR);
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_short_IR);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_short_IR);
     };
-    SUBCLASS(acc_pointer_Short_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
+    SUBCLASS(acc_pointer_Borange_short_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
 		model = "\MRC\JLTS\optionals\Glocko\Glocko_flash.p3d";
-        MRT_SwitchItemNextClass = CLASS(acc_pointer_Short_Borange);
-		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Short_Borange);
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_short);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_short);
     };
 
-	SUBCLASS(acc_pointer_Borange_DP23,TAG_CLASS(acc_pointer_Short_Borange))
+	SUBCLASS(acc_pointer_Borange_DP23,TAG_CLASS(acc_pointer_Borange_short))
 	{
 		model = "\OPTRE_Weapons\smg\m12_laser.p3d";
 
@@ -506,7 +488,7 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_DP23_IR);
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DP23_IR);
 	};
-	SUBCLASS(acc_pointer_Borange_DP23_IR,TAG_CLASS(acc_pointer_Short_Borange_IR))
+	SUBCLASS(acc_pointer_Borange_DP23_IR,TAG_CLASS(acc_pointer_Borange_short_IR))
 	{
 		model = "\OPTRE_Weapons\smg\m12_laser.p3d";
 
@@ -524,7 +506,7 @@ class CfgWeapons
 		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_DP23);
 	};
 
-    SUBCLASS(acc_pointer_Long_Borange,TAG_CLASS(acc_pointer_Borange))
+    SUBCLASS(acc_pointer_Borange_long,TAG_CLASS(acc_pointer_Borange))
     {
         model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
         
@@ -538,10 +520,10 @@ class CfgWeapons
             };
         };
 
-        MRT_SwitchItemNextClass = CLASS(acc_pointer_Long_Borange_IR);
-		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange_IR);
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_long_IR);
+		MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_long_IR);
     };
-    SUBCLASS(acc_pointer_Long_Borange_IR,TAG_CLASS(acc_pointer_Borange_IR))
+    SUBCLASS(acc_pointer_Borange_long_IR,TAG_CLASS(acc_pointer_Borange_IR))
     {
         model = "\OPTRE_Weapons\SMG\m7_laser.p3d";
 
@@ -555,11 +537,11 @@ class CfgWeapons
             };
         };
 
-        MRT_SwitchItemNextClass = CLASS(acc_pointer_Long_Borange);
-        MRT_SwitchItemPrevClass = CLASS(acc_pointer_Long_Borange);
+        MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_long);
+        MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_long);
     };
 
-	SUBCLASS(acc_pointer_Borange_Firepuncher,TAG_CLASS(acc_pointer_Long_Borange))
+	SUBCLASS(acc_pointer_Borange_Firepuncher,TAG_CLASS(acc_pointer_Borange_long))
 	{
 		model = "\OPTRE_Weapons\Shotgun\flashlight.p3d";
 
@@ -575,7 +557,7 @@ class CfgWeapons
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_Firepuncher_IR);
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_Firepuncher_IR);
 	};
-	SUBCLASS(acc_pointer_Borange_Firepuncher_IR,TAG_CLASS(acc_pointer_Long_Borange_IR))
+	SUBCLASS(acc_pointer_Borange_Firepuncher_IR,TAG_CLASS(acc_pointer_Borange_long_IR))
 	{
 		model = "\OPTRE_Weapons\Shotgun\flashlight.p3d";
 
@@ -597,6 +579,8 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = TAG_NAME(DC-Series Flashlight);
 	};
+
+	// ############################################################ Sidearms ############################################################
 
     SUBCLASS(hgun_DC17SA_F,JLTS_DC17SA)
     {
@@ -709,13 +693,75 @@ class CfgWeapons
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 				compatibleItems[]=
 				{
-					CLASS(acc_pointer_Short_Borange),
-					CLASS(acc_pointer_Short_Borange_IR),
+					CLASS(acc_pointer_Borange_short),
+					CLASS(acc_pointer_Borange_short_IR),
 					CLASS(acc_flashlight)
 				};
 			};
 		};
     };
+
+	// ############################################################ SMGs ############################################################
+
+	SUBCLASS(SMG_DC15S_F,71st_DC15S)
+	{
+		displayName = TAG_NAME(DC-15S Blaster Carbine);
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(SMG_DC15S_F);
+		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
+		magazineWell[] = {};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(2.5 / 3.4377) / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc15s.wss),
+					3,
+					0.875,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 650";
+			dispersion = "2.8 / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc15s.wss),
+					3,
+					0.875,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+	};
+
+	// ############################################################ Rifles ############################################################
 
 	SUBCLASS(arifle_DC15A_F,71st_DC15A)
 	{
@@ -836,106 +882,21 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(SMG_DC15S_F,71st_DC15S)
+	SUBCLASS(arifle_DC15C_F,3AS_DC15C_F)
 	{
-		displayName = TAG_NAME(DC-15S Blaster Carbine);
-		author = "Krinix & Anorexican";
-		baseWeapon = CLASS(SMG_DC15S_F);
-		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
+		displayName = TAG_NAME(DC-15C Blaster Carbine);
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC15C_F);
+		recoil = "recoil_trg21";
+		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
 		magazineWell[] = {};
-		reloadMagazineSound[]=
-		{
-			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
-			1,
-			1,
-			30
-		};
-		class Single: Single
-		{
-			reloadTime = "60 / 700";
-			dispersion = "(2.5 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\dc15s.wss),
-					3,
-					0.875,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class FullAuto: FullAuto
-		{
-			reloadTime = "60 / 650";
-			dispersion = "2.8 / 1000";
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\dc15s.wss),
-					3,
-					0.875,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-	};
-
-	SUBCLASS(LMG_DC15LE_F,71st_DC15A_LE)
-	{
-		displayName = TAG_NAME(DC-15LE Blaster Rifle);
-		author = "Krinix & Anorexican";
-		baseWeapon = CLASS(LMG_DC15LE_F);
-		recoil = "recoil_car_lsw";
-		modes[] = { "Single", "Burst", "FullAuto", "FullAutoFast" };
-		magazines[] = { CLASS(100Rnd_EC40_Mag_F) };
-		magazineWell[] = {};
-		reloadMagazineSound[]=
-		{
-			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
-			1,
-			1,
-			30
-		};
-		class Single: Single
-		{
-			reloadTime = "60 / 700";
-			dispersion = "(1.4 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\dc15l.wss),
-					1.5,
-					0.9,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
+		modes[] = { "Single", "Burst" };
 		class Burst: Mode_Burst
 		{
-			burst = 5;
-			reloadTime = "60 / 600";
-			dispersion = "(1.7 / 3.4377) / 1000";
+			burst = 2;
+			reloadTime = "60 / 500";
+			dispersion = "(1.6 / 3.4377) / 1000";
+			textureType = "dual";
 			sounds[]=
 			{
 				"StandardSound"
@@ -945,9 +906,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15l.wss),
-					1.5,
-					0.9,
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.2,
 					1800
 				};
 				soundBegin[]=
@@ -956,63 +917,23 @@ class CfgWeapons
 					1
 				};
 			};
-		};
-		class FullAuto: FullAuto
-		{
-			reloadTime = "60 / 500";
-			dispersion = "(2.0 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\dc15l.wss),
-					1.5,
-					0.9,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class FullAutoFast: FullAuto
-		{
-			reloadTime = "60 / 600";
-			dispersion = "(1.85 / 3.4377) / 1000";
-			textureType = "fastAuto";
-		};
-	};
-
-	SUBCLASS(srifle_DC15X_F,JLTS_DC15X)
-	{
-		displayName = TAG_NAME(DC-15X Precision Blaster);
-		author = "Krinix & Anorexican";
-		baseWeapon = CLASS(srifle_DC15X_F);
-		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
-		magazineWell[] = {};
-		reloadMagazineSound[]=
-		{
-			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
-			1,
-			1,
-			30
 		};
 		class Single: Single
 		{
-			reloadTime = "60 / 100";
-			dispersion = "(0.4 / 3.4377) / 1000";
+			reloadTime = "60 / 700";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15x.wss),
-					3.35,
-					0.8,
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.2,
 					1800
 				};
 				soundBegin[]=
@@ -1024,20 +945,77 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class CowsSlot: CowsSlot
+			mass = 70;
+		};
+	};
+
+	SUBCLASS(arifle_DC15C_UGL_F,3AS_DC15C_GL)
+	{
+		displayName = TAG_NAME(DC-15C Blaster Carbine (UGL));
+		author = "Anorexican";
+		baseWeapon = CLASS(arifle_DC15C_UGL_F);
+		recoil = "recoil_trg21";
+		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		magazineWell[] = {};
+		modes[] = { "Single", "Burst" };
+		class Burst: Mode_Burst
+		{
+			burst = 2;
+			reloadTime = "60 / 500";
+			dispersion = "(1.6 / 3.4377) / 1000";
+			textureType = "dual";
+			sounds[]=
 			{
-				compatibleItems[] = { CLASS(optic_Holo), CLASS(optic_DC15X_scope) };
+				"StandardSound"
 			};
-			class PointerSlot: PointerSlot
+			class StandardSound: BaseSoundModeType
 			{
-				compatibleItems[] += {
-					CLASS(acc_pointer_Long_Borange),
-					CLASS(acc_pointer_Long_Borange_IR)
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.25,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
 				};
 			};
 		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
+					2.25,
+					1.25,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 85;
+		};
 	};
-	
+
 	SUBCLASS(arifle_WestarM5_F,3AS_WestarM5_F)
 	{
 		displayName = TAG_NAME(Westar M5 Blaster Carbine);
@@ -1219,88 +1197,20 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(arifle_DC15C_F,3AS_DC15C_F)
-	{
-		displayName = TAG_NAME(DC-15C Blaster Carbine);
-		author = "Anorexican";
-		baseWeapon = CLASS(arifle_DC15C_F);
-		recoil = "recoil_trg21";
-		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
-		magazineWell[] = {};
-		modes[] = { "Single", "Burst" };
-		class Burst: Mode_Burst
-		{
-			burst = 2;
-			reloadTime = "60 / 500";
-			dispersion = "(1.6 / 3.4377) / 1000";
-			textureType = "dual";
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
-					2.25,
-					1.2,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class Single: Single
-		{
-			reloadTime = "60 / 700";
-			dispersion = "(1.4 / 3.4377) / 1000";
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
-					2.25,
-					1.2,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 70;
-		};
-	};
+	// ############################################################ Snipers ############################################################
 
-	SUBCLASS(arifle_DC15C_UGL_F,3AS_DC15C_GL)
+	SUBCLASS(srifle_DW32S_F,JLTS_DW32S)
 	{
-		displayName = TAG_NAME(DC-15C Blaster Carbine (UGL));
+		displayName = TAG_NAME(DW-32S Blaster Rifle);
 		author = "Anorexican";
-		baseWeapon = CLASS(arifle_DC15C_UGL_F);
-		recoil = "recoil_trg21";
-		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		baseWeapon = CLASS(srifle_DW32S_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
-		modes[] = { "Single", "Burst" };
-		class Burst: Mode_Burst
+		class Single: Mode_SemiAuto
 		{
-			burst = 2;
-			reloadTime = "60 / 500";
-			dispersion = "(1.6 / 3.4377) / 1000";
-			textureType = "dual";
+			reloadTime = "60 / 250";
+			dispersion = "(0.75 / 3.4377) / 1000";
 			sounds[]=
 			{
 				"StandardSound"
@@ -1310,35 +1220,10 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
-					2.25,
-					1.25,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class Single: Single
-		{
-			reloadTime = "60 / 700";
-			dispersion = "(1.4 / 3.4377) / 1000";
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					"\Aux501\Weapons\Republic\DC15A\sounds\dc15a_shot.wss",
-					2.25,
-					1.25,
-					1800
+					QPATHTOF(data\sounds\dw32s.wss),
+					2.5,
+					0.875,
+					250
 				};
 				soundBegin[]=
 				{
@@ -1350,35 +1235,173 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]=
+				{ 
+					CLASS(acc_pointer_Borange_long),
+					CLASS(acc_pointer_Borange_long_IR)
+				};
+			};
 		};
 	};
 
-	SUBCLASS(arifle_DC17M_F,3AS_DC17M_F)
+	SUBCLASS(srifle_DC15X_F,JLTS_DC15X)
 	{
-		displayName = TAG_NAME(DC-17M Blaster Platform);
-		author = "Anorexican";
-		baseWeapon = CLASS(arifle_DC17M_F);
+		displayName = TAG_NAME(DC-15X Precision Blaster);
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
+		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
 		magazineWell[] = {};
-		modes[] = { "Single", "Burst", "FullAuto" };
-		class FullAuto: FullAuto
+		reloadMagazineSound[]=
 		{
-			reloadTime = "60 / 600";
-			dispersion = "(1.4 / 3.4377) / 1000";
-			sounds[]=
-			{
-				"StandardSound"
-			};
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 100";
+			dispersion = "(0.4 / 3.4377) / 1000";
 			class StandardSound: BaseSoundModeType
 			{
-				soundContinuous = 1;
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
-					1.4,
+					QPATHTOF(data\sounds\dc15x.wss),
+					3.35,
+					0.8,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_Holo), CLASS(optic_DC15X_scope) };
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] += {
+					CLASS(acc_pointer_Borange_long),
+					CLASS(acc_pointer_Borange_long_IR)
+				};
+			};
+		};
+	};
+
+	SUBCLASS(srifle_Firepuncher_F,k_773_rifle)
+	{
+		displayName = TAG_NAME(Firepuncher Precision Blaster);
+		author = "Anorexican";
+		baseWeapon = CLASS(srifle_Firepuncher_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		magazineWell[] = {};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 250";
+			dispersion = "(0.5 / 3.4377) / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\firepuncher.wss),
+					2.5,
+					0.9,
+					250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\firepuncher_spr.wss),
+					2.5,
+					0.825,
+					250
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 85;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[]=
+				{
+					CLASS(optic_Firepuncher_scope),
+					CLASS(optic_Firepuncher_scope_off)
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]=
+				{ 
+					CLASS(acc_pointer_Borange_Firepuncher),
+					CLASS(acc_pointer_Borange_Firepuncher_IR)
+				};
+			};
+		};
+	};
+
+	// ############################################################ LMGs ############################################################
+
+	SUBCLASS(LMG_DC15LE_F,71st_DC15A_LE)
+	{
+		displayName = TAG_NAME(DC-15LE Blaster Rifle);
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(LMG_DC15LE_F);
+		recoil = "recoil_car_lsw";
+		modes[] = { "Single", "Burst", "FullAuto", "FullAutoFast" };
+		magazines[] = { CLASS(100Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dc15l.wss),
 					1.5,
+					0.9,
 					1800
 				};
 				soundBegin[]=
@@ -1391,8 +1414,8 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 5;
-			reloadTime = "60 / 750";
-			dispersion = "(1.3 / 3.4377) / 1000";
+			reloadTime = "60 / 600";
+			dispersion = "(1.7 / 3.4377) / 1000";
 			sounds[]=
 			{
 				"StandardSound"
@@ -1402,9 +1425,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
-					1.4,
+					QPATHTOF(data\sounds\dc15l.wss),
 					1.5,
+					0.9,
 					1800
 				};
 				soundBegin[]=
@@ -1414,40 +1437,135 @@ class CfgWeapons
 				};
 			};
 		};
-		class Single: Single
+		class FullAuto: FullAuto
 		{
-			reloadTime = "60 / 700";
-			dispersion = "(1.2 / 3.4377) / 1000";
-			sounds[]=
-			{
-				"StandardSound"
-			};
+			reloadTime = "60 / 500";
+			dispersion = "(2.0 / 3.4377) / 1000";
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
-					1.4,
+					QPATHTOF(data\sounds\dc15l.wss),
 					1.5,
+					0.9,
 					1800
 				};
 				soundBegin[]=
 				{
 					"begin1",
 					1
+				};
+			};
+		};
+		class FullAutoFast: FullAuto
+		{
+			reloadTime = "60 / 600";
+			dispersion = "(1.85 / 3.4377) / 1000";
+			textureType = "fastAuto";
+		};
+	};
+
+	// ############################################################ Special ############################################################
+
+	SUBCLASS(sgun_DP23_F,JLTS_DP23)
+	{
+		displayName = TAG_NAME(DP-23 CQC Blaster);
+		author = "Anorexican";
+		baseWeapon = CLASS(sgun_DP23_F);
+		muzzles[] = { "this", CLASS(Blaster_F) };
+		magazines[] = { CLASS(15Rnd_EC20_Mag_F) };
+		magazineWell[] = {};
+		drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
+		reloadMagazineSound[] = { "\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30 };
+		class Single: Single
+		{
+			reloadTime = "60 / 120";
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\dp23.wss),
+					6.5,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		SUBCLASS(Blaster_F,UGL_F)
+		{
+			displayName = "Blaster Mode";
+			displayNameShort = "Blaster";
+			muzzlePos = "usti hlavne";
+			muzzleEnd = "konec hlavne";
+			cursor = "";
+			useModelOptics = 0;
+			useExternalOptic = 1;
+			magazineWell[] = {};
+			magazines[] = { CLASS(30Rnd_EC50_Mag_F) };
+			cameraDir = "eye";
+			memoryPointCamera = "";
+			discreteDistance[] = {100};
+			discreteDistanceCameraPoint[]=
+			{
+				"eye"
+			};
+			discreteDistanceInitIndex = 0;
+			initSpeed = -1;
+			recoil = "recoil_akm";
+			recoilProne = "assaultRifleBase";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class Single: Mode_SemiAuto
+			{
+				reloadTime = "60 / 365";
+				dispersion = "(2 / 3.4377) / 1000";
+				recoil = "recoil_single_primary_3outof10";
+				recoilProne = "recoil_single_primary_prone_3outof10";
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound: BaseSoundModeType
+				{
+					begin1[]=
+					{
+						QPATHTOF(data\sounds\dp23_rfl.wss),
+						2,
+						0.825,
+						200
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
 				};
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+			class CowsSlot: CowsSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = { CLASS(optic_Holo) };
+			};
 			class PointerSlot: PointerSlot
 			{
+				linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
 				compatibleItems[]=
 				{
-					CLASS(acc_pointer_Borange_DC17M),
-					CLASS(acc_pointer_Borange_DC17M_IR),
+					CLASS(acc_pointer_Borange_DP23),
+					CLASS(acc_pointer_Borange_DP23_IR)
 				};
 			};
 		};
@@ -1558,27 +1676,32 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(sgun_DP23_F,JLTS_DP23)
+	SUBCLASS(arifle_DC17M_F,3AS_DC17M_F)
 	{
-		displayName = TAG_NAME(DP-23 CQC Blaster);
+		displayName = TAG_NAME(DC-17M Blaster Platform);
 		author = "Anorexican";
-		baseWeapon = CLASS(sgun_DP23_F);
-		muzzles[] = { "this", CLASS(Blaster_F) };
-		magazines[] = { CLASS(15Rnd_EC20_Mag_F) };
+		baseWeapon = CLASS(arifle_DC17M_F);
+		recoil = "recoil_MSBS65";
+		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
 		magazineWell[] = {};
-		drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
-		reloadMagazineSound[] = { "\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30 };
-		class Single: Single
+		modes[] = { "Single", "Burst", "FullAuto" };
+		class FullAuto: FullAuto
 		{
-			reloadTime = "60 / 120";
+			reloadTime = "60 / 600";
+			dispersion = "(1.4 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
 			class StandardSound: BaseSoundModeType
 			{
+				soundContinuous = 1;
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dp23.wss),
-					6.5,
-					1,
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
+					1.5,
 					1800
 				};
 				soundBegin[]=
@@ -1588,199 +1711,72 @@ class CfgWeapons
 				};
 			};
 		};
-		SUBCLASS(Blaster_F,UGL_F)
+		class Burst: Mode_Burst
 		{
-			displayName = "Blaster Mode";
-			displayNameShort = "Blaster";
-			muzzlePos = "usti hlavne";
-			muzzleEnd = "konec hlavne";
-			cursor = "";
-			useModelOptics = 0;
-			useExternalOptic = 1;
-			magazineWell[] = {};
-			magazines[] = { CLASS(30Rnd_EC50_Mag_F) };
-			cameraDir = "eye";
-			memoryPointCamera = "";
-			discreteDistance[] = {100};
-			discreteDistanceCameraPoint[]=
-			{
-				"eye"
-			};
-			discreteDistanceInitIndex = 0;
-			initSpeed = -1;
-			recoil = "recoil_akm";
-			recoilProne = "assaultRifleBase";
+			burst = 5;
+			reloadTime = "60 / 750";
+			dispersion = "(1.3 / 3.4377) / 1000";
 			sounds[]=
 			{
 				"StandardSound"
 			};
-			class Single: Mode_SemiAuto
+			class StandardSound: BaseSoundModeType
 			{
-				reloadTime = "60 / 365";
-				dispersion = "(2 / 3.4377) / 1000";
-				recoil = "recoil_single_primary_3outof10";
-				recoilProne = "recoil_single_primary_prone_3outof10";
-				sounds[]=
+				weaponSoundEffect = "";
+				begin1[]=
 				{
-					"StandardSound"
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
+					1.5,
+					1800
 				};
-				class StandardSound: BaseSoundModeType
+				soundBegin[]=
 				{
-					begin1[]=
-					{
-						QPATHTOF(data\sounds\dp23_rfl.wss),
-						2,
-						0.825,
-						200
-					};
-					soundBegin[]=
-					{
-						"begin1",
-						1
-					};
+					"begin1",
+					1
+				};
+			};
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(1.2 / 3.4377) / 1000";
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
+					1.5,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
 				};
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
-			class CowsSlot: CowsSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = { CLASS(optic_Holo) };
-			};
 			class PointerSlot: PointerSlot
 			{
-				linkProxy = "\a3\data_f_mark\Proxies\Weapon_Slots\UNDERBARREL";
 				compatibleItems[]=
 				{
-					CLASS(acc_pointer_Borange_DP23),
-					CLASS(acc_pointer_Borange_DP23_IR)
+					CLASS(acc_pointer_Borange_DC17M),
+					CLASS(acc_pointer_Borange_DC17M_IR),
 				};
 			};
 		};
 	};
 
-	SUBCLASS(srifle_DW32S_F,JLTS_DW32S)
-	{
-		displayName = TAG_NAME(DW-32S Blaster Rifle);
-		author = "Anorexican";
-		baseWeapon = CLASS(srifle_DW32S_F);
-		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
-		magazineWell[] = {};
-		class Single: Mode_SemiAuto
-		{
-			reloadTime = "60 / 250";
-			dispersion = "(0.75 / 3.4377) / 1000";
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					2.5,
-					0.875,
-					250
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 85;
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[]=
-				{ 
-					CLASS(acc_pointer_Long_Borange),
-					CLASS(acc_pointer_Long_Borange_IR)
-				};
-			};
-		};
-	};
-
-	SUBCLASS(srifle_Firepuncher_F,k_773_rifle)
-	{
-		displayName = TAG_NAME(Firepuncher Precision Blaster);
-		author = "Anorexican";
-		baseWeapon = CLASS(srifle_Firepuncher_F);
-		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
-		magazineWell[] = {};
-		reloadMagazineSound[]=
-		{
-			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
-			1,
-			1,
-			30
-		};
-		class Single: Single
-		{
-			reloadTime = "60 / 250";
-			dispersion = "(0.5 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\firepuncher.wss),
-					2.5,
-					0.9,
-					250
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				weaponSoundEffect = "";
-				begin1[]=
-				{
-					QPATHTOF(data\sounds\firepuncher_spr.wss),
-					2.5,
-					0.825,
-					250
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 85;
-			class CowsSlot: CowsSlot
-			{
-				compatibleItems[]=
-				{
-					CLASS(optic_Firepuncher_scope),
-					CLASS(optic_Firepuncher_scope_off)
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[]=
-				{ 
-					CLASS(acc_pointer_Borange_Firepuncher),
-					CLASS(acc_pointer_Borange_Firepuncher_IR)
-				};
-			};
-		};
-	};
+	// ############################################################ Launchers ############################################################
 
 	SUBCLASS(launch_RPS6X_F,JLTS_RPS6)
 	{

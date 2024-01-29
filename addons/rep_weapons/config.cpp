@@ -40,14 +40,14 @@ class CfgPatches
         {
             CLASS(acc_pointer_Borange),
             CLASS(acc_pointer_Borange_IR),
-            CLASS(acc_pointer_Short_Borange),
-            CLASS(acc_pointer_Short_Borange_IR),
+            CLASS(acc_pointer_Borange_short),
+            CLASS(acc_pointer_Borange_short_IR),
 			CLASS(acc_pointer_Borange_DC17M),
 			CLASS(acc_pointer_Borange_DC17M_IR),
 			CLASS(acc_pointer_Borange_DP23),
 			CLASS(acc_pointer_Borange_DP23_IR),
-            CLASS(acc_pointer_Long_Borange),
-            CLASS(acc_pointer_Long_Borange_IR),
+            CLASS(acc_pointer_Borange_long),
+            CLASS(acc_pointer_Borange_long_IR),
 			CLASS(acc_flashlight),
 			CLASS(arifle_DC15A_F),
 			CLASS(arifle_DC15A_UGL_F),
@@ -115,6 +115,32 @@ class CfgPatches
 			CLASS(M_ECX100_HE)
 		};
     };
+};
+
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class UnderBarrelSlot;
+class WeaponSlotsInfo;
+class PointerSlot: SlotInfo
+{
+	compatibleItems[] += {
+		CLASS(acc_pointer_Borange),
+		CLASS(acc_pointer_Borange_IR),
+		CLASS(acc_pointer_Borange_DC17M),
+		CLASS(acc_pointer_Borange_DC17M_IR),
+		CLASS(acc_pointer_Borange_short),
+		CLASS(acc_pointer_Borange_short_IR),
+		CLASS(acc_pointer_Borange_DP23),
+		CLASS(acc_pointer_Borange_DP23_IR),
+		CLASS(acc_pointer_Borange_long),
+		CLASS(acc_pointer_Borange_long_IR),
+		CLASS(acc_pointer_Borange_Firepuncher),
+		CLASS(acc_pointer_Borange_Firepuncher_IR),
+	};
 };
 
 #include <CfgAmmo.hpp>
