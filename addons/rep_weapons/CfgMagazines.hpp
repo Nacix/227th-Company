@@ -7,6 +7,7 @@ class CfgMagazines
     class 3AS_300Rnd_EC60_Mag;
     class 3AS_10Rnd_EC80_Mag;
     class 3AS_AntiArmour_mag;
+    class CA_LauncherMagazine;
 
     SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)
     {
@@ -128,5 +129,30 @@ class CfgMagazines
         count = 1;
         mass = 5;
         descriptionShort = "ECX1000 volatile tibanna cartridge<br />Used in: DC-17M";
+    };
+
+    SUBCLASS(RPS6X_THEAT_SACLOS_F,CA_LauncherMagazine)
+	{
+		author = "Anorexican";
+        displayName = TAG_NAME(ECX780 T-HEAT SACLOS Missile);
+        descriptionShort = "Wire-Guided Tandem HEAT Missile<br />Damage: 180+600<br />Radius: 3m<br />Range: 1000m<br />Used in: RPS-6X";
+		displayNameShort = "T-HEAT SACLOS";
+
+		scope = 2;
+		model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket_item.p3d";
+		picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
+
+        ammo = CLASS(M_ECX780_THEAT);
+		initSpeed = 140;
+		mass = 60;
+	};
+
+    SUBCLASS(RPS6X_HE_SACLOS_F,TAG_CLASS(RPS6X_THEAT_SACLOS_F))
+    {
+        displayName = TAG_NAME(ECX100 HE SACLOS Missile);
+        descriptionShort = "Wire-Guided HE Missile<br />Damage: 100<br />Radius: 8m<br />Range: 1000m<br />Used in: RPS-6X";
+        displayNameShort = "HE SACLOS";
+
+        ammo = CLASS(M_ECX100_HE);
     };
 };

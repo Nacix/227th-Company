@@ -100,13 +100,18 @@ class CfgPatches
 			CLASS(21Rnd_EC60_Mag_F),
 			CLASS(5Rnd_EC80_Mag_F),
 			CLASS(15Rnd_EC80_Mag_F),
-			CLASS(1Rnd_ECX1000_Mag_F)
+			CLASS(1Rnd_ECX1000_Mag_F),
+			CLASS(RPS6X_THEAT_SACLOS_F),
+			CLASS(RPS6X_HE_SACLOS_F)
 		};
         ammo[]=
 		{
 			CLASS(B_EC20_Pellets_Submunition_Deploy),
 			CLASS(B_EC20_Pellets_Submunition),
-			CLASS(B_ECX130_147x114_AT)
+			CLASS(B_ECX130_147x114_AT),
+			CLASS(ammo_Penetrator_ECP600),
+			CLASS(M_ECX780_THEAT),
+			CLASS(M_ECX100_HE)
 		};
     };
 };

@@ -33,6 +33,7 @@ class CfgWeapons
     class acc_pointer_IR;
 	class optic_LRPS;
 	class UGL_F;
+	class launch_RPG32_F;
 
 	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
@@ -274,6 +275,18 @@ class CfgWeapons
 			{
 				class Snip;
 			};
+		};
+	};
+
+	class JLTS_RPS6: launch_RPG32_F
+	{
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
 		};
 	};
 
@@ -1750,6 +1763,118 @@ class CfgWeapons
 					CLASS(acc_pointer_Borange_Firepuncher_IR)
 				};
 			};
+		};
+	};
+
+	SUBCLASS(launch_RPS6X_F,JLTS_RPS6)
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(RPS-6X SACLOS Missile Launcher);
+		descriptionShort = "Hybrid Launcher";
+		baseWeapon = CLASS(launch_RPS6X_F);
+		
+		modelOptics = "A3\Weapons_F_Tank\acc\reticle_Vorona.p3d";
+		weaponInfoType = "RscOpticsRangeFinderVorona";
+		opticsZoomInit = 0.375;
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+
+		cursor = "missile";
+		canLock = 0;
+		weaponLockDelay = 1.5;
+		lockAcquire = 1;
+		inertia = 0.9;
+		aimTransitionSpeed = 0.5;
+		dexterity = 1.1;
+
+		ace_overpressure_angle = 30;
+		ace_overpressure_damage = 0.69999999;
+		ace_overpressure_priority = 1;
+		ace_overpressure_range = 15;
+		ace_releadlaunchers_enabled = 1;
+
+		JLTS_hasElectronics = 0;
+		JLTS_hasEMPProtection = 1;
+
+		magazines[]=
+		{
+			CLASS(RPS6X_THEAT_SACLOS_F),
+			CLASS(RPS6X_HE_SACLOS_F)
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\reload_Titan", 
+			1, 
+			1, 
+			20
+		};
+
+		class OpticsModes
+		{
+			class optic
+			{
+				cameraDir = "look";
+				distanceZoomMin = 300;
+				distanceZoomMax = 300;
+				memoryPointCamera = "eye";
+				opticsZoomInit = "0.25 / 2.5";
+				opticsZoomMin = "0.25 / 2.5";
+				opticsZoomMax = "0.25 / 6";
+				opticsDisablePeripherialVision = 1;
+				opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+				opticsFlare = 0;
+				opticsID = 1;
+				useModelOptics = 1;
+				thermalMode[] = { 0, 1 };
+				visionMode[]=
+				{
+					"Normal",
+					"NVG",
+					"TI"
+				};
+			};
+		};
+
+		class Single: Single
+		{
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[]=
+				{
+					QPATHTOF(data\sounds\rps6.wss),
+					12,
+					1.65,
+					1500
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+				closure1[]=
+				{
+					"LF_Weapon_Unit\PLX\sounds\PLX_shot.wss",
+					15,
+					1.35,
+					1000
+				};
+				soundClosure[]=
+				{
+					"closure1",
+					1
+				};
+			};
+		};
+		drySound[]=
+		{
+			"a3\sounds_f_exp\arsenal\weapons\launchers\rpg7\rpg7_dry",
+			0.85,
+			1,
+			20
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 100;
 		};
 	};
 };
