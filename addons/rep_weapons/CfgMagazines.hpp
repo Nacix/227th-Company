@@ -1,5 +1,7 @@
 class CfgMagazines
 {
+    class CA_LauncherMagazine;
+    
     class 3AS_16Rnd_EC20_Mag;
     class 3AS_60Rnd_EC30_Mag;
     class 3AS_100Rnd_EC40_Mag;
@@ -8,7 +10,6 @@ class CfgMagazines
     class 3AS_5Rnd_EC80_Mag;
     class 3AS_10Rnd_EC80_Mag;
     class 3AS_AntiArmour_mag;
-    class CA_LauncherMagazine;
 
     SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)
     {
