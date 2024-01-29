@@ -2,6 +2,7 @@ class CfgAmmo
 {
     class MissileBase;
     class ammo_Penetrator_Base;
+    
     class 3AS_Delta7_20mm_AA;
     class 3AS_EC20_BluePlasma;
 
