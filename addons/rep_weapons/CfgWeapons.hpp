@@ -3,11 +3,16 @@ class CfgWeapons
 	// ############################################################ Reference Classes ############################################################
 
 	class Default;
+	class InventoryOpticsItem_Base_F;
+
+	class optic_LRPS;
+	class acc_pointer_IR;
+
+	class hgun_P07_F;
+	
 	class Rifle_Base_F;
 	class arifle_MX_Base_F;
-    class hgun_P07_F;
-    class acc_pointer_IR;
-	class optic_LRPS;
+
 	class UGL_F;
 	class launch_RPG32_F;
 
@@ -22,11 +27,8 @@ class CfgWeapons
 	class 71st_DC15A_UGL_Base;
 	class 71st_DC15A_LE_Base;
 
-	
-	class InventoryOpticsItem_Base_F;
-	class JLTS_DC15S;
 	class JLTS_Glocko_flashlight;
-	class JLTS_DW32S;
+	class JLTS_DC15S;
 
 	class k_773_rifle_base;
 
@@ -35,6 +37,38 @@ class CfgWeapons
 	class ItemCore: Default
 	{
 		class ItemInfo;
+	};
+
+	class JLTS_DC15X_scope: optic_LRPS
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class Snip;
+			};
+		};
+	};
+
+	class k_773_scope1: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 773scope;
+			};
+		};
+	};
+	class k_773_scope2: k_773_scope1
+	{
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes
+			{
+				class 773scope;
+			};
+		};
 	};
 
     class JLTS_DC17SA: hgun_P07_F
@@ -47,6 +81,19 @@ class CfgWeapons
             class UnderBarrelSlot;
         };
     };
+
+	class 71st_DC15S: JLTS_DC15S
+	{
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
 
 	class 71st_DC15A: 71st_DC15A_Base
 	{
@@ -74,33 +121,7 @@ class CfgWeapons
 		};
 	};
 
-	class 71st_DC15S: JLTS_DC15S
-	{
-		class Single;
-		class FullAuto;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-			class PointerSlot;
-			class MuzzleSlot;
-			class UnderBarrelSlot;
-		};
-	};
-
-	class 71st_DC15A_LE: 71st_DC15A_LE_Base
-	{
-		class Single;
-		class FullAuto;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-			class PointerSlot;
-			class MuzzleSlot;
-			class UnderBarrelSlot;
-		};
-	};
-
-	class JLTS_DC15X: arifle_MX_Base_F
+	class 3AS_DC15C_F: 3AS_DC15C_Base_F
 	{
 		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -112,19 +133,7 @@ class CfgWeapons
 		};
 	};
 
-	class JLTS_DP23: arifle_MX_Base_F
-	{
-		class Single;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-			class PointerSlot;
-			class MuzzleSlot;
-			class UnderBarrelSlot;
-		};
-	};
-
-	class JLTS_DW32S: arifle_MX_Base_F
+	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
 	{
 		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -164,7 +173,7 @@ class CfgWeapons
 		};
 	};
 
-	class 3AS_DC15C_F: 3AS_DC15C_Base_F
+	class JLTS_DW32S: arifle_MX_Base_F
 	{
 		class Single;
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -176,33 +185,9 @@ class CfgWeapons
 		};
 	};
 
-	class 3AS_DC15C_GL: 3AS_DC15C_Base_F
+	class JLTS_DC15X: arifle_MX_Base_F
 	{
 		class Single;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-			class PointerSlot;
-			class MuzzleSlot;
-			class UnderBarrelSlot;
-		};
-	};
-
-	class 3AS_DC17M_F: 3AS_DC17M_Base_F
-	{
-		class Single;
-		class FullAuto;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot;
-			class PointerSlot;
-			class MuzzleSlot;
-			class UnderBarrelSlot;
-		};
-	};
-
-	class 3AS_DC15L_F: 3AS_DC15L_Base_F
-	{
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -224,35 +209,52 @@ class CfgWeapons
 		};
 	};
 
-	class k_773_scope1: ItemCore
+	class 71st_DC15A_LE: 71st_DC15A_LE_Base
 	{
-		class ItemInfo: InventoryOpticsItem_Base_F
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class OpticsModes
-			{
-				class 773scope;
-			};
-		};
-	};
-	class k_773_scope2: k_773_scope1
-	{
-		class ItemInfo: ItemInfo
-		{
-			class OpticsModes
-			{
-				class 773scope;
-			};
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
 		};
 	};
 
-	class JLTS_DC15X_scope: optic_LRPS
+	class JLTS_DP23: arifle_MX_Base_F
 	{
-		class ItemInfo: InventoryOpticsItem_Base_F
+		class Single;
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class OpticsModes
-			{
-				class Snip;
-			};
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC15L_F: 3AS_DC15L_Base_F
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 3AS_DC17M_F: 3AS_DC17M_Base_F
+	{
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
 		};
 	};
 
@@ -347,6 +349,12 @@ class CfgWeapons
 	};
 
 	// ############################################################ Lasers & Lights ############################################################
+
+	SUBCLASS(acc_flashlight,JLTS_Glocko_flashlight)
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(DC-Series Flashlight);
+	};
 
     SUBCLASS(acc_pointer_Borange,acc_pointer_IR)
     {
@@ -572,12 +580,6 @@ class CfgWeapons
 
 		MRT_SwitchItemNextClass = CLASS(acc_pointer_Borange_Firepuncher);
         MRT_SwitchItemPrevClass = CLASS(acc_pointer_Borange_Firepuncher);
-	};
-
-	NEW_CLASS(acc_flashlight): JLTS_Glocko_flashlight
-	{
-		author = "Anorexican";
-		displayName = TAG_NAME(DC-Series Flashlight);
 	};
 
 	// ############################################################ Sidearms ############################################################
