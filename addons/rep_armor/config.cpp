@@ -203,7 +203,7 @@ class CfgPatches
             CLASS(Headgear_H_P2_SCT),
             CLASS(Headgear_H_P2_VCT),
             CLASS(Headgear_H_P2_CSP),
-            CLASS(Headgear_H_P2_CLP),
+            CLASS(Headgear_H_P2_CLC),
             CLASS(Headgear_H_P2_CP),
             CLASS(Headgear_H_P2_CS),
             CLASS(Headgear_H_P2_CSS),
