@@ -1365,8 +1365,8 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					3,
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
 					1.5,
 					1800
 				};
@@ -1391,8 +1391,8 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					3,
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
 					1.5,
 					1800
 				};
@@ -1416,8 +1416,8 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					3,
+					"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+					1.4,
 					1.5,
 					1800
 				};
