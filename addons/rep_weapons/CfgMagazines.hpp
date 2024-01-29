@@ -5,6 +5,7 @@ class CfgMagazines
     class 3AS_100Rnd_EC40_Mag;
     class 3AS_45Rnd_EC50_Mag;
     class 3AS_300Rnd_EC60_Mag;
+    class 3AS_5Rnd_EC80_Mag;
     class 3AS_10Rnd_EC80_Mag;
     class 3AS_AntiArmour_mag;
     class CA_LauncherMagazine;
@@ -101,12 +102,10 @@ class CfgMagazines
         descriptionShort = "21-charge EC60 tibanna cartridge<br />Used in: DW-32S";
     };
 
-    SUBCLASS(5Rnd_EC80_Mag_F,3AS_10Rnd_EC80_Mag)
+    SUBCLASS(5Rnd_EC80_Mag_F,3AS_5Rnd_EC80_Mag)
     {
         author = "Anorexican";
         displayName = "5Rnd EC80 Cartridge";
-        modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\sniper_Barrel";
-        count = 5;
         mass = 5;
         initSpeed = 850;
         descriptionShort = "5-charge EC80 tibanna cartridge<br />Used in: DC-17M";
