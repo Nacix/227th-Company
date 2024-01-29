@@ -54,44 +54,44 @@ class CfgEditorSubcategories
 		displayName = "Atomospheric Ships (P1)";
 	};
 
-	NEW_CLASS(EdSubCat_Helmets_P2)
+	NEW_CLASS(EdSubcat_Helmets_P2)
 	{
 		displayName = "Phase II Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_P2_Custom)
+	NEW_CLASS(EdSubcat_Helmets_P2_Custom)
 	{
 		displayName = "Phase II Helmets (Custom)";
 	};
-	NEW_CLASS(EdSubCat_Helmets_P1)
+	NEW_CLASS(EdSubcat_Helmets_P1)
 	{
 		displayName = "Phase I Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_Engineer)
+	NEW_CLASS(EdSubcat_Helmets_Engineer)
 	{
 		displayName = "Engineer Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_Pilot)
+	NEW_CLASS(EdSubcat_Helmets_Pilot)
 	{
 		displayName = "Pilot Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_ARF)
+	NEW_CLASS(EdSubcat_Helmets_ARF)
 	{
 		displayName = "ARF Trooper Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_Insulated)
+	NEW_CLASS(EdSubcat_Helmets_Insulated)
 	{
 		displayName = "Insulated Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_ARC)
+	NEW_CLASS(EdSubcat_Helmets_ARC)
 	{
 		displayName = "ARC Trooper Helmets";
 	};
-	NEW_CLASS(EdSubCat_Helmets_SpecOp)
+	NEW_CLASS(EdSubcat_Helmets_SpecOp)
 	{
 		displayName = "Special Operations Helmets";
 	};
 
-	NEW_CLASS(EdSubCat_Launchers)
+	NEW_CLASS(EdSubcat_Launchers)
 	{
 		displayName = "Launchers";
 	};
