@@ -249,9 +249,6 @@ class CfgVehicles
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Canada),H_P2_Canada);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Catcher),H_P2_Catcher);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (FiveO),H_P2_Fiveo);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Fox),H_P2_Fox);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Hotshot),H_P2_Hotshot);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Jager),H_P2_Jager);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Kitsune),H_P2_Kitsune);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Luci),H_P2_Luci);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Neca),H_P2_Neca);

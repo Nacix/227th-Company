@@ -52,7 +52,6 @@ class XtdGearModels
 					"Canada",
 					"Catcher",
 					"Fiveo",
-					"Fox",
 					"Kitsune",
 					"Luci",
 					"Rex",
@@ -83,7 +82,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Canada);
 				SET_BACKGROUND_DEFAULT(Catcher);
 				SET_BACKGROUND_DEFAULT(Fiveo);
-				SET_BACKGROUND_DEFAULT(Fox);
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
 				SET_BACKGROUND_DEFAULT(Rex);
