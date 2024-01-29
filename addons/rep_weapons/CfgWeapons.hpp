@@ -855,7 +855,7 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15c.wss),
+					QPATHTOF(data\sounds\dc15s.wss),
 					3,
 					0.785,
 					1800
@@ -876,7 +876,7 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15c.wss),
+					QPATHTOF(data\sounds\dc15s.wss),
 					3,
 					0.785,
 					1800
@@ -1526,7 +1526,7 @@ class CfgWeapons
 					weaponSoundEffect = "";
 					begin1[]=
 					{
-						QPATHTOF(data\sounds\valken_38x.wss),
+						QPATHTOF(data\sounds\dc15l_at.wss),
 						15,
 						0.65,
 						2250
