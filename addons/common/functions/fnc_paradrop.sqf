@@ -21,19 +21,24 @@
 
 params ["_unit", "_altitude", ["_pullHeight", 60]];
 
+TRACE_3("paradrop",_unit,_altitude,_pullHeight);
+
 // forEach: parses every unit in the provided unit's group and sends them to the sky
 {
-	if (isPlayer _x) then { continue };
+	if (isPlayer _x) then { LOG_1("Skipping paradrop for [%1] (unit is player)",_x); continue };
+	
+	LOG_2("Setting paradrop height of unit [%1] to %2m",_x,_altitude);
 	[_x, _altitude] call BIS_fnc_setHeight;
 
 	// _this select 0  -> _unit | _this select 1 -> _pullHeight
-	[{(position (_this select 0)) select 2 <= (_this select 1)}, {
-		_target = _this select 0;
+	[{ (position _this#0) select 2 <= _this#1 }, {
+		_target = _this#0;
 
 		// Sets the unit's chute variant based on their rank
 		private _chuteType = "ls_misc_hawkbatSteerable_parachute";
 
 		// Create the selected chute and move our unit into it
+		LOG_1("Deploying parachute on unit [%1]",_target);
 		_chute = createVehicle [_chuteType, position _target, [], 0, "Fly"];
 		_chute setPos position _target;
 		_target moveInDriver _chute;
