@@ -251,7 +251,6 @@ class CfgVehicles
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (FiveO),H_P2_Fiveo);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Kitsune),H_P2_Kitsune);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Luci),H_P2_Luci);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Neca),H_P2_Neca);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Rex),H_P2_Rex);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Riven),H_P2_Riven);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sage),H_P2_Sage);

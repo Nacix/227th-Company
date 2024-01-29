@@ -217,7 +217,6 @@ class CfgPatches
             CLASS(Headgear_H_P2_FiveO),
             CLASS(Headgear_H_P2_Kitsune),
             CLASS(Headgear_H_P2_Luci),
-            CLASS(Headgear_H_P2_Neca),
             CLASS(Headgear_H_P2_Rex),
             CLASS(Headgear_H_P2_Riven),
             CLASS(Headgear_H_P2_Sage),
