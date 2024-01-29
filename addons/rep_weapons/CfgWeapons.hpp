@@ -606,6 +606,7 @@ class CfgWeapons
 		recoil = "3AS_recoil_dc15a";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
 		magazines[] = { CLASS(24Rnd_EC30_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -723,6 +724,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC15A_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -782,6 +784,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC15A_UGL_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -839,6 +842,7 @@ class CfgWeapons
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(SMG_DC15S_F);
 		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -898,6 +902,7 @@ class CfgWeapons
 		recoil = "recoil_car_lsw";
 		modes[] = { "Single", "Burst", "FullAuto", "FullAutoFast" };
 		magazines[] = { CLASS(100Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -988,6 +993,7 @@ class CfgWeapons
 		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -1039,6 +1045,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_WestarM5_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		class FullAuto: FullAuto
 		{
 			reloadTime = "60 / 500";
@@ -1128,6 +1135,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_WestarM5_UGL_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
 		class FullAuto: FullAuto
 		{
@@ -1218,6 +1226,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC15C_F);
 		recoil = "recoil_trg21";
 		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
 		class Burst: Mode_Burst
 		{
@@ -1284,6 +1293,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC15C_UGL_F);
 		recoil = "recoil_trg21";
 		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
+		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
 		class Burst: Mode_Burst
 		{
@@ -1350,6 +1360,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC17M_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
+		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
 		class FullAuto: FullAuto
 		{
@@ -1449,6 +1460,7 @@ class CfgWeapons
 		baseWeapon = CLASS(arifle_DC15L_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
 		muzzles[] = { "this", "AntiTank" };
 		class Burst: Mode_Burst
@@ -1509,6 +1521,7 @@ class CfgWeapons
 			discreteDistanceInitIndex = 0;
 			drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
 			magazines[] = { CLASS(1Rnd_ECX130_Mag_F) };
+			magazineWell[] = {};
 			maxZeroing = 100;
 			modes[] = { "Single" };
 			reloadAction = "GestureReloadMX";
@@ -1552,6 +1565,7 @@ class CfgWeapons
 		baseWeapon = CLASS(sgun_DP23_F);
 		muzzles[] = { "this", CLASS(Blaster_F) };
 		magazines[] = { CLASS(15Rnd_EC20_Mag_F) };
+		magazineWell[] = {};
 		drySound[] = { "\3AS\3AS_Main\Sounds\Blaster_empty", 2, 1, 20 };
 		reloadMagazineSound[] = { "\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30 };
 		class Single: Single
@@ -1654,6 +1668,7 @@ class CfgWeapons
 		baseWeapon = CLASS(srifle_DW32S_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
+		magazineWell[] = {};
 		class Single: Mode_SemiAuto
 		{
 			reloadTime = "60 / 250";
@@ -1700,6 +1715,7 @@ class CfgWeapons
 		baseWeapon = CLASS(srifle_Firepuncher_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -1801,6 +1817,7 @@ class CfgWeapons
 			CLASS(RPS6X_THEAT_SACLOS_F),
 			CLASS(RPS6X_HE_SACLOS_F)
 		};
+		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\reload_Titan", 
