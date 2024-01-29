@@ -702,7 +702,7 @@ class CfgWeapons
 			class CowsSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = { "3AS_optic_holo_DC15S" };
+				compatibleItems[] = { CLASS(optic_Holo) };
 			};
 			class PointerSlot
 			{
