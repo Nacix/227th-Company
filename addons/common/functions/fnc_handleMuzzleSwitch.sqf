@@ -32,12 +32,12 @@ private _muzzleChangeHandler = ["muzzle", {
 		case CLASS(sgun_DP23_F): {
 			 // Set the DP-23 optic to shotgun mode
 			 LOG_1("Resetting DP-23 optic on unit [%1]",_unit);
-			_unit removePrimaryWeaponItem CLASS(optic_Holo);
+			_unit removePrimaryWeaponItem CLASS(optic_Holo_DP23);
 		};
 		case CLASS(Blaster_F): {
 			// Set the DP-23 optic to blaster mode
-			LOG_2("Setting DP-23 optic to [%1] on unit [%2]",CLASS(optic_Holo),_unit);
-			_unit addPrimaryWeaponItem CLASS(optic_Holo);
+			LOG_2("Setting DP-23 optic to [%1] on unit [%2]",CLASS(optic_Holo_DP23),_unit);
+			_unit addPrimaryWeaponItem CLASS(optic_Holo_DP23);
 		};
 	};
 }] call CBA_fnc_addPlayerEventHandler;

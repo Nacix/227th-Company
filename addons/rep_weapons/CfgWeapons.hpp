@@ -279,6 +279,11 @@ class CfgWeapons
 		scope = 2;
     };
 
+	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
+	{
+		scope = 1;
+	};
+
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
 	{
 		author = "Krinix & Anorexican";
@@ -728,9 +733,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15s.wss),
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
 					3,
-					0.875,
+					1.3,
 					1800
 				};
 				soundBegin[]=
@@ -749,9 +754,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15s.wss),
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
 					3,
-					0.875,
+					1.3,
 					1800
 				};
 				soundBegin[]=
@@ -821,6 +826,14 @@ class CfgWeapons
 					"begin1",
 					1
 				};
+			};
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 95;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
 			};
 		};
 	};
@@ -1015,6 +1028,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { "3AS_optic_reflex_DC15C" };
+			};
 		};
 	};
 
@@ -1254,7 +1271,7 @@ class CfgWeapons
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		magazines[] = { CLASS(12Rnd_EC90_Mag_F) };
 		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{
@@ -1559,7 +1576,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = { CLASS(optic_Holo) };
+				compatibleItems[] = { CLASS(optic_Holo_DP23) };
 			};
 			class PointerSlot: PointerSlot
 			{
@@ -1573,11 +1590,11 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(arifle_DC15L_F,3AS_DC15L_F)
+	SUBCLASS(arifle_DC15HX_F,3AS_DC15L_F)
 	{
-		displayName = TAG_NAME(DC-15L Dual-Purpose Blaster);
+		displayName = TAG_NAME(DC-15HX Dual-Purpose Blaster);
 		author = "Anorexican";
-		baseWeapon = CLASS(arifle_DC15L_F);
+		baseWeapon = CLASS(arifle_DC15HX_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
@@ -1586,7 +1603,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 5;
-			reloadTime = "60 / 650";
+			reloadTime = "60 / 500";
 			dispersion = "(1.3 / 3.4377) / 1000";
 			sounds[]=
 			{
@@ -1611,7 +1628,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime = "60 / 700";
+			reloadTime = "60 / 550";
 			dispersion = "(1.2 / 3.4377) / 1000";
 			sounds[]=
 			{
@@ -1675,6 +1692,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 135;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
 		};
 	};
 
