@@ -1271,7 +1271,7 @@ class CfgWeapons
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(srifle_DC15X_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
+		magazines[] = { CLASS(12Rnd_EC90_Mag_F) };
 		magazineWell[] = {};
 		reloadMagazineSound[]=
 		{

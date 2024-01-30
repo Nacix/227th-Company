@@ -9,6 +9,7 @@ class CfgMagazines
     class 3AS_300Rnd_EC60_Mag;
     class 3AS_5Rnd_EC80_Mag;
     class 3AS_10Rnd_EC80_Mag;
+    class 3AS_10Rnd_EM90_mag;
     class 3AS_AntiArmour_mag;
 
     SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)
@@ -110,6 +111,17 @@ class CfgMagazines
         mass = 5;
         initSpeed = 850;
         descriptionShort = "5-charge EC80 tibanna cartridge<br />Used in: DC-17M";
+    };
+
+    SUBCLASS(12Rnd_EC90_Mag_F,3AS_10Rnd_EM90_mag)
+    {
+        author = "Anorexican";
+        displayName = "12Rnd EC90 Cartridge";
+        count = 12;
+        mass = 5;
+        ammo = "3AS_EC90_BluePlasma";
+        initSpeed = 1500;
+        descriptionShort = "12-charge EC90 focused tibanna cartridge<br />Used in: DC-15X";
     };
 
     SUBCLASS(1Rnd_ECX130_Mag_F,TAG_CLASS(45Rnd_EC40_Mag_F))
