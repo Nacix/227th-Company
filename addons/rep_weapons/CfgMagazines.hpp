@@ -82,7 +82,7 @@ class CfgMagazines
         displayName = "15Rnd EC80 Cartridge";
         count = 15;
         mass = 5;
-        initSpeed = 1000;
+        initSpeed = 1250;
         descriptionShort = "15-charge EC80 tibanna cartridge<br />Used in: DC-15X";
     };
 
@@ -99,6 +99,7 @@ class CfgMagazines
     {
         author = "Anorexican";
         displayName = "21Rnd EC60 Cartridge";
+        initSpeed = 875;
         count = 21;
         mass = 5;
         descriptionShort = "21-charge EC60 tibanna cartridge<br />Used in: DW-32S";
@@ -109,7 +110,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "5Rnd EC80 Cartridge";
         mass = 5;
-        initSpeed = 850;
+        initSpeed = 1000;
         descriptionShort = "5-charge EC80 tibanna cartridge<br />Used in: DC-17M";
     };
 
