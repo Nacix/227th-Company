@@ -2022,7 +2022,7 @@ class CfgWeapons
 			class LinkedItemsMuzzle
 			{
 				slot = "MuzzleSlot";
-				item = CLASS(k_773_snds);
+				item = "k_773_snds";
 			};
 		};
 	};
