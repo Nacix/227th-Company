@@ -109,6 +109,7 @@ class CfgVehicles
 
     ADD_SNIPER_OBJECT(Firepuncher,srifle_Firepuncher_F,15Rnd_EC80_Mag_F);
     ADD_SNIPER_OBJECT(Firepuncher (Scope),srifle_Firepuncher_scope_F,15Rnd_EC80_Mag_F);
+    ADD_SNIPER_OBJECT(Firepuncher (Suppressor),srifle_Firepuncher_suppressor_F,15Rnd_EC80_Mag_F);
 
     // ############################################################ LMGs ############################################################
 

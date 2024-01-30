@@ -2015,6 +2015,18 @@ class CfgWeapons
 		};
 	};
 
+	SUBCLASS(srifle_Firepuncher_suppressor_F,TAG_CLASS(srifle_Firepuncher_scope_F))
+	{
+		class LinkedItems: LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = CLASS(k_773_snds);
+			};
+		};
+	};
+
 	SUBCLASS(LMG_DC15LE_scope_F,TAG_CLASS(LMG_DC15LE_F))
 	{
 		scope = 1;

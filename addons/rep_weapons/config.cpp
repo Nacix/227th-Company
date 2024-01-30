@@ -77,6 +77,7 @@ class CfgPatches
 			CLASS(srifle_DW32S_pointer_F),
 			CLASS(srifle_DC15X_scope_F),
 			CLASS(srifle_Firepuncher_scope_F),
+			CLASS(srifle_Firepuncher_suppressor_F),
 			CLASS(LMG_DC15LE_scope_F),
 			CLASS(sgun_DP23_pointer_F),
 			CLASS(arifle_DC17M_pointer_F)
@@ -107,7 +108,8 @@ class CfgPatches
 			CLASS(Weapon_arifle_DC17M_pointer_F),
 			CLASS(Weapon_srifle_DW32S_pointer_F),
 			CLASS(Weapon_srifle_DC15X_scope_F),
-			CLASS(Weapon_srifle_Firepuncher_scope_F)
+			CLASS(Weapon_srifle_Firepuncher_scope_F),
+			CLASS(Weapon_srifle_Firepuncher_suppressor_F)
 		};
         magazines[]=
 		{
