@@ -828,6 +828,13 @@ class CfgWeapons
 				};
 			};
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
+		};
 	};
 
 	SUBCLASS(arifle_DC15A_UGL_F,71st_DC15A_UGL)
@@ -1020,6 +1027,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { "3AS_optic_reflex_DC15C" };
+			};
 		};
 	};
 
@@ -1680,6 +1691,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 135;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = {};
+			};
 		};
 	};
 
