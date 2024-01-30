@@ -1557,10 +1557,10 @@ class CfgWeapons
 				{
 					begin1[]=
 					{
-						QPATHTOF(data\sounds\dp23_rfl.wss),
-						2,
-						0.825,
-						200
+						"LF_Weapon_Unit\main\sounds\iond1_01.wss",
+						2.65,
+						1.5,
+						1800
 					};
 					soundBegin[]=
 					{
