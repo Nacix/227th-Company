@@ -18,7 +18,7 @@ class CfgMagazines
         displayName = "15Rnd EC20 Cartridge";
         ammo = CLASS(B_EC20_Pellets_Submunition);
         count = 15;
-        mass = 12;
+        mass = 9;
         descriptionShort = "15-charge EC20 tibanna scatter cartridge<br />Used in: DP-23";
     };
 
