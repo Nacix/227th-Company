@@ -1603,7 +1603,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 5;
-			reloadTime = "60 / 650";
+			reloadTime = "60 / 500";
 			dispersion = "(1.3 / 3.4377) / 1000";
 			sounds[]=
 			{
@@ -1628,7 +1628,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime = "60 / 700";
+			reloadTime = "60 / 575";
 			dispersion = "(1.2 / 3.4377) / 1000";
 			sounds[]=
 			{
