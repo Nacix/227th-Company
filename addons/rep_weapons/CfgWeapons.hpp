@@ -1628,7 +1628,7 @@ class CfgWeapons
 		};
 		class Single: Mode_SemiAuto
 		{
-			reloadTime = "60 / 575";
+			reloadTime = "60 / 550";
 			dispersion = "(1.2 / 3.4377) / 1000";
 			sounds[]=
 			{
