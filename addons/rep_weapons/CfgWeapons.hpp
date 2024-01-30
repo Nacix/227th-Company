@@ -1398,7 +1398,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15LE Blaster Rifle);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(LMG_DC15LE_F);
-		recoil = "recoil_car_lsw";
+		recoil = "recoil_MSBS65";
 		modes[] = { "Single", "Burst", "FullAuto", "FullAutoFast" };
 		magazines[] = { CLASS(100Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
