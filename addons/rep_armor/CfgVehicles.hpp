@@ -140,7 +140,7 @@ class CfgVehicles
 			QPATHTOF(data\uniforms\trooper\ct\u_up_ct_co.paa),
 			QPATHTOF(data\uniforms\trooper\ct\u_low_ct_co.paa)
 		};
-		SET_ARMOR_UNIFORM(11.5,0.625,12,0.01,0.25,0.4)
+		SET_ARMOR_UNIFORM(9,0.65,12,0.01,0.25,0.4);
 		class Wounds
 		{
 			tex[] = {};

@@ -99,6 +99,7 @@ class CfgPatches
             CLASS(NV_Visor_Valyrian),
             CLASS(NV_Visor_Yellow),
             CLASS(V_Invisible_CT),
+            CLASS(V_Holster_CT),
             CLASS(V_Suspenders_CT),
             CLASS(V_AB_CT),
             CLASS(V_AB_Medic),
