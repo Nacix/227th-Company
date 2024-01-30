@@ -70,7 +70,16 @@ class CfgPatches
 			CLASS(sgun_DP23_F),
 			CLASS(arifle_DC15HX_F),
 			CLASS(arifle_DC17M_F),
-			CLASS(launch_RPS6_F)
+			CLASS(launch_RPS6_F),
+			CLASS(hgun_DC17SA_pointer_F),
+			CLASS(arifle_DC15C_scope_F),
+			CLASS(arifle_WestarM5_scope_F),
+			CLASS(srifle_DW32S_pointer_F),
+			CLASS(srifle_DC15X_scope_F),
+			CLASS(srifle_Firepuncher_scope_F),
+			CLASS(LMG_DC15LE_scope_F),
+			CLASS(sgun_DP23_pointer_F),
+			CLASS(arifle_DC17M_pointer_F)
         };
         units[]=
 		{
@@ -90,6 +99,15 @@ class CfgPatches
 			CLASS(Weapon_srifle_DW32S_F),
 			CLASS(Weapon_srifle_Firepuncher_F),
 			CLASS(Weapon_launch_RPS6_F),
+			CLASS(Weapon_hgun_DC17SA_pointer_F),
+			CLASS(Weapon_arifle_DC15C_scope_F),
+			CLASS(Weapon_arifle_WestarM5_scope_F),
+			CLASS(Weapon_LMG_DC15LE_scope_F),
+			CLASS(Weapon_sgun_DP23_pointer_F),
+			CLASS(Weapon_arifle_DC17M_pointer_F),
+			CLASS(Weapon_srifle_DW32S_pointer_F),
+			CLASS(Weapon_srifle_DC15X_scope_F),
+			CLASS(Weapon_srifle_Firepuncher_scope_F)
 		};
         magazines[]=
 		{

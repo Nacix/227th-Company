@@ -1913,4 +1913,147 @@ class CfgWeapons
 			mass = 100;
 		};
 	};
+
+	// ############################################################ Weapon Prefabs ############################################################
+
+	SUBCLASS(hgun_DC17SA_pointer_F,TAG_CLASS(hgun_DC17SA_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(hgun_DC17SA_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_Holo);	
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_short);	
+			};
+		};
+	};
+
+	SUBCLASS(arifle_DC15C_scope_F,TAG_CLASS(arifle_DC15C_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_DC15C_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3AS_optic_acog_DC15C";
+			};
+		};
+	};
+
+	SUBCLASS(arifle_WestarM5_scope_F,TAG_CLASS(arifle_WestarM5_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_WestarM5_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3AS_Optic_Scope_WestarM5";
+			};
+		};
+	};
+
+	SUBCLASS(srifle_DW32S_pointer_F,TAG_CLASS(srifle_DW32S_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_DW32S_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_long);
+			};
+		};
+	};
+
+	SUBCLASS(srifle_DC15X_scope_F,TAG_CLASS(srifle_DC15X_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_DC15X_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_DC15X_scope);
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_long);
+			};
+		};
+	};
+
+	SUBCLASS(srifle_Firepuncher_scope_F,TAG_CLASS(srifle_Firepuncher_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_Firepuncher_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_Firepuncher_scope);
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_Firepuncher);
+			};
+		};
+	};
+
+	SUBCLASS(LMG_DC15LE_scope_F,TAG_CLASS(LMG_DC15LE_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(LMG_DC15LE_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_DC15A_scope";
+			};
+		};
+	};
+
+	SUBCLASS(sgun_DP23_pointer_F,TAG_CLASS(sgun_DP23_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(sgun_DP23_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_DP23);
+			};
+		};
+	};
+
+	SUBCLASS(arifle_DC17M_pointer_F,TAG_CLASS(arifle_DC17M_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_DC17M_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_DC17M);
+			};
+		};
+	};
 };
