@@ -279,6 +279,11 @@ class CfgWeapons
 		scope = 2;
     };
 
+	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
+	{
+		scope = 1;
+	};
+
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
 	{
 		author = "Krinix & Anorexican";
@@ -1559,7 +1564,7 @@ class CfgWeapons
 			class CowsSlot: CowsSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = { CLASS(optic_Holo) };
+				compatibleItems[] = { CLASS(optic_Holo_DP23) };
 			};
 			class PointerSlot: PointerSlot
 			{
