@@ -38,6 +38,7 @@ class Extended_InitPost_EventHandlers {
 	SET_TRAITS(B_Krayt_P2_RTO_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_P2_Support_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_P2_Marksman_F,SPC,VCT,scout);
+	SET_TRAITS(B_Krayt_P2_Sniper_F,SPC,VCT,sniper);
 	SET_TRAITS(B_Krayt_P2_Pilot_F,SPC,CX,basic);
 	SET_TRAITS(B_Krayt_P1_DC15A_F,CT,CT,basic);
 	SET_TRAITS(B_Krayt_P1_DC15S_F,CT,CT,basic);
@@ -54,16 +55,24 @@ class Extended_InitPost_EventHandlers {
 	SET_TRAITS(B_Krayt_P1_Medic_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_P1_RTO_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_P1_Support_F,SPC,SCT,basic);
-	SET_TRAITS(B_Krayt_P1_Marksman_F,SPC,VCT,scout);
+	SET_TRAITS(B_Krayt_P1_Sniper_F,SPC,VCT,scout);
 	SET_TRAITS(B_Krayt_P1_Pilot_F,SPC,CX,basic);
-	SET_TRAITS(B_Krayt_ARC_DC15A_UGL_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_WestarM5_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_AT_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_Engineer_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_Sharpshooter_F,SPC,CLC,elite);
+	SET_TRAITS(B_Krayt_ARC_Sniper_F,SPC,CLC,elite);
 	SET_TRAITS(B_Krayt_ARC_Medic_F,SPC,CLC,elite);
 	SET_TRAITS(B_Krayt_ARC_NCO_F,NCO,CSS,elite);
 	SET_TRAITS(B_Krayt_Jet_DC15LE_F,SPC,CSP,leader);
 	SET_TRAITS(B_Krayt_Jet_DC15A_UGL_F,SPC,CSP,scout);
 	SET_TRAITS(B_Krayt_Jet_Medic_F,SPC,CSP,leader);
 	SET_TRAITS(B_Krayt_Jet_AT_F,SPC,CSP,leader);
+	SET_TRAITS(B_Krayt_Jet_Engineer_F,SPC,CSP,leader);
+	SET_TRAITS(B_Krayt_Jet_Marksman_F,SPC,CSP,leader);
+	SET_TRAITS(B_Krayt_Jet_Sniper_F,SPC,CSP,leader);
 	SET_TRAITS(B_Krayt_Jet_NCO_F,NCO,CSS,scout);
+	SET_TRAITS(B_Krayt_Jet_Officer_F,SCO,CPT,leader);
 	SET_TRAITS(B_Krayt_Geonosis_DC15A_F,CT,CT,basic);
 	SET_TRAITS(B_Krayt_Geonosis_DC15S_F,CT,CT,basic);
 	SET_TRAITS(B_Krayt_Geonosis_AT_F,SPC,SCT,basic);
@@ -75,6 +84,7 @@ class Extended_InitPost_EventHandlers {
 	SET_TRAITS(B_Krayt_Geonosis_RTO_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_Geonosis_Support_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_Geonosis_Marksman_F,SPC,VCT,scout);
+	SET_TRAITS(B_Krayt_Geonosis_Sniper_F,SPC,VCT,sniper);
 	SET_TRAITS(B_Krayt_Insulated_DC15A_F,CT,CT,basic);
 	SET_TRAITS(B_Krayt_Insulated_DC15S_F,CT,CT,basic);
 	SET_TRAITS(B_Krayt_Insulated_AT_F,SPC,SCT,basic);
@@ -86,4 +96,5 @@ class Extended_InitPost_EventHandlers {
 	SET_TRAITS(B_Krayt_Insulated_RTO_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_Insulated_Support_F,SPC,SCT,basic);
 	SET_TRAITS(B_Krayt_Insulated_Marksman_F,SPC,VCT,scout);
+	SET_TRAITS(B_Krayt_Insulated_Sniper_F,SPC,VCT,sniper);
 };
