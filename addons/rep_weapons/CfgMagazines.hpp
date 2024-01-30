@@ -67,13 +67,13 @@ class CfgMagazines
         descriptionShort = "100-charge EC40 tibanna cartridge<br />Used in: DC-15LE & DC-17M";
     };
 
-    SUBCLASS(30Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
+    SUBCLASS(24Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
     {
         author = "Anorexican";
-        displayName = "30Rnd EC50 Cartridge";
-        count = 30;
+        displayName = "24Rnd EC50 Cartridge";
+        count = 24;
         mass = 3;
-        descriptionShort = "30-charge EC50 tibanna cartridge<br />Used in: DP-23";
+        descriptionShort = "24-charge EC50 tibanna cartridge<br />Used in: DP-23";
     };
 
     SUBCLASS(36Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)

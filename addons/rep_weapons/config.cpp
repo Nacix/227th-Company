@@ -119,7 +119,7 @@ class CfgPatches
 			CLASS(45Rnd_EC40_Mag_F),
 			CLASS(60Rnd_EC40_Mag_F),
 			CLASS(100Rnd_EC40_Mag_F),
-			CLASS(30Rnd_EC50_Mag_F),
+			CLASS(24Rnd_EC50_Mag_F),
 			CLASS(36Rnd_EC50_Mag_F),
 			CLASS(21Rnd_EC60_Mag_F),
 			CLASS(5Rnd_EC80_Mag_F),

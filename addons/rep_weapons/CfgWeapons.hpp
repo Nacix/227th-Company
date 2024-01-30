@@ -1527,7 +1527,7 @@ class CfgWeapons
 			useModelOptics = 0;
 			useExternalOptic = 1;
 			magazineWell[] = {};
-			magazines[] = { CLASS(30Rnd_EC50_Mag_F) };
+			magazines[] = { CLASS(24Rnd_EC50_Mag_F) };
 			cameraDir = "eye";
 			memoryPointCamera = "";
 			discreteDistance[] = {100};

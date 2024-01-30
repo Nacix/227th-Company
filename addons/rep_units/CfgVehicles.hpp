@@ -284,7 +284,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -308,7 +308,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -506,7 +506,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
     
         SET_LOADOUT;
     };
@@ -892,7 +892,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -916,7 +916,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1158,7 +1158,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1429,7 +1429,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1719,7 +1719,7 @@ class CfgVehicles
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(30Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
