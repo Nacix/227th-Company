@@ -733,9 +733,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15s.wss),
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
 					3,
-					0.875,
+					1.3,
 					1800
 				};
 				soundBegin[]=
@@ -754,9 +754,9 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dc15s.wss),
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
 					3,
-					0.875,
+					1.3,
 					1800
 				};
 				soundBegin[]=
