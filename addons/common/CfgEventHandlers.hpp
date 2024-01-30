@@ -13,6 +13,13 @@ class Extended_PreInit_EventHandlers {
 class Extended_PostInit_EventHandlers {
     class ADDON {
         init = QUOTE(call COMPILE_FILE(XEH_postInit));
-        // clientInit = QUOTE(call FUNC(init));
+        serverInit = QUOTE(call FUNC(init));
+        clientInit = QUOTE(call FUNC(clientInit));
     };
+};
+
+class Extended_FiredBIS_EventHandlers {
+	class ADDON {
+		server_fired_eh = QUOTE(_this call FUNC(adjustGrenadePhysics));
+	};
 };

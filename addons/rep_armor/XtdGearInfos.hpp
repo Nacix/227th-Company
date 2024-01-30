@@ -138,7 +138,6 @@ class XtdGearInfos
 		XTD_H_P2(Canada,Trooper,Canada);
 		XTD_H_P2(Catcher,Trooper,Catcher);
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
-		XTD_H_P2(Fox,Trooper,Fox);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
 		XTD_H_P2(Rex,Trooper,Rex);
@@ -220,8 +219,9 @@ class XtdGearInfos
 
 		// Miscellaneous Vests
 		XTD_V_OMNI(Invisible_CT,Basic,Invisible);
-		XTD_V_OMNI(AB_CT,Basic,Trooper);
+		XTD_V_OMNI(Holster_CT,Basic,Trooper);
 		XTD_V_OMNI(Suspenders_CT,Basic,Suspenders);
+		XTD_V_OMNI(AB_CT,Specialist,Trooper);
 		XTD_V_OMNI(AB_AT,Specialist,AT);
 		XTD_V_OMNI(AB_EOD,Specialist,EOD);
 		XTD_V_OMNI(AB_Geonosis,Specialist,Geonosis);
