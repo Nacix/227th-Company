@@ -1590,11 +1590,11 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(arifle_DC15L_F,3AS_DC15L_F)
+	SUBCLASS(arifle_DC15HX_F,3AS_DC15L_F)
 	{
-		displayName = TAG_NAME(DC-15L Dual-Purpose Blaster);
+		displayName = TAG_NAME(DC-15HX Dual-Purpose Blaster);
 		author = "Anorexican";
-		baseWeapon = CLASS(arifle_DC15L_F);
+		baseWeapon = CLASS(arifle_DC15HX_F);
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};

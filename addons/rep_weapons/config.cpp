@@ -68,7 +68,7 @@ class CfgPatches
 			CLASS(srifle_Firepuncher_F),
 			CLASS(LMG_DC15LE_F),
 			CLASS(sgun_DP23_F),
-			CLASS(arifle_DC15L_F),
+			CLASS(arifle_DC15HX_F),
 			CLASS(arifle_DC17M_F),
 			CLASS(launch_RPS6_F)
         };
@@ -78,7 +78,7 @@ class CfgPatches
 			CLASS(Weapon_arifle_DC15A_UGL_F),
 			CLASS(Weapon_arifle_DC15C_F),
 			CLASS(Weapon_arifle_DC15C_UGL_F),
-			CLASS(Weapon_arifle_DC15L_F),
+			CLASS(Weapon_arifle_DC15HX_F),
 			CLASS(Weapon_arifle_DC17M_F),
 			CLASS(Weapon_arifle_WestarM5_F),
 			CLASS(Weapon_arifle_WestarM5_GL_F),
