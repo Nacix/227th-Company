@@ -830,6 +830,7 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 95;
 			class CowsSlot: CowsSlot
 			{
 				compatibleItems[] = {};
