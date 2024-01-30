@@ -39,6 +39,17 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class optic_DC15A_scope: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class OpticScopeLookMedium;
+			};
+		};
+	};
+
 	class JLTS_DC15X_scope: optic_LRPS
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -282,6 +293,22 @@ class CfgWeapons
 	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
 	{
 		scope = 1;
+	};
+
+	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
+	{
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class OpticScopeLookMedium: OpticScopeLookMedium
+				{
+					opticsZoomInit = "0.25 / 2";
+					opticsZoomMax = "0.25 / 2";
+					opticsZoomMin = "0.25 / 4";
+				};
+			};
+		};
 	};
 
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
@@ -1040,7 +1067,7 @@ class CfgWeapons
 		displayName = TAG_NAME(Westar M5 Blaster Carbine);
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_WestarM5_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_car_lsw";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		class FullAuto: FullAuto
@@ -1130,7 +1157,7 @@ class CfgWeapons
 		displayName = TAG_NAME(Westar M5 Blaster Carbine (UGL));
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_WestarM5_UGL_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_car_lsw";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
@@ -1398,7 +1425,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15LE Blaster Rifle);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(LMG_DC15LE_F);
-		recoil = "recoil_car_lsw";
+		recoil = "recoil_MSBS65";
 		modes[] = { "Single", "Burst", "FullAuto", "FullAutoFast" };
 		magazines[] = { CLASS(100Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
@@ -1483,6 +1510,14 @@ class CfgWeapons
 			dispersion = "(1.85 / 3.4377) / 1000";
 			textureType = "fastAuto";
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 10.5;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_DC15LE_scope) };
+			};
+		};
 	};
 
 	// ############################################################ Special ############################################################
@@ -1527,7 +1562,7 @@ class CfgWeapons
 			useModelOptics = 0;
 			useExternalOptic = 1;
 			magazineWell[] = {};
-			magazines[] = { CLASS(30Rnd_EC50_Mag_F) };
+			magazines[] = { CLASS(24Rnd_EC50_Mag_F) };
 			cameraDir = "eye";
 			memoryPointCamera = "";
 			discreteDistance[] = {100};
@@ -1595,7 +1630,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15HX Dual-Purpose Blaster);
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC15HX_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_SMG_03";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
@@ -1911,6 +1946,161 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 100;
+		};
+	};
+
+	// ############################################################ Weapon Prefabs ############################################################
+
+	SUBCLASS(hgun_DC17SA_pointer_F,TAG_CLASS(hgun_DC17SA_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(hgun_DC17SA_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_Holo);	
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_short);	
+			};
+		};
+	};
+
+	SUBCLASS(arifle_DC15C_scope_F,TAG_CLASS(arifle_DC15C_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_DC15C_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3AS_optic_acog_DC15C";
+			};
+		};
+	};
+
+	SUBCLASS(arifle_WestarM5_scope_F,TAG_CLASS(arifle_WestarM5_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_WestarM5_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "3AS_Optic_Scope_WestarM5";
+			};
+		};
+	};
+
+	SUBCLASS(srifle_DW32S_pointer_F,TAG_CLASS(srifle_DW32S_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_DW32S_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_long);
+			};
+		};
+	};
+
+	SUBCLASS(srifle_DC15X_scope_F,TAG_CLASS(srifle_DC15X_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_DC15X_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_DC15X_scope);
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_long);
+			};
+		};
+	};
+
+	SUBCLASS(srifle_Firepuncher_scope_F,TAG_CLASS(srifle_Firepuncher_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(srifle_Firepuncher_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_Firepuncher_scope);
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_Firepuncher);
+			};
+		};
+	};
+
+	SUBCLASS(srifle_Firepuncher_suppressor_F,TAG_CLASS(srifle_Firepuncher_scope_F))
+	{
+		class LinkedItems: LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "k_773_snds";
+			};
+		};
+	};
+
+	SUBCLASS(LMG_DC15LE_scope_F,TAG_CLASS(LMG_DC15LE_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(LMG_DC15LE_F);
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = CLASS(optic_DC15LE_scope);
+			};
+		};
+	};
+
+	SUBCLASS(sgun_DP23_pointer_F,TAG_CLASS(sgun_DP23_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(sgun_DP23_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_DP23);
+			};
+		};
+	};
+
+	SUBCLASS(arifle_DC17M_pointer_F,TAG_CLASS(arifle_DC17M_F))
+	{
+		scope = 1;
+		baseWeapon = CLASS(arifle_DC17M_F);
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = CLASS(acc_pointer_Borange_DC17M);
+			};
 		};
 	};
 };

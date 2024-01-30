@@ -88,11 +88,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), CLASS(launch_RPS6X_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15HX_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_5(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -136,11 +136,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_UGL_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -160,11 +160,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -184,11 +184,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -208,7 +208,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -232,7 +232,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -256,7 +256,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -280,11 +280,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -304,11 +304,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -328,7 +328,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -357,7 +357,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -381,7 +381,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(LMG_DC15LE_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -396,16 +396,16 @@ class CfgVehicles
         SET_INFO_KRAYT(B_Krayt_P2_Marksman_F,CT);
 
         // Uniform
-        uniformClass = CLASS(U_B_VCT);
+        uniformClass = CLASS(U_B_SCT);
         backpack = CLASS(B_Pack_CT);
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_AB_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_AB_Marksman), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -414,12 +414,35 @@ class CfgVehicles
         SET_LOADOUT;
     };
 
+    SUBCLASS(B_Krayt_P2_Sniper_F,TAG_CLASS(B_Krayt_P2_Marksman_F))
+    {
+        displayName = "Clone Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_P2_Sniper_F,CT);
+
+        // Uniform
+        uniformClass = CLASS(U_B_VCT);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_VCT), CLASS(V_AB_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
     // ############################################################ ARC Troopers ############################################################
 
-    SUBCLASS(B_Krayt_ARC_DC15A_UGL_F,TAG_CLASS(B_Krayt_P2_DC15A_UGL_F))
+    SUBCLASS(B_Krayt_ARC_WestarM5_F,TAG_CLASS(B_Krayt_P2_DC15A_UGL_F))
     {
-        displayName = "ARC Trooper (DC-15A UGL)";
-        SET_INFO_KRAYT(B_Krayt_ARC_DC15A_UGL_F,ARC);
+        displayName = "ARC Trooper (Westar M5)";
+        SET_INFO_KRAYT(B_Krayt_ARC_WestarM5_F,ARC);
 
         // Uniform
         uniformClass = CLASS(U_B_CLC);
@@ -431,12 +454,60 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_WestarM5_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(3Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_10(TAG_CLASS(60Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_ARC_AT_F,TAG_CLASS(B_Krayt_P2_AT_F))
+    {
+        displayName = "ARC Trooper (Anti-Tank)";
+        SET_INFO_KRAYT(B_Krayt_ARC_AT_F,ARC);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLC);
+        backpack = CLASS(B_Pack_AT_straps);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_CT), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(arifle_DC15HX_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_5(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_ARC_Engineer_F,TAG_CLASS(B_Krayt_P2_Engineer_F))
+    {
+        displayName = "ARC Trooper (Engineer)";
+        SET_INFO_KRAYT(B_Krayt_ARC_Engineer_F,ARC);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLC);
+        backpack = CLASS(B_Pack_EOD_straps);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_CT), CLASS(NV_Range_Gray), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+    
         SET_LOADOUT;
     };
 
@@ -455,11 +526,59 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_westarM5_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_ARC_Sharpshooter_F,TAG_CLASS(B_Krayt_P2_Marksman_F))
+    {
+        displayName = "ARC Trooper (Sharpshooter)";
+        SET_INFO_KRAYT(B_Krayt_ARC_Sharpshooter_F,ARC);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLC);
+        backpack = CLASS(B_Pack_ARC_CT);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_CT), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_Firepuncher_suppressor_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_10(TAG_CLASS(15Rnd_EC80_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_ARC_Sniper_F,TAG_CLASS(B_Krayt_P2_Sniper_F))
+    {
+        displayName = "ARC Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_ARC_Sniper_F,ARC);
+
+        // Uniform
+        uniformClass = CLASS(U_B_CLC);
+        backpack = CLASS(B_Pack_ARC_CT);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_CLC), CLASS(V_ARC_CT), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_10(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -479,11 +598,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_WestarM5_UGL_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(3Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_10(TAG_CLASS(60Rnd_EC40_Mag_F)), LIST_5(3Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -503,7 +622,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -577,11 +696,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS  { CLASS(arifle_DC15A_F), CLASS(hgun_DC17SA_F), CLASS(launch_RPS6X_F), WEAPONS_BASE }
+        #define WEAPONS  { CLASS(arifle_DC15HX_F), CLASS(hgun_DC17SA_pointer_F), CLASS(launch_RPS6X_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_8(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -769,11 +888,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS  { CLASS(arifle_DC15A_F), WEAPONS_BASE }
+        #define WEAPONS  { CLASS(sgun_DP23_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -793,11 +912,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS  { CLASS(arifle_DC15A_F), WEAPONS_BASE }
+        #define WEAPONS  { CLASS(sgun_DP23_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -865,7 +984,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS  { CLASS(LMG_DC15LE_F), WEAPONS_BASE }
+        #define WEAPONS  { CLASS(LMG_DC15LE_scope_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -874,10 +993,10 @@ class CfgVehicles
         SET_LOADOUT;
     };
 
-    SUBCLASS(B_Krayt_P1_Marksman_F,TAG_CLASS(B_Krayt_P2_Marksman_F))
+    SUBCLASS(B_Krayt_P1_Sniper_F,TAG_CLASS(B_Krayt_P2_Sniper_F))
     {
-        displayName = "Clone Trooper (Marksman)";
-        SET_INFO_KRAYT(B_Krayt_P1_Marksman_F,CT_P1);
+        displayName = "Clone Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_P1_Sniper_F,CT_P1);
 
         // Uniform
         uniformClass = CLASS(U_B_VCT);
@@ -889,11 +1008,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS  { CLASS(srifle_DW32S_F), WEAPONS_BASE }
+        #define WEAPONS  { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -913,7 +1032,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -939,11 +1058,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(LMG_DC15LE_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_8(TAG_CLASS(100Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -963,7 +1082,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -987,7 +1106,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1011,11 +1130,83 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15HX_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_8(TAG_CLASS(100Rnd_EC40_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_5(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_Engineer_F,TAG_CLASS(B_Krayt_P2_Engineer_F))
+    {
+        displayName = "Jet Trooper (Anti-Tank)";
+        SET_INFO_KRAYT(B_Krayt_Jet_AT_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_EOD), CLASS(NV_Macro_Brown), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_Marksman_F,TAG_CLASS(B_Krayt_P2_Marksman_F))
+    {
+        displayName = "Jet Trooper (Marksman)";
+        SET_INFO_KRAYT(B_Krayt_Jet_Marksman_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Marksman), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_Sniper_F,TAG_CLASS(B_Krayt_P2_Sniper_F))
+    {
+        displayName = "Jet Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_Jet_Sniper_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_CT);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Marksman), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1031,15 +1222,39 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Kama_CS), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_AB_Jet), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_8(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Jet_Officer_F,TAG_CLASS(B_Krayt_P2_CPT_F))
+    {
+        displayName = "Jet Trooper (Officer)";
+        SET_INFO_KRAYT(B_Krayt_Jet_Officer_F,Jet);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Jet_NCO);
+        backpack = CLASS(B_Pack_JP_MC_krayt);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_P2_Jet), CLASS(V_Kama_Officer_Geonosis), CLASS(NV_Macro_Yellow), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+    
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(arifle_DC15C_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES { LIST_8(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1112,13 +1327,13 @@ class CfgVehicles
         #undef EQUIPMENT
         #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
-        // Weapons
+       // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15HX_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_5(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1162,11 +1377,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_UGL_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1186,7 +1401,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1210,11 +1425,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1234,7 +1449,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1258,7 +1473,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1282,7 +1497,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(LMG_DC15LE_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1302,15 +1517,39 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DW32S_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Geonosis_Sniper_F,TAG_CLASS(B_Krayt_P2_Sniper_F))
+    {
+        displayName = "Desert Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_Geonosis_Sniper_F,Geonosis);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Insulated_Geonosis_CT);
+        backpack = CLASS(B_Pack_CT_straps);
+
+        // Equipment
+        #undef EQUIPMENT
         #define EQUIPMENT { CLASS(H_Insulated_Geonosis), CLASS(V_Invisible_CT), CLASS(NV_Macro_Yellow_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(100Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_8(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1380,11 +1619,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15HX_F), CLASS(launch_RPS6X_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_8(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES { LIST_5(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(TAG_CLASS(1Rnd_ECX130_Mag_F)), LIST_3(TAG_CLASS(RPS6X_THEAT_SACLOS_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1428,11 +1667,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_UGL_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_UGL_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_5(1Rnd_HE_Grenade_shell), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1452,11 +1691,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(arifle_DC15C_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(60Rnd_EC30_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(36Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1476,11 +1715,11 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(arifle_DC15A_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(sgun_DP23_pointer_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
-        #define MAGAZINES  { LIST_10(TAG_CLASS(45Rnd_EC40_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+        #define MAGAZINES  { LIST_10(TAG_CLASS(15Rnd_EC20_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC50_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };
@@ -1500,7 +1739,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1524,7 +1763,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(SMG_DC15S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1548,7 +1787,7 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(LMG_DC15LE_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
@@ -1572,11 +1811,35 @@ class CfgVehicles
 
         // Weapons
         #undef WEAPONS
-        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+        #define WEAPONS { CLASS(srifle_DW32S_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
 
         // Magazines
         #undef MAGAZINES
         #define MAGAZINES  { LIST_8(TAG_CLASS(21Rnd_EC60_Mag_F)), LIST_2(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
+
+        SET_LOADOUT;
+    };
+
+    SUBCLASS(B_Krayt_Insulated_Sniper_F,TAG_CLASS(B_Krayt_P2_Sniper_F))
+    {
+        displayName = "Insulated Trooper (Sniper)";
+        SET_INFO_KRAYT(B_Krayt_Insulated_Sniper_F,Insulated);
+
+        // Uniform
+        uniformClass = CLASS(U_B_Insulated_CT);
+        backpack = CLASS(B_Pack_CT_straps);
+
+        // Equipment
+        #undef EQUIPMENT
+        #define EQUIPMENT { CLASS(H_Insulated_CT), CLASS(V_Invisible_CT), CLASS(NV_Macro_Brown_spec), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+
+        // Weapons
+        #undef WEAPONS
+        #define WEAPONS { CLASS(srifle_DC15X_scope_F), CLASS(hgun_DC17SA_pointer_F), QUOTE(71st_CloneBinocular), WEAPONS_BASE }
+
+        // Magazines
+        #undef MAGAZINES
+        #define MAGAZINES  { LIST_8(TAG_CLASS(12Rnd_EC90_Mag_F)), LIST_5(TAG_CLASS(24Rnd_EC30_Mag_F)), MAGS_MISC }
 
         SET_LOADOUT;
     };

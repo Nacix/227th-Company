@@ -31,7 +31,7 @@ TRACE_3("paradrop",_unit,_altitude,_pullHeight);
 	[_x, _altitude] call BIS_fnc_setHeight;
 
 	// _this select 0  -> _unit | _this select 1 -> _pullHeight
-	[{ (position _this#0) select 2 <= _this#1 }, {
+	[{ (position (_this#0)) select 2 <= (_this#1) }, {
 		_target = _this#0;
 
 		// Sets the unit's chute variant based on their rank

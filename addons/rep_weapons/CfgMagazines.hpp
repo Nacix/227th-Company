@@ -18,7 +18,7 @@ class CfgMagazines
         displayName = "15Rnd EC20 Cartridge";
         ammo = CLASS(B_EC20_Pellets_Submunition);
         count = 15;
-        mass = 3;
+        mass = 9;
         descriptionShort = "15-charge EC20 tibanna scatter cartridge<br />Used in: DP-23";
     };
 
@@ -36,7 +36,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "60Rnd EC30 Cartridge";
         count = 60;
-        mass = 5;
+        mass = 8;
         descriptionShort = "60-charge EC30 tibanna cartridge<br />Used in: DC-15S";
     };
 
@@ -45,7 +45,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "45Rnd EC40 Cartridge";
         count = 45;
-        mass = 5;
+        mass = 9;
         descriptionShort = "45-charge EC40 tibanna cartridge<br />Used in: DC-15A";
     };
 
@@ -54,7 +54,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "60Rnd EC40 Cartridge";
         count = 60;
-        mass = 5;
+        mass = 12;
         descriptionShort = "60-charge EC40 tibanna cartridge<br />Used in: Westar M5";
     };
 
@@ -63,17 +63,17 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "100Rnd EC40 Cartridge";
         count = 100;
-        mass = 7;
+        mass = 20;
         descriptionShort = "100-charge EC40 tibanna cartridge<br />Used in: DC-15LE & DC-17M";
     };
 
-    SUBCLASS(30Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
+    SUBCLASS(24Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
     {
         author = "Anorexican";
-        displayName = "30Rnd EC50 Cartridge";
-        count = 30;
-        mass = 3;
-        descriptionShort = "30-charge EC50 tibanna cartridge<br />Used in: DP-23";
+        displayName = "24Rnd EC50 Cartridge";
+        count = 24;
+        mass = 6;
+        descriptionShort = "24-charge EC50 tibanna cartridge<br />Used in: DP-23";
     };
 
     SUBCLASS(36Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
@@ -81,7 +81,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "36Rnd EC50 Cartridge";
         count = 36;
-        mass = 5;
+        mass = 9;
         descriptionShort = "36-charge EC50 tibanna cartridge<br />Used in: DC-15C";
     };
 
@@ -91,7 +91,7 @@ class CfgMagazines
         displayName = "21Rnd EC60 Cartridge";
         initSpeed = 875;
         count = 21;
-        mass = 5;
+        mass = 7;
         descriptionShort = "21-charge EC60 focused tibanna cartridge<br />Velocity: 875m/s<br />Used in: DW-32S";
     };
 
@@ -99,7 +99,7 @@ class CfgMagazines
     {
         author = "Anorexican";
         displayName = "5Rnd EC80 Cartridge";
-        mass = 5;
+        mass = 4;
         initSpeed = 1000;
         descriptionShort = "5-charge EC80 focused tibanna cartridge<br />Velocity: 1000m/s<br />Used in: DC-17M";
     };
@@ -109,9 +109,9 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "15Rnd EC80 Cartridge";
         count = 15;
-        mass = 5;
+        mass = 12;
         initSpeed = 1250;
-        descriptionShort = "15-charge EC80 tibanna cartridge<br />Velocity: 1250m/s<br />Used in: DC-15X";
+        descriptionShort = "15-charge EC80 tibanna cartridge<br />Velocity: 1250m/s<br />Used in: 773 'Firepuncher'";
     };
 
     SUBCLASS(12Rnd_EC90_Mag_F,3AS_10Rnd_EM90_mag)
@@ -119,7 +119,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "12Rnd EC90 Cartridge";
         count = 12;
-        mass = 5;
+        mass = 12;
         ammo = "3AS_EC90_BluePlasma";
         initSpeed = 1500;
         descriptionShort = "12-charge EC90 focused tibanna cartridge<br />Velocity: 1500m/s<br />Used in: DC-15X";
@@ -131,9 +131,9 @@ class CfgMagazines
         displayName = "1Rnd ECX130 Cartridge";
         ammo = CLASS(B_ECX130_147x114_AT);
         count = 1;
-        mass = 6;
+        mass = 2;
         initSpeed = 850;
-        descriptionShort = "ECX130 superheated tibanna cartridge<br />Velocity: 850m/s<br />Used in: DC-15L";
+        descriptionShort = "ECX130 superheated tibanna cartridge<br />Velocity: 850m/s<br />Used in: DC-15HX";
     };
 
     SUBCLASS(1Rnd_ECX1000_Mag_F,3AS_AntiArmour_mag)
@@ -141,7 +141,7 @@ class CfgMagazines
         author = "Anorexican";
         displayName = "1Rnd ECX1000 Cartridge";
         count = 1;
-        mass = 5;
+        mass = 10;
         descriptionShort = "ECX1000 volatile tibanna cartridge<br />Used in: DC-17M";
     };
 
