@@ -111,7 +111,7 @@ class CfgMagazines
         count = 15;
         mass = 5;
         initSpeed = 1250;
-        descriptionShort = "15-charge EC80 tibanna cartridge<br />Velocity: 1250m/s<br />Used in: DC-15X";
+        descriptionShort = "15-charge EC80 tibanna cartridge<br />Velocity: 1250m/s<br />Used in: 773 'Firepuncher'";
     };
 
     SUBCLASS(12Rnd_EC90_Mag_F,3AS_10Rnd_EM90_mag)
@@ -133,7 +133,7 @@ class CfgMagazines
         count = 1;
         mass = 6;
         initSpeed = 850;
-        descriptionShort = "ECX130 superheated tibanna cartridge<br />Velocity: 850m/s<br />Used in: DC-15L";
+        descriptionShort = "ECX130 superheated tibanna cartridge<br />Velocity: 850m/s<br />Used in: DC-15HX";
     };
 
     SUBCLASS(1Rnd_ECX1000_Mag_F,3AS_AntiArmour_mag)
