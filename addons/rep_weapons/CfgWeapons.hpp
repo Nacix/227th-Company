@@ -1040,7 +1040,7 @@ class CfgWeapons
 		displayName = TAG_NAME(Westar M5 Blaster Carbine);
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_WestarM5_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_car_lsw";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		class FullAuto: FullAuto
@@ -1130,7 +1130,7 @@ class CfgWeapons
 		displayName = TAG_NAME(Westar M5 Blaster Carbine (UGL));
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_WestarM5_UGL_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_car_lsw";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
