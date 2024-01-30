@@ -37,7 +37,7 @@ private _muzzleChangeHandler = ["muzzle", {
 		case CLASS(Blaster_F): {
 			// Set the DP-23 optic to blaster mode
 			LOG_2("Setting DP-23 optic to [%1] on unit [%2]",CLASS(optic_Holo_DP23),_unit);
-			_unit addPrimaryWeaponItem CLASS(optic_Holo);
+			_unit addPrimaryWeaponItem CLASS(optic_Holo_DP23);
 		};
 	};
 }] call CBA_fnc_addPlayerEventHandler;
