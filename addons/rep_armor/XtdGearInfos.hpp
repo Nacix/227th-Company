@@ -219,8 +219,9 @@ class XtdGearInfos
 
 		// Miscellaneous Vests
 		XTD_V_OMNI(Invisible_CT,Basic,Invisible);
-		XTD_V_OMNI(AB_CT,Basic,Trooper);
+		XTD_V_OMNI(Holster_CT,Basic,Trooper);
 		XTD_V_OMNI(Suspenders_CT,Basic,Suspenders);
+		XTD_V_OMNI(AB_CT,Specialist,Trooper);
 		XTD_V_OMNI(AB_AT,Specialist,AT);
 		XTD_V_OMNI(AB_EOD,Specialist,EOD);
 		XTD_V_OMNI(AB_Geonosis,Specialist,Geonosis);
