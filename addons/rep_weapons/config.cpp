@@ -39,6 +39,7 @@ class CfgPatches
         weapons[]=
         {
 			CLASS(optic_Holo),
+			CLASS(optic_DC15LE_scope),
 			CLASS(optic_DC15X_scope),
 			CLASS(optic_Firepuncher_scope),
 			CLASS(optic_Firepuncher_scope_off),

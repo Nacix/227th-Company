@@ -39,6 +39,17 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class optic_DC15A_scope: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class OpticScopeLookMedium;
+			};
+		};
+	};
+
 	class JLTS_DC15X_scope: optic_LRPS
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -282,6 +293,22 @@ class CfgWeapons
 	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
 	{
 		scope = 1;
+	};
+
+	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
+	{
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class OpticScopeLookMedium: OpticScopeLookMedium
+				{
+					opticsZoomInit = "0.25 / 2";
+					opticsZoomMax = "0.25 / 2";
+					opticsZoomMin = "0.25 / 4";
+				};
+			};
+		};
 	};
 
 	SUBCLASS(optic_DC15X_scope,JLTS_DC15X_scope)
@@ -1483,6 +1510,14 @@ class CfgWeapons
 			dispersion = "(1.85 / 3.4377) / 1000";
 			textureType = "fastAuto";
 		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 10.5;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_DC15LE_scope) };
+			};
+		};
 	};
 
 	// ############################################################ Special ############################################################
@@ -2036,7 +2071,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item = "optic_DC15A_scope";
+				item = CLASS(optic_DC15LE_scope);
 			};
 		};
 	};
