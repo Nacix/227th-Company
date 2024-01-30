@@ -1595,7 +1595,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15HX Dual-Purpose Blaster);
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC15HX_F);
-		recoil = "recoil_MSBS65";
+		recoil = "recoil_SMG_03";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
