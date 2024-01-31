@@ -137,18 +137,91 @@ class CfgAmmo
 			seekerAngle = 15;
 		};
     };
-    SUBCLASS(M_ECX100_HE,TAG_CLASS(M_ECX780_THEAT))
+    SUBCLASS(M_ECX100_HE,MissileBase)
     {
         hit = 100;
-        indirectHit = 25;
-        indirectHitRange = 8;
+        indirectHit = 35;
+        indirectHitRange = 10;
         warheadName = "HE";
         submunitionAmmo = "";
-        model = "\A3\Weapons_F_Tank\Launchers\Vorona\Vorona_missile_he_fly";
+        submunitionDirectionType = "";
+        submunitionInitSpeed = 0;
+        submunitionParentSpeedCoef = 0;
         triggerOnImpact = 0;
-        explosive = 1;
+        model = "\A3\Weapons_F_Tank\Launchers\Vorona\Vorona_missile_he_fly";
+        explosive = 0.9;
         aiAmmoUsageFlags = "64 + 128";
         craterEffects = "ATMissileCrater";
         effectsMissile = "missile3";
+        deleteParentWhenTriggered = 0;
+        manualcontrolOffset = 80;
+        flightProfiles[] = { "Cruise" };
+        maneuvrability = 6;
+        missileManualControlCone = 60;
+        simulationStep = 0.002;
+        maxControlRange = 600;
+        initTime = 0.05;
+        trackOversteer = 0.5;
+        trackLead = 0.85;
+        airFriction = 0.06;
+        sideAirFriction = 0.09;
+        maxSpeed = 200;
+        thrustTime = 1;
+        thrust = 70;
+        fuseDistance = 5;
+        whistleDist = 4;
+        weaponLockSystem = 0;
+        class CamShakeExplode
+        {
+            power = 11;
+            duration = 1.4;
+            frequency = 20;
+            distance = 30;
+        };
+        class CamShakeHit
+		{
+			power = 110;
+			duration = 0.5;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = 0;
+			duration = 0.2;
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakePlayerFire
+		{
+			power = 0;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+
+        class ace_missileguidance
+		{
+			enabled = 1;
+			canVanillaLock = 0;
+            correctionDistance = 3;
+			offsetFromCrosshair[] = { 0, 0, 0 };
+
+			attackProfiles[] = { "WIRE" };
+			defaultAttackProfile = "WIRE";
+            minDeflection = 0;
+			maxDeflection = 0.0027;
+			incDeflection = 0.0005;
+
+			seekerLockModes[] = { "LOAL", "LOBL" };
+			defaultSeekerLockMode = "LOAL";
+			seekerTypes[] = { "SACLOS" };
+			defaultSeekerType = "SACLOS";
+			seekerMinRange = 80;
+			seekerMaxRange = 600;
+			seekLastTargetPos = 0;
+			seekerAccuracy = 1;
+			seekerAngle = 15;
+		};
     };
 };
