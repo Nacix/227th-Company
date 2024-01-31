@@ -1149,6 +1149,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 65;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] += { "LFP_lw8holo_scope" };
+			};
 		};
 	};
 	
