@@ -1631,7 +1631,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC15HX_F);
 		recoil = "recoil_SMG_03";
-		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
 		muzzles[] = { "this", "AntiTank" };
