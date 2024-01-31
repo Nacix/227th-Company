@@ -1253,7 +1253,7 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
-		class Single: Mode_SemiAuto
+		class Single: Single
 		{
 			reloadTime = "60 / 250";
 			dispersion = "(0.75 / 3.4377) / 1000";
