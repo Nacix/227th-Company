@@ -1266,10 +1266,10 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					2.5,
-					0.875,
-					250
+					"RD501_Vehicle_Weapons\_sounds\Kannon\Kannon_1.ogg",
+					1.65,
+					1.05,
+					500
 				};
 				soundBegin[]=
 				{
