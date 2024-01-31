@@ -71,7 +71,7 @@ class CfgAmmo
         maneuvrability = 6;
         missileManualControlCone = 60;
         simulationStep = 0.002;
-        maxControlRange = 1000;
+        maxControlRange = 600;
         initTime = 0.05;
         trackOversteer = 0.5;
         trackLead = 0.85;
@@ -131,7 +131,7 @@ class CfgAmmo
 			seekerTypes[] = { "SACLOS" };
 			defaultSeekerType = "SACLOS";
 			seekerMinRange = 80;
-			seekerMaxRange = 2000;
+			seekerMaxRange = 600;
 			seekLastTargetPos = 0;
 			seekerAccuracy = 1;
 			seekerAngle = 15;
