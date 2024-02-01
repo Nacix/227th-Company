@@ -621,7 +621,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-17SA Blaster Pistol);
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
-		recoil = "3AS_recoil_dc15a";
+		recoil = "recoil_MSBS65";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
 		magazines[] = { CLASS(24Rnd_EC30_Mag_F) };
 		magazineWell[] = {};
@@ -1149,6 +1149,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 65;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] += { "LFP_lw8holo_scope" };
+			};
 		};
 	};
 	
@@ -1253,7 +1257,7 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
-		class Single: Mode_SemiAuto
+		class Single: Single
 		{
 			reloadTime = "60 / 250";
 			dispersion = "(0.75 / 3.4377) / 1000";
@@ -1266,10 +1270,10 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[]=
 				{
-					QPATHTOF(data\sounds\dw32s.wss),
-					2.5,
-					0.875,
-					250
+					"RD501_Vehicle_Weapons\_sounds\Kannon\Kannon_1.ogg",
+					1.65,
+					1.05,
+					500
 				};
 				soundBegin[]=
 				{
@@ -1631,7 +1635,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC15HX_F);
 		recoil = "recoil_SMG_03";
-		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
+		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
 		muzzles[] = { "this", "AntiTank" };
