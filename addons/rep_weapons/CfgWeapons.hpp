@@ -621,7 +621,7 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-17SA Blaster Pistol);
 		author = "Anorexican";
 		baseWeapon = CLASS(hgun_DC17SA_F);
-		recoil = "3AS_recoil_dc15a";
+		recoil = "recoil_MSBS65";
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dc17sa\hgun_dc17sa_co.paa) };
 		magazines[] = { CLASS(24Rnd_EC30_Mag_F) };
 		magazineWell[] = {};
