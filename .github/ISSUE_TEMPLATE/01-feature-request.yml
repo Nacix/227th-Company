@@ -1,0 +1,40 @@
+﻿name: Feature Request
+description: Suggest a feature you'd like to see in the project
+title: 'feature: lowercasetitlehere'
+labels:
+  - feature
+projects:
+  - nacix/3
+assignees:
+  - nacix
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Details
+      description: Briefly describe the feature you'd like to see in the project
+      placeholder: Describe your feature here...
+    validations:
+      required: true
+  - type: textarea
+    id: feature-benefits
+    attributes:
+      label: Feature Benefits
+      description: >
+        Briefly describe how your feature would benefit
+        the project
+      placeholder: (optional) Sell your feature here...
+  - type: textarea
+    id: media
+    attributes:
+      label: Media
+      description: >-
+        If you have any additional media (screenshots, videos, etc.) for your
+        feature, please upload them here.
+      placeholder: (optional) Upload media here...
+  - type: input
+    id: other-info
+    attributes:
+      label: Additional Details
+      description: Describe any additional comments/concerns.
+      placeholder: (optional) Provide additional details here...
