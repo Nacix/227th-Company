@@ -1,1 +1,5 @@
 ﻿blank_issues_enabled: false
+contact_links:
+  - name: Progress Tracker
+    url: https://github.com/users/nacix/projects/3
+    about: You can track the status of your issue(s) here!
