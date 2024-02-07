@@ -85,7 +85,7 @@ class CfgVehicles
 
 	ADD_BACKPACK(RTO_Mini,RTO Pack (Mini),JLTS_Clone_RTO_pack,250);
 
-	ADD_BACKPACK_STRAPS(AT,AT Backpack,JLTS_Clone_backpack,375);
+	ADD_BACKPACK_STRAPS(AT,AT Backpack,JLTS_Clone_backpack,425);
 	ADD_BACKPACK_STRAPS(Medic,Medic Backpack,JLTS_Clone_backpack,350);
 	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack,375);
 	ADD_BACKPACK_STRAPS(CT,Trooper Backpack,JLTS_Clone_backpack,275);
