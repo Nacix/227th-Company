@@ -200,6 +200,20 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(NCO);
 			};
 		};
+		NEW_CLASS(NV_Internal)
+		{
+			label = TAG_NAME(Internal Chip);
+			author = "Anorexican";
+			options[] = { "variant" };
+			class variant
+			{
+				label = "Variant";
+				values[] = { "NV", "NV_TI", "NV_hybrid" };
+				SET_BACKGROUND_DEFAULT(NV);
+				SET_BACKGROUND_DEFAULT_PRETTY(NV_TI,TI);
+				SET_BACKGROUND_DEFAULT_PRETTY(NV_hybrid,NV / TI);
+			};
+		};
 		NEW_CLASS(NV_Range)
 		{
 			label = TAG_NAME(Rangefinder);

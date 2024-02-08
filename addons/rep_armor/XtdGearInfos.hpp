@@ -74,6 +74,12 @@ class XtdGearInfos
 				type = QUOTE(typeName); \
 				skin = QUOTE(skinName); \
 			}
+		#define XTD_NV_INTERNAL(className,variantName) \
+			class TAG##_NV_##className## \
+			{ \
+				model = QUOTE(TAG##_NV_Internal); \
+				variant = QUOTE(variantName); \
+			}
 		#define XTD_NV_RANGE(className,skinName) \
 			class TAG##_NV_Range_##className## \
 			{ \
@@ -189,6 +195,11 @@ class XtdGearInfos
 		XTD_H_SPECOP(NCO,Default,NCO);
 		XTD_H_SPECOP(Geonosis,Geonosis,Default);
 		XTD_H_SPECOP(Geonosis_NCO,Geonosis,NCO);
+
+		// NV - Internal
+		XTD_NV_INTERNAL(Internal,NV);
+		XTD_NV_INTERNAL(Internal_TI,NV_TI);
+		XTD_NV_INTERNAL(Internal_hybrid,NV_hybrid);
 
 		// NV - Rangefinders
 		XTD_NV_RANGE(Brown,Brown);

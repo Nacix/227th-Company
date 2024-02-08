@@ -82,6 +82,8 @@ class CfgPatches
             CLASS(H_P2_Pilot_Carrot),
             CLASS(H_P2_Pilot_Texan),
             CLASS(NV_Internal),
+            CLASS(NV_Internal_TI),
+            CLASS(NV_Internal_hybrid),
             CLASS(NV_Range_Brown),
             CLASS(NV_Range_Gray),
             CLASS(NV_Range_Jinx),

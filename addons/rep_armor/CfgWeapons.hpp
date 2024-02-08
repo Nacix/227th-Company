@@ -242,9 +242,29 @@ class CfgWeapons
 
 	SUBCLASS(NV_Internal,JLTS_CloneNVG)
 	{ 
-		displayName = TAG_NAME(Internal NV);
+		displayName = TAG_NAME(Internal Chip (NV));
 		hiddenSelectionsTextures[] = { "" };
 		modelOptics = "\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d";
+	};
+	SUBCLASS(NV_Internal_TI,TAG_CLASS(NV_Internal))
+	{
+		displayName = TAG_NAME(Internal Chip (TI));
+		visionMode[]=
+		{
+			"Normal",
+			"TI"
+		};
+		thermalMode[] = { 0 };
+	};
+	SUBCLASS(NV_Internal_hybrid,TAG_CLASS(NV_Internal_TI))
+	{
+		displayName = TAG_NAME(Internal Chip (NV / TI));
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
 	};
 
 	ADD_NVG_RANGE(Brown);
