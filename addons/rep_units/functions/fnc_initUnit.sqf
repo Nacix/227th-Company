@@ -37,7 +37,7 @@ private _unitSkills = GVAR(skillTable) getOrDefault [_skillLevel, []];
 
 [_unit, _faceProfile, _designation] call FUNC(setIdentity);
 
-if (_unitSkills isEqualTo []) exitWith {};
+if (!isServer || count _unitSkills == 0) exitWith {};
 
 {
 	_unit setSkill [_x, _unitSkills select _forEachIndex];
