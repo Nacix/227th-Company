@@ -15,5 +15,5 @@ class CfgUnitInsignia {
 	NEW_INSIGNIA(Reaper);
 	NEW_INSIGNIA(Varactyl);
 	NEW_INSIGNIA(Mercy);
-	NEW_INSIGNIA(Nimbus);
+	NEW_INSIGNIA(Acklay);
 };

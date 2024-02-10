@@ -15,9 +15,9 @@
  * NONE
  *
  * Examples:
- * [player, "NCO"] call krt_clones_fnc_setUnitIdentity; // Selects face from NCO profile with default voice
- * [player, ["WhiteHead_02", 0.5, "AsianHead_A3_02", 0.5]] call krt_clones_fnc_setUnitIdentity; // Selects face from array with default designation
- * [player, "WhiteHead_02", "RC"] call krt_clones_fnc_setUnitIdentity; // Applies face and sets designation to "RC"
+ * [player, "NCO"] call krt_rep_units_fnc_setUnitIdentity; // Selects face from NCO profile with default voice
+ * [player, ["WhiteHead_02", 0.5, "AsianHead_A3_02", 0.5]] call krt_rep_units_fnc_setUnitIdentity; // Selects face from array with default designation
+ * [player, "WhiteHead_02", "RC"] call krt_rep_units_fnc_setUnitIdentity; // Applies face and sets designation to "RC"
  *
  * Public: No
 */
