@@ -50,7 +50,11 @@
     class TAG##_H_P1_##className##: TAG##_H_P1_CT \
     { \
         displayName = TAG_NAME(rawName (P1)); \
-        hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa) }; \
+        hiddenSelectionsTextures[]= \
+        { \
+            QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa), \
+            QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa), \
+        }; \
     }
     
 #define ADD_P1_PILOT_HELMET(className,rawName) \

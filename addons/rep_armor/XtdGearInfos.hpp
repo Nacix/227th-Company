@@ -160,9 +160,12 @@ class XtdGearInfos
 		XTD_H_P1(CT,Default);
 		XTD_H_P1(SCT,SCT);
 		XTD_H_P1(VCT,VCT);
+		XTD_H_P1(CLC,CLC);
+		XTD_H_P1(CP,CP);
 		XTD_H_P1(CSP,CSP);
 		XTD_H_P1(CS,CS);
 		XTD_H_P1(CSS,CSS);
+		XTD_H_P1(CFS,CFS);
 		XTD_H_P1(CSM,CSM);
 
 		// P2 Pilot Helmets

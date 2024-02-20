@@ -25,13 +25,13 @@ class CfgWeapons
 
 	// References inherited class with ItemInfo -- always inherits from A3's Viper SP Helmet
 	#define REF_INFO_VIPER(className) REF_INFO(className,H_HelmetO_ViperSP_hex_F)
-	REF_INFO_VIPER(3AS_P1_Base);
 	REF_INFO_VIPER(3AS_P2_Pilot_Helmet);
 	REF_INFO_VIPER(JLTS_CloneHelmetP2);
 	REF_INFO_VIPER(JLTS_CloneHelmetAB);
 
 	// References inherited class with ItemInfo -- always inherits from JLTS' P2 Clone Helmet
 	#define REF_INFO_P2(className) REF_INFO(className,JLTS_CloneHelmetP2)
+	REF_INFO_P2(SEA_Helmet_P1_Base);
 	REF_INFO_P2(LSEA_Helmet_Pilot_P1_Base);
 	REF_INFO_P2(SEA_Helmet_ARF_Base);
 	REF_INFO_P2(SEA_Helmet_Engineer_Base);
@@ -182,19 +182,26 @@ class CfgWeapons
 
 	// ############################################################ P1 Trooper Helmets ############################################################
 
-	SUBCLASS(H_P1_CT,3AS_P1_Base)
+	SUBCLASS(H_P1_CT,SEA_Helmet_P1_Base)
 	{
 		displayName = TAG_NAME(Trooper Helmet (P1));
 		subItems[] = {};
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_ct_co.paa) };
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\p1\h_p1_ct_co.paa), 
+			QPATHTOF(data\helmets\p1\h_p1_ct_co.paa)
+		};
 		DEF_ARMOR_BASE;
 	};
 
 	ADD_P1_CT_HELMET(SCT,SCT Helmet);
 	ADD_P1_CT_HELMET(VCT,VCT Helmet);
 	ADD_P1_CT_HELMET(CSP,CSP Helmet);
+	ADD_P1_CT_HELMET(CLC,CLC Helmet);
+	ADD_P1_CT_HELMET(CP,CP Helmet);
 	ADD_P1_CT_HELMET(CS,CS Helmet);
 	ADD_P1_CT_HELMET(CSS,CSS Helmet);
+	ADD_P1_CT_HELMET(CFS,CFS Helmet);
 	ADD_P1_CT_HELMET(CSM,CSM Helmet);
 
 	// ############################################################ P1 Pilot Helmets ############################################################

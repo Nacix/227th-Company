@@ -116,13 +116,16 @@ class XtdGearModels
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "SCT", "VCT", "CSP", "CS", "CSS", "CSM" };
+				values[] = { "Default", "SCT", "VCT", "CSP", "CLC", "CP", "CS", "CSS", "CFS", "CSM" };
 				SET_BACKGROUND_DEFAULT(Default);
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
 				SET_BACKGROUND_DEFAULT(CSP);
+				SET_BACKGROUND_DEFAULT(CLC);
+				SET_BACKGROUND_DEFAULT(CP);
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
+				SET_BACKGROUND_DEFAULT(CFS);
 				SET_BACKGROUND_DEFAULT(CSM);
 			};
 		};
