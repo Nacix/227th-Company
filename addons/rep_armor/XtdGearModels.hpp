@@ -116,7 +116,7 @@ class XtdGearModels
 			class skin
 			{
 				label = "Skin";
-				values[] = { "Default", "SCT", "VCT", "CSP", "CS", "CSS", "CSM", "Jinx" };
+				values[] = { "Default", "SCT", "VCT", "CSP", "CS", "CSS", "CSM" };
 				SET_BACKGROUND_DEFAULT(Default);
 				SET_BACKGROUND_DEFAULT(SCT);
 				SET_BACKGROUND_DEFAULT(VCT);
@@ -124,7 +124,6 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
 				SET_BACKGROUND_DEFAULT(CSM);
-				SET_BACKGROUND_DEFAULT(Jinx);
 			};
 		};
 		NEW_CLASS(H_Pilot)

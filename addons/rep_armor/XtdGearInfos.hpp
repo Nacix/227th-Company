@@ -164,7 +164,6 @@ class XtdGearInfos
 		XTD_H_P1(CS,CS);
 		XTD_H_P1(CSS,CSS);
 		XTD_H_P1(CSM,CSM);
-		XTD_H_P1(Jinx,Jinx);
 
 		// P2 Pilot Helmets
 		XTD_H_P2_PILOT(CX,Default);

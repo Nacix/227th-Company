@@ -74,7 +74,6 @@ class CfgPatches
             CLASS(H_P1_CS),
             CLASS(H_P1_CSS),
             CLASS(H_P1_CSM),
-            CLASS(H_P1_Jinx),
             CLASS(H_P1_Pilot_CX),
             CLASS(H_P1_Pilot_CXG1),
             CLASS(H_P1_Pilot_CXG2),

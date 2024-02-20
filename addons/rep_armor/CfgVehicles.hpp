@@ -287,8 +287,6 @@ class CfgVehicles
 	ADD_HELMET_OBJECT_P1(P1 Helmet (CSS),H_P1_CSS);
 	ADD_HELMET_OBJECT_P1(P1 Helmet (CSM),H_P1_CSM);
 
-	ADD_HELMET_OBJECT_P1(P1 Custom Helmet (Jinx),H_P1_Jinx);
-
 	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CX),H_P1_Pilot_CX);
 	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CXG1),H_P1_Pilot_CXG1);
 	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CXG2),H_P1_Pilot_CXG2);

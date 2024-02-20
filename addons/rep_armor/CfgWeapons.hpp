@@ -197,8 +197,6 @@ class CfgWeapons
 	ADD_P1_CT_HELMET(CSS,CSS Helmet);
 	ADD_P1_CT_HELMET(CSM,CSM Helmet);
 
-	ADD_P1_CT_HELMET(Jinx,Jinx's Helmet);
-
 	// ############################################################ P1 Pilot Helmets ############################################################
 
 	SUBCLASS(H_P1_Pilot_CX,LSEA_Helmet_Pilot_P1_Base)
