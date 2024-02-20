@@ -740,7 +740,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P1_CSP), CLASS(V_Kama_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P1_CP), CLASS(V_Kama_CP), CLASS(NV_Internal), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -812,7 +812,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P1_CSP), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P1_CLC), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
@@ -836,7 +836,7 @@ class CfgVehicles
 
         // Equipment
         #undef EQUIPMENT
-        #define EQUIPMENT { CLASS(H_P1_CSS), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
+        #define EQUIPMENT { CLASS(H_P1_CFS), CLASS(V_Kama_Officer), QUOTE(lsd_gar_p1SingleHeadlamp_nvg), QUOTE(JLTS_clone_comlink), EQUIPMENT_BASE }
 
         // Weapons
         #undef WEAPONS
