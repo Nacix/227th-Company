@@ -162,6 +162,19 @@ class CfgWeapons
 	ADD_SPECOP_HELMET(CSP,Spec-Ops Helmet [CSP]);
 	ADD_SPECOP_HELMET(NCO,Spec-Ops Helmet [NCO]);
 
+	// ############################################################ Katarn Helmets ############################################################
+
+	SUBCLASS(H_Katarn_CT,3AS_H_Katarn_Helmet)
+	{
+		displayName = TAG_NAME(Katarn Helmet);
+		subItems[] = {};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\katarn\h_katarn_ct_co.paa),
+			QPATHTOF(data\helmets\katarn\h_katarn_ct_co.paa)
+		};
+	};
+
 	// ############################################################ Insulated Helmets ############################################################
 
 	SUBCLASS(H_Insulated_CT,3AS_ColdAssault_Helmet_Base)
@@ -586,6 +599,24 @@ class CfgWeapons
 		};
 	};
 
+	SUBCLASS(U_B_Katarn_Base,Uniform_Base)
+	{
+		author = "3rd Army Studios, Valyrian, & Anorexican";
+		displayName = TAG_NAME(KatarnUniformBase);
+		hiddenSelections[] = { "camo" };
+		picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Uniform_Unmarked_UI_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		tas_is_commando = 1;
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = CLASS(B_Katarn_Base);
+			uniformType = "Neopren";
+			containerClass = "Supply250";
+			mass = 40;
+		};
+	};
+
 	// Trooper Uniforms
 	ADD_UNIFORM_TROOPER(CR,Trooper Armor (Cadet),150);
 	ADD_UNIFORM_TROOPER(CT,Trooper Armor (CT),150);
@@ -612,4 +643,6 @@ class CfgWeapons
 	// Insulated Uniforms
 	ADD_UNIFORM_INSULATED(CT,Insulated Armor,200);
 	ADD_UNIFORM_INSULATED(Geonosis_CT,Insulated Armor (Geonosis),200);
+
+	ADD_UNIFORM_KATARN(CT,Katarn Armor,250);
 };
