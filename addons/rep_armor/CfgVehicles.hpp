@@ -56,6 +56,7 @@ class CfgVehicles
 	#define ADD_HELMET_OBJECT_P1(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_P1)
 	#define ADD_HELMET_OBJECT_PILOT(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_Pilot)
 	#define ADD_HELMET_OBJECT_SPECOP(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_SpecOp)
+	#define ADD_HELMET_OBJECT_KATARN(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_Katarn
 
 	// ############################################################ Backpacks ############################################################
 
@@ -204,6 +205,24 @@ class CfgVehicles
 		};
 	};
 
+	SUBCLASS(B_Katarn_Base,TAG##_B_Trooper_Base)
+	{
+		_generalMacro = CLASS(B_Katarn_Base);
+		displayName = TAG_NAME(CloneKatarnBase);
+		uniformClass = CLASS(U_B_Katarn_Base);
+		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\katarn\u_katarn_ct_co.paa),
+			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
+		};
+	};
+
 	ADD_V_UNIFORM_TROOPER(CR,CRBase);
 	ADD_V_UNIFORM_TROOPER(CT,CTBase);
 	ADD_V_UNIFORM_TROOPER(SCT,SCTBase);
@@ -227,6 +246,8 @@ class CfgVehicles
 
 	ADD_V_UNIFORM_INSULATED(CT,InsulatedBase);
 	ADD_V_UNIFORM_INSULATED(Geonosis_CT,InsulatedGeonosisBase);
+
+	ADD_V_UNIFORM_KATARN(CT,KatarnBase);
 
 	// ############################################################ Helmet Objects ############################################################
 
@@ -278,6 +299,8 @@ class CfgVehicles
 
 	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (CT),H_Insulated_CT);
 	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (Geonosis),H_Insulated_Geonosis);
+
+	ADD_HELMET_OBJECT_KATARN(Katarn Helmet (CT),H_Katarn_CT);
 
 	ADD_HELMET_OBJECT_P1(P1 Helmet (CT),H_P1_CT);
 	ADD_HELMET_OBJECT_P1(P1 Helmet (SCT),H_P1_SCT);

@@ -90,6 +90,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Special Operations Helmets";
 	};
+	NEW_CLASS(EdSubcat_Helmets_Katarn)
+	{
+		displayName = "Katarn Helmets";
+	};
 
 	NEW_CLASS(EdSubcat_Launchers)
 	{

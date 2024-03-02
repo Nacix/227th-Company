@@ -67,6 +67,7 @@ class CfgPatches
             CLASS(H_SpecOp_NCO),
             CLASS(H_Insulated_CT),
             CLASS(H_Insulated_Geonosis),
+            CLASS(H_Katarn_CT),
             CLASS(H_P1_CT),
             CLASS(H_P1_SCT),
             CLASS(H_P1_VCT),
@@ -130,6 +131,7 @@ class CfgPatches
             CLASS(V_Kama_Valyrian),
             CLASS(U_B_Trooper_Base),
             CLASS(U_B_Insulated_Base),
+            CLASS(U_B_Katarn_Base),
             CLASS(U_B_CR),
             CLASS(U_B_CT),
             CLASS(U_B_SCT),
@@ -148,7 +150,8 @@ class CfgPatches
             CLASS(U_B_Jet_CT),
             CLASS(U_B_Jet_NCO),
             CLASS(U_B_Insulated_CT),
-            CLASS(U_B_Insulated_Geonosis_CT)
+            CLASS(U_B_Insulated_Geonosis_CT),
+            CLASS(U_B_Katarn_CT),
         };
         units[]=
         {
@@ -183,6 +186,7 @@ class CfgPatches
             CLASS(B_Pack_JP_MC_valyrian),
             CLASS(B_Trooper_Base),
             CLASS(B_Insulated_Base),
+            CLASS(B_Katarn_Base),
             CLASS(B_CR_Base),
             CLASS(B_CT_Base),
             CLASS(B_SCT_Base),
@@ -203,6 +207,7 @@ class CfgPatches
             CLASS(B_Jet_NCO_Base),
             CLASS(B_Insulated_CT_Base),
             CLASS(B_Insulated_Geonosis_CT_Base),
+            CLASS(B_Katarn_CT_Base),
             CLASS(Headgear_H_P2_CT),
             CLASS(Headgear_H_P2_SCT),
             CLASS(Headgear_H_P2_VCT),
@@ -244,6 +249,7 @@ class CfgPatches
             CLASS(Headgear_H_SpecOp_NCO),
             CLASS(Headgear_H_Insulated_CT),
             CLASS(Headgear_H_Insulated_Geonosis),
+            CLASS(Headgear_H_Katarn_CT),
             CLASS(Headgear_H_P1_CT),
             CLASS(Headgear_H_P1_SCT),
             CLASS(Headgear_H_P1_VCT),
