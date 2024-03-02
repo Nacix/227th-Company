@@ -310,6 +310,7 @@ class XtdGearModels
 					"Trooper",
 					"Suspenders",
 					"AT",
+					"EOD",
 					"Geonosis",
 					"Jet",
 					"Marksman",
@@ -326,6 +327,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Trooper);
 				SET_BACKGROUND_DEFAULT(Suspenders);
 				SET_BACKGROUND_DEFAULT_PRETTY(AT,Anti-Tank);
+				SET_BACKGROUND_DEFAULT(EOD);
 				SET_BACKGROUND_DEFAULT(Geonosis);
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT(Marksman);
