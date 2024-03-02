@@ -75,7 +75,7 @@ class CfgVehicles
 		maximumLoad = QUOTE(225);
 	};
 	
-	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO,325);
+	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO,350);
 
 	SUBCLASS(B_Pack_RTO_straps,JLTS_Clone_backpack_s_RTO)
 	{
