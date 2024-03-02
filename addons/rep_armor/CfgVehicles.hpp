@@ -88,7 +88,7 @@ class CfgVehicles
 
 	ADD_BACKPACK_STRAPS(AT,AT Backpack,JLTS_Clone_backpack,425);
 	ADD_BACKPACK_STRAPS(Medic,Medic Backpack,JLTS_Clone_backpack,350);
-	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack,375);
+	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack,425);
 	ADD_BACKPACK_STRAPS(CT,Trooper Backpack,JLTS_Clone_backpack,275);
 	ADD_BACKPACK_STRAPS(Jet,Jet Trooper Backpack,JLTS_Clone_backpack,300);
 	ADD_BACKPACK_STRAPS(Snow_CT,Snow Trooper Backpack,JLTS_Clone_backpack,325);
