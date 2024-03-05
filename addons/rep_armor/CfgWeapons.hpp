@@ -81,6 +81,7 @@ class CfgWeapons
 
 	ADD_CT_HELMET(Canada,Canada's Helmet);
     ADD_CT_HELMET(Catcher,Catcher's Helmet);
+	ADD_CT_HELMET(Cookie,Cookie's Helmet);
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
