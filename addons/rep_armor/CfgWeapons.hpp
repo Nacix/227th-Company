@@ -546,7 +546,7 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(B_Kama_Cookie,TAG##_V_Kama_Officer)
+	SUBCLASS(V_Kama_Cookie,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Cookie's Vest);
 		hiddenSelectionsTextures[]=
