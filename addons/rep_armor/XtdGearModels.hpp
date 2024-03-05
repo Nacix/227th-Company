@@ -320,6 +320,7 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
+					"Cookie",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -337,6 +338,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
+				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};

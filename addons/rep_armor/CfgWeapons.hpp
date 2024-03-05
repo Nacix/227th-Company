@@ -546,6 +546,16 @@ class CfgWeapons
 		};
 	};
 
+	SUBCLASS(B_Kama_Cookie,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Cookie's Vest);
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_Spartacus,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Spartacus' Vest);
