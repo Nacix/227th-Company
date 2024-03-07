@@ -371,6 +371,7 @@ class XtdGearModels
 					"Jinx",
 					"Knight",
 					"Speed",
+					"Texan",
 					"Valyrian"
 				};
 				SET_BACKGROUND_DEFAULT(Cadet);
