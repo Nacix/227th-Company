@@ -61,6 +61,7 @@ class XtdGearModels
 					"Sparrow",
 					"Spartacus",
 					"Speed",
+					"Texan",
 					"Valyrian",
 					"Wicked"
 				};
@@ -91,6 +92,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Sparrow);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Texan);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 				SET_BACKGROUND_DEFAULT(Wicked);
 			};
@@ -320,6 +322,8 @@ class XtdGearModels
 					"Corporal",
 					"Sergeant",
 					"Officer",
+					"Officer_blk",
+					"Cookie",
 					"Spartacus",
 					"Valyrian"
 				};
@@ -337,6 +341,8 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Corporal);
 				SET_BACKGROUND_DEFAULT(Sergeant);
 				SET_BACKGROUND_DEFAULT(Officer);
+				SET_BACKGROUND_DEFAULT_PRETTY(Officer_blk,Officer [Black]);
+				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
@@ -367,6 +373,7 @@ class XtdGearModels
 					"Jinx",
 					"Knight",
 					"Speed",
+					"Texan",
 					"Valyrian"
 				};
 				SET_BACKGROUND_DEFAULT(Cadet);
@@ -385,6 +392,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
 				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Texan);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};

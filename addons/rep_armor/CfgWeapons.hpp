@@ -81,6 +81,7 @@ class CfgWeapons
 
 	ADD_CT_HELMET(Canada,Canada's Helmet);
     ADD_CT_HELMET(Catcher,Catcher's Helmet);
+	ADD_CT_HELMET(Cookie,Cookie's Helmet);
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
@@ -90,6 +91,7 @@ class CfgWeapons
     ADD_CT_HELMET(Sparky,Sparky's Helmet);
     ADD_CT_HELMET(Sparrow,Sparrow's Helmet);
     ADD_CT_HELMET(Speed,Speed's Helmet);
+	ADD_CT_HELMET(Texan,Texan's Helmet);
     ADD_CT_HELMET(Valyrian,Valyrian's Helmet);
     ADD_CT_HELMET(Wicked,Wicked's Helmet);
 
@@ -535,6 +537,16 @@ class CfgWeapons
 		DEF_ARMOR(2.12,0.05,0,1,0.35,0.5);
 	};
 
+	SUBCLASS(V_Kama_Officer_blk,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Officer Vest (Black));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_Officer_Geonosis,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Officer Vest (Geonosis));
@@ -542,6 +554,16 @@ class CfgWeapons
 		{
 			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
 			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
+		};
+	};
+
+	SUBCLASS(V_Kama_Cookie,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Cookie's Vest);
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa)
 		};
 	};
 
@@ -634,6 +656,7 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
 	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
+	ADD_UNIFORM_TROOPER(Texan,Texan's Armor,200);
 	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
 	// Special Trooper Uniforms
