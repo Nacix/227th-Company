@@ -128,6 +128,7 @@ class CfgPatches
             CLASS(V_Kama_CS),
             CLASS(V_Kama_Medic),
             CLASS(V_Kama_Officer),
+            CLASS(V_Kama_Officer_blk),
             CLASS(V_Kama_Officer_Geonosis),
             CLASS(V_Kama_Cookie),
             CLASS(V_Kama_Spartacus),

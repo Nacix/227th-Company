@@ -537,6 +537,16 @@ class CfgWeapons
 		DEF_ARMOR(2.12,0.05,0,1,0.35,0.5);
 	};
 
+	SUBCLASS(V_Kama_Officer_blk,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Officer Vest (Black));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_Officer_Geonosis,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Officer Vest (Geonosis));

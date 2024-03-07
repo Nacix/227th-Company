@@ -249,6 +249,7 @@ class XtdGearInfos
 		XTD_V_OMNI(Kama_Medic,Leadership,Medic);
 		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
 		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
+		XTD_V_OMNI(Kama_Officer_blk,Leadership,Officer_blk);
 		XTD_V_OMNI(Kama_Officer_Geonosis,Leadership,Geonosis);
 		XTD_V_OMNI(Kama_Cookie,Leadership,Cookie);
 		XTD_V_OMNI(Kama_Spartacus,Leadership,Spartacus);
