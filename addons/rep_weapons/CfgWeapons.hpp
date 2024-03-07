@@ -2015,7 +2015,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item = "3AS_optic_acog_DC15C";
+				item = CLASS(optic_DC15C_scope);
 			};
 		};
 	};
