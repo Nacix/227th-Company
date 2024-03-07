@@ -149,6 +149,7 @@ class CfgPatches
             CLASS(U_B_Jinx),
             CLASS(U_B_Knight),
             CLASS(U_B_Speed),
+            CLASS(U_B_Texan),
             CLASS(U_B_Valyrian),
             CLASS(U_B_Jet_CT),
             CLASS(U_B_Jet_NCO),

@@ -646,6 +646,7 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
 	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
+	ADD_UNIFORM_TROOPER(Texan,Texan's Armor,200);
 	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
 	// Special Trooper Uniforms

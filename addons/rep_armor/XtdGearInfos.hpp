@@ -275,6 +275,7 @@ class XtdGearInfos
 		XTD_U_TROOPER(Jinx,Jinx);
 		XTD_U_TROOPER(Knight,Knight);
 		XTD_U_TROOPER(Speed,Speed);
+		XTD_U_TROOPER(Texan,Texan);
 		XTD_U_TROOPER(Valyrian,Valyrian);
 
 		// Insulated Uniforms

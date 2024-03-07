@@ -389,6 +389,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);
 				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Texan);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 			};
 		};
