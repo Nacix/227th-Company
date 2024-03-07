@@ -1285,6 +1285,8 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(srifle_DW32S_F);
 		recoil = "recoil_MSBS65";
+		modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+		weaponInfoType = "RscWeaponZeroing";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
 		class Single: Single
