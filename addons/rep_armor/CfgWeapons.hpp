@@ -91,6 +91,7 @@ class CfgWeapons
     ADD_CT_HELMET(Sparky,Sparky's Helmet);
     ADD_CT_HELMET(Sparrow,Sparrow's Helmet);
     ADD_CT_HELMET(Speed,Speed's Helmet);
+	ADD_CT_HELMET(Texan,Texan's Helmet);
     ADD_CT_HELMET(Valyrian,Valyrian's Helmet);
     ADD_CT_HELMET(Wicked,Wicked's Helmet);
 

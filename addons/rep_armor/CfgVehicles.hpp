@@ -277,6 +277,7 @@ class CfgVehicles
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparky),Sparky);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparrow),Sparrow);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Speed),Speed);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Texan),Texan);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Valyrian),Valyrian);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Wicked),Wicked);
 

@@ -154,6 +154,7 @@ class XtdGearInfos
 		XTD_H_P2(Sparrow,Trooper,Sparrow);
 		XTD_H_P2(Spartacus,Trooper,Spartacus);
 		XTD_H_P2(Speed,Trooper,Speed);
+		XTD_H_P2(Texan,Trooper,Texan);
 		XTD_H_P2(Valyrian,Trooper,Valyrian);
 		XTD_H_P2(Wicked,Trooper,Wicked);
 

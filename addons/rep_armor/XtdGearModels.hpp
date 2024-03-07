@@ -61,6 +61,7 @@ class XtdGearModels
 					"Sparrow",
 					"Spartacus",
 					"Speed",
+					"Texan",
 					"Valyrian",
 					"Wicked"
 				};
@@ -91,6 +92,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Sparrow);
 				SET_BACKGROUND_DEFAULT(Spartacus);
 				SET_BACKGROUND_DEFAULT(Speed);
+				SET_BACKGROUND_DEFAULT(Texan);
 				SET_BACKGROUND_DEFAULT(Valyrian);
 				SET_BACKGROUND_DEFAULT(Wicked);
 			};
