@@ -50,6 +50,17 @@ class CfgWeapons
 		};
 	};
 
+	class 3AS_optic_acog_DC15C: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 3AS_DC15C_Optic;
+			};
+		};
+	};
+
 	class JLTS_DC15X_scope: optic_LRPS
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -293,6 +304,21 @@ class CfgWeapons
 	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
 	{
 		scope = 1;
+	};
+
+	SUBCLASS(optic_DC15C_scope,3AS_optic_acog_DC15C)
+	{
+		class ItemInfo: ItemInfo
+		{
+			modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
+			class OpticsModes: OpticsModes
+			{
+				class 3AS_DC15C_Optic: 3AS_DC15C_Optic
+				{
+					modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
+				};
+			};
+		};
 	};
 
 	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
@@ -988,6 +1014,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_DC15C_scope), "3AS_optic_holo_DC15S" };
+			};
 		};
 	};
 
