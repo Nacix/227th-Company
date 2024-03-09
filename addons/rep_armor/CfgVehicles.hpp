@@ -47,15 +47,17 @@ class CfgVehicles
             }; \
         }
 	
-	#define ADD_HELMET_OBJECT_ARC(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_ARC)
-	#define ADD_HELMET_OBJECT_ARF(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_ARF)
-	#define ADD_HELMET_OBJECT_ENGINEER(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_Engineer)
-	#define ADD_HELMET_OBJECT_INSULATED(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_Insulated)
-	#define ADD_HELMET_OBJECT_P2(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_P2)
-	#define ADD_HELMET_OBJECT_P2_CUSTOM(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_P2_Custom)
-	#define ADD_HELMET_OBJECT_P1(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_P1)
-	#define ADD_HELMET_OBJECT_PILOT(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_Pilot)
-	#define ADD_HELMET_OBJECT_SPECOP(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,helmetClass,EdSubcat_Helmets_SpecOp)
+	#define ADD_HELMET_OBJECT_ARC(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_ARC_##helmetClass,EdSubcat_Helmets_ARC)
+	#define ADD_HELMET_OBJECT_ARF(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_ARF_##helmetClass,EdSubcat_Helmets_ARF)
+	#define ADD_HELMET_OBJECT_ENGINEER(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_Engineer_##helmetClass,EdSubcat_Helmets_Engineer)
+	#define ADD_HELMET_OBJECT_INSULATED(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_Insulated_##helmetClass,EdSubcat_Helmets_Insulated)
+	#define ADD_HELMET_OBJECT_P2(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_P2_##helmetClass,EdSubcat_Helmets_P2)
+	#define ADD_HELMET_OBJECT_P2_CUSTOM(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_P2_##helmetClass,EdSubcat_Helmets_P2_Custom)
+	#define ADD_HELMET_OBJECT_P1(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_P1_##helmetClass,EdSubcat_Helmets_P1)
+	#define ADD_HELMET_OBJECT_PILOT_P1(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_P1_Pilot_##helmetClass,EdSubcat_Helmets_Pilot)
+	#define ADD_HELMET_OBJECT_PILOT_P2(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_P2_Pilot_##helmetClass,EdSubcat_Helmets_Pilot)
+	#define ADD_HELMET_OBJECT_SPECOP(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_SpecOp_##helmetClass,EdSubcat_Helmets_SpecOp)
+	#define ADD_HELMET_OBJECT_KATARN(namePretty,helmetClass) ADD_HELMET_OBJECT(namePretty,H_Katarn_##helmetClass,EdSubcat_Helmets_Katarn
 
 	// ############################################################ Backpacks ############################################################
 
@@ -74,7 +76,7 @@ class CfgVehicles
 		maximumLoad = QUOTE(225);
 	};
 	
-	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO,325);
+	ADD_BACKPACK(RTO,RTO Backpack,JLTS_Clone_backpack_RTO,350);
 
 	SUBCLASS(B_Pack_RTO_straps,JLTS_Clone_backpack_s_RTO)
 	{
@@ -87,7 +89,7 @@ class CfgVehicles
 
 	ADD_BACKPACK_STRAPS(AT,AT Backpack,JLTS_Clone_backpack,425);
 	ADD_BACKPACK_STRAPS(Medic,Medic Backpack,JLTS_Clone_backpack,350);
-	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack,375);
+	ADD_BACKPACK_STRAPS(EOD,EOD Backpack,JLTS_Clone_backpack,450);
 	ADD_BACKPACK_STRAPS(CT,Trooper Backpack,JLTS_Clone_backpack,275);
 	ADD_BACKPACK_STRAPS(Jet,Jet Trooper Backpack,JLTS_Clone_backpack,300);
 	ADD_BACKPACK_STRAPS(Snow_CT,Snow Trooper Backpack,JLTS_Clone_backpack,325);
@@ -204,6 +206,24 @@ class CfgVehicles
 		};
 	};
 
+	SUBCLASS(B_Katarn_Base,TAG##_B_Trooper_Base)
+	{
+		_generalMacro = CLASS(B_Katarn_Base);
+		displayName = TAG_NAME(CloneKatarnBase);
+		uniformClass = CLASS(U_B_Katarn_Base);
+		model = "\3AS\3AS_Characters\Commando\3AS_Katarn_Armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\uniforms\katarn\u_katarn_ct_co.paa),
+			"\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa"
+		};
+	};
+
 	ADD_V_UNIFORM_TROOPER(CR,CRBase);
 	ADD_V_UNIFORM_TROOPER(CT,CTBase);
 	ADD_V_UNIFORM_TROOPER(SCT,SCTBase);
@@ -220,6 +240,7 @@ class CfgVehicles
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Knight,KnightBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Luci,LuciBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Speed,SpeedBase);
+	ADD_V_UNIFORM_TROOPER_CUSTOM(Texan,TexanBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Valyrian,ValyrianBase);
 
 	ADD_V_UNIFORM_TROOPER_JET(CT,JetBase);
@@ -228,72 +249,79 @@ class CfgVehicles
 	ADD_V_UNIFORM_INSULATED(CT,InsulatedBase);
 	ADD_V_UNIFORM_INSULATED(Geonosis_CT,InsulatedGeonosisBase);
 
+	ADD_V_UNIFORM_KATARN(CT,KatarnBase);
+
 	// ############################################################ Helmet Objects ############################################################
 
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CT),H_P2_CT);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (SCT),H_P2_SCT);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (VCT),H_P2_VCT);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CSP),H_P2_CSP);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CLC),H_P2_CLC);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CP),H_P2_CP);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CS),H_P2_CS);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CSS),H_P2_CSS);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CFS),H_P2_CFS);
-	ADD_HELMET_OBJECT_P2(P2 Helmet (CSM),H_P2_CSM);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CT),CT);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (SCT),SCT);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (VCT),VCT);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CSP),CSP);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CLC),CLC);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CP),CP);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CS),CS);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CSS),CSS);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CFS),CFS);
+	ADD_HELMET_OBJECT_P2(P2 Helmet (CSM),CSM);
 
-	ADD_HELMET_OBJECT_P2(P2 Jet Helmet,H_P2_Jet);
+	ADD_HELMET_OBJECT_P2(P2 Jet Helmet,Jet);
 	
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Canada),H_P2_Canada);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Catcher),H_P2_Catcher);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (FiveO),H_P2_Fiveo);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Kitsune),H_P2_Kitsune);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Luci),H_P2_Luci);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Rex),H_P2_Rex);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Riven),H_P2_Riven);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sage),H_P2_Sage);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparky),H_P2_Sparky);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparrow),H_P2_Sparrow);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Speed),H_P2_Speed);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Valyrian),H_P2_Valyrian);
-	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Wicked),H_P2_Wicked);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Canada),Canada);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Catcher),Catcher);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Cookie),Cookie);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (FiveO),Fiveo);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Kitsune),Kitsune);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Luci),Luci);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Rex),Rex);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Riven),Riven);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sage),Sage);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparky),Sparky);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sparrow),Sparrow);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Speed),Speed);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Texan),Texan);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Valyrian),Valyrian);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Wicked),Wicked);
 
-	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (CT),H_ARC_CT);
-	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Cookie),H_ARC_Cookie);
-	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (DevilDolphin),H_ARC_Devil);
-	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Jinx),H_ARC_Jinx);
-	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Knight),H_ARC_Knight);
+	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (CT),CT);
+	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Cookie),Cookie);
+	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (DevilDolphin),Devil);
+	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Jinx),Jinx);
+	ADD_HELMET_OBJECT_ARC(P2 ARC Helmet (Knight),Knight);
 
-	ADD_HELMET_OBJECT_ARF(ARF Trooper Helmet (CT),H_ARF_CT);
-	ADD_HELMET_OBJECT_ARF(ARF Trooper Helmet (Spartacus),H_ARF_Spartacus);
+	ADD_HELMET_OBJECT_ARF(ARF Trooper Helmet (CT),CT);
+	ADD_HELMET_OBJECT_ARF(ARF Trooper Helmet (Spartacus),Spartacus);
 
-	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (CT),H_Engineer_CT);
-	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (CSP),H_Engineer_CSP);
-	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (NCO),H_Engineer_NCO);
+	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (CT),CT);
+	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (CSP),CSP);
+	ADD_HELMET_OBJECT_ENGINEER(Engineer Helmet (NCO),NCO);
 
-	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (CT),H_SpecOp_CT);
-	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (CSP),H_SpecOp_CSP);
-	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (NCO),H_SpecOp_NCO);
-	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (Geonosis),H_SpecOp_Geonosis);
-	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (Geonosis) [NCO],H_SpecOp_Geonosis_NCO);
+	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (CT),CT);
+	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (CSP),CSP);
+	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (NCO),NCO);
+	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (Geonosis),Geonosis);
+	ADD_HELMET_OBJECT_SPECOP(Special Operations Helmet (Geonosis) [NCO],Geonosis_NCO);
 
-	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (CT),H_Insulated_CT);
-	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (Geonosis),H_Insulated_Geonosis);
+	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (CT),CT);
+	ADD_HELMET_OBJECT_INSULATED(Insulated Helmet (Geonosis),Geonosis);
 
-	ADD_HELMET_OBJECT_P1(P1 Helmet (CT),H_P1_CT);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (SCT),H_P1_SCT);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (VCT),H_P1_VCT);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (CSP),H_P1_CSP);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (CS),H_P1_CS);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (CSS),H_P1_CSS);
-	ADD_HELMET_OBJECT_P1(P1 Helmet (CSM),H_P1_CSM);
+	ADD_HELMET_OBJECT_KATARN(Katarn Helmet (CT),H_Katarn_CT);
 
-	ADD_HELMET_OBJECT_P1(P1 Custom Helmet (Jinx),H_P1_Jinx);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CT),CT);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (SCT),SCT);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (VCT),VCT);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CLC),CLC);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CP),CP);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CSP),CSP);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CS),CS);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CSS),CSS);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CFS),CFS);
+	ADD_HELMET_OBJECT_P1(P1 Helmet (CSM),CSM);
 
-	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CX),H_P1_Pilot_CX);
-	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CXG1),H_P1_Pilot_CXG1);
-	ADD_HELMET_OBJECT_PILOT(P1 Pilot Helmet (CXG2),H_P1_Pilot_CXG2);
+	ADD_HELMET_OBJECT_PILOT_P1(P1 Pilot Helmet (CX),CX);
+	ADD_HELMET_OBJECT_PILOT_P1(P1 Pilot Helmet (CXG1),CXG1);
+	ADD_HELMET_OBJECT_PILOT_P1(P1 Pilot Helmet (CXG2),CXG2);
 
-	ADD_HELMET_OBJECT_PILOT(P2 Pilot Helmet (CX),H_P2_Pilot_CX);
-	ADD_HELMET_OBJECT_PILOT(P2 Pilot Helmet (Carrot),H_P2_Pilot_Carrot);
-	ADD_HELMET_OBJECT_PILOT(P2 Pilot Helmet (Texan),H_P2_Pilot_Texan);
+	ADD_HELMET_OBJECT_PILOT_P2(P2 Pilot Helmet (CX),CX);
+	ADD_HELMET_OBJECT_PILOT_P2(P2 Pilot Helmet (Carrot),Carrot);
+	ADD_HELMET_OBJECT_PILOT_P2(P2 Pilot Helmet (Texan),Texan);
 };

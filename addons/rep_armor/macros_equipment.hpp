@@ -50,7 +50,11 @@
     class TAG##_H_P1_##className##: TAG##_H_P1_CT \
     { \
         displayName = TAG_NAME(rawName (P1)); \
-        hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa) }; \
+        hiddenSelectionsTextures[]= \
+        { \
+            QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa), \
+            QPATHTOF(data\helmets\p1\h_p1_##className##_co.paa), \
+        }; \
     }
     
 #define ADD_P1_PILOT_HELMET(className,rawName) \
@@ -101,6 +105,18 @@
             QPATHTOF(data\helmets\specops\h_specop_##className##_co.paa), \
             QUOTE(\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa), \
             QPATHTOF(data\helmets\specops\h_specop_##className##_co.paa) \
+        }; \
+    }
+
+#define ADD_KATARN_HELMET(className,rawName) \
+    class TAG##_H_Katarn_##className##: TAG##_H_Katarn_CT \
+    { \
+        displayName = TAG_NAME(rawName); \
+        hiddenSelectionsTextures[]= \
+        { \
+            QPATHTOF(data\helmets\katarn\h_katarn_##className##_co.paa), \
+            QPATHTOF(data\helmets\katarn\h_katarn_##className##_co.paa), \
+            QPATHTOF(data\helmets\katarn\h_katarn_##className##_co.paa) \
         }; \
     }
 
@@ -155,6 +171,7 @@
 
 #define ADD_UNIFORM_TROOPER(className,rawName,cargoSize) ADD_UNIFORM(className,rawName,cargoSize,Trooper)
 #define ADD_UNIFORM_INSULATED(className,rawName,cargoSize) ADD_UNIFORM(Insulated_##className,rawName,cargoSize,Insulated)
+#define ADD_UNIFORM_KATARN(className,rawName,cargoSize) ADD_UNIFORM(Katarn_##className,rawName,cargoSize,Katarn)
 
 // ############################################################ CfgVehicles ############################################################
 
@@ -205,6 +222,16 @@
         { \
             QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa), \
             QPATHTOF(data\uniforms\insulated\u_insulated_##className##_co.paa) \
+        }; \
+    }
+#define ADD_V_UNIFORM_KATARN(className,rawName) \
+    SUBCLASS(B_Katarn_##className##_Base,TAG##_B_Katarn_Base) \
+    { \
+        displayName = TAG_NAME(rawName); \
+        hiddenSelectionsTextures[]= \
+        { \
+            QPATHTOF(data\uniforms\katarn\u_katarn_##className##_co.paa), \
+            QPATHTOF(data\uniforms\katarn\u_katarn_##className##_co.paa) \
         }; \
     }
 

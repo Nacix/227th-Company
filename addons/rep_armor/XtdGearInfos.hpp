@@ -143,6 +143,7 @@ class XtdGearInfos
 		// P2 Custom Helmets
 		XTD_H_P2(Canada,Trooper,Canada);
 		XTD_H_P2(Catcher,Trooper,Catcher);
+		XTD_H_P2(Cookie,Trooper,Cookie);
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
@@ -153,6 +154,7 @@ class XtdGearInfos
 		XTD_H_P2(Sparrow,Trooper,Sparrow);
 		XTD_H_P2(Spartacus,Trooper,Spartacus);
 		XTD_H_P2(Speed,Trooper,Speed);
+		XTD_H_P2(Texan,Trooper,Texan);
 		XTD_H_P2(Valyrian,Trooper,Valyrian);
 		XTD_H_P2(Wicked,Trooper,Wicked);
 
@@ -160,11 +162,13 @@ class XtdGearInfos
 		XTD_H_P1(CT,Default);
 		XTD_H_P1(SCT,SCT);
 		XTD_H_P1(VCT,VCT);
+		XTD_H_P1(CLC,CLC);
+		XTD_H_P1(CP,CP);
 		XTD_H_P1(CSP,CSP);
 		XTD_H_P1(CS,CS);
 		XTD_H_P1(CSS,CSS);
+		XTD_H_P1(CFS,CFS);
 		XTD_H_P1(CSM,CSM);
-		XTD_H_P1(Jinx,Jinx);
 
 		// P2 Pilot Helmets
 		XTD_H_P2_PILOT(CX,Default);
@@ -245,7 +249,9 @@ class XtdGearInfos
 		XTD_V_OMNI(Kama_Medic,Leadership,Medic);
 		XTD_V_OMNI(Kama_CS,Leadership,Sergeant);
 		XTD_V_OMNI(Kama_Officer,Leadership,Officer);
+		XTD_V_OMNI(Kama_Officer_blk,Leadership,Officer_blk);
 		XTD_V_OMNI(Kama_Officer_Geonosis,Leadership,Geonosis);
+		XTD_V_OMNI(Kama_Cookie,Leadership,Cookie);
 		XTD_V_OMNI(Kama_Spartacus,Leadership,Spartacus);
 		XTD_V_OMNI(Kama_Valyrian,Leadership,Valyrian);
 
@@ -270,6 +276,7 @@ class XtdGearInfos
 		XTD_U_TROOPER(Jinx,Jinx);
 		XTD_U_TROOPER(Knight,Knight);
 		XTD_U_TROOPER(Speed,Speed);
+		XTD_U_TROOPER(Texan,Texan);
 		XTD_U_TROOPER(Valyrian,Valyrian);
 
 		// Insulated Uniforms

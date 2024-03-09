@@ -16,7 +16,6 @@ class CfgWeapons
 	class UGL_F;
 	class launch_RPG32_F;
 
-	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
 	class 3AS_DC15L_Base_F;
 	class 3AS_DC17M_Base_F;
@@ -29,6 +28,7 @@ class CfgWeapons
 
 	class JLTS_Glocko_flashlight;
 	class JLTS_DC15S;
+	class JLTS_stun_muzzle;
 
 	class k_773_rifle_base;
 
@@ -39,6 +39,17 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class 3AS_optic_holo_DC15S: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class ACO;
+			};
+		};
+	};
+
 	class optic_DC15A_scope: ItemCore
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -46,6 +57,17 @@ class CfgWeapons
 			class OpticsModes
 			{
 				class OpticScopeLookMedium;
+			};
+		};
+	};
+
+	class 3AS_optic_acog_DC15C: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class 3AS_DC15C_Optic;
 			};
 		};
 	};
@@ -187,6 +209,7 @@ class CfgWeapons
 	class JLTS_DW32S: arifle_MX_Base_F
 	{
 		class Single;
+		class Stun;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -288,11 +311,42 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = TAG_NAME(Holosight);
 		scope = 2;
+		inertia = 0;
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class ACO: ACO
+				{
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+				};
+			};
+		};
     };
 
 	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
 	{
 		scope = 1;
+	};
+
+	SUBCLASS(optic_DC15C_scope,3AS_optic_acog_DC15C)
+	{
+		class ItemInfo: ItemInfo
+		{
+			modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
+			class OpticsModes: OpticsModes
+			{
+				class 3AS_DC15C_Optic: 3AS_DC15C_Optic
+				{
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+					
+					modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
+				};
+			};
+		};
 	};
 
 	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
@@ -306,6 +360,10 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 2";
 					opticsZoomMax = "0.25 / 2";
 					opticsZoomMin = "0.25 / 4";
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
@@ -324,12 +382,18 @@ class CfgWeapons
 				{
 					discreteFOV[] = {};
 					discreteInitIndex = -1;
-					discreteDistance[] = { 100 };
+
+					discreteDistance[] = { 50 };
 					discreteDistanceInitIndex = 0;
+
 					modelOptics[] = { "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d", "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d" };
+
 					opticsZoomInit = "0.25 / 6";
 					opticsZoomMax = "0.25 / 6";
 					opticsZoomMin = "0.25 / 20";
+					
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
@@ -352,6 +416,11 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 12";
 					opticsZoomMax = "0.25 / 12";
 					opticsZoomMin = "0.25 / 20";
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+
 					visionMode[] = { "Normal", "NVG", "TI" };
 				};
 			};
@@ -374,7 +443,12 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 2";
 					opticsZoomMax = "0.25 / 2";
 					opticsZoomMin = "0.25 / 10";
+
 					visionMode[] = { "Normal", "NVG", "TI" };
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
@@ -653,7 +727,14 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: StandardSound
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+			};
+			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -988,6 +1069,10 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 70;
+			class CowsSlot: CowsSlot
+			{
+				compatibleItems[] = { CLASS(optic_DC15C_scope), "3AS_optic_holo_DC15S" };
+			};
 		};
 	};
 
@@ -1255,6 +1340,10 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(srifle_DW32S_F);
 		recoil = "recoil_MSBS65";
+		modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+		distanceZoomMax = 50;
+		distanceZoomMin = 50;
+		weaponInfoType = "RscWeaponZeroing";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
 		class Single: Single
@@ -1281,6 +1370,10 @@ class CfgWeapons
 					1
 				};
 			};
+		};
+		class Stun: TAG##_muzzle_Stun_Base
+		{
+			memoryPointCamera = "opticView";
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
@@ -1983,7 +2076,7 @@ class CfgWeapons
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
-				item = "3AS_optic_acog_DC15C";
+				item = CLASS(optic_DC15C_scope);
 			};
 		};
 	};

@@ -25,13 +25,13 @@ class CfgWeapons
 
 	// References inherited class with ItemInfo -- always inherits from A3's Viper SP Helmet
 	#define REF_INFO_VIPER(className) REF_INFO(className,H_HelmetO_ViperSP_hex_F)
-	REF_INFO_VIPER(3AS_P1_Base);
 	REF_INFO_VIPER(3AS_P2_Pilot_Helmet);
 	REF_INFO_VIPER(JLTS_CloneHelmetP2);
 	REF_INFO_VIPER(JLTS_CloneHelmetAB);
 
 	// References inherited class with ItemInfo -- always inherits from JLTS' P2 Clone Helmet
 	#define REF_INFO_P2(className) REF_INFO(className,JLTS_CloneHelmetP2)
+	REF_INFO_P2(SEA_Helmet_P1_Base);
 	REF_INFO_P2(LSEA_Helmet_Pilot_P1_Base);
 	REF_INFO_P2(SEA_Helmet_ARF_Base);
 	REF_INFO_P2(SEA_Helmet_Engineer_Base);
@@ -81,6 +81,7 @@ class CfgWeapons
 
 	ADD_CT_HELMET(Canada,Canada's Helmet);
     ADD_CT_HELMET(Catcher,Catcher's Helmet);
+	ADD_CT_HELMET(Cookie,Cookie's Helmet);
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
@@ -90,6 +91,7 @@ class CfgWeapons
     ADD_CT_HELMET(Sparky,Sparky's Helmet);
     ADD_CT_HELMET(Sparrow,Sparrow's Helmet);
     ADD_CT_HELMET(Speed,Speed's Helmet);
+	ADD_CT_HELMET(Texan,Texan's Helmet);
     ADD_CT_HELMET(Valyrian,Valyrian's Helmet);
     ADD_CT_HELMET(Wicked,Wicked's Helmet);
 
@@ -162,6 +164,19 @@ class CfgWeapons
 	ADD_SPECOP_HELMET(CSP,Spec-Ops Helmet [CSP]);
 	ADD_SPECOP_HELMET(NCO,Spec-Ops Helmet [NCO]);
 
+	// ############################################################ Katarn Helmets ############################################################
+
+	SUBCLASS(H_Katarn_CT,3AS_H_Katarn_Helmet)
+	{
+		displayName = TAG_NAME(Katarn Helmet);
+		subItems[] = {};
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\katarn\h_katarn_ct_co.paa),
+			QPATHTOF(data\helmets\katarn\h_katarn_ct_co.paa)
+		};
+	};
+
 	// ############################################################ Insulated Helmets ############################################################
 
 	SUBCLASS(H_Insulated_CT,3AS_ColdAssault_Helmet_Base)
@@ -182,22 +197,27 @@ class CfgWeapons
 
 	// ############################################################ P1 Trooper Helmets ############################################################
 
-	SUBCLASS(H_P1_CT,3AS_P1_Base)
+	SUBCLASS(H_P1_CT,SEA_Helmet_P1_Base)
 	{
 		displayName = TAG_NAME(Trooper Helmet (P1));
 		subItems[] = {};
-		hiddenSelectionsTextures[] = { QPATHTOF(data\helmets\p1\h_p1_ct_co.paa) };
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\helmets\p1\h_p1_ct_co.paa), 
+			QPATHTOF(data\helmets\p1\h_p1_ct_co.paa)
+		};
 		DEF_ARMOR_BASE;
 	};
 
 	ADD_P1_CT_HELMET(SCT,SCT Helmet);
 	ADD_P1_CT_HELMET(VCT,VCT Helmet);
 	ADD_P1_CT_HELMET(CSP,CSP Helmet);
+	ADD_P1_CT_HELMET(CLC,CLC Helmet);
+	ADD_P1_CT_HELMET(CP,CP Helmet);
 	ADD_P1_CT_HELMET(CS,CS Helmet);
 	ADD_P1_CT_HELMET(CSS,CSS Helmet);
+	ADD_P1_CT_HELMET(CFS,CFS Helmet);
 	ADD_P1_CT_HELMET(CSM,CSM Helmet);
-
-	ADD_P1_CT_HELMET(Jinx,Jinx's Helmet);
 
 	// ############################################################ P1 Pilot Helmets ############################################################
 
@@ -517,6 +537,16 @@ class CfgWeapons
 		DEF_ARMOR(2.12,0.05,0,1,0.35,0.5);
 	};
 
+	SUBCLASS(V_Kama_Officer_blk,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Officer Vest (Black));
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_officer_blk_co.paa)
+		};
+	};
+
 	SUBCLASS(V_Kama_Officer_Geonosis,TAG##_V_Kama_Officer)
 	{
 		displayName = TAG_NAME(Officer Vest (Geonosis));
@@ -524,6 +554,16 @@ class CfgWeapons
 		{
 			QPATHTOF(data\vests\basic\trooper\v_ab_jet_co.paa),
 			QPATHTOF(data\vests\officer\v_kama_officer_co.paa)
+		};
+	};
+
+	SUBCLASS(V_Kama_Cookie,TAG##_V_Kama_Officer)
+	{
+		displayName = TAG_NAME(Cookie's Vest);
+		hiddenSelectionsTextures[]=
+		{
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa),
+			QPATHTOF(data\vests\officer\v_kama_cookie_co.paa)
 		};
 	};
 
@@ -581,6 +621,24 @@ class CfgWeapons
 		};
 	};
 
+	SUBCLASS(U_B_Katarn_Base,Uniform_Base)
+	{
+		author = "3rd Army Studios, Valyrian, & Anorexican";
+		displayName = TAG_NAME(KatarnUniformBase);
+		hiddenSelections[] = { "camo" };
+		picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Uniform_Unmarked_UI_ca.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		tas_is_commando = 1;
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = CLASS(B_Katarn_Base);
+			uniformType = "Neopren";
+			containerClass = "Supply250";
+			mass = 40;
+		};
+	};
+
 	// Trooper Uniforms
 	ADD_UNIFORM_TROOPER(CR,Trooper Armor (Cadet),150);
 	ADD_UNIFORM_TROOPER(CT,Trooper Armor (CT),150);
@@ -598,6 +656,7 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
 	ADD_UNIFORM_TROOPER(Speed,Speed' Armor,200);
+	ADD_UNIFORM_TROOPER(Texan,Texan's Armor,200);
 	ADD_UNIFORM_TROOPER(Valyrian,Valyrian's Armor,200);
 
 	// Special Trooper Uniforms
@@ -607,4 +666,6 @@ class CfgWeapons
 	// Insulated Uniforms
 	ADD_UNIFORM_INSULATED(CT,Insulated Armor,200);
 	ADD_UNIFORM_INSULATED(Geonosis_CT,Insulated Armor (Geonosis),200);
+
+	ADD_UNIFORM_KATARN(CT,Katarn Armor,250);
 };
