@@ -16,7 +16,6 @@ class CfgWeapons
 	class UGL_F;
 	class launch_RPG32_F;
 
-	class 3AS_optic_holo_DC15S;
 	class 3AS_DC15C_Base_F;
 	class 3AS_DC15L_Base_F;
 	class 3AS_DC17M_Base_F;
@@ -29,6 +28,7 @@ class CfgWeapons
 
 	class JLTS_Glocko_flashlight;
 	class JLTS_DC15S;
+	class JLTS_stun_muzzle;
 
 	class k_773_rifle_base;
 
@@ -209,6 +209,7 @@ class CfgWeapons
 	class JLTS_DW32S: arifle_MX_Base_F
 	{
 		class Single;
+		class Stun;
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot;
@@ -726,7 +727,14 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: StandardSound
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+			};
+			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1333,6 +1341,8 @@ class CfgWeapons
 		baseWeapon = CLASS(srifle_DW32S_F);
 		recoil = "recoil_MSBS65";
 		modelOptics = "\kobra\442_weapons\weapons\773\773_retical.p3d";
+		distanceZoomMax = 50;
+		distanceZoomMin = 50;
 		weaponInfoType = "RscWeaponZeroing";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
@@ -1360,6 +1370,10 @@ class CfgWeapons
 					1
 				};
 			};
+		};
+		class Stun: TAG##_muzzle_Stun_Base
+		{
+			memoryPointCamera = "opticView";
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
