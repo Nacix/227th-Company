@@ -1371,10 +1371,6 @@ class CfgWeapons
 				};
 			};
 		};
-		class Stun: TAG##_muzzle_Stun_Base
-		{
-			memoryPointCamera = "opticView";
-		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
