@@ -39,6 +39,17 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class 3AS_optic_holo_DC15S: ItemCore
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			class OpticsModes
+			{
+				class ACO;
+			};
+		};
+	};
+
 	class optic_DC15A_scope: ItemCore
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -299,6 +310,18 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = TAG_NAME(Holosight);
 		scope = 2;
+		inertia = 0;
+		class ItemInfo: ItemInfo
+		{
+			class OpticsModes: OpticsModes
+			{
+				class ACO: ACO
+				{
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+				};
+			};
+		};
     };
 
 	SUBCLASS(optic_Holo_DP23,TAG_CLASS(optic_Holo))
@@ -315,6 +338,10 @@ class CfgWeapons
 			{
 				class 3AS_DC15C_Optic: 3AS_DC15C_Optic
 				{
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+					
 					modelOptics = "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d";
 				};
 			};
@@ -332,6 +359,10 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 2";
 					opticsZoomMax = "0.25 / 2";
 					opticsZoomMin = "0.25 / 4";
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
@@ -350,12 +381,18 @@ class CfgWeapons
 				{
 					discreteFOV[] = {};
 					discreteInitIndex = -1;
-					discreteDistance[] = { 100 };
+
+					discreteDistance[] = { 50 };
 					discreteDistanceInitIndex = 0;
+
 					modelOptics[] = { "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d", "\TK\71st\71_Weapons\acc\reticle_blue_2.p3d" };
+
 					opticsZoomInit = "0.25 / 6";
 					opticsZoomMax = "0.25 / 6";
 					opticsZoomMin = "0.25 / 20";
+					
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
@@ -378,6 +415,11 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 12";
 					opticsZoomMax = "0.25 / 12";
 					opticsZoomMin = "0.25 / 20";
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
+
 					visionMode[] = { "Normal", "NVG", "TI" };
 				};
 			};
@@ -400,7 +442,12 @@ class CfgWeapons
 					opticsZoomInit = "0.25 / 2";
 					opticsZoomMax = "0.25 / 2";
 					opticsZoomMin = "0.25 / 10";
+
 					visionMode[] = { "Normal", "NVG", "TI" };
+
+					discreteDistance[] = { 50 };
+					distanceZoomMax = 50;
+					distanceZoomMin = 50;
 				};
 			};
 		};
