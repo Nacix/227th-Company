@@ -1017,7 +1017,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 2;
-			reloadTime = "60 / 500";
+			reloadTime = "60 / 600";
 			dispersion = "(1.6 / 3.4377) / 1000";
 			textureType = "dual";
 			sounds[]=
@@ -1043,7 +1043,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			reloadTime = "60 / 700";
+			reloadTime = "60 / 550";
 			dispersion = "(1.4 / 3.4377) / 1000";
 			sounds[]=
 			{
@@ -1088,7 +1088,7 @@ class CfgWeapons
 		class Burst: Mode_Burst
 		{
 			burst = 2;
-			reloadTime = "60 / 500";
+			reloadTime = "60 / 600";
 			dispersion = "(1.6 / 3.4377) / 1000";
 			textureType = "dual";
 			sounds[]=
@@ -1114,7 +1114,7 @@ class CfgWeapons
 		};
 		class Single: Single
 		{
-			reloadTime = "60 / 700";
+			reloadTime = "60 / 550";
 			dispersion = "(1.4 / 3.4377) / 1000";
 			sounds[]=
 			{
