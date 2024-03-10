@@ -734,7 +734,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -776,7 +776,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -836,7 +836,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 700";
 			dispersion = "(2.5 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -857,7 +857,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 650";
 			dispersion = "2.8 / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -897,7 +897,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 500";
 			dispersion = "(1.5 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -919,7 +919,7 @@ class CfgWeapons
 			burst = 5;
 			reloadTime = "60 / 550";
 			dispersion = "1.8 / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -965,7 +965,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 500";
 			dispersion = "(2.1 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -986,7 +986,7 @@ class CfgWeapons
 		{
 			burst = 5;
 			reloadTime = "60 / 550";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1024,7 +1024,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1049,7 +1049,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1095,7 +1095,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1120,7 +1120,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1163,7 +1163,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				soundContinuous = 1;
 				weaponSoundEffect = "";
@@ -1189,7 +1189,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1214,7 +1214,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1258,7 +1258,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				soundContinuous = 1;
 				weaponSoundEffect = "";
@@ -1284,7 +1284,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1309,7 +1309,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1354,7 +1354,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1404,7 +1404,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 100";
 			dispersion = "(0.4 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1456,7 +1456,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 250";
 			dispersion = "(0.5 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1472,7 +1472,7 @@ class CfgWeapons
 					1
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1533,7 +1533,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 700";
 			dispersion = "(1.4 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1559,7 +1559,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1580,7 +1580,7 @@ class CfgWeapons
 		{
 			reloadTime = "60 / 500";
 			dispersion = "(2.0 / 3.4377) / 1000";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1628,7 +1628,7 @@ class CfgWeapons
 		class Single: Single
 		{
 			reloadTime = "60 / 120";
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1681,7 +1681,7 @@ class CfgWeapons
 				{
 					"StandardSound"
 				};
-				class StandardSound: BaseSoundModeType
+				class StandardSound
 				{
 					begin1[]=
 					{
@@ -1737,7 +1737,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1762,7 +1762,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1799,7 +1799,7 @@ class CfgWeapons
 				{
 					"StandardSound"
 				};
-				class StandardSound: BaseSoundModeType
+				class StandardSound
 				{
 					weaponSoundEffect = "";
 					begin1[]=
@@ -1844,7 +1844,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				soundContinuous = 1;
 				weaponSoundEffect = "";
@@ -1871,7 +1871,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -1896,7 +1896,7 @@ class CfgWeapons
 			{
 				"StandardSound"
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				weaponSoundEffect = "";
 				begin1[]=
@@ -2001,7 +2001,7 @@ class CfgWeapons
 
 		class Single: Single
 		{
-			class StandardSound: BaseSoundModeType
+			class StandardSound
 			{
 				begin1[]=
 				{
