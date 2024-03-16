@@ -272,6 +272,7 @@ class XtdGearInfos
 		XTD_U_TROOPER(Jet_NCO,Jet_NCO);
 
 		// Custom Trooper Uniforms
+		XTD_U_TROOPER(Catcher,Catcher);
 		XTD_U_TROOPER(Cookie,Cookie);
 		XTD_U_TROOPER(Jinx,Jinx);
 		XTD_U_TROOPER(Knight,Knight);
