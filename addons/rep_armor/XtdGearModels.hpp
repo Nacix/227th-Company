@@ -369,6 +369,7 @@ class XtdGearModels
 					"CSM",
 					"Jet",
 					"Jet_NCO",
+					"Catcher",
 					"Cookie",
 					"Jinx",
 					"Knight",
@@ -388,6 +389,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(CSM);
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT_PRETTY(Jet_NCO,Jet [NCO]);
+				SET_BACKGROUND_DEFAULT(Catcher);
 				SET_BACKGROUND_DEFAULT(Cookie);
 				SET_BACKGROUND_DEFAULT(Jinx);
 				SET_BACKGROUND_DEFAULT(Knight);

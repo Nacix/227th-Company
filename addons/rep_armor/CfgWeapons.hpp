@@ -652,6 +652,7 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(CSM,Trooper Armor (CSM),200);
 
 	// Custom Trooper Uniforms
+	ADD_UNIFORM_TROOPER(Catcher,Catcher's Armor,200);
 	ADD_UNIFORM_TROOPER(Cookie,Cookie's Armor,200);
 	ADD_UNIFORM_TROOPER(Jinx,Jinx's Armor,200);
 	ADD_UNIFORM_TROOPER(Knight,Knight's Armor,200);
