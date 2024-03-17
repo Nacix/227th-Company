@@ -11,6 +11,28 @@ class CfgMagazines
     class 3AS_10Rnd_EC80_Mag;
     class 3AS_10Rnd_EM90_mag;
     class 3AS_AntiArmour_mag;
+    class JLTS_stun_mag_short;
+    class JLTS_stun_mag_long;
+
+    SUBCLASS(15Rnd_ST10_mag_F,JLTS_stun_mag_short)
+    {
+        author = "Anorexican";
+        displayName = "15Rnd ST10 Stun Cartridge";
+        descriptionShort = "15-charge ST10 stun cartridge<br />Duration: 10s";
+        ammo = CLASS(B_ST10);
+        initSpeed = 100;
+        count = 15;
+        mass = 5;
+        JLTS_stunDuration = 10;
+        JLTS_hasElectronics = 0;
+    };
+
+    SUBCLASS(15Rnd_ST20_mag_F,TAG##_15Rnd_ST10_mag_F)
+    {
+        displayName = "15Rnd ST20 Stun Cartridge";
+        descriptionShort = "15-charge ST20 stun cartridge<br />Duration: 20s";
+        JLTS_stunDuration = 20;
+    };
 
     SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)
     {
