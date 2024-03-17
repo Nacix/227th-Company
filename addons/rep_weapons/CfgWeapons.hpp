@@ -303,6 +303,20 @@ class CfgWeapons
 			class UnderBarrelSlot;
 		};
 	};
+
+	class JLTS_stun_muzzle: Rifle_Base_F
+	{
+		class Single: Mode_SemiAuto {};
+	};
+
+	// ############################################################ Muzzles ############################################################
+
+	SUBCLASS(muzzle_Stun,JLTS_stun_muzzle)
+	{
+		author = "Anorexican";
+		displayName = TAG_NAME(Stun);
+		magazines[] = { CLASS(15Rnd_ST10_mag_F), CLASS(15Rnd_ST20_mag_F) };
+	};
 	
 	// ############################################################ Optics ############################################################
 
@@ -794,6 +808,11 @@ class CfgWeapons
 			};
 			JLTS_hasElectronics = 0;
 			JLTS_hasEMPProtection = 1;
+		};
+		class Stun: TAG_CLASS(muzzle_Stun)
+		{
+			reloadAction = "GestureReloadPistol";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
 		};
 
 		class WeaponSlotsInfo
