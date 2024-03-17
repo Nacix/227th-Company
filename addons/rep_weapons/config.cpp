@@ -38,6 +38,7 @@ class CfgPatches
         };
         weapons[]=
         {
+			CLASS(muzzle_Stun),
 			CLASS(optic_Holo),
 			CLASS(optic_DC15C_scope),
 			CLASS(optic_DC15LE_scope),
@@ -115,6 +116,8 @@ class CfgPatches
 		};
         magazines[]=
 		{
+			CLASS(15Rnd_ST10_mag_F),
+			CLASS(15Rnd_ST20_mag_F),
 			CLASS(15Rnd_EC20_Mag_F),
 			CLASS(24Rnd_EC30_Mag_F),
 			CLASS(60Rnd_EC30_Mag_F),
@@ -133,6 +136,8 @@ class CfgPatches
 		};
         ammo[]=
 		{
+			CLASS(B_ST10),
+			CLASS(B_ST20),
 			CLASS(B_EC20_Pellets_Submunition_Deploy),
 			CLASS(B_EC20_Pellets_Submunition),
 			CLASS(B_ECX130_147x114_AT),
