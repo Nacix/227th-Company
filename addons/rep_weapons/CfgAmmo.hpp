@@ -6,6 +6,20 @@ class CfgAmmo
     class 3AS_Delta7_20mm_AA;
     class 3AS_EC20_BluePlasma;
 
+    class JLTS_bullet_stun;
+
+    SUBCLASS(B_ST10,JLTS_bullet_stun)
+    {
+        typicalSpeed = 100;
+        timeToLive = 5;
+    };
+
+    SUBCLASS(B_ST20,TAG##_B_ST10)
+    {
+        typicalSpeed = 100;
+        timeToLive = 5;
+    };
+
     SUBCLASS(B_EC20_Pellets_Submunition_Deploy,3AS_EC20_BluePlasma)
     {
         simulationStep = 0.05;
