@@ -14,24 +14,58 @@ class CfgMagazines
     class JLTS_stun_mag_short;
     class JLTS_stun_mag_long;
 
-    SUBCLASS(15Rnd_ST10_mag_F,JLTS_stun_mag_short)
+    SUBCLASS(15Rnd_ST10_Mag_F,JLTS_stun_mag_short)
     {
         author = "Anorexican";
         displayName = "15Rnd ST10 Stun Cartridge";
         descriptionShort = "15-charge ST10 stun cartridge<br />Duration: 10s";
         ammo = CLASS(B_ST10);
-        initSpeed = 100;
+        initSpeed = 135;
         count = 15;
         mass = 5;
         JLTS_stunDuration = 10;
         JLTS_hasElectronics = 0;
     };
 
-    SUBCLASS(15Rnd_ST20_mag_F,TAG##_15Rnd_ST10_mag_F)
+    SUBCLASS(15Rnd_ST20_Mag_F,TAG##_15Rnd_ST10_Mag_F)
     {
         displayName = "15Rnd ST20 Stun Cartridge";
         descriptionShort = "15-charge ST20 stun cartridge<br />Duration: 20s";
+        initSpeed = 135;
         JLTS_stunDuration = 20;
+    };
+
+    SUBCLASS(30Rnd_ST20_Mag_F,TAG##_15Rnd_ST10_Mag_F)
+    {
+        displayName = "30Rnd ST20 Stun Cartridge";
+        descriptionShort = "30-charge ST20 stun cartridge<br />Duration: 20s";
+        ammo = CLASS(B_ST20_Rifle);
+        initSpeed = 225;
+        count = 30;
+        mass = 10;
+        JLTS_stunDuration = 20;
+    };
+
+    SUBCLASS(5Rnd_ST45_Mag_F,TAG##_15Rnd_ST10_Mag_F)
+    {
+        displayName = "5Rnd ST45 Stun Cartridge";
+        descriptionShort = "5-charge ST45 stun cartridge<br />Duration: 45s";
+        ammo = CLASS(B_ST45_Marksman);
+        initSpeed = 450;
+        count = 5;
+        mass = 5;
+        JLTS_stunDuration = 45;
+    };
+
+    SUBCLASS(3Rnd_ST90_Mag_F,TAG##_15Rnd_ST10_Mag_F)
+    {
+        displayName = "3Rnd ST90 Stun Cartridge";
+        descriptionShort = "3-charge ST90 stun cartridge<br />Duration: 90s";
+        ammo = CLASS(B_ST90_Sniper);
+        initSpeed = 700;
+        count = 3;
+        mass = 6;
+        JLTS_stunDuration = 90;
     };
 
     SUBCLASS(15Rnd_EC20_Mag_F,3AS_16Rnd_EC20_Mag)

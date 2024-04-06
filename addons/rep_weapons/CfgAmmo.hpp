@@ -10,21 +10,39 @@ class CfgAmmo
 
     SUBCLASS(B_ST10,JLTS_bullet_stun)
     {
-        typicalSpeed = 100;
+        typicalSpeed = 135;
         timeToLive = 5;
     };
 
     SUBCLASS(B_ST20,TAG##_B_ST10)
     {
-        typicalSpeed = 100;
+        typicalSpeed = 135;
         timeToLive = 5;
+    };
+
+    SUBCLASS(B_ST20_Rifle,TAG##_B_ST10)
+    {
+        typicalSpeed = 225;
+        timeToLive = 8;
+    };
+
+    SUBCLASS(B_ST45_Marksman,TAG##_B_ST10)
+    {
+        typicalSpeed = 450;
+        timeToLive = 8;
+    };
+
+    SUBCLASS(B_ST90_Sniper,TAG##_B_ST10)
+    {
+        typicalSpeed = 700;
+        timeToLive = 10;
     };
 
     SUBCLASS(B_EC20_Pellets_Submunition_Deploy,3AS_EC20_BluePlasma)
     {
         simulationStep = 0.05;
         airFriction = -0.0033;
-        hit = 5;
+        hit = 12;
     };
 
     SUBCLASS(B_EC20_Pellets_Submunition,3AS_EC20_BluePlasma)

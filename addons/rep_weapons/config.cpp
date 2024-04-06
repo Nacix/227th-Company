@@ -39,6 +39,9 @@ class CfgPatches
         weapons[]=
         {
 			CLASS(muzzle_Stun),
+			CLASS(muzzle_Stun_Rifle),
+			CLASS(muzzle_Stun_Marksman),
+			CLASS(muzzle_Stun_Sniper),
 			CLASS(optic_Holo),
 			CLASS(optic_DC15C_scope),
 			CLASS(optic_DC15LE_scope),
@@ -116,8 +119,11 @@ class CfgPatches
 		};
         magazines[]=
 		{
-			CLASS(15Rnd_ST10_mag_F),
-			CLASS(15Rnd_ST20_mag_F),
+			CLASS(15Rnd_ST10_Mag_F),
+			CLASS(15Rnd_ST20_Mag_F),
+			CLASS(30Rnd_EC20_Mag_F),
+			CLASS(5Rnd_ST45_Mag_F),
+			CLASS(3Rnd_ST90_Mag_F),
 			CLASS(15Rnd_EC20_Mag_F),
 			CLASS(24Rnd_EC30_Mag_F),
 			CLASS(60Rnd_EC30_Mag_F),
@@ -138,6 +144,9 @@ class CfgPatches
 		{
 			CLASS(B_ST10),
 			CLASS(B_ST20),
+			CLASS(B_ST20_Rifle),
+			CLASS(B_ST45_Marksman),
+			CLASS(B_ST90_Sniper),
 			CLASS(B_EC20_Pellets_Submunition_Deploy),
 			CLASS(B_EC20_Pellets_Submunition),
 			CLASS(B_ECX130_147x114_AT),
@@ -156,6 +165,7 @@ class CowsSlot;
 class MuzzleSlot;
 class UnderBarrelSlot;
 class WeaponSlotsInfo;
+
 class PointerSlot: SlotInfo
 {
 	compatibleItems[] += {

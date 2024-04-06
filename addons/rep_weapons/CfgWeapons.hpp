@@ -28,7 +28,6 @@ class CfgWeapons
 
 	class JLTS_Glocko_flashlight;
 	class JLTS_DC15S;
-	class JLTS_stun_muzzle;
 
 	class k_773_rifle_base;
 
@@ -306,7 +305,7 @@ class CfgWeapons
 
 	class JLTS_stun_muzzle: Rifle_Base_F
 	{
-		class Single: Mode_SemiAuto {};
+		class Single;
 	};
 
 	// ############################################################ Muzzles ############################################################
@@ -316,6 +315,40 @@ class CfgWeapons
 		author = "Anorexican";
 		displayName = TAG_NAME(Stun);
 		magazines[] = { CLASS(15Rnd_ST10_mag_F), CLASS(15Rnd_ST20_mag_F) };
+		class Single: Single
+		{
+			dispersion = 0.003;
+		};
+	};
+
+	SUBCLASS(muzzle_Stun_Rifle,TAG##_muzzle_Stun)
+	{
+		fireSpreadAngle = 1;
+		magazines[] = { CLASS(30Rnd_ST20_Mag_F) };
+		class Single: Single
+		{
+			dispersion = 0.0009;
+		};
+	};
+
+	SUBCLASS(muzzle_Stun_Marksman,TAG##_muzzle_Stun)
+	{
+		fireSpreadAngle = 2;
+		magazines[] = { CLASS(5Rnd_ST45_Mag_F) };
+		class Single: Single
+		{
+			dispersion = 0.0006;
+		};
+	};
+
+	SUBCLASS(muzzle_Stun_Sniper,TAG##_muzzle_Stun)
+	{
+		fireSpreadAngle = 3;
+		magazines[] = { CLASS(3Rnd_ST90_Mag_F) };
+		class Single: Single
+		{
+			dispersion = 0.0003;
+		};
 	};
 	
 	// ############################################################ Optics ############################################################
@@ -814,7 +847,6 @@ class CfgWeapons
 			reloadAction = "GestureReloadPistol";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
 		};
-
 		class WeaponSlotsInfo
 		{
 			class CowsSlot
@@ -844,6 +876,11 @@ class CfgWeapons
 		baseWeapon = CLASS(SMG_DC15S_F);
 		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
 		magazineWell[] = {};
+		muzzles[]=
+		{
+			"this",
+			"Stun"
+		};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -893,6 +930,17 @@ class CfgWeapons
 				};
 			};
 		};
+		class Stun: TAG_CLASS(muzzle_Stun_Rifle)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
+			};
+		};
 	};
 
 	// ############################################################ Rifles ############################################################
@@ -905,6 +953,11 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
+		muzzles[]=
+		{
+			"this",
+			"Stun"
+		};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -955,6 +1008,17 @@ class CfgWeapons
 				};
 			};
 		};
+		class Stun: TAG_CLASS(muzzle_Stun_Rifle)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 95;
@@ -973,6 +1037,11 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(45Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
+		muzzles[]=
+		{
+			"this",
+			"Stun"
+		};
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -1022,6 +1091,17 @@ class CfgWeapons
 				};
 			};
 		};
+		class Stun: TAG_CLASS(muzzle_Stun_Rifle)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
+			};
+		};
 	};
 
 	SUBCLASS(arifle_DC15C_F,3AS_DC15C_F)
@@ -1033,6 +1113,14 @@ class CfgWeapons
 		magazines[] = { CLASS(36Rnd_EC50_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst" };
+		muzzles[] = { "this", "Stun" };
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
 		class Burst: Mode_Burst
 		{
 			burst = 2;
@@ -1083,6 +1171,17 @@ class CfgWeapons
 					"begin1",
 					1
 				};
+			};
+		};
+		class Stun: TAG_CLASS(muzzle_Stun_Rifle)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1174,6 +1273,7 @@ class CfgWeapons
 		recoil = "recoil_car_lsw";
 		magazines[] = { CLASS(60Rnd_EC40_Mag_F) };
 		magazineWell[] = {};
+		muzzles[] = { "this", "Stun" };
 		class FullAuto: FullAuto
 		{
 			reloadTime = "60 / 500";
@@ -1248,6 +1348,17 @@ class CfgWeapons
 					"begin1",
 					1
 				};
+			};
+		};
+		class Stun: TAG_CLASS(muzzle_Stun_Rifle)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1365,6 +1476,7 @@ class CfgWeapons
 		weaponInfoType = "RscWeaponZeroing";
 		magazines[] = { CLASS(21Rnd_EC60_Mag_F) };
 		magazineWell[] = {};
+		muzzles[] = { "this", "Stun" };
 		class Single: Single
 		{
 			reloadTime = "60 / 250";
@@ -1390,6 +1502,17 @@ class CfgWeapons
 				};
 			};
 		};
+		class Stun: TAG_CLASS(muzzle_Stun_Marksman)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 85;
@@ -1412,6 +1535,7 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(12Rnd_EC90_Mag_F) };
 		magazineWell[] = {};
+		muzzles[] = { "this", "Stun" };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -1440,6 +1564,17 @@ class CfgWeapons
 				};
 			};
 		};
+		class Stun: TAG_CLASS(muzzle_Stun_Sniper)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
+			};
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -1464,6 +1599,7 @@ class CfgWeapons
 		recoil = "recoil_MSBS65";
 		magazines[] = { CLASS(15Rnd_EC80_Mag_F) };
 		magazineWell[] = {};
+		muzzles[] = { "this", "Stun" };
 		reloadMagazineSound[]=
 		{
 			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
@@ -1506,6 +1642,17 @@ class CfgWeapons
 					"begin1",
 					1
 				};
+			};
+		};
+		class Stun: TAG_CLASS(muzzle_Stun_Sniper)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -1639,6 +1786,8 @@ class CfgWeapons
 		displayName = TAG_NAME(DP-23 CQC Blaster);
 		author = "Anorexican";
 		baseWeapon = CLASS(sgun_DP23_F);
+		cursor = "";
+		cursorAim = "gl";
 		muzzles[] = { "this", CLASS(Blaster_F) };
 		magazines[] = { CLASS(15Rnd_EC20_Mag_F) };
 		magazineWell[] = {};
@@ -1670,7 +1819,8 @@ class CfgWeapons
 			displayNameShort = "Blaster";
 			muzzlePos = "usti hlavne";
 			muzzleEnd = "konec hlavne";
-			cursor = "";
+			cursor = "arifle";
+			cursorAim = "CursorAim";
 			useModelOptics = 0;
 			useExternalOptic = 1;
 			magazineWell[] = {};
@@ -1855,6 +2005,7 @@ class CfgWeapons
 		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
+		muzzles[] = { "this", "Stun" };
 		class FullAuto: FullAuto
 		{
 			reloadTime = "60 / 600";
@@ -1930,6 +2081,17 @@ class CfgWeapons
 					"begin1",
 					1
 				};
+			};
+		};
+		class Stun: TAG_CLASS(muzzle_Stun_Marksman)
+		{
+			reloadAction = "GestureReloadMX";
+			reloadMagazineSound[]=
+			{
+				"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+				1,
+				1,
+				30
 			};
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
