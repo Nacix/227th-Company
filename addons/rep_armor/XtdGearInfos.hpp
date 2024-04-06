@@ -147,6 +147,7 @@ class XtdGearInfos
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
+		XTD_H_P2(Napoleon,Trooper,Napoleon);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
