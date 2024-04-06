@@ -281,6 +281,11 @@ class XtdGearInfos
 		XTD_U_TROOPER(Texan,Texan);
 		XTD_U_TROOPER(Valyrian,Valyrian);
 
+		// Pilot Uniforms
+		XTD_U_TROOPER(CX,CX);
+		XTD_U_TROOPER(CXG1,CXG1);
+		XTD_U_TROOPER(CXG2,CXG2);
+
 		// Insulated Uniforms
 		XTD_U_INSULATED(CT,Default);
 		XTD_U_INSULATED(Geonosis_CT,Geonosis);

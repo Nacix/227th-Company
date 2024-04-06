@@ -652,6 +652,11 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(CSS,Trooper Armor (CSS),200);
 	ADD_UNIFORM_TROOPER(CSM,Trooper Armor (CSM),200);
 
+	// Pilot Uniforms
+	ADD_UNIFORM_TROOPER(CX,Pilot Armor (CX),150);
+	ADD_UNIFORM_TROOPER(CXG1,Pilot Armor (CXG1),150);
+	ADD_UNIFORM_TROOPER(CXG2,Pilot Armor (CXG2),150);
+
 	// Custom Trooper Uniforms
 	ADD_UNIFORM_TROOPER(Catcher,Catcher's Armor,200);
 	ADD_UNIFORM_TROOPER(Cookie,Cookie's Armor,200);
