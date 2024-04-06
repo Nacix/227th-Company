@@ -128,6 +128,19 @@ class CfgWeapons
 		};
 	};
 
+	class 71st_DC15S_UGL: 71st_DC15S
+	{
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
 	class 71st_DC15A: 71st_DC15A_Base
 	{
 		class Single;
@@ -823,6 +836,64 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15S Blaster Carbine);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(SMG_DC15S_F);
+		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
+		magazineWell[] = {};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(2.5 / 3.4377) / 1000";
+			class StandardSound
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
+					3,
+					1.3,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 650";
+			dispersion = "2.8 / 1000";
+			class StandardSound
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
+					3,
+					1.3,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+	};
+
+	SUBCLASS(SMG_DC15S_UGL_F,71st_DC15S_UGL)
+	{
+		displayName = TAG_NAME(DC-15S Blaster Carbine (UGL));
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(SMG_DC15S_UGL_F);
 		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
 		magazineWell[] = {};
 		reloadMagazineSound[]=
