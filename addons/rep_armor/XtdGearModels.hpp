@@ -54,6 +54,7 @@ class XtdGearModels
 					"Fiveo",
 					"Kitsune",
 					"Luci",
+					"Napoleon",
 					"Rex",
 					"Riven",
 					"Sage",
@@ -85,6 +86,7 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(Fiveo);
 				SET_BACKGROUND_DEFAULT(Kitsune);
 				SET_BACKGROUND_DEFAULT(Luci);
+				SET_BACKGROUND_DEFAULT(Napoleon);
 				SET_BACKGROUND_DEFAULT(Rex);
 				SET_BACKGROUND_DEFAULT(Riven);
 				SET_BACKGROUND_DEFAULT(Sage);
@@ -367,6 +369,9 @@ class XtdGearModels
 					"CS",
 					"CSS",
 					"CSM",
+					"CX",
+					"CXG1",
+					"CXG2",
 					"Jet",
 					"Jet_NCO",
 					"Catcher",
@@ -387,6 +392,9 @@ class XtdGearModels
 				SET_BACKGROUND_DEFAULT(CS);
 				SET_BACKGROUND_DEFAULT(CSS);
 				SET_BACKGROUND_DEFAULT(CSM);
+				SET_BACKGROUND_DEFAULT(CX);
+				SET_BACKGROUND_DEFAULT(CXG1);
+				SET_BACKGROUND_DEFAULT(CXG2);
 				SET_BACKGROUND_DEFAULT(Jet);
 				SET_BACKGROUND_DEFAULT_PRETTY(Jet_NCO,Jet [NCO]);
 				SET_BACKGROUND_DEFAULT(Catcher);

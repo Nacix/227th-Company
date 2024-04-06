@@ -50,7 +50,7 @@ class CfgWeapons
 		};
 	};
 
-	class optic_DC15A_scope: ItemCore
+	class optic_DC15_ACOG: ItemCore
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
@@ -116,6 +116,19 @@ class CfgWeapons
     };
 
 	class 71st_DC15S: JLTS_DC15S
+	{
+		class Single;
+		class FullAuto;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot;
+			class PointerSlot;
+			class MuzzleSlot;
+			class UnderBarrelSlot;
+		};
+	};
+
+	class 71st_DC15S_UGL: 71st_DC15S
 	{
 		class Single;
 		class FullAuto;
@@ -349,7 +362,7 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
+	SUBCLASS(optic_DC15LE_scope,optic_DC15_ACOG)
 	{
 		class ItemInfo: ItemInfo
 		{
@@ -823,6 +836,64 @@ class CfgWeapons
 		displayName = TAG_NAME(DC-15S Blaster Carbine);
 		author = "Krinix & Anorexican";
 		baseWeapon = CLASS(SMG_DC15S_F);
+		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
+		magazineWell[] = {};
+		reloadMagazineSound[]=
+		{
+			"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",
+			1,
+			1,
+			30
+		};
+		class Single: Single
+		{
+			reloadTime = "60 / 700";
+			dispersion = "(2.5 / 3.4377) / 1000";
+			class StandardSound
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
+					3,
+					1.3,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+		class FullAuto: FullAuto
+		{
+			reloadTime = "60 / 650";
+			dispersion = "2.8 / 1000";
+			class StandardSound
+			{
+				weaponSoundEffect = "";
+				begin1[]=
+				{
+					"\LF_Weapon_Unit\ak-47\data\sound\EL16.wss",
+					3,
+					1.3,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					1
+				};
+			};
+		};
+	};
+
+	SUBCLASS(SMG_DC15S_UGL_F,71st_DC15S_UGL)
+	{
+		displayName = TAG_NAME(DC-15S Blaster Carbine (UGL));
+		author = "Krinix & Anorexican";
+		baseWeapon = CLASS(SMG_DC15S_UGL_F);
 		magazines[] = { CLASS(60Rnd_EC30_Mag_F) };
 		magazineWell[] = {};
 		reloadMagazineSound[]=
@@ -1833,7 +1904,7 @@ class CfgWeapons
 		author = "Anorexican";
 		baseWeapon = CLASS(arifle_DC17M_F);
 		recoil = "recoil_MSBS65";
-		magazines[] = { CLASS(100Rnd_EC40_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
+		magazines[] = { CLASS(60Rnd_EC50_Mag_F), CLASS(5Rnd_EC80_Mag_F), CLASS(1Rnd_ECX1000_Mag_F) };
 		magazineWell[] = {};
 		modes[] = { "Single", "Burst", "FullAuto" };
 		class FullAuto: FullAuto

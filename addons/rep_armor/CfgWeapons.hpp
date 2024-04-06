@@ -85,6 +85,7 @@ class CfgWeapons
     ADD_CT_HELMET(FiveO,FiveO's Helmet);
     ADD_CT_HELMET(Kitsune,Kitsune's Helmet);
     ADD_CT_HELMET(Luci,Luci's Helmet);
+	ADD_CT_HELMET(Napoleon,Napoleon's Helmet);
     ADD_CT_HELMET(Rex,Rex's Helmet);
     ADD_CT_HELMET(Riven,Riven's Helmet);
     ADD_CT_HELMET(Sage,Sage's Helmet);
@@ -650,6 +651,11 @@ class CfgWeapons
 	ADD_UNIFORM_TROOPER(CS,Trooper Armor (CS),200);
 	ADD_UNIFORM_TROOPER(CSS,Trooper Armor (CSS),200);
 	ADD_UNIFORM_TROOPER(CSM,Trooper Armor (CSM),200);
+
+	// Pilot Uniforms
+	ADD_UNIFORM_TROOPER(CX,Pilot Armor (CX),150);
+	ADD_UNIFORM_TROOPER(CXG1,Pilot Armor (CXG1),150);
+	ADD_UNIFORM_TROOPER(CXG2,Pilot Armor (CXG2),150);
 
 	// Custom Trooper Uniforms
 	ADD_UNIFORM_TROOPER(Catcher,Catcher's Armor,200);

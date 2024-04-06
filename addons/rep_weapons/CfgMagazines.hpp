@@ -38,6 +38,10 @@ class CfgMagazines
         count = 60;
         mass = 8;
         descriptionShort = "60-charge EC30 tibanna cartridge<br />Used in: DC-15S";
+
+        model = "\TK\71st\71_Weapons\blaster\dc15s\DC15S_Mag.p3d";
+        modelSpecial = "\TK\71st\71_Weapons\blaster\dc15s\DC15S_Mag.p3d";
+        modelSpecialIsProxy = 1;
     };
 
     SUBCLASS(45Rnd_EC40_Mag_F,3AS_100Rnd_EC40_Mag)
@@ -47,6 +51,10 @@ class CfgMagazines
         count = 45;
         mass = 9;
         descriptionShort = "45-charge EC40 tibanna cartridge<br />Used in: DC-15A";
+
+        model = "\TK\71st\71_Weapons\blaster\dc15a\DC15A_Mag.p3d";
+        modelSpecial = "\TK\71st\71_Weapons\blaster\dc15a\DC15A_Mag.p3d";
+        modelSpecialIsProxy = 1;
     };
 
     SUBCLASS(60Rnd_EC40_Mag_F,3AS_100Rnd_EC40_Mag)
@@ -64,7 +72,11 @@ class CfgMagazines
         displayName = "100Rnd EC40 Cartridge";
         count = 100;
         mass = 20;
-        descriptionShort = "100-charge EC40 tibanna cartridge<br />Used in: DC-15LE & DC-17M";
+        descriptionShort = "100-charge EC40 tibanna cartridge<br />Used in: DC-15LE";
+
+        model = "\TK\71st\71_Weapons\blaster\dc15a\DC15A_Mag.p3d";
+        modelSpecial = "\TK\71st\71_Weapons\blaster\dc15a\DC15A_Mag.p3d";
+        modelSpecialIsProxy = 1;
     };
 
     SUBCLASS(24Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
@@ -83,6 +95,18 @@ class CfgMagazines
         count = 36;
         mass = 9;
         descriptionShort = "36-charge EC50 tibanna cartridge<br />Used in: DC-15C";
+    };
+
+    SUBCLASS(60Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
+    {
+        author = "Anorexican";
+        displayName = "60Rnd EC50 Cartridge";
+        count = 60;
+        mass = 12;
+        descriptionShort = "60-charge EC50 tibanna cartridge<br />Used in: DC-17M";
+
+        modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel";
+        modelSpecialIsProxy = 1;
     };
 
     SUBCLASS(21Rnd_EC60_Mag_F,3AS_300Rnd_EC60_Mag)

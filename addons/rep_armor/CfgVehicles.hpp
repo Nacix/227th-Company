@@ -235,6 +235,10 @@ class CfgVehicles
 	ADD_V_UNIFORM_TROOPER(CSS,CSSBase);
 	ADD_V_UNIFORM_TROOPER(CSM,CSMBase);
 
+	ADD_V_UNIFORM_TROOPER(CX,CXBase);
+	ADD_V_UNIFORM_TROOPER(CXG1,CXG1Base);
+	ADD_V_UNIFORM_TROOPER(CXG2,CXG2Base);
+
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Catcher,CatcherBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Cookie,CookieBase);
 	ADD_V_UNIFORM_TROOPER_CUSTOM(Jinx,JinxBase);
@@ -273,6 +277,7 @@ class CfgVehicles
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (FiveO),Fiveo);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Kitsune),Kitsune);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Luci),Luci);
+	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Napoleon),Napoleon);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Rex),Rex);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Riven),Riven);
 	ADD_HELMET_OBJECT_P2_CUSTOM(P2 Custom Helmet (Sage),Sage);

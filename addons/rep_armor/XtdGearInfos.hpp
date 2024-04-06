@@ -147,6 +147,7 @@ class XtdGearInfos
 		XTD_H_P2(Fiveo,Trooper,Fiveo);
 		XTD_H_P2(Kitsune,Trooper,Kitsune);
 		XTD_H_P2(Luci,Trooper,Luci);
+		XTD_H_P2(Napoleon,Trooper,Napoleon);
 		XTD_H_P2(Rex,Trooper,Rex);
 		XTD_H_P2(Riven,Trooper,Riven);
 		XTD_H_P2(Sage,Trooper,Sage);
@@ -279,6 +280,11 @@ class XtdGearInfos
 		XTD_U_TROOPER(Speed,Speed);
 		XTD_U_TROOPER(Texan,Texan);
 		XTD_U_TROOPER(Valyrian,Valyrian);
+
+		// Pilot Uniforms
+		XTD_U_TROOPER(CX,CX);
+		XTD_U_TROOPER(CXG1,CXG1);
+		XTD_U_TROOPER(CXG2,CXG2);
 
 		// Insulated Uniforms
 		XTD_U_INSULATED(CT,Default);
