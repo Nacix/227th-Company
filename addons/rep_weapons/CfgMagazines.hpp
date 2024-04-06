@@ -97,6 +97,18 @@ class CfgMagazines
         descriptionShort = "36-charge EC50 tibanna cartridge<br />Used in: DC-15C";
     };
 
+    SUBCLASS(60Rnd_EC50_Mag_F,3AS_45Rnd_EC50_Mag)
+    {
+        author = "Anorexican";
+        displayName = "60Rnd EC50 Cartridge";
+        count = 60;
+        mass = 12;
+        descriptionShort = "60-charge EC50 tibanna cartridge<br />Used in: DC-17M";
+
+        modelSpecial = "3AS\3AS_Weapons\DC17M\attachments\blaster_Barrel";
+        modelSpecialIsProxy = 1;
+    };
+
     SUBCLASS(21Rnd_EC60_Mag_F,3AS_300Rnd_EC60_Mag)
     {
         author = "Anorexican";
