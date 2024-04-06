@@ -50,7 +50,7 @@ class CfgWeapons
 		};
 	};
 
-	class optic_DC15A_scope: ItemCore
+	class optic_DC15_ACOG: ItemCore
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
@@ -349,7 +349,7 @@ class CfgWeapons
 		};
 	};
 
-	SUBCLASS(optic_DC15LE_scope,optic_DC15A_scope)
+	SUBCLASS(optic_DC15LE_scope,optic_DC15_ACOG)
 	{
 		class ItemInfo: ItemInfo
 		{
